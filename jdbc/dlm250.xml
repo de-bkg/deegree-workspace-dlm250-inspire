@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<JDBCConnection configVersion='3.0.0'  xmlns='http://www.deegree.org/jdbc' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:schemaLocation='http://www.deegree.org/jdbc http://schemas.deegree.org/jdbc/3.0.0/jdbc.xsd'>
+  <Url>@jdbc_dlm250_url@</Url>
+  <User>@jdbc_dlm250_user@</User>
+  <Password>@jdbc_dlm250_pwd@</Password>
+  <ReadOnly>true</ReadOnly>
+</JDBCConnection>

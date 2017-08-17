@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<schema elementFormDefault="qualified" targetNamespace="http://www.locationframework.eu/schemas/AirTransportNetwork/1.0" version="1.0" 
+        xmlns="http://www.w3.org/2001/XMLSchema" 
+        xmlns:elf-tn-a="http://www.locationframework.eu/schemas/AirTransportNetwork/1.0" 
+        xmlns:tn-a="http://inspire.ec.europa.eu/schemas/tn-a/4.0"
+        xmlns:tn="http://inspire.ec.europa.eu/schemas/tn/4.0" 
+        xmlns:gn="http://inspire.ec.europa.eu/schemas/gn/4.0" 
+        xmlns:base="http://inspire.ec.europa.eu/schemas/base/3.3" 
+        xmlns:gml="http://www.opengis.net/gml/3.2" 
+        xmlns:gmlexr="http://www.opengis.net/gml/3.3/exr"> 
+  
+  <import namespace="http://inspire.ec.europa.eu/schemas/base/3.3" schemaLocation="../inspire/base/3.3/BaseTypes.xsd"/>
+  <import namespace="http://inspire.ec.europa.eu/schemas/gn/4.0" schemaLocation="../inspire/gn/4.0/GeographicalNames.xsd"/>
+  <import namespace="http://inspire.ec.europa.eu/schemas/tn-a/4.0" schemaLocation="../inspire/tn-a/4.0/AirTransportNetwork.xsd"/>
+  <import namespace="http://inspire.ec.europa.eu/schemas/tn/4.0" schemaLocation="../inspire/tn/4.0/CommonTransportElements.xsd"/>
+  <import namespace="http://www.opengis.net/gml/3.2" schemaLocation="../inspire/gml/3.2.1/gml.xsd"/>
+  <import namespace="http://www.opengis.net/gml/3.3/exr" schemaLocation="../inspire/gml/3.3/extdEncRule.xsd"/>
+     
+  
+  <!--XML Schema document created by ShapeChange - http://shapechange.net/-->
+  <element name="AerodromeArea" substitutionGroup="tn-a:AerodromeArea" type="elf-tn-a:AerodromeAreaType"/>
+  <complexType name="AerodromeAreaType">
+    <complexContent>
+      <extension base="tn-a:AerodromeAreaType">
+        <sequence>
+          <element minOccurs="0" name="area" type="gml:MeasureType"/>
+          <element minOccurs="0" name="transEuropeanTransportNetwork" type="boolean"/>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="AerodromeAreaPropertyType">
+    <sequence minOccurs="0">
+      <element ref="elf-tn-a:AerodromeArea"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="AerodromeNode" substitutionGroup="tn-a:AerodromeNode" type="elf-tn-a:AerodromeNodeType"/>
+  <complexType name="AerodromeNodeType">
+    <complexContent>
+      <extension base="tn-a:AerodromeNodeType">
+        <sequence>
+          <element minOccurs="0" name="transEuropeanTransportNetwork" type="boolean"/>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="AerodromeNodePropertyType">
+    <sequence minOccurs="0">
+      <element ref="elf-tn-a:AerodromeNode"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="FunctionalUseCategory" substitutionGroup="tn:TransportProperty" type="elf-tn-a:FunctionalUseCategoryType"/>
+  <complexType name="FunctionalUseCategoryType">
+    <complexContent>
+      <extension base="tn:TransportPropertyType">
+        <sequence>
+          <element name="functionalUseCategory" type="gml:ReferenceType">
+            <annotation>
+              <appinfo>
+                <targetCodeList xmlns="http://www.opengis.net/gml/3.3/exr">FunctionalUseCode</targetCodeList>
+              </appinfo>
+            </annotation>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="FunctionalUseCategoryPropertyType">
+    <sequence minOccurs="0">
+      <element ref="elf-tn-a:FunctionalUseCategory"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="RunwayLine" substitutionGroup="gml:AbstractFeature" type="elf-tn-a:RunwayLineType"/>
+  <complexType name="RunwayLineType">
+    <complexContent>
+      <extension base="gml:AbstractFeatureType">
+        <sequence>
+          <element minOccurs="0" name="geographicalName" nillable="true">
+            <complexType>
+              <sequence>
+                <element ref="gn:GeographicalName"/>
+              </sequence>
+              <attribute name="nilReason" type="gml:NilReasonType"/>
+            </complexType>
+          </element>
+          <element name="beginLifespanVersion" nillable="true">
+            <complexType>
+              <simpleContent>
+                <extension base="dateTime">
+                  <attribute name="nilReason" type="gml:NilReasonType"/>
+                </extension>
+              </simpleContent>
+            </complexType>
+          </element>
+          <element minOccurs="0" name="endLifespanVersion" nillable="true">
+            <complexType>
+              <simpleContent>
+                <extension base="dateTime">
+                  <attribute name="nilReason" type="gml:NilReasonType"/>
+                </extension>
+              </simpleContent>
+            </complexType>
+          </element>
+          <element name="geometry" type="gml:CurvePropertyType"/>
+          <element name="inspireId" type="base:IdentifierPropertyType"/>
+          <element name="length" type="gml:MeasureType"/>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="RunwayLinePropertyType">
+    <sequence minOccurs="0">
+      <element ref="elf-tn-a:RunwayLine"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="TransportationUseCategory" substitutionGroup="tn:TransportProperty" type="elf-tn-a:TransportationUseCategoryType"/>
+  <complexType name="TransportationUseCategoryType">
+    <complexContent>
+      <extension base="tn:TransportPropertyType">
+        <sequence>
+          <element name="transportationUseCategory" type="gml:ReferenceType">
+            <annotation>
+              <appinfo>
+                <targetCodeList xmlns="http://www.opengis.net/gml/3.3/exr">TransportationUseCode</targetCodeList>
+              </appinfo>
+            </annotation>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="TransportationUseCategoryPropertyType">
+    <sequence minOccurs="0">
+      <element ref="elf-tn-a:TransportationUseCategory"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+</schema>

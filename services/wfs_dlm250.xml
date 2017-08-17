@@ -1,0 +1,63 @@
+<deegreeWFS configVersion="3.2.0" 
+            xmlns="http://www.deegree.org/services/wfs" 
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+            xsi:schemaLocation="http://www.deegree.org/services/wfs http://schemas.deegree.org/services/wfs/3.2.0/wfs_configuration.xsd">  
+
+  <SupportedVersions>
+    <Version>1.0.0</Version>
+    <Version>1.1.0</Version>
+    <Version>2.0.0</Version>
+  </SupportedVersions>
+  
+  <!-- Hier die Feature-Stores für den WFS auflisten -->
+  <FeatureStoreId>dlm250</FeatureStoreId>
+
+  <!-- keine Transaktionen zulassen -->
+  <EnableTransactions>false</EnableTransactions>
+  <DisabledResources>
+    <Pattern>http://inspire.ec.europa.eu/codelist</Pattern>
+  </DisabledResources>
+
+  <!-- INSPIRE CRS -->
+  <QueryCRS>urn:ogc:def:crs:EPSG::4258</QueryCRS>
+  <QueryCRS>urn:ogc:def:crs:EPSG::4326</QueryCRS>
+  <QueryCRS>urn:ogc:def:crs:EPSG::3857</QueryCRS>
+  <QueryCRS>urn:ogc:def:crs:EPSG::3034</QueryCRS>
+  <QueryCRS>urn:ogc:def:crs:EPSG::3035</QueryCRS>
+  <!-- GK -->
+  <QueryCRS>urn:ogc:def:crs:EPSG::31466</QueryCRS>
+  <QueryCRS>urn:ogc:def:crs:EPSG::31467</QueryCRS>
+  <QueryCRS>urn:ogc:def:crs:EPSG::31468</QueryCRS>
+  <QueryCRS>urn:ogc:def:crs:EPSG::31469</QueryCRS>
+  <QueryCRS>urn:ogc:def:crs:EPSG::5676</QueryCRS>
+  <QueryCRS>urn:ogc:def:crs:EPSG::5677</QueryCRS>
+  <QueryCRS>urn:ogc:def:crs:EPSG::5678</QueryCRS>
+  <QueryCRS>urn:ogc:def:crs:EPSG::5679</QueryCRS>  
+  <QueryCRS>urn:ogc:def:crs:EPSG::2397</QueryCRS>
+  <QueryCRS>urn:ogc:def:crs:EPSG::2398</QueryCRS>
+  <QueryCRS>urn:ogc:def:crs:EPSG::2399</QueryCRS>
+  <!-- UTM -->
+  <QueryCRS>urn:ogc:def:crs:EPSG::25832</QueryCRS>
+  <QueryCRS>urn:ogc:def:crs:EPSG::25833</QueryCRS>
+  <QueryCRS>urn:ogc:def:crs:EPSG::4647</QueryCRS>
+  <QueryCRS>urn:ogc:def:crs:EPSG::5650</QueryCRS>
+  <QueryCRS>urn:ogc:def:crs:EPSG::32632</QueryCRS>
+  <QueryCRS>urn:ogc:def:crs:EPSG::32633</QueryCRS>
+  <!-- TM -->
+  <QueryCRS>urn:ogc:def:crs:EPSG::3044</QueryCRS>
+  <QueryCRS>urn:ogc:def:crs:EPSG::3045</QueryCRS>
+  <!-- Lambert -->
+  <QueryCRS>urn:ogc:def:crs:EPSG::4839</QueryCRS>
+
+  <!-- Required for WFS 1.1.0/GML 3.2 output with gml:FeatureCollection root element (as mandated by ESDIN) -->
+  <GMLFormat gmlVersion="GML_32">
+    <MimeType>application/gml+xml; version=3.2</MimeType>
+    <MimeType>text/xml; subtype=gml/3.2.1</MimeType>
+    <GetFeatureResponse>
+      <AdditionalSchemaLocation>http://www.opengis.net/gml/3.2 http://schemas.opengis.net/gml/3.2.1/deprecatedTypes.xsd</AdditionalSchemaLocation>
+      <DisableDynamicSchema>true</DisableDynamicSchema>
+      <DisableStreaming>true</DisableStreaming>
+    </GetFeatureResponse>
+  </GMLFormat>
+  
+</deegreeWFS>

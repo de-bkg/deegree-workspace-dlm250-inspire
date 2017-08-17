@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema targetNamespace="http://www.locationframework.eu/schemas/HydroNetwork/1.0" version="1.0" elementFormDefault="qualified" 
+        xmlns:elf-hn="http://www.locationframework.eu/schemas/HydroNetwork/1.0" 
+        xmlns="http://www.w3.org/2001/XMLSchema" 
+        xmlns:ge_hg="http://inspire.ec.europa.eu/schemas/ge_hg/4.0" 
+        xmlns:gml="http://www.opengis.net/gml/3.2" 
+        xmlns:hy-n="http://inspire.ec.europa.eu/schemas/hy-n/4.0" 
+        xmlns:hy-p="http://inspire.ec.europa.eu/schemas/hy-p/4.0">
+        
+  <import namespace="http://inspire.ec.europa.eu/schemas/ge_hg/4.0" schemaLocation="../inspire/ge_hg/4.0/HydrogeologyCore.xsd"/>
+  <import namespace="http://inspire.ec.europa.eu/schemas/hy-n/4.0" schemaLocation="../inspire/hy-n/4.0/HydroNetwork.xsd"/>
+  <import namespace="http://inspire.ec.europa.eu/schemas/hy-p/4.0" schemaLocation="../inspire/hy-p/4.0/HydroPhysicalWaters.xsd"/>
+  <import namespace="http://www.opengis.net/gml/3.2" schemaLocation="http://schemas.opengis.net/gml/3.2.1/gml.xsd"/>
+  
+  <!--XML Schema document created by ShapeChange - http://shapechange.net/-->
+  <element name="HydroNode" substitutionGroup="hy-n:HydroNode" type="elf-hn:HydroNodeType"/>
+  <complexType name="HydroNodeType">
+    <complexContent>
+      <extension base="hy-n:HydroNodeType">
+        <sequence>
+          <element minOccurs="0" name="spring" type="ge_hg:HydrogeologicalObjectNaturalPropertyType"/>
+          <element minOccurs="0" name="damOrWeir" type="hy-p:DamOrWeirPropertyType"/>
+          <element minOccurs="0" name="lock" type="hy-p:LockPropertyType"/>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="HydroNodePropertyType">
+    <sequence minOccurs="0">
+      <element ref="elf-hn:HydroNode"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+</schema>

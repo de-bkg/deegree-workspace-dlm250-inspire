@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema targetNamespace="http://www.locationframework.eu/schemas/CommonTransportElements/1.0" version="1.0" elementFormDefault="qualified"
+        xmlns:elf-tn="http://www.locationframework.eu/schemas/CommonTransportElements/1.0"
+        xmlns="http://www.w3.org/2001/XMLSchema" 
+        xmlns:gml="http://www.opengis.net/gml/3.2" 
+        xmlns:gmlexr="http://www.opengis.net/gml/3.3/exr" 
+        xmlns:tn="http://inspire.ec.europa.eu/schemas/tn/4.0" 
+        xmlns:tn-ra="http://inspire.ec.europa.eu/schemas/tn-ra/4.0" 
+        xmlns:tn-ro="http://inspire.ec.europa.eu/schemas/tn-ro/4.0">
+        
+  <import namespace="http://inspire.ec.europa.eu/schemas/tn-ra/4.0" schemaLocation="../inspire/tn-ra/4.0/RailwayTransportNetwork.xsd"/>
+  <import namespace="http://inspire.ec.europa.eu/schemas/tn-ro/4.0" schemaLocation="../inspire/tn-ro/4.0/RoadTransportNetwork.xsd"/>
+  <import namespace="http://inspire.ec.europa.eu/schemas/tn/4.0" schemaLocation="../inspire/tn/4.0/CommonTransportElements.xsd"/>
+  <import namespace="http://www.opengis.net/gml/3.2" schemaLocation="../inspire/gml/3.2.1/gml.xsd"/>
+  <import namespace="http://www.opengis.net/gml/3.3/exr" schemaLocation="../inspire/gml/3.3/extdEncRule.xsd"/>
+  
+  <!--XML Schema document created by ShapeChange - http://shapechange.net/-->
+  <element name="SchengenBorderPoint" substitutionGroup="tn:TransportPoint" type="elf-tn:SchengenBorderPointType"/>
+  <complexType name="SchengenBorderPointType">
+    <complexContent>
+      <extension base="tn:TransportPointType">
+        <sequence>
+          <element minOccurs="0" name="railwayNode" type="tn-ra:RailwayNodePropertyType"/>
+          <element minOccurs="0" name="roadNode" type="tn-ro:RoadNodePropertyType"/>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="SchengenBorderPointPropertyType">
+    <sequence minOccurs="0">
+      <element ref="elf-tn:SchengenBorderPoint"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="VerticalPosition" substitutionGroup="tn:VerticalPosition" type="elf-tn:VerticalPositionType"/>
+  <complexType name="VerticalPositionType">
+    <complexContent>
+      <extension base="tn:VerticalPositionType">
+        <sequence>
+          <element minOccurs="0" name="verticalRelation" type="gml:ReferenceType">
+            <annotation>
+              <appinfo>
+                <targetCodeList xmlns="http://www.opengis.net/gml/3.3/exr">VerticalRelationValue</targetCodeList>
+              </appinfo>
+            </annotation>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="VerticalPositionPropertyType">
+    <sequence minOccurs="0">
+      <element ref="elf-tn:VerticalPosition"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+</schema>

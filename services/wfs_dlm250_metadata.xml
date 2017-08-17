@@ -1,0 +1,81 @@
+<deegreeServicesMetadata configVersion="3.2.0" 
+                         xmlns="http://www.deegree.org/services/metadata" 
+                         xmlns:ad="urn:x-inspire:specification:gmlas:Addresses:3.0"
+                         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                         xsi:schemaLocation="http://www.deegree.org/services/metadata http://schemas.deegree.org/services/metadata/3.2.0/metadata.xsd">
+
+  <ServiceIdentification>
+    <Title>WFS Digitales Landschaftsmodell 1:250.000 INSPIRE</Title>
+    <Abstract>WFS Digitales Landschaftsmodell 1:250.000 INSPIRE</Abstract>
+    <Keywords>
+        <Keyword>Transport Network Air</Keyword>
+        <Keyword>infoFeatureAccessService</Keyword>
+        <Keyword>DownloadService</Keyword>
+        <Keyword>INSPIRE:DownloadService</Keyword>
+        <Keyword>INSPIRE</Keyword>
+        <Keyword>TODO: Mehr</Keyword>
+    </Keywords>
+    <Fees>none</Fees>
+    <AccessConstraints>
+      Verordnung zur Festlegung der Nutzungsbestimmungen für die Bereitstellung von Geodaten des Bundes (GeoNutzV) vom 19. März 2013 
+      (Bundesgesetzblatt Jahrgang 2013 Teil I Nr. 14), 
+      URL: http://www.geodatenzentrum.de/docpdf/geonutzv.pdf
+    </AccessConstraints>    
+  </ServiceIdentification>
+
+  <ServiceProvider>
+    <ProviderName>Dienstleistungszentrum des Bundes für Geoinformation und Geodäsie</ProviderName>
+    <ProviderSite>http://www.geodatenzentrum.de</ProviderSite>
+    <ServiceContact>
+      <IndividualName/>
+      <PositionName>Technischer Administrator</PositionName>
+      <Phone>+49 (0) 341 5634 333</Phone>
+      <Facsimile>+49 (0) 341 5634 415</Facsimile>
+      <ElectronicMailAddress>dlz@bkg.bund.de</ElectronicMailAddress>
+      <Address>
+        <DeliveryPoint>Karl-Rothe-Str. 10-14</DeliveryPoint>
+        <City>Leipzig</City>
+        <AdministrativeArea>DE-SN</AdministrativeArea>
+        <PostalCode>04105</PostalCode>
+        <Country>Deutschland</Country>
+      </Address>
+      <OnlineResource>http://www.geodatenzentrum.de</OnlineResource>
+      <!-- HoursOfService>24x7</HoursOfService>
+      <ContactInstructions>Do not hesitate to call</ContactInstructions-->
+      <Role>PointOfContact</Role>
+    </ServiceContact>
+  </ServiceProvider>
+
+  <!--DatasetMetadata>
+    <MetadataUrlTemplate>http://mis.bkg.bund.de/geonetwork/srv/eng/csw?REQUEST=GetRecordById&amp;SERVICE=CSW&amp;VERSION=2.0.2&amp;OutputSchema=http://www.isotc211.org/2005/gmd&amp;elementSetName=full&amp;ID=${metadataSetId}</MetadataUrlTemplate>
+    <Dataset xmlns:ps="http://inspire.ec.europa.eu/schemas/ps/4.0">
+      <Name>ps:ProtectedSite</Name>
+      <Title>ps:ProtectedSite</Title>
+      <Abstract>Harmonized INSPIRE ProtectedSites (Annex I)</Abstract>
+      <MetadataSetId>TODO...</MetadataSetId>
+    </Dataset>
+  </DatasetMetadata-->
+
+  <!--ExtendedCapabilities protocolVersions="2.0.0">
+    <inspire_dls:ExtendedCapabilities xmlns:inspire_dls="http://inspire.ec.europa.eu/schemas/inspire_dls/1.0"
+                                      xmlns:inspire_common="http://inspire.ec.europa.eu/schemas/common/1.0"
+                                      xsi:schemaLocation="http://inspire.ec.europa.eu/schemas/common/1.0 http://inspire.ec.europa.eu/schemas/common/1.0/common.xsd http://inspire.ec.europa.eu/schemas/inspire_dls/1.0 http://inspire.ec.europa.eu/schemas/inspire_dls/1.0/inspire_dls.xsd">
+      <inspire_common:MetadataUrl>
+        <inspire_common:URL>http://mis.bkg.bund.de/geonetwork/srv/eng/csw?REQUEST=GetRecordById&amp;SERVICE=CSW&amp;VERSION=2.0.2&amp;OutputSchema=http://www.isotc211.org/2005/gmd&amp;elementSetName=full&amp;id=TODO</inspire_common:URL>
+        <inspire_common:MediaType>application/vnd.iso.19139+xml</inspire_common:MediaType>
+      </inspire_common:MetadataUrl>
+      <inspire_common:SupportedLanguages>
+        <inspire_common:DefaultLanguage>
+          <inspire_common:Language>eng</inspire_common:Language>
+        </inspire_common:DefaultLanguage>
+      </inspire_common:SupportedLanguages>
+      <inspire_common:ResponseLanguage>
+        <inspire_common:Language>eng</inspire_common:Language>
+      </inspire_common:ResponseLanguage>
+      <inspire_dls:SpatialDataSetIdentifier>
+        <inspire_common:Code>TODO...</inspire_common:Code>
+      </inspire_dls:SpatialDataSetIdentifier>
+    </inspire_dls:ExtendedCapabilities>
+  </ExtendedCapabilities-->
+
+</deegreeServicesMetadata>

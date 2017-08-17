@@ -1,0 +1,510 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema targetNamespace="http://www.locationframework.eu/schemas/Miscellaneous/1.0" version="1.0" elementFormDefault="qualified" 
+        xmlns:elf-misc="http://www.locationframework.eu/schemas/Miscellaneous/1.0" 
+        xmlns:elf-gn="http://www.locationframework.eu/schemas/GeographicalNames/1.0" 
+        xmlns="http://www.w3.org/2001/XMLSchema" 
+        xmlns:base="http://inspire.ec.europa.eu/schemas/base/3.3" 
+        xmlns:gml="http://www.opengis.net/gml/3.2" 
+        xmlns:gmlexr="http://www.opengis.net/gml/3.3/exr">
+        
+  <import namespace="http://inspire.ec.europa.eu/schemas/base/3.3" schemaLocation="http://inspire.ec.europa.eu/schemas/base/3.3/BaseTypes.xsd"/>
+  <import namespace="http://www.locationframework.eu/schemas/GeographicalNames/1.0" schemaLocation="GeographicalNames.xsd"/>
+  <import namespace="http://www.opengis.net/gml/3.2" schemaLocation="http://schemas.opengis.net/gml/3.2.1/gml.xsd"/>
+  <import namespace="http://www.opengis.net/gml/3.3/exr" schemaLocation="http://schemas.opengis.net/gml/3.3/extdEncRule.xsd"/>
+  
+  <!--XML Schema document created by ShapeChange - http://shapechange.net/-->
+  <element name="AmusementPark" substitutionGroup="elf-misc:LandmarkFeature" type="elf-misc:AmusementParkType"/>
+  <complexType name="AmusementParkType">
+    <complexContent>
+      <extension base="elf-misc:LandmarkFeatureType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="AmusementParkPropertyType">
+    <sequence minOccurs="0">
+      <element ref="elf-misc:AmusementPark"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Cave" substitutionGroup="gml:AbstractFeature" type="elf-misc:CaveType"/>
+  <complexType name="CaveType">
+    <complexContent>
+      <extension base="gml:AbstractFeatureType">
+        <sequence>
+          <element name="geometry" type="gml:PointPropertyType"/>
+          <element name="inspireID" type="base:IdentifierPropertyType"/>
+          <element maxOccurs="unbounded" minOccurs="0" name="name" nillable="true">
+            <complexType>
+              <sequence>
+                <element ref="elf-gn:GeographicalName"/>
+              </sequence>
+              <attribute name="nilReason" type="gml:NilReasonType"/>
+            </complexType>
+          </element>
+          <element name="beginLifespanVersion" nillable="true">
+            <complexType>
+              <simpleContent>
+                <extension base="dateTime">
+                  <attribute name="nilReason" type="gml:NilReasonType"/>
+                </extension>
+              </simpleContent>
+            </complexType>
+          </element>
+          <element minOccurs="0" name="endLifespanVersion" nillable="true">
+            <complexType>
+              <simpleContent>
+                <extension base="dateTime">
+                  <attribute name="nilReason" type="gml:NilReasonType"/>
+                </extension>
+              </simpleContent>
+            </complexType>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="CavePropertyType">
+    <sequence minOccurs="0">
+      <element ref="elf-misc:Cave"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="DisposalSite" substitutionGroup="gml:AbstractFeature" type="elf-misc:DisposalSiteType"/>
+  <complexType name="DisposalSiteType">
+    <complexContent>
+      <extension base="gml:AbstractFeatureType">
+        <sequence>
+          <element name="geometry" type="gml:PointPropertyType"/>
+          <element name="inspireID" type="base:IdentifierPropertyType"/>
+          <element name="beginLifespanVersion" nillable="true">
+            <complexType>
+              <simpleContent>
+                <extension base="dateTime">
+                  <attribute name="nilReason" type="gml:NilReasonType"/>
+                </extension>
+              </simpleContent>
+            </complexType>
+          </element>
+          <element minOccurs="0" name="endLifespanVersion" nillable="true">
+            <complexType>
+              <simpleContent>
+                <extension base="dateTime">
+                  <attribute name="nilReason" type="gml:NilReasonType"/>
+                </extension>
+              </simpleContent>
+            </complexType>
+          </element>
+          <element name="byProduct" nillable="true" type="gml:ReferenceType">
+            <annotation>
+              <appinfo>
+                <targetCodeList xmlns="http://www.opengis.net/gml/3.3/exr">ByProductCode</targetCodeList>
+              </appinfo>
+            </annotation>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="DisposalSitePropertyType">
+    <sequence minOccurs="0">
+      <element ref="elf-misc:DisposalSite"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="ExtractionMine" substitutionGroup="gml:AbstractFeature" type="elf-misc:ExtractionMineType"/>
+  <complexType name="ExtractionMineType">
+    <complexContent>
+      <extension base="gml:AbstractFeatureType">
+        <sequence>
+          <element name="geometry" type="gml:PointPropertyType"/>
+          <element minOccurs="0" name="conditionOfFacility" nillable="true" type="gml:ReferenceType">
+            <annotation>
+              <appinfo>
+                <targetCodeList xmlns="http://www.opengis.net/gml/3.3/exr">ConditionOfFacilityValue</targetCodeList>
+              </appinfo>
+            </annotation>
+          </element>
+          <element name="extractionMineType" nillable="true" type="gml:ReferenceType">
+            <annotation>
+              <appinfo>
+                <targetCodeList xmlns="http://www.opengis.net/gml/3.3/exr">ExtractionMineTypeCode</targetCodeList>
+              </appinfo>
+            </annotation>
+          </element>
+          <element maxOccurs="unbounded" minOccurs="0" name="name" nillable="true">
+            <complexType>
+              <sequence>
+                <element ref="elf-gn:GeographicalName"/>
+              </sequence>
+              <attribute name="nilReason" type="gml:NilReasonType"/>
+            </complexType>
+          </element>
+          <element name="product" nillable="true" type="gml:ReferenceType">
+            <annotation>
+              <appinfo>
+                <targetCodeList xmlns="http://www.opengis.net/gml/3.3/exr">ProductCode</targetCodeList>
+              </appinfo>
+            </annotation>
+          </element>
+          <element name="inspireID" type="base:IdentifierPropertyType"/>
+          <element name="beginLifespanVersion" nillable="true">
+            <complexType>
+              <simpleContent>
+                <extension base="dateTime">
+                  <attribute name="nilReason" type="gml:NilReasonType"/>
+                </extension>
+              </simpleContent>
+            </complexType>
+          </element>
+          <element minOccurs="0" name="endLifespanVersion" nillable="true">
+            <complexType>
+              <simpleContent>
+                <extension base="dateTime">
+                  <attribute name="nilReason" type="gml:NilReasonType"/>
+                </extension>
+              </simpleContent>
+            </complexType>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="ExtractionMinePropertyType">
+    <sequence minOccurs="0">
+      <element ref="elf-misc:ExtractionMine"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element abstract="true" name="LandmarkFeature" substitutionGroup="gml:AbstractFeature" type="elf-misc:LandmarkFeatureType"/>
+  <complexType abstract="true" name="LandmarkFeatureType">
+    <complexContent>
+      <extension base="gml:AbstractFeatureType">
+        <sequence>
+          <element name="geometry" type="gml:GeometricPrimitivePropertyType"/>
+          <element name="inspireID" type="base:IdentifierPropertyType"/>
+          <element maxOccurs="unbounded" minOccurs="0" name="name" nillable="true">
+            <complexType>
+              <sequence>
+                <element ref="elf-gn:GeographicalName"/>
+              </sequence>
+              <attribute name="nilReason" type="gml:NilReasonType"/>
+            </complexType>
+          </element>
+          <element name="beginLifespanVersion" nillable="true">
+            <complexType>
+              <simpleContent>
+                <extension base="dateTime">
+                  <attribute name="nilReason" type="gml:NilReasonType"/>
+                </extension>
+              </simpleContent>
+            </complexType>
+          </element>
+          <element minOccurs="0" name="endLifespanVersion" nillable="true">
+            <complexType>
+              <simpleContent>
+                <extension base="dateTime">
+                  <attribute name="nilReason" type="gml:NilReasonType"/>
+                </extension>
+              </simpleContent>
+            </complexType>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="LandmarkFeaturePropertyType">
+    <sequence minOccurs="0">
+      <element ref="elf-misc:LandmarkFeature"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Pipe" substitutionGroup="gml:AbstractFeature" type="elf-misc:PipeType"/>
+  <complexType name="PipeType">
+    <complexContent>
+      <extension base="gml:AbstractFeatureType">
+        <sequence>
+          <element name="geometry" type="gml:CurvePropertyType"/>
+          <element name="inspireID" type="base:IdentifierPropertyType"/>
+          <element name="product" nillable="true" type="gml:ReferenceType">
+            <annotation>
+              <appinfo>
+                <targetCodeList xmlns="http://www.opengis.net/gml/3.3/exr">ProductCode</targetCodeList>
+              </appinfo>
+            </annotation>
+          </element>
+          <element name="verticalPosition" nillable="true">
+            <complexType>
+              <simpleContent>
+                <extension base="base:VerticalPositionValueType">
+                  <attribute name="nilReason" type="gml:NilReasonType"/>
+                </extension>
+              </simpleContent>
+            </complexType>
+          </element>
+          <element name="beginLifespanVersion" nillable="true">
+            <complexType>
+              <simpleContent>
+                <extension base="dateTime">
+                  <attribute name="nilReason" type="gml:NilReasonType"/>
+                </extension>
+              </simpleContent>
+            </complexType>
+          </element>
+          <element minOccurs="0" name="endLifespanVersion" nillable="true">
+            <complexType>
+              <simpleContent>
+                <extension base="dateTime">
+                  <attribute name="nilReason" type="gml:NilReasonType"/>
+                </extension>
+              </simpleContent>
+            </complexType>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="PipePropertyType">
+    <sequence minOccurs="0">
+      <element ref="elf-misc:Pipe"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="PowerLine" substitutionGroup="gml:AbstractFeature" type="elf-misc:PowerLineType"/>
+  <complexType name="PowerLineType">
+    <complexContent>
+      <extension base="gml:AbstractFeatureType">
+        <sequence>
+          <element name="geometry" type="gml:CurvePropertyType"/>
+          <element name="inspireID" type="base:IdentifierPropertyType"/>
+          <element name="linearFeatureArrangement" nillable="true" type="gml:ReferenceType">
+            <annotation>
+              <appinfo>
+                <targetCodeList xmlns="http://www.opengis.net/gml/3.3/exr">LinearFeatureArrangementCode</targetCodeList>
+              </appinfo>
+            </annotation>
+          </element>
+          <element name="beginLifespanVersion" nillable="true">
+            <complexType>
+              <simpleContent>
+                <extension base="dateTime">
+                  <attribute name="nilReason" type="gml:NilReasonType"/>
+                </extension>
+              </simpleContent>
+            </complexType>
+          </element>
+          <element minOccurs="0" name="endLifespanVersion" nillable="true">
+            <complexType>
+              <simpleContent>
+                <extension base="dateTime">
+                  <attribute name="nilReason" type="gml:NilReasonType"/>
+                </extension>
+              </simpleContent>
+            </complexType>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="PowerLinePropertyType">
+    <sequence minOccurs="0">
+      <element ref="elf-misc:PowerLine"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="PowerStation" substitutionGroup="gml:AbstractFeature" type="elf-misc:PowerStationType"/>
+  <complexType name="PowerStationType">
+    <complexContent>
+      <extension base="gml:AbstractFeatureType">
+        <sequence>
+          <element name="geometry" type="gml:PointPropertyType"/>
+          <element name="inspireID" type="base:IdentifierPropertyType"/>
+          <element maxOccurs="unbounded" minOccurs="0" name="name" nillable="true">
+            <complexType>
+              <sequence>
+                <element ref="elf-gn:GeographicalName"/>
+              </sequence>
+              <attribute name="nilReason" type="gml:NilReasonType"/>
+            </complexType>
+          </element>
+          <element name="powerPlantType" nillable="true" type="gml:ReferenceType">
+            <annotation>
+              <appinfo>
+                <targetCodeList xmlns="http://www.opengis.net/gml/3.3/exr">PowerPlantTypeCode</targetCodeList>
+              </appinfo>
+            </annotation>
+          </element>
+          <element name="beginLifespanVersion" nillable="true">
+            <complexType>
+              <simpleContent>
+                <extension base="dateTime">
+                  <attribute name="nilReason" type="gml:NilReasonType"/>
+                </extension>
+              </simpleContent>
+            </complexType>
+          </element>
+          <element minOccurs="0" name="endLifespanVersion" nillable="true">
+            <complexType>
+              <simpleContent>
+                <extension base="dateTime">
+                  <attribute name="nilReason" type="gml:NilReasonType"/>
+                </extension>
+              </simpleContent>
+            </complexType>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="PowerStationPropertyType">
+    <sequence minOccurs="0">
+      <element ref="elf-misc:PowerStation"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="ProcessingFacility" substitutionGroup="gml:AbstractFeature" type="elf-misc:ProcessingFacilityType"/>
+  <complexType name="ProcessingFacilityType">
+    <complexContent>
+      <extension base="gml:AbstractFeatureType">
+        <sequence>
+          <element name="geometry" type="gml:PointPropertyType"/>
+          <element name="inspireID" type="base:IdentifierPropertyType"/>
+          <element name="product" nillable="true" type="gml:ReferenceType">
+            <annotation>
+              <appinfo>
+                <targetCodeList xmlns="http://www.opengis.net/gml/3.3/exr">ProductCode</targetCodeList>
+              </appinfo>
+            </annotation>
+          </element>
+          <element name="beginLifespanVersion" nillable="true">
+            <complexType>
+              <simpleContent>
+                <extension base="dateTime">
+                  <attribute name="nilReason" type="gml:NilReasonType"/>
+                </extension>
+              </simpleContent>
+            </complexType>
+          </element>
+          <element minOccurs="0" name="endLifespanVersion" nillable="true">
+            <complexType>
+              <simpleContent>
+                <extension base="dateTime">
+                  <attribute name="nilReason" type="gml:NilReasonType"/>
+                </extension>
+              </simpleContent>
+            </complexType>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="ProcessingFacilityPropertyType">
+    <sequence minOccurs="0">
+      <element ref="elf-misc:ProcessingFacility"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="PumpingStation" substitutionGroup="gml:AbstractFeature" type="elf-misc:PumpingStationType"/>
+  <complexType name="PumpingStationType">
+    <complexContent>
+      <extension base="gml:AbstractFeatureType">
+        <sequence>
+          <element name="product" nillable="true" type="gml:ReferenceType">
+            <annotation>
+              <appinfo>
+                <targetCodeList xmlns="http://www.opengis.net/gml/3.3/exr">ProductCode</targetCodeList>
+              </appinfo>
+            </annotation>
+          </element>
+          <element name="geometry" type="gml:PointPropertyType"/>
+          <element name="inspireID" type="base:IdentifierPropertyType"/>
+          <element name="beginLifespanVersion" nillable="true">
+            <complexType>
+              <simpleContent>
+                <extension base="dateTime">
+                  <attribute name="nilReason" type="gml:NilReasonType"/>
+                </extension>
+              </simpleContent>
+            </complexType>
+          </element>
+          <element minOccurs="0" name="endLifespanVersion" nillable="true">
+            <complexType>
+              <simpleContent>
+                <extension base="dateTime">
+                  <attribute name="nilReason" type="gml:NilReasonType"/>
+                </extension>
+              </simpleContent>
+            </complexType>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="PumpingStationPropertyType">
+    <sequence minOccurs="0">
+      <element ref="elf-misc:PumpingStation"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="RaceTrack" substitutionGroup="elf-misc:LandmarkFeature" type="elf-misc:RaceTrackType"/>
+  <complexType name="RaceTrackType">
+    <complexContent>
+      <extension base="elf-misc:LandmarkFeatureType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="RaceTrackPropertyType">
+    <sequence minOccurs="0">
+      <element ref="elf-misc:RaceTrack"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="SteepTerrainFace" substitutionGroup="gml:AbstractFeature" type="elf-misc:SteepTerrainFaceType"/>
+  <complexType name="SteepTerrainFaceType">
+    <complexContent>
+      <extension base="gml:AbstractFeatureType">
+        <sequence>
+          <element name="geometry" type="gml:CurvePropertyType"/>
+          <element name="inspireID" type="base:IdentifierPropertyType"/>
+          <element name="beginLifespanVersion" nillable="true">
+            <complexType>
+              <simpleContent>
+                <extension base="dateTime">
+                  <attribute name="nilReason" type="gml:NilReasonType"/>
+                </extension>
+              </simpleContent>
+            </complexType>
+          </element>
+          <element minOccurs="0" name="endLifespanVersion" nillable="true">
+            <complexType>
+              <simpleContent>
+                <extension base="dateTime">
+                  <attribute name="nilReason" type="gml:NilReasonType"/>
+                </extension>
+              </simpleContent>
+            </complexType>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="SteepTerrainFacePropertyType">
+    <sequence minOccurs="0">
+      <element ref="elf-misc:SteepTerrainFace"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+</schema>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema targetNamespace="http://www.locationframework.eu/schemas/ProtectedSites/1.0" version="1.0" elementFormDefault="qualified"
+        xmlns:elf-ps="http://www.locationframework.eu/schemas/ProtectedSites/1.0" 
+        xmlns="http://www.w3.org/2001/XMLSchema" 
+        xmlns:ps="http://inspire.ec.europa.eu/schemas/ps/4.0">
+        
+  <import namespace="http://inspire.ec.europa.eu/schemas/ps/4.0" schemaLocation="http://inspire.ec.europa.eu/schemas/ps/4.0/ProtectedSites.xsd"/>
+  
+  <!--XML Schema document created by ShapeChange - http://shapechange.net/-->
+</schema>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema targetNamespace="http://www.locationframework.eu/schemas/GeographicalNames/1.0" version="1.0" elementFormDefault="qualified"
+        xmlns:elf-gn="http://www.locationframework.eu/schemas/GeographicalNames/1.0" 
+        xmlns="http://www.w3.org/2001/XMLSchema" 
+        xmlns:gml="http://www.opengis.net/gml/3.2" 
+        xmlns:gmlexr="http://www.opengis.net/gml/3.3/exr" 
+        xmlns:gn="http://inspire.ec.europa.eu/schemas/gn/4.0">
+    
+  <import namespace="http://inspire.ec.europa.eu/schemas/gn/4.0" schemaLocation="../inspire/gn/4.0/GeographicalNames.xsd"/>
+  <import namespace="http://www.opengis.net/gml/3.2" schemaLocation="http://schemas.opengis.net/gml/3.2.1/gml.xsd"/>
+  <import namespace="http://www.opengis.net/gml/3.3/exr" schemaLocation="http://schemas.opengis.net/gml/3.3/extdEncRule.xsd"/>
+  
+  <!--XML Schema document created by ShapeChange - http://shapechange.net/-->
+  <element name="GeographicalName" substitutionGroup="gn:GeographicalName" type="elf-gn:GeographicalNameType"/>
+  <complexType name="GeographicalNameType">
+    <complexContent>
+      <extension base="gn:GeographicalNameType">
+        <sequence>
+          <element minOccurs="0" name="referenceName" type="boolean"/>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="GeographicalNamePropertyType">
+    <sequence>
+      <element ref="elf-gn:GeographicalName"/>
+    </sequence>
+  </complexType>
+  <element name="NamedPlace" substitutionGroup="gn:NamedPlace" type="elf-gn:NamedPlaceType"/>
+  <complexType name="NamedPlaceType">
+    <complexContent>
+      <extension base="gn:NamedPlaceType">
+        <sequence>
+          <element minOccurs="0" name="EGNType" type="gml:ReferenceType">
+            <annotation>
+              <appinfo>
+                <targetCodeList xmlns="http://www.opengis.net/gml/3.3/exr">EuroGeoNamesLocationTypeValue</targetCodeList>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="populationIndication" type="elf-gn:PopulationIndicationPropertyType"/>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="NamedPlacePropertyType">
+    <sequence minOccurs="0">
+      <element ref="elf-gn:NamedPlace"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="PopulationIndication" substitutionGroup="gml:AbstractObject" type="elf-gn:PopulationIndicationType"/>
+  <complexType name="PopulationIndicationType">
+    <choice>
+      <element name="populationNumber" type="integer"/>
+      <element name="populationRange" type="elf-gn:PopulationRangePropertyType"/>
+    </choice>
+  </complexType>
+  <complexType name="PopulationIndicationPropertyType">
+    <sequence>
+      <element ref="elf-gn:PopulationIndication"/>
+    </sequence>
+  </complexType>
+  <element name="PopulationRange" substitutionGroup="gml:AbstractObject" type="elf-gn:PopulationRangeType"/>
+  <complexType name="PopulationRangeType">
+    <sequence>
+      <element name="lower" type="integer"/>
+      <element name="upper" type="integer"/>
+    </sequence>
+  </complexType>
+  <complexType name="PopulationRangePropertyType">
+    <sequence>
+      <element ref="elf-gn:PopulationRange"/>
+    </sequence>
+  </complexType>
+</schema>

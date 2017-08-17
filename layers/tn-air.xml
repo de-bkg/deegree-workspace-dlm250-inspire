@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FeatureLayers configVersion="3.2.0" 
+               xmlns="http://www.deegree.org/layers/feature" 
+               xmlns:l="http://www.deegree.org/layers/base" 
+               xmlns:d="http://www.deegree.org/metadata/description" 
+               xmlns:s="http://www.deegree.org/metadata/spatial" 
+               xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+               xsi:schemaLocation="http://www.deegree.org/layers/feature http://schemas.deegree.org/layers/feature/3.2.0/feature.xsd">
+    
+    <FeatureStoreId>dlm250</FeatureStoreId>
+
+    <FeatureLayer>
+        <FeatureType xmlns:elf-tn-a="http://www.locationframework.eu/schemas/AirTransportNetwork/1.0">elf-tn-a:AerodromeArea</FeatureType>
+        <l:Name>TN.AirTransportNetwork.AerodromeArea</l:Name>
+        <d:Title>TN.AirTransportNetwork.AerodromeArea</d:Title>
+
+        <s:CRS>EPSG:4258 EPSG:4326 EPSG:3857 EPSG:3034 EPSG:3035 EPSG:31466 EPSG:31467 EPSG:31468 EPSG:31469 EPSG:2397 EPSG:2398 EPSG:2399 EPSG:25832 EPSG:25833 EPSG:32632 EPSG:32633 EPSG:3044 EPSG:3045 EPSG:4839</s:CRS>
+
+        <l:StyleRef>
+            <l:StyleStoreId>TNA_AerodromeArea_Default</l:StyleStoreId>
+            <l:Style>
+                <!-- The StyleName specifies the name under which the style will be known in the WMS -->
+                <l:StyleName>TN.AirTransportNetwork.AerodromeArea.Default</l:StyleName>
+                <!-- The LayerNameRef and StyleNameRef are used to extract the style from the style store -->
+                <l:LayerNameRef>TN.AirTransportNetwork.AerodromeArea.Default</l:LayerNameRef>
+                <l:StyleNameRef>TN.AirTransportNetwork.AerodromeArea.Default</l:StyleNameRef>
+            </l:Style>
+        </l:StyleRef>
+    </FeatureLayer>
+    
+    <FeatureLayer>
+        <FeatureType xmlns:elf-tn-a="http://www.locationframework.eu/schemas/AirTransportNetwork/1.0">elf-tn-a:AerodromeNode</FeatureType>
+        <l:Name>TN.AirTransportNetwork.AerodromeNode</l:Name>
+        <d:Title>TN.AirTransportNetwork.AerodromeNode</d:Title>
+
+        <s:CRS>EPSG:4258 EPSG:4326 EPSG:3857 EPSG:3034 EPSG:3035 EPSG:31466 EPSG:31467 EPSG:31468 EPSG:31469 EPSG:2397 EPSG:2398 EPSG:2399 EPSG:25832 EPSG:25833 EPSG:32632 EPSG:32633 EPSG:3044 EPSG:3045 EPSG:4839</s:CRS>
+
+        <l:StyleRef>
+            <l:StyleStoreId>TNA_AerodromeNode_Default</l:StyleStoreId>
+            <l:Style>
+                <l:StyleName>TN.AirTransportNetwork.AerodromeNode.Default</l:StyleName>
+                <l:LayerNameRef>TN.AirTransportNetwork.AerodromeNode.Default</l:LayerNameRef>
+                <l:StyleNameRef>TN.AirTransportNetwork.AerodromeNode.Default</l:StyleNameRef>
+            </l:Style>
+        </l:StyleRef>
+    </FeatureLayer>
+
+    <FeatureLayer>
+        <FeatureType xmlns:elf-tn-a="http://www.locationframework.eu/schemas/AirTransportNetwork/1.0">elf-tn-a:RunwayLine</FeatureType>
+        <l:Name>TN.AirTransportNetwork.RunwayLine</l:Name>
+        <d:Title>TN.AirTransportNetwork.RunwayLine</d:Title>
+
+        <s:CRS>EPSG:4258 EPSG:4326 EPSG:3857 EPSG:3034 EPSG:3035 EPSG:31466 EPSG:31467 EPSG:31468 EPSG:31469 EPSG:2397 EPSG:2398 EPSG:2399 EPSG:25832 EPSG:25833 EPSG:32632 EPSG:32633 EPSG:3044 EPSG:3045 EPSG:4839</s:CRS>
+
+        <l:StyleRef>
+            <l:StyleStoreId>TNA_RunwayLine_Default</l:StyleStoreId>
+            <l:Style>
+                <l:StyleName>TN.AirTransportNetwork.RunwayLine.Default</l:StyleName>
+                <l:LayerNameRef>TN.AirTransportNetwork.RunwayLine.Default</l:LayerNameRef>
+                <l:StyleNameRef>TN.AirTransportNetwork.RunwayLine.Default</l:StyleNameRef>
+            </l:Style>
+        </l:StyleRef>
+    </FeatureLayer>
+    
+    <!-- Folgende Themen haben keine Daten --> 
+    <FeatureLayer>
+        <FeatureType xmlns:tn-a="http://inspire.ec.europa.eu/schemas/tn-a/4.0" >tn-a:TaxiwayArea</FeatureType>
+        <l:Name>TN.AirTransportNetwork.TaxiwayArea</l:Name>
+        <d:Title>TN.AirTransportNetwork.TaxiwayArea</d:Title>
+
+        <s:CRS>EPSG:4258 EPSG:4326 EPSG:3857 EPSG:3034 EPSG:3035 EPSG:31466 EPSG:31467 EPSG:31468 EPSG:31469 EPSG:2397 EPSG:2398 EPSG:2399 EPSG:25832 EPSG:25833 EPSG:32632 EPSG:32633 EPSG:3044 EPSG:3045 EPSG:4839</s:CRS>
+
+        <l:StyleRef>
+            <l:StyleStoreId>TNA_TaxiwayArea_Default</l:StyleStoreId>
+            <l:Style>
+                <l:StyleName>TN.AirTransportNetwork.TaxiwayArea.Default</l:StyleName>
+                <l:LayerNameRef>TN.AirTransportNetwork.TaxiwayArea.Default</l:LayerNameRef>
+                <l:StyleNameRef>TN.AirTransportNetwork.TaxiwayArea.Default</l:StyleNameRef>
+            </l:Style>
+        </l:StyleRef>
+    </FeatureLayer>
+    
+    <FeatureLayer>
+        <FeatureType xmlns:tn-a="http://inspire.ec.europa.eu/schemas/tn-a/4.0" >tn-a:RunwayArea</FeatureType>
+        <l:Name>TN.AirTransportNetwork.RunwayArea</l:Name>
+        <d:Title>TN.AirTransportNetwork.RunwayArea</d:Title>
+
+        <s:CRS>EPSG:4258 EPSG:4326 EPSG:3857 EPSG:3034 EPSG:3035 EPSG:31466 EPSG:31467 EPSG:31468 EPSG:31469 EPSG:2397 EPSG:2398 EPSG:2399 EPSG:25832 EPSG:25833 EPSG:32632 EPSG:32633 EPSG:3044 EPSG:3045 EPSG:4839</s:CRS>
+
+        <l:StyleRef>
+            <l:StyleStoreId>TNA_RunwayArea_Default</l:StyleStoreId>
+            <l:Style>
+                <l:StyleName>TN.AirTransportNetwork.RunwayArea.Default</l:StyleName>
+                <l:LayerNameRef>TN.AirTransportNetwork.RunwayArea.Default</l:LayerNameRef>
+                <l:StyleNameRef>TN.AirTransportNetwork.RunwayArea.Default</l:StyleNameRef>
+            </l:Style>
+        </l:StyleRef>
+    </FeatureLayer>
+    
+    <FeatureLayer>
+        <FeatureType xmlns:tn-a="http://inspire.ec.europa.eu/schemas/tn-a/4.0" >tn-a:ApronArea</FeatureType>
+        <l:Name>TN.AirTransportNetwork.ApronArea</l:Name>
+        <d:Title>TN.AirTransportNetwork.ApronArea</d:Title>
+
+        <s:CRS>EPSG:4258 EPSG:4326 EPSG:3857 EPSG:3034 EPSG:3035 EPSG:31466 EPSG:31467 EPSG:31468 EPSG:31469 EPSG:2397 EPSG:2398 EPSG:2399 EPSG:25832 EPSG:25833 EPSG:32632 EPSG:32633 EPSG:3044 EPSG:3045 EPSG:4839</s:CRS>
+
+        <l:StyleRef>
+            <l:StyleStoreId>TNA_ApronArea_Default</l:StyleStoreId>
+            <l:Style>
+                <l:StyleName>TN.AirTransportNetwork.ApronArea.Default</l:StyleName>
+                <l:LayerNameRef>TN.AirTransportNetwork.ApronArea.Default</l:LayerNameRef>
+                <l:StyleNameRef>TN.AirTransportNetwork.ApronArea.Default</l:StyleNameRef>
+            </l:Style>
+        </l:StyleRef>
+    </FeatureLayer>
+    
+    <FeatureLayer>
+        <FeatureType xmlns:tn-a="http://inspire.ec.europa.eu/schemas/tn-a/4.0" >tn-a:AirspaceArea</FeatureType>
+        <l:Name>TN.AirTransportNetwork.AirspaceArea</l:Name>
+        <d:Title>TN.AirTransportNetwork.AirspaceArea</d:Title>
+
+        <s:CRS>EPSG:4258 EPSG:4326 EPSG:3857 EPSG:3034 EPSG:3035 EPSG:31466 EPSG:31467 EPSG:31468 EPSG:31469 EPSG:2397 EPSG:2398 EPSG:2399 EPSG:25832 EPSG:25833 EPSG:32632 EPSG:32633 EPSG:3044 EPSG:3045 EPSG:4839</s:CRS>
+
+        <l:StyleRef>
+            <l:StyleStoreId>TNA_AirSpaceArea_Default</l:StyleStoreId>
+            <l:Style>
+                <l:StyleName>TN.AirTransportNetwork.AirspaceArea.Default</l:StyleName>
+                <l:LayerNameRef>TN.AirTransportNetwork.AirspaceArea.Default</l:LayerNameRef>
+                <l:StyleNameRef>TN.AirTransportNetwork.AirspaceArea.Default</l:StyleNameRef>
+            </l:Style>
+        </l:StyleRef>
+    </FeatureLayer>
+    
+    <FeatureLayer>
+        <FeatureType xmlns:tn-a="http://inspire.ec.europa.eu/schemas/tn-a/4.0">tn-a:AirRouteLink</FeatureType>
+        <l:Name>TN.AirTransportNetwork.AirLink</l:Name>
+        <d:Title>TN.AirTransportNetwork.AirLink</d:Title>
+
+        <s:CRS>EPSG:4258 EPSG:4326 EPSG:3857 EPSG:3034 EPSG:3035 EPSG:31466 EPSG:31467 EPSG:31468 EPSG:31469 EPSG:2397 EPSG:2398 EPSG:2399 EPSG:25832 EPSG:25833 EPSG:32632 EPSG:32633 EPSG:3044 EPSG:3045 EPSG:4839</s:CRS>
+
+        <l:StyleRef>
+            <l:StyleStoreId>TNA_AirLink_Default</l:StyleStoreId>
+            <l:Style>
+                <l:StyleName>TN.AirTransportNetwork.AirLink.Default</l:StyleName>
+                <l:LayerNameRef>TN.AirTransportNetwork.AirLink.Default</l:LayerNameRef>
+                <l:StyleNameRef>TN.AirTransportNetwork.AirLink.Default</l:StyleNameRef>
+            </l:Style>
+        </l:StyleRef>
+    </FeatureLayer>
+
+</FeatureLayers>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema targetNamespace="http://www.locationframework.eu/schemas/WaterTransportNetwork/1.0" version="1.0" elementFormDefault="qualified" 
+        xmlns="http://www.w3.org/2001/XMLSchema" 
+        xmlns:elf-tn-w="http://www.locationframework.eu/schemas/WaterTransportNetwork/1.0" 
+        xmlns:gml="http://www.opengis.net/gml/3.2" 
+        xmlns:gmlexr="http://www.opengis.net/gml/3.3/exr" 
+        xmlns:tn="http://inspire.ec.europa.eu/schemas/tn/4.0" 
+        xmlns:tn-w="http://inspire.ec.europa.eu/schemas/tn-w/4.0">
+        
+  <import namespace="http://inspire.ec.europa.eu/schemas/tn-w/4.0" schemaLocation="../inspire/tn-w/4.0/WaterTransportNetwork.xsd"/>
+  <import namespace="http://inspire.ec.europa.eu/schemas/tn/4.0" schemaLocation="../inspire/tn/4.0/CommonTransportElements.xsd"/>
+  <import namespace="http://www.opengis.net/gml/3.2" schemaLocation="../inspire/gml/3.2.1/gml.xsd"/>
+  <import namespace="http://www.opengis.net/gml/3.3/exr" schemaLocation="../inspire/gml/3.3/extdEncRule.xsd"/>
+  
+  <!--XML Schema document created by ShapeChange - http://shapechange.net/-->
+  <element name="FerryCrossing" substitutionGroup="tn-w:FerryCrossing" type="elf-tn-w:FerryCrossingType"/>
+  <complexType name="FerryCrossingType">
+    <complexContent>
+      <extension base="tn-w:FerryCrossingType">
+        <sequence>
+          <element minOccurs="0" name="ferryCrossingIdentifier" type="string"/>
+          <element minOccurs="0" name="internationalConnection" type="boolean"/>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="FerryCrossingPropertyType">
+    <sequence minOccurs="0">
+      <element ref="elf-tn-w:FerryCrossing"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="PortArea" substitutionGroup="tn-w:PortArea" type="elf-tn-w:PortAreaType"/>
+  <complexType name="PortAreaType">
+    <complexContent>
+      <extension base="tn-w:PortAreaType">
+        <sequence>
+          <element minOccurs="0" name="area" type="gml:AreaType"/>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="PortAreaPropertyType">
+    <sequence minOccurs="0">
+      <element ref="elf-tn-w:PortArea"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="PortNode" substitutionGroup="tn-w:PortNode" type="elf-tn-w:PortNodeType"/>
+  <complexType name="PortNodeType">
+    <complexContent>
+      <extension base="tn-w:PortNodeType">
+        <sequence>
+          <element minOccurs="0" name="ferryStationIdentifier" type="string"/>
+          <element minOccurs="0" name="locationCode" type="string"/>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="PortNodePropertyType">
+    <sequence minOccurs="0">
+      <element ref="elf-tn-w:PortNode"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="PortType" substitutionGroup="tn:TransportProperty" type="elf-tn-w:PortTypeType"/>
+  <complexType name="PortTypeType">
+    <complexContent>
+      <extension base="tn:TransportPropertyType">
+        <sequence>
+          <element minOccurs="0" name="portType" type="gml:ReferenceType">
+            <annotation>
+              <appinfo>
+                <targetCodeList xmlns="http://www.opengis.net/gml/3.3/exr">TransportationSystemTypeCode</targetCodeList>
+              </appinfo>
+            </annotation>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="PortTypePropertyType">
+    <sequence minOccurs="0">
+      <element ref="elf-tn-w:PortType"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+</schema>

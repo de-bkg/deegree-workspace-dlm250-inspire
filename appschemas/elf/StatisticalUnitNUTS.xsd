@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema targetNamespace="http://www.locationframework.eu/schemas/NUTS/1.0" version="1.0" elementFormDefault="qualified"
+        xmlns:elf-su-nuts="http://www.locationframework.eu/schemas/NUTS/1.0" 
+        xmlns="http://www.w3.org/2001/XMLSchema" 
+        xmlns:su-nuts="http://inspire.jrc.ec.europa.eu/schemas/su-nuts/2.0">
+        
+  <import namespace="http://inspire.jrc.ec.europa.eu/schemas/su-nuts/2.0" schemaLocation="http://inspire.ec.europa.eu/draft-schemas/su-nuts/2.0/StatisticalUnitNUTS.xsd"/>
+  
+  <!--XML Schema document created by ShapeChange - http://shapechange.net/-->
+</schema>

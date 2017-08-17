@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema targetNamespace="http://www.locationframework.eu/schemas/PhysicalWaters/1.0" version="1.0" elementFormDefault="qualified" 
+        xmlns:elf-pw="http://www.locationframework.eu/schemas/PhysicalWaters/1.0" 
+        xmlns="http://www.w3.org/2001/XMLSchema" 
+        xmlns:base="http://inspire.ec.europa.eu/schemas/base/3.3" 
+        xmlns:gml="http://www.opengis.net/gml/3.2" 
+        xmlns:gmlexr="http://www.opengis.net/gml/3.3/exr" 
+        xmlns:gn="http://inspire.ec.europa.eu/schemas/gn/4.0" 
+        xmlns:hy="http://inspire.ec.europa.eu/schemas/hy/4.0" 
+        xmlns:hy-p="http://inspire.ec.europa.eu/schemas/hy-p/4.0">
+        
+  <import namespace="http://inspire.ec.europa.eu/schemas/base/3.3" schemaLocation="../inspire/base/3.3/BaseTypes.xsd"/>
+  <import namespace="http://inspire.ec.europa.eu/schemas/gn/4.0" schemaLocation="../inspire/gn/4.0/GeographicalNames.xsd"/>  
+  <import namespace="http://inspire.ec.europa.eu/schemas/hy-p/4.0" schemaLocation="../inspire/hy-p/4.0/HydroPhysicalWaters.xsd"/>
+  <import namespace="http://inspire.ec.europa.eu/schemas/hy/4.0" schemaLocation="../inspire/hy/4.0/HydroBase.xsd"/>
+  <import namespace="http://www.opengis.net/gml/3.2" schemaLocation="../inspire/gml/3.2.1/gml.xsd"/>
+  <import namespace="http://www.opengis.net/gml/3.3/exr" schemaLocation="../inspire/gml/3.3/extdEncRule.xsd"/>
+  
+  <!--XML Schema document created by ShapeChange - http://shapechange.net/-->
+  <element name="Embankment" substitutionGroup="hy-p:Embankment" type="elf-pw:EmbankmentType"/>
+  <complexType name="EmbankmentType">
+    <complexContent>
+      <extension base="hy-p:EmbankmentType">
+        <sequence>
+          <element minOccurs="0" name="embankmentType" type="gml:ReferenceType">
+            <annotation>
+              <appinfo>
+                <targetCodeList xmlns="http://www.opengis.net/gml/3.3/exr">EmbankmentTypeCode</targetCodeList>
+              </appinfo>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="predominantFeatureHeight" type="gml:LengthType"/>
+          <element minOccurs="0" name="waterLevelEffect" type="gml:ReferenceType">
+            <annotation>
+              <appinfo>
+                <targetCodeList xmlns="http://www.opengis.net/gml/3.3/exr">WaterLevelEffectCode</targetCodeList>
+              </appinfo>
+            </annotation>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="EmbankmentPropertyType">
+    <sequence minOccurs="0">
+      <element ref="elf-pw:Embankment"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="Island" substitutionGroup="gml:AbstractFeature" type="elf-pw:IslandType"/>
+  <complexType name="IslandType">
+    <complexContent>
+      <extension base="gml:AbstractFeatureType">
+        <sequence>
+          <element maxOccurs="unbounded" minOccurs="0" name="geographicalName" nillable="true">
+            <complexType>
+              <sequence>
+                <element ref="gn:GeographicalName"/>
+              </sequence>
+              <attribute name="nilReason" type="gml:NilReasonType"/>
+            </complexType>
+          </element>
+          <element maxOccurs="unbounded" minOccurs="0" name="hydroId" nillable="true">
+            <complexType>
+              <sequence>
+                <element ref="hy:HydroIdentifier"/>
+              </sequence>
+              <attribute name="nilReason" type="gml:NilReasonType"/>
+            </complexType>
+          </element>
+          <element maxOccurs="unbounded" minOccurs="0" name="relatedHydroObject" type="gml:ReferenceType">
+            <annotation>
+              <appinfo>
+                <targetElement xmlns="http://www.opengis.net/gml/3.2">hy:HydroObject</targetElement>
+              </appinfo>
+            </annotation>
+          </element>
+          <element name="inspireId" type="base:IdentifierPropertyType"/>
+          <element name="geometry" type="gml:SurfacePropertyType"/>
+          <element name="beginLifespanVersion" nillable="true">
+            <complexType>
+              <simpleContent>
+                <extension base="dateTime">
+                  <attribute name="nilReason" type="gml:NilReasonType"/>
+                </extension>
+              </simpleContent>
+            </complexType>
+          </element>
+          <element name="endLifespanVersion" nillable="true">
+            <complexType>
+              <simpleContent>
+                <extension base="dateTime">
+                  <attribute name="nilReason" type="gml:NilReasonType"/>
+                </extension>
+              </simpleContent>
+            </complexType>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="IslandPropertyType">
+    <sequence minOccurs="0">
+      <element ref="elf-pw:Island"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="LandWaterBoundary" substitutionGroup="hy-p:LandWaterBoundary" type="elf-pw:LandWaterBoundaryType"/>
+  <complexType name="LandWaterBoundaryType">
+    <complexContent>
+      <extension base="hy-p:LandWaterBoundaryType">
+        <sequence>
+          <element maxOccurs="unbounded" minOccurs="0" name="delimit" type="hy-p:SurfaceWaterPropertyType"/>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="LandWaterBoundaryPropertyType">
+    <sequence minOccurs="0">
+      <element ref="elf-pw:LandWaterBoundary"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="ShorelineConstruction" substitutionGroup="hy-p:ShorelineConstruction" type="elf-pw:ShorelineConstructionType"/>
+  <complexType name="ShorelineConstructionType">
+    <complexContent>
+      <extension base="hy-p:ShorelineConstructionType">
+        <sequence>
+          <element minOccurs="0" name="shorelineConstructionType" type="gml:ReferenceType">
+            <annotation>
+              <appinfo>
+                <targetCodeList xmlns="http://www.opengis.net/gml/3.3/exr">ShorelineConstructionTypeCode</targetCodeList>
+              </appinfo>
+            </annotation>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="ShorelineConstructionPropertyType">
+    <sequence minOccurs="0">
+      <element ref="elf-pw:ShorelineConstruction"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+</schema>

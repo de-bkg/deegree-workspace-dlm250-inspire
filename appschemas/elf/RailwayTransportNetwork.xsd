@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema version="1.0"
+        elementFormDefault="qualified" 
+        targetNamespace="http://www.locationframework.eu/schemas/RailwayTransportNetwork/1.0" 
+        xmlns:elf-tn-ra="http://www.locationframework.eu/schemas/RailwayTransportNetwork/1.0" 
+        xmlns="http://www.w3.org/2001/XMLSchema" 
+        xmlns:gml="http://www.opengis.net/gml/3.2" 
+        xmlns:gmlexr="http://www.opengis.net/gml/3.3/exr" 
+        xmlns:tn="http://inspire.ec.europa.eu/schemas/tn/4.0" 
+        xmlns:tn-ra="http://inspire.ec.europa.eu/schemas/tn-ra/4.0">
+    
+  <import namespace="http://inspire.ec.europa.eu/schemas/tn-ra/4.0" schemaLocation="../inspire/tn-ra/4.0/RailwayTransportNetwork.xsd"/>
+  <import namespace="http://inspire.ec.europa.eu/schemas/tn/4.0" schemaLocation="../inspire/tn/4.0/CommonTransportElements.xsd"/>
+  <import namespace="http://www.opengis.net/gml/3.2" schemaLocation="../inspire/gml/3.2.1/gml.xsd"/>
+  <import namespace="http://www.opengis.net/gml/3.3/exr" schemaLocation="../inspire/gml/3.3/extdEncRule.xsd"/>
+    
+    <!--XML Schema document created by ShapeChange - http://shapechange.net/-->
+    <element name="DesignSpeed" substitutionGroup="tn-ra:DesignSpeed" type="elf-tn-ra:DesignSpeedType"/>
+    <complexType name="DesignSpeedType">
+        <complexContent>
+            <extension base="tn-ra:DesignSpeedType">
+                <sequence>
+                    <element minOccurs="0" name="speedClass" type="gml:ReferenceType">
+                        <annotation>
+                            <appinfo>
+                                <targetCodeList xmlns="http://www.opengis.net/gml/3.3/exr">RailwaySpeedClassValue</targetCodeList>
+                            </appinfo>
+                        </annotation>
+                    </element>
+                </sequence>
+            </extension>
+        </complexContent>
+    </complexType>
+    <complexType name="DesignSpeedPropertyType">
+        <sequence minOccurs="0">
+            <element ref="elf-tn-ra:DesignSpeed"/>
+        </sequence>
+        <attributeGroup ref="gml:AssociationAttributeGroup"/>
+        <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+    </complexType>
+    <element name="RailwayClass" substitutionGroup="tn:TransportProperty" type="elf-tn-ra:RailwayClassType"/>
+    <complexType name="RailwayClassType">
+        <complexContent>
+            <extension base="tn:TransportPropertyType">
+                <sequence>
+                    <element name="railwayClass" type="gml:ReferenceType">
+                        <annotation>
+                            <appinfo>
+                                <targetCodeList xmlns="http://www.opengis.net/gml/3.3/exr">RailwayClassCode</targetCodeList>
+                            </appinfo>
+                        </annotation>
+                    </element>
+                </sequence>
+            </extension>
+        </complexContent>
+    </complexType>
+    <complexType name="RailwayClassPropertyType">
+        <sequence minOccurs="0">
+            <element ref="elf-tn-ra:RailwayClass"/>
+        </sequence>
+        <attributeGroup ref="gml:AssociationAttributeGroup"/>
+        <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+    </complexType>
+    <element name="RailwayElectrification" substitutionGroup="tn-ra:RailwayElectrification" type="elf-tn-ra:RailwayElectrificationType"/>
+    <complexType name="RailwayElectrificationType">
+        <complexContent>
+            <extension base="tn-ra:RailwayElectrificationType">
+                <sequence>
+                    <element minOccurs="0" name="railwayPowerMethod" type="gml:ReferenceType">
+                        <annotation>
+                            <appinfo>
+                                <targetCodeList xmlns="http://www.opengis.net/gml/3.3/exr">RailwayPowerMethodCode</targetCodeList>
+                            </appinfo>
+                        </annotation>
+                    </element>
+                </sequence>
+            </extension>
+        </complexContent>
+    </complexType>
+    <complexType name="RailwayElectrificationPropertyType">
+        <sequence minOccurs="0">
+            <element ref="elf-tn-ra:RailwayElectrification"/>
+        </sequence>
+        <attributeGroup ref="gml:AssociationAttributeGroup"/>
+        <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+    </complexType>
+    <element name="RailwayLink" substitutionGroup="tn-ra:RailwayLink" type="elf-tn-ra:RailwayLinkType"/>
+    <complexType name="RailwayLinkType">
+        <complexContent>
+            <extension base="tn-ra:RailwayLinkType">
+                <sequence>
+                    <element minOccurs="0" name="transEuropeanTransportNetwork" type="boolean"/>
+                </sequence>
+            </extension>
+        </complexContent>
+    </complexType>
+    <complexType name="RailwayLinkPropertyType">
+        <sequence minOccurs="0">
+            <element ref="elf-tn-ra:RailwayLink"/>
+        </sequence>
+        <attributeGroup ref="gml:AssociationAttributeGroup"/>
+        <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+    </complexType>
+    <element name="RailwayStationNode" substitutionGroup="tn-ra:RailwayStationNode" type="elf-tn-ra:RailwayStationNodeType"/>
+    <complexType name="RailwayStationNodeType">
+        <complexContent>
+            <extension base="tn-ra:RailwayStationNodeType">
+                <sequence>
+                    <element minOccurs="0" name="facilityType" type="gml:ReferenceType">
+                        <annotation>
+                            <appinfo>
+                                <targetCodeList xmlns="http://www.opengis.net/gml/3.3/exr">RailwayFacilityTypeValue</targetCodeList>
+                            </appinfo>
+                        </annotation>
+                    </element>
+                </sequence>
+            </extension>
+        </complexContent>
+    </complexType>
+    <complexType name="RailwayStationNodePropertyType">
+        <sequence minOccurs="0">
+            <element ref="elf-tn-ra:RailwayStationNode"/>
+        </sequence>
+        <attributeGroup ref="gml:AssociationAttributeGroup"/>
+        <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+    </complexType>
+</schema>

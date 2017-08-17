@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema targetNamespace="http://www.locationframework.eu/schemas/RoadTransportNetwork/1.0" version="1.0" elementFormDefault="qualified" 
+        xmlns:elf-tn-ro="http://www.locationframework.eu/schemas/RoadTransportNetwork/1.0" 
+        xmlns="http://www.w3.org/2001/XMLSchema" 
+        xmlns:gml="http://www.opengis.net/gml/3.2" 
+        xmlns:gmlexr="http://www.opengis.net/gml/3.3/exr" 
+        xmlns:tn="http://inspire.ec.europa.eu/schemas/tn/4.0" 
+        xmlns:tn-ro="http://inspire.ec.europa.eu/schemas/tn-ro/4.0">
+
+  <import namespace="http://inspire.ec.europa.eu/schemas/tn-ro/4.0" schemaLocation="../inspire/tn-ro/4.0/RoadTransportNetwork.xsd"/>
+  <import namespace="http://inspire.ec.europa.eu/schemas/tn/4.0" schemaLocation="../inspire/tn/4.0/CommonTransportElements.xsd"/>
+  <import namespace="http://www.opengis.net/gml/3.2" schemaLocation="../inspire/gml/3.2.1/gml.xsd"/>
+  <import namespace="http://www.opengis.net/gml/3.3/exr" schemaLocation="../inspire/gml/3.3/extdEncRule.xsd"/>
+  
+  <!--XML Schema document created by ShapeChange - http://shapechange.net/-->
+  <element name="InterchangePoint" substitutionGroup="tn:TransportPoint" type="elf-tn-ro:InterchangePointType"/>
+  <complexType name="InterchangePointType">
+    <complexContent>
+      <extension base="tn:TransportPointType">
+        <sequence>
+          <element minOccurs="0" name="typeOfInterchange" type="gml:ReferenceType">
+            <annotation>
+              <appinfo>
+                <targetCodeList xmlns="http://www.opengis.net/gml/3.3/exr">TypeOfInterchangeValue</targetCodeList>
+              </appinfo>
+            </annotation>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="InterchangePointPropertyType">
+    <sequence minOccurs="0">
+      <element ref="elf-tn-ro:InterchangePoint"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="RoadLink" substitutionGroup="tn-ro:RoadLink" type="elf-tn-ro:RoadLinkType"/>
+  <complexType name="RoadLinkType">
+    <complexContent>
+      <extension base="tn-ro:RoadLinkType">
+        <sequence>
+          <element minOccurs="0" name="transEuropeanTransportNetwork" type="boolean"/>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="RoadLinkPropertyType">
+    <sequence minOccurs="0">
+      <element ref="elf-tn-ro:RoadLink"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+</schema>

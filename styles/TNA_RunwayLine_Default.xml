@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<se:FeatureTypeStyle version="1.1.0" 
+                     xmlns:elf-tn-a="http://www.locationframework.eu/schemas/AirTransportNetwork/1.0" 
+                     xmlns:tn-a="http://inspire.ec.europa.eu/schemas/tn-a/4.0" 
+                     xmlns:net="http://inspire.ec.europa.eu/schemas/net/4.0" 
+                     xmlns:se="http://www.opengis.net/se" 
+                     xmlns:ogc="http://www.opengis.net/ogc"
+                     xmlns:base="urn:x-inspire:specification:gmlas:BaseTypes:3.2"
+                     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+                     xsi:schemaLocation="http://www.opengis.net/se http://schemas.opengis.net/se/1.1.0/FeatureStyle.xsd">
+
+    <se:Name>TN.AirTransportNetwork.RunwayLine.Default</se:Name>
+    <se:Description>
+        <se:Title>Runway Line Default Style</se:Title> 
+        <se:Abstract>
+            The geometry is rendered using a White (#FFFFFF) fill and a solid Blue (#0000CD)outline with a stroke width of 2 pixel.
+        </se:Abstract> 
+    </se:Description> 
+    <se:FeatureTypeName>elf-tn-a:RunwayLine</se:FeatureTypeName> 
+    
+    <se:Rule>
+        <se:PolygonSymbolizer> 
+            <se:Fill>
+                <se:SvgParameter name="fill">#FFFFFF</se:SvgParameter>
+            </se:Fill>
+            <se:Stroke>
+                <se:SvgParameter name="stroke">#0000CD</se:SvgParameter>
+                <se:SvgParameter name="stroke-width">2</se:SvgParameter>
+            </se:Stroke>
+        </se:PolygonSymbolizer> 
+        <se:LineSymbolizer> 
+            <se:Stroke>
+                <se:SvgParameter name="stroke">#0000CD</se:SvgParameter>
+                <se:SvgParameter name="stroke-width">2</se:SvgParameter>
+            </se:Stroke>
+        </se:LineSymbolizer> 
+        <se:LineSymbolizer> 
+            <se:Stroke>
+                <se:SvgParameter name="stroke">#FFFFFF</se:SvgParameter>
+                <se:SvgParameter name="stroke-width">1</se:SvgParameter>
+            </se:Stroke>
+        </se:LineSymbolizer> 
+    </se:Rule>        
+</se:FeatureTypeStyle>

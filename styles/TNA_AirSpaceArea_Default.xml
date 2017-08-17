@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<se:FeatureTypeStyle version="1.1.0" 
+                     xmlns:elf-tn-a="http://www.locationframework.eu/schemas/AirTransportNetwork/1.0" 
+                     xmlns:tn-a="http://inspire.ec.europa.eu/schemas/tn-a/4.0" 
+                     xmlns:net="http://inspire.ec.europa.eu/schemas/net/4.0" 
+                     xmlns:se="http://www.opengis.net/se" 
+                     xmlns:ogc="http://www.opengis.net/ogc"
+                     xmlns:base="urn:x-inspire:specification:gmlas:BaseTypes:3.2"
+                     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+                     xsi:schemaLocation="http://www.opengis.net/se http://schemas.opengis.net/se/1.1.0/FeatureStyle.xsd">
+
+    <se:Name>TN.AirTransportNetwork.AirspaceArea.Default</se:Name>
+    <se:Description>
+        <se:Title>Airspace Area Default Style</se:Title> 
+        <se:Abstract>
+            The geometry is rendered using a 25% Megenta (#8B008B) fill and a solid Megenta (#8B008B) outline with a stroke width of 2 pixel.
+        </se:Abstract> 
+    </se:Description> 
+    <se:FeatureTypeName>tn-a:AirspaceArea</se:FeatureTypeName> 
+    
+    <se:Rule>
+        <se:PolygonSymbolizer> 
+            <se:Geometry> 
+                <ogc:PropertyName>net:geometry</ogc:PropertyName> 
+            </se:Geometry> 
+            <se:Fill>
+                <se:SvgParameter name="fill">#8B008B</se:SvgParameter>
+            </se:Fill>
+            <se:Stroke>
+                <se:SvgParameter name="stroke">#8B008B</se:SvgParameter>
+                <se:SvgParameter name="stroke-width">2</se:SvgParameter>
+            </se:Stroke>
+        </se:PolygonSymbolizer> 
+    </se:Rule>        
+</se:FeatureTypeStyle>

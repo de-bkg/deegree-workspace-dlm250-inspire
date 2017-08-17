@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema targetNamespace="http://www.locationframework.eu/schemas/AdministrativeUnits/1.0" version="1.0" elementFormDefault="qualified"
+        xmlns:elf-au="http://www.locationframework.eu/schemas/AdministrativeUnits/1.0" 
+        xmlns:elf-gn="http://www.locationframework.eu/schemas/GeographicalNames/1.0" 
+        xmlns="http://www.w3.org/2001/XMLSchema" 
+        xmlns:au="http://inspire.ec.europa.eu/schemas/au/4.0" 
+        xmlns:base="http://inspire.ec.europa.eu/schemas/base/3.3" 
+        xmlns:base2="http://inspire.ec.europa.eu/schemas/base2/2.0" 
+        xmlns:gml="http://www.opengis.net/gml/3.2" 
+        xmlns:gmlexr="http://www.opengis.net/gml/3.3/exr" 
+        xmlns:gn="http://inspire.ec.europa.eu/schemas/gn/4.0">
+        
+  <import namespace="http://inspire.ec.europa.eu/schemas/au/4.0" schemaLocation="../inspire/au/4.0/AdministrativeUnits.xsd"/>
+  <import namespace="http://inspire.ec.europa.eu/schemas/base/3.3" schemaLocation="../inspire/base/3.3/BaseTypes.xsd"/>
+  <import namespace="http://inspire.ec.europa.eu/schemas/base2/2.0" schemaLocation="../inspire/base2/2.0/BaseTypes2.xsd"/>
+  <import namespace="http://inspire.ec.europa.eu/schemas/gn/4.0" schemaLocation="../inspire/gn/4.0/GeographicalNames.xsd"/>
+  <import namespace="http://www.locationframework.eu/schemas/GeographicalNames/1.0" schemaLocation="GeographicalNames.xsd"/>
+  <import namespace="http://www.opengis.net/gml/3.2" schemaLocation="http://schemas.opengis.net/gml/3.2.1/gml.xsd"/>
+  <import namespace="http://www.opengis.net/gml/3.3/exr" schemaLocation="http://schemas.opengis.net/gml/3.3/extdEncRule.xsd"/>
+  
+  <!--XML Schema document created by ShapeChange - http://shapechange.net/-->
+  <element name="AdministrativeUnit" substitutionGroup="au:AdministrativeUnit" type="elf-au:AdministrativeUnitType"/>
+  <complexType name="AdministrativeUnitType">
+    <complexContent>
+      <extension base="au:AdministrativeUnitType">
+        <sequence>
+          <element minOccurs="0" name="SHNCode" type="base2:ThematicIdentifierPropertyType"/>
+          <element minOccurs="0" name="validFrom" nillable="true">
+            <complexType>
+              <simpleContent>
+                <extension base="dateTime">
+                  <attribute name="nilReason" type="gml:NilReasonType"/>
+                </extension>
+              </simpleContent>
+            </complexType>
+          </element>
+          <!--element maxOccurs="unbounded" minOccurs="0" name="adminUnitArea"-->
+          <element maxOccurs="unbounded" minOccurs="0" name="adminUnitArea" type="elf-au:AdministrativeUnitAreaPropertyType">
+            <annotation>
+              <appinfo>
+                <reversePropertyName xmlns="http://www.opengis.net/gml/3.2">elf-au:adminUnit</reversePropertyName>
+              </appinfo>
+            </annotation>
+            <!--complexType>
+              <complexContent>
+                <extension base="gml:AbstractFeatureMemberType">
+                  <sequence minOccurs="0">
+                    <element ref="elf-au:AdministrativeUnitArea"/>
+                  </sequence>
+                  <attributeGroup ref="gml:AssociationAttributeGroup"/>
+                </extension>
+              </complexContent>
+            </complexType-->
+          </element>
+          <element maxOccurs="unbounded" minOccurs="0" name="namedPlacePoint" type="elf-gn:NamedPlacePropertyType"/>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="AdministrativeUnitPropertyType">
+    <sequence minOccurs="0">
+      <element ref="elf-au:AdministrativeUnit"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="AdministrativeUnitArea" substitutionGroup="gml:AbstractFeature" type="elf-au:AdministrativeUnitAreaType"/>
+  <complexType name="AdministrativeUnitAreaType">
+    <complexContent>
+      <extension base="gml:AbstractFeatureType">
+        <sequence>
+          <element name="geometry" type="gml:SurfacePropertyType"/>
+          <element name="inspireID" type="base:IdentifierPropertyType"/>
+          <element name="landCoverType" type="gml:ReferenceType">
+            <annotation>
+              <appinfo>
+                <targetCodeList xmlns="http://www.opengis.net/gml/3.3/exr">LandCoverTypeValue</targetCodeList>
+              </appinfo>
+            </annotation>
+          </element>
+          <element name="beginLifespanVersion" nillable="true">
+            <complexType>
+              <simpleContent>
+                <extension base="dateTime">
+                  <attribute name="nilReason" type="gml:NilReasonType"/>
+                </extension>
+              </simpleContent>
+            </complexType>
+          </element>
+          <element minOccurs="0" name="endLifespanVersion" nillable="true">
+            <complexType>
+              <simpleContent>
+                <extension base="dateTime">
+                  <attribute name="nilReason" type="gml:NilReasonType"/>
+                </extension>
+              </simpleContent>
+            </complexType>
+          </element>
+          <element maxOccurs="6" minOccurs="0" name="adminUnit" type="elf-au:AdministrativeUnitPropertyType">
+            <annotation>
+              <appinfo>
+                <reversePropertyName xmlns="http://www.opengis.net/gml/3.2">elf-au:adminUnitArea</reversePropertyName>
+              </appinfo>
+            </annotation>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="AdministrativeUnitAreaPropertyType">
+    <sequence minOccurs="0">
+      <element ref="elf-au:AdministrativeUnitArea"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+</schema>

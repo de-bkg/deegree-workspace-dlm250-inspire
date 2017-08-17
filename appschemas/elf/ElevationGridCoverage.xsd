@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema targetNamespace="http://www.locationframework.eu/schemas/ElevationGridCoverage/1.0" version="1.0" elementFormDefault="qualified" 
+        xmlns:elf-el="http://www.locationframework.eu/schemas/ElevationGridCoverage/1.0"
+        xmlns:el-cov="http://inspire.ec.europa.eu/schemas/el-cov/4.0" 
+        xmlns="http://www.w3.org/2001/XMLSchema">
+        
+  <import namespace="http://inspire.ec.europa.eu/schemas/el-cov/4.0" schemaLocation="http://inspire.ec.europa.eu/schemas/el-cov/4.0/ElevationGridCoverage.xsd"/>
+  
+  <!--XML Schema document created by ShapeChange - http://shapechange.net/-->
+</schema>
