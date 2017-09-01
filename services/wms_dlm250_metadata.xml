@@ -4,21 +4,48 @@
                          xsi:schemaLocation="http://www.deegree.org/services/metadata http://schemas.deegree.org/services/metadata/3.0.0/metadata.xsd">
 
   <ServiceIdentification>
-    <Title>WMS Digitales Landschaftsmodell 1:250.000 INSPIRE</Title>
-    <Abstract>WMS Digitales Landschaftsmodell 1:250.000 INSPIRE</Abstract>
+    <Title>WMS Digitales Landschaftsmodell 1:250 000 INSPIRE</Title>
+    <Abstract>
+      WMS Digitales Landschaftsmodell 1:250 000 INSPIRE. 
+      This service provides from ATKIS DLM250 transformed datasets for the INSPIRE themes Transport Networks, Hydrography (Networks and Physical Water), Administrative Units and Protected Sites.
+      The data provided through this service covers the area of Germany. 
+    </Abstract>
     <Keywords>
-        <Keyword>Transport Network</Keyword>
+        <Keyword>WMS</Keyword>
         <Keyword>infoMapAccessService</Keyword>
         <Keyword>ViewService</Keyword>
         <Keyword>INSPIRE:ViewService</Keyword>
         <Keyword>INSPIRE</Keyword>
-        <Keyword>TODO: Mehr</Keyword>
+        <Keyword>INSPIRE-WMS_Hydro-Netzwerk_ATKIS_DLM250</Keyword>
+        <Keyword>INSPIRE-WMS_Hydro-Physische_Gewaesser_ATKIS_DLM250</Keyword>
+        <Keyword>INSPIRE-WMS_Verkehrsnetze_ATKIS_DLM250</Keyword>
+        <Keyword>INSPIRE-WMS_Verwaltungseinheiten_ATKIS_DLM250</Keyword>
+        <Keyword>INSPIRE-WMS_Schutzgebiete_ATKIS_DLM250</Keyword>
+        <Keyword>ATKIS</Keyword>
+        <Keyword>DLM250</Keyword>
+        <Keyword>Amtliches Topographisch-Kartographisches Informationssystem</Keyword>
+        <Keyword>Digitales Landschaftsmodell 250</Keyword>
+        <Keyword>Gewässernetz</Keyword>
+        <Keyword>Hydrography</Keyword>
+        <Keyword>Hydro - Netzwerk</Keyword>
+        <Keyword>Hydro - Network</Keyword>
+        <Keyword>Hydro - Physische Gewässer</Keyword>
+        <Keyword>Hydro - Physical Waters</Keyword>
+        <Keyword>Verkehrsnetze</Keyword>
+        <Keyword>Transport Networks</Keyword>
+        <Keyword>Verwaltungseinheiten</Keyword>
+        <Keyword>Administrative Units</Keyword>
+        <Keyword>Schutzgebiete</Keyword>
+        <Keyword>Protected Sites</Keyword>
+        <Keyword>Deutschland</Keyword>
+        <Keyword>Germany</Keyword>
+        <Keyword>BKG</Keyword>
     </Keywords>
-    <Fees>none</Fees>
+    <Fees>This service can be used free of charge corresponding to the Spatial Data Access Act (http://www.geodatenzentrum.de/docpdf/geozg_eng.pdf)</Fees>
     <AccessConstraints>
-      Verordnung zur Festlegung der Nutzungsbestimmungen für die Bereitstellung von Geodaten des Bundes (GeoNutzV) vom 19. März 2013 
-      (Bundesgesetzblatt Jahrgang 2013 Teil I Nr. 14), 
-      URL: http://www.geodatenzentrum.de/docpdf/geonutzv.pdf
+      Terms of Ordinance to Determine the Conditions for Use for the Provision of Spatial Data of the Federation (Verordnung zur Festlegung der Nutzungsbestimmungen für die Bereitstellung von Geodaten des Bundes – GeoNutzV), as published on 19th of March 2013 (Bundesgesetzblatt Jahrgang 2013 Teil I Nr. 14) are applied. 
+      For more details see: http://www.geodatenzentrum.de/docpdf/geonutzv_eng.pdf.
+     | Source reference must be maintained: &amp;copy; GeoBasis-DE / BKG &amp;lt; year of last data download&amp;gt;
     </AccessConstraints>    
   </ServiceIdentification>
 
@@ -45,21 +72,37 @@
     </ServiceContact>
   </ServiceProvider>
 
-  <!--ExtendedCapabilities>
-    <inspire_vs:ExtendedCapabilities xsi:schemaLocation="http://inspire.ec.europa.eu/schemas/common/1.0 http://inspire.ec.europa.eu/schemas/common/1.0/common.xsd http://inspire.ec.europa.eu/schemas/inspire_vs/1.0 http://inspire.ec.europa.eu/schemas/inspire_vs/1.0/inspire_vs.xsd">
+<!--
+  <DatasetMetadata>
+    <MetadataUrlTemplate>http://mis.bkg.bund.de/geonetwork/srv/eng/csw?request=GetRecordById&amp;service=CSW&amp;version=2.0.2&amp;resultType=results&amp;outputSchema=http://www.isotc211.org/2005/gmd&amp;outputFormat=application/xml&amp;typeNames=csw:Record&amp;elementSetName=full&amp;id=${metadataSetId}</MetadataUrlTemplate>
+    <ExternalMetadataAuthority name="BKG">https://registry.gdi-de.org/id/de.bund.bkg.csw/</ExternalMetadataAuthority>
+    <Dataset xmlns:gn="http://inspire.ec.europa.eu/schemas/gn/4.0">
+      <Name>GN.NamedPlace</Name>                                            Layername wie im theme definiert!
+      <Title>GN.NamedPlace</Title>                                          can be multilingual by using the lang attribute
+      <Abstract>Harmonized INSPIRE Geographical Names (Annex I)</Abstract>  can be multilingual by using the lang attribute
+      <MetadataSetId>142d56bb-108b-4e6a-96a6-8239b80af77e</MetadataSetId>
+      <ExternalMetadataSetId authority="BKG">https://registry.gdi-de.org/id/de.bund.bkg.csw/DEBKG00M00000187</ExternalMetadataSetId>
+    </Dataset>
+  </DatasetMetadata>
+    
+  <ExtendedCapabilities protocolVersions="1.3.0">
+    <inspire_vs:ExtendedCapabilities xmlns:inspire_vs="http://inspire.ec.europa.eu/schemas/inspire_vs/1.0" 
+                                     xmlns:inspire_common="http://inspire.ec.europa.eu/schemas/common/1.0" 
+                                     xsi:schemaLocation="http://inspire.ec.europa.eu/schemas/common/1.0 http://inspire.ec.europa.eu/schemas/common/1.0/common.xsd http://inspire.ec.europa.eu/schemas/inspire_vs/1.0 http://inspire.ec.europa.eu/schemas/inspire_vs/1.0/inspire_vs.xsd">
       <inspire_common:MetadataUrl>
-        <inspire_common:URL>http://mis.bkg.bund.de/geonetwork/srv/eng/csw?REQUEST=GetRecordById&amp;SERVICE=CSW&amp;VERSION=2.0.2&amp;OutputSchema=http://www.isotc211.org/2005/gmd&amp;elementSetName=full&amp;ID=TODO</inspire_common:URL>
+        <inspire_common:URL>http://mis.bkg.bund.de/geonetwork/srv/eng/csw?request=GetRecordById&amp;service=CSW&amp;version=2.0.2&amp;resultType=results&amp;outputSchema=http://www.isotc211.org/2005/gmd&amp;outputFormat=application/xml&amp;typeNames=csw:Record&amp;elementSetName=full&amp;id=cd7b8516-bbe3-4836-9ed8-b49b6d279932</inspire_common:URL>
         <inspire_common:MediaType>application/vnd.iso.19139+xml</inspire_common:MediaType>
       </inspire_common:MetadataUrl>
       <inspire_common:SupportedLanguages>
         <inspire_common:DefaultLanguage>
-          <inspire_common:Language>eng</inspire_common:Language>
+          <inspire_common:Language>ger</inspire_common:Language>
         </inspire_common:DefaultLanguage>
       </inspire_common:SupportedLanguages>
       <inspire_common:ResponseLanguage>
-        <inspire_common:Language>eng</inspire_common:Language>
+        <inspire_common:Language>ger</inspire_common:Language>
       </inspire_common:ResponseLanguage>
     </inspire_vs:ExtendedCapabilities>
-  </ExtendedCapabilities-->
+  </ExtendedCapabilities>
 
+-->
 </deegreeServicesMetadata>

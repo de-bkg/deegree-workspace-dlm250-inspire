@@ -1,103 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Themes xmlns="http://www.deegree.org/themes/standard" xmlns:d="http://www.deegree.org/metadata/description" xmlns:s="http://www.deegree.org/metadata/spatial" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" configVersion="3.2.0" xsi:schemaLocation="http://www.deegree.org/themes/standard http://schemas.deegree.org/themes/3.2.0/themes.xsd">
 
-  <!-- In order to reference layers, the theme configuration needs to know layer stores. 
-       That’s why the first thing we need to specify are the layer stores we intend to use: -->
   <LayerStoreId>tn-air</LayerStoreId>
 
-  <!-- the actual theme configuration -->
   <Theme>
-    <!-- First, we have the choice to give the theme an identifier or not. 
-         If it does not have an identifier, it will not be requestable in the service configuration -->
     <Identifier>TN.AirTransportNetwork</Identifier>
-    <!-- Then we can specify the description and spatial metadata (only the Title element is mandatory here). -->
-    <d:Title>TN.AirTransportNetwork</d:Title>
+    <d:Title>Transportnetzwerke Luft</d:Title>
 
     <s:CRS>EPSG:4258 EPSG:4326 EPSG:3857 EPSG:3034 EPSG:3035 EPSG:31466 EPSG:31467 EPSG:31468 EPSG:31469 EPSG:2397 EPSG:2398 EPSG:2399 EPSG:25832 EPSG:25833 EPSG:32632 EPSG:32633 EPSG:3044 EPSG:3045 EPSG:4839</s:CRS>
 
-    <!-- After that, we can add layers and subthemes as required to the theme: -->
     <Theme>
         <Identifier>TN.AirTransportNetwork.AerodromeArea</Identifier>
-        <d:Title>TN.AirTransportNetwork.AerodromeArea</d:Title>
+        <d:Title>Flugplatzgelände</d:Title>
         <Layer>TN.AirTransportNetwork.AerodromeArea</Layer>
     </Theme>
+    
     <!-- Daten aber keine vorgegebenen SLDs: -->
     <Theme>
         <Identifier>TN.AirTransportNetwork.AerodromeNode</Identifier>
         <d:Title>TN.AirTransportNetwork.AerodromeNode</d:Title>
         <Layer>TN.AirTransportNetwork.AerodromeNode</Layer>
     </Theme>
+    
     <Theme>
         <Identifier>TN.AirTransportNetwork.RunwayLine</Identifier>
         <d:Title>TN.AirTransportNetwork.RunwayLine</d:Title>
         <Layer>TN.AirTransportNetwork.RunwayLine</Layer>
     </Theme>
-    
-    <!-- Folgende Themen haben keine Daten und werden daher nicht angeboten:
-    <Theme>
-        <Identifier>TN.AirTransportNetwork.TaxiwayArea</Identifier>
-        <d:Title>TN.AirTransportNetwork.TaxiwayArea</d:Title>
-        <Layer>TN.AirTransportNetwork.TaxiwayArea</Layer>
-    </Theme>
-    <Theme>
-        <Identifier>TN.AirTransportNetwork.RunwayArea</Identifier>
-        <d:Title>TN.AirTransportNetwork.RunwayArea</d:Title>
-        <Layer>TN.AirTransportNetwork.RunwayArea</Layer>
-    </Theme>
-    <Theme>
-        <Identifier>TN.AirTransportNetwork.ApronArea</Identifier>
-        <d:Title>TN.AirTransportNetwork.ApronArea</d:Title>
-        <Layer>TN.AirTransportNetwork.ApronArea</Layer>
-    </Theme>
-    <Theme>
-        <Identifier>TN.AirTransportNetwork.AirspaceArea</Identifier>
-        <d:Title>TN.AirTransportNetwork.AirspaceArea</d:Title>
-        <Layer>TN.AirTransportNetwork.AirspaceArea</Layer>
-    </Theme>
-    <Theme>
-        <Identifier>TN.AirTransportNetwork.AirRouteLink</Identifier>
-        <d:Title>TN.AirTransportNetwork.AirRouteLink</d:Title>
-        <Layer>TN.AirTransportNetwork.AirRouteLink</Layer>
-    </Theme>
-    -->
-    <!-- Zu folgenden Themen fehlen Daten und SLDs: 
-    
-    <Theme>
-        <Identifier>TN.AirTransportNetwork.ProcedureLink</Identifier>
-        <d:Title>TN.AirTransportNetwork.ProcedureLink</d:Title>
-        <Layer>TN.AirTransportNetwork.ProcedureLink</Layer>
-    </Theme>
-    <Theme>
-        <Identifier>TN.AirTransportNetwork.InstrumentApproachProcedure</Identifier>
-        <d:Title>TN.AirTransportNetwork.InstrumentApproachProcedure</d:Title>
-        <Layer>TN.AirTransportNetwork.InstrumentApproachProcedure</Layer>
-    </Theme>
-    <Theme>
-        <Identifier>TN.AirTransportNetwork.StandardInstrumentArrival</Identifier>
-        <d:Title>TN.AirTransportNetwork.StandardInstrumentArrival</d:Title>
-        <Layer>TN.AirTransportNetwork.StandardInstrumentArrival</Layer>
-    </Theme>
-    <Theme>
-        <Identifier>TN.AirTransportNetwork.StandardInstrumentDeparture</Identifier>
-        <d:Title>TN.AirTransportNetwork.StandardInstrumentDeparture</d:Title>
-        <Layer>TN.AirTransportNetwork.StandardInstrumentDeparture</Layer>
-    </Theme>
-    <Theme>
-        <Identifier>TN.AirTransportNetwork.Navaid</Identifier>
-        <d:Title>TN.AirTransportNetwork.Navaid</d:Title>
-        <Layer>TN.AirTransportNetwork.Navaid</Layer>
-    </Theme>
-    <Theme>
-        <Identifier>TN.AirTransportNetwork.RunwayCentrelinePoint</Identifier>
-        <d:Title>TN.AirTransportNetwork.RunwayCentrelinePoint</d:Title>
-        <Layer>TN.AirTransportNetwork.RunwayCentrelinePoint</Layer>
-    </Theme>
-    <Theme>
-        <Identifier>TN.AirTransportNetwork.TouchDownLiftOff</Identifier>
-        <d:Title>TN.AirTransportNetwork.TouchDownLiftOff</d:Title>
-        <Layer>TN.AirTransportNetwork.TouchDownLiftOff</Layer>
-    </Theme>
-    -->
+
   </Theme>
 
 </Themes>

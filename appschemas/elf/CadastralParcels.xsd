@@ -4,7 +4,7 @@
         xmlns="http://www.w3.org/2001/XMLSchema" 
         xmlns:cp="http://inspire.ec.europa.eu/schemas/cp/4.0">
         
-  <import namespace="http://inspire.ec.europa.eu/schemas/cp/4.0" schemaLocation="http://inspire.ec.europa.eu/schemas/cp/4.0/CadastralParcels.xsd"/>
+  <import namespace="http://inspire.ec.europa.eu/schemas/cp/4.0" schemaLocation="../inspire/cp/4.0/CadastralParcels.xsd"/>
   
   <!--XML Schema document created by ShapeChange - http://shapechange.net/-->
 </schema>

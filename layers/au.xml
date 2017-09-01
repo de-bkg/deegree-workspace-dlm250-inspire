@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FeatureLayers configVersion="3.2.0" 
+               xmlns="http://www.deegree.org/layers/feature" 
+               xmlns:l="http://www.deegree.org/layers/base" 
+               xmlns:d="http://www.deegree.org/metadata/description" 
+               xmlns:s="http://www.deegree.org/metadata/spatial" 
+               xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+               xsi:schemaLocation="http://www.deegree.org/layers/feature http://schemas.deegree.org/layers/feature/3.2.0/feature.xsd">
+    
+    <FeatureStoreId>dlm250</FeatureStoreId>
+
+    <FeatureLayer>
+        <FeatureType xmlns:au="http://inspire.ec.europa.eu/schemas/au/4.0">au:AdministrativeBoundary</FeatureType>
+        <l:Name>AU.AdministrativeBoundary</l:Name>
+        <d:Title>AU.AdministrativeBoundary</d:Title>
+
+        <s:CRS>EPSG:4258 EPSG:4326 EPSG:3857 EPSG:3034 EPSG:3035 EPSG:31466 EPSG:31467 EPSG:31468 EPSG:31469 EPSG:2397 EPSG:2398 EPSG:2399 EPSG:25832 EPSG:25833 EPSG:32632 EPSG:32633 EPSG:3044 EPSG:3045 EPSG:4839</s:CRS>
+
+        <l:StyleRef>
+            <l:StyleStoreId>AU_AdministrativeBoundary_Default</l:StyleStoreId>
+            <l:Style>
+                <!-- The StyleName specifies the name under which the style will be known in the WMS -->
+                <l:StyleName>AU.AdministrativeBoundary.Default</l:StyleName>
+                <!-- The LayerNameRef and StyleNameRef are used to extract the style from the style store -->
+                <l:LayerNameRef>AU.AdministrativeBoundary.Default</l:LayerNameRef>
+                <l:StyleNameRef>AU.AdministrativeBoundary.Default</l:StyleNameRef>
+            </l:Style>
+        </l:StyleRef>
+    </FeatureLayer>    
+
+    <FeatureLayer>
+        <FeatureType xmlns:au="http://inspire.ec.europa.eu/schemas/au/4.0">au:AdministrativeUnit</FeatureType>
+        <l:Name>AU.AdministrativeUnit</l:Name>
+        <d:Title>AU.AdministrativeUnit</d:Title>
+
+        <s:CRS>EPSG:4258 EPSG:4326 EPSG:3857 EPSG:3034 EPSG:3035 EPSG:31466 EPSG:31467 EPSG:31468 EPSG:31469 EPSG:2397 EPSG:2398 EPSG:2399 EPSG:25832 EPSG:25833 EPSG:32632 EPSG:32633 EPSG:3044 EPSG:3045 EPSG:4839</s:CRS>
+
+        <l:StyleRef>
+            <l:StyleStoreId>AU_AdministrativeUnit_Default</l:StyleStoreId>
+            <l:Style>
+                <!-- The StyleName specifies the name under which the style will be known in the WMS -->
+                <l:StyleName>AU.AdministrativeUnit.Default</l:StyleName>
+                <!-- The LayerNameRef and StyleNameRef are used to extract the style from the style store -->
+                <l:LayerNameRef>AU.AdministrativeUnit.Default</l:LayerNameRef>
+                <l:StyleNameRef>AU.AdministrativeUnit.Default</l:StyleNameRef>
+            </l:Style>
+        </l:StyleRef>
+    </FeatureLayer>    
+
+    <FeatureLayer>
+        <FeatureType xmlns:au="http://inspire.ec.europa.eu/schemas/au/4.0">au:Condominium</FeatureType>
+        <l:Name>AU.Condominium</l:Name>
+        <d:Title>AU.Condominium</d:Title>
+
+        <s:CRS>EPSG:4258 EPSG:4326 EPSG:3857 EPSG:3034 EPSG:3035 EPSG:31466 EPSG:31467 EPSG:31468 EPSG:31469 EPSG:2397 EPSG:2398 EPSG:2399 EPSG:25832 EPSG:25833 EPSG:32632 EPSG:32633 EPSG:3044 EPSG:3045 EPSG:4839</s:CRS>
+
+        <l:StyleRef>
+            <l:StyleStoreId>AU_Condominium_Default</l:StyleStoreId>
+            <l:Style>
+                <!-- The StyleName specifies the name under which the style will be known in the WMS -->
+                <l:StyleName>AU.Condominium.Default</l:StyleName>
+                <!-- The LayerNameRef and StyleNameRef are used to extract the style from the style store -->
+                <l:LayerNameRef>AU.Condominium.Default</l:LayerNameRef>
+                <l:StyleNameRef>AU.Condominium.Default</l:StyleNameRef>
+            </l:Style>
+        </l:StyleRef>
+    </FeatureLayer>    
+
+    <FeatureLayer>
+        <FeatureType xmlns:elf-au="http://www.locationframework.eu/schemas/AdministrativeUnits/1.0">elf-au:AdministrativeUnitArea</FeatureType>
+        <l:Name>AU.AdministrativeUnitArea</l:Name>
+        <d:Title>AU.AdministrativeUnitArea</d:Title>
+
+        <s:CRS>EPSG:4258 EPSG:4326 EPSG:3857 EPSG:3034 EPSG:3035 EPSG:31466 EPSG:31467 EPSG:31468 EPSG:31469 EPSG:2397 EPSG:2398 EPSG:2399 EPSG:25832 EPSG:25833 EPSG:32632 EPSG:32633 EPSG:3044 EPSG:3045 EPSG:4839</s:CRS>
+
+        <l:StyleRef>
+            <l:StyleStoreId>AU_AdministrativeUnitArea_Default</l:StyleStoreId>
+            <l:Style>
+                <!-- The StyleName specifies the name under which the style will be known in the WMS -->
+                <l:StyleName>AU.AdministrativeUnitArea.Default</l:StyleName>
+                <!-- The LayerNameRef and StyleNameRef are used to extract the style from the style store -->
+                <l:LayerNameRef>AU.AdministrativeUnitArea.Default</l:LayerNameRef>
+                <l:StyleNameRef>AU.AdministrativeUnitArea.Default</l:StyleNameRef>
+            </l:Style>
+        </l:StyleRef>
+    </FeatureLayer>    
+
+</FeatureLayers>

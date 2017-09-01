@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Themes xmlns="http://www.deegree.org/themes/standard" xmlns:d="http://www.deegree.org/metadata/description" xmlns:s="http://www.deegree.org/metadata/spatial" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" configVersion="3.2.0" xsi:schemaLocation="http://www.deegree.org/themes/standard http://schemas.deegree.org/themes/3.2.0/themes.xsd">
+
+  <LayerStoreId>hy</LayerStoreId>
+
+  <Theme>
+    <Identifier>HY</Identifier>
+    <d:Title>Hydrografie</d:Title>
+
+    <s:CRS>EPSG:4258 EPSG:4326 EPSG:3857 EPSG:3034 EPSG:3035 EPSG:31466 EPSG:31467 EPSG:31468 EPSG:31469 EPSG:2397 EPSG:2398 EPSG:2399 EPSG:25832 EPSG:25833 EPSG:32632 EPSG:32633 EPSG:3044 EPSG:3045 EPSG:4839</s:CRS>
+
+    <Theme>
+        <Identifier>HY.Network.WatercourseLink</Identifier>
+        <d:Title>Hydrografisches Netzwerk WatercourseLink</d:Title>
+        <Layer>HY.Network.WatercourseLink</Layer>
+    </Theme>
+
+    <Theme>
+        <Identifier>HY.Network.HydroNode</Identifier>
+        <d:Title>Hydrografisches Netzwerk HydroNode</d:Title>
+        <Layer>HY.Network.HydroNode</Layer>
+    </Theme>
+
+    <Theme>
+        <Identifier>HY.PhysicalWaters.HydroPointOfInterest</Identifier>
+        <d:Title>Interessante hydrologische Punkte</d:Title>
+        <Layer>HY.PhysicalWaters.HydroPointOfInterest</Layer>
+    </Theme>
+
+    <Theme>
+        <Identifier>HY.PhysicalWaters.LandWaterBoundary</Identifier>
+        <d:Title>Uferlinien</d:Title>
+        <Layer>HY.PhysicalWaters.LandWaterBoundary</Layer>
+    </Theme>
+
+    <Theme>
+        <Identifier>HY.PhysicalWaters.ManMadeObject</Identifier>
+        <d:Title>Bauwerke an Gewässern</d:Title>
+        <Layer>HY.PhysicalWaters.ManMadeObject</Layer>
+    </Theme>
+ 
+    <Theme>
+        <Identifier>HY.PhysicalWaters.Waterbodies</Identifier>
+        <d:Title>Wasserkörper</d:Title>
+        <Layer>HY.PhysicalWaters.Waterbodies</Layer>
+    </Theme>
+
+    <Theme>
+        <Identifier>HY.PhysicalWaters.Wetland</Identifier>
+        <d:Title>Feuchtgebiete</d:Title>
+        <Layer>HY.PhysicalWaters.Wetland</Layer>
+    </Theme>
+  </Theme>
+
+</Themes>

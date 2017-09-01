@@ -18,6 +18,7 @@
   <import namespace="http://www.opengis.net/gml/3.2" schemaLocation="http://schemas.opengis.net/gml/3.2.1/gml.xsd"/>
   <import namespace="http://www.opengis.net/gml/3.3/exr" schemaLocation="http://schemas.opengis.net/gml/3.3/extdEncRule.xsd"/>
   
+  
   <!--XML Schema document created by ShapeChange - http://shapechange.net/-->
   <element name="AdministrativeUnit" substitutionGroup="au:AdministrativeUnit" type="elf-au:AdministrativeUnitType"/>
   <complexType name="AdministrativeUnitType">

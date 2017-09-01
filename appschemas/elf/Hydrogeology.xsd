@@ -5,8 +5,10 @@
         xmlns="http://www.w3.org/2001/XMLSchema" 
         xmlns:ge_hg="http://inspire.ec.europa.eu/schemas/ge_hg/4.0">
         
-  <import namespace="http://inspire.ec.europa.eu/schemas/ge_hg/4.0" schemaLocation="http://inspire.ec.europa.eu/schemas/ge_hg/4.0/HydrogeologyCore.xsd"/>
+  <import namespace="http://inspire.ec.europa.eu/schemas/ge_hg/4.0" schemaLocation="../inspire/ge_hg/4.0/HydrogeologyCore.xsd"/>
   <import namespace="http://www.locationframework.eu/schemas/HydroNetwork/1.0" schemaLocation="HydroNetwork.xsd"/>
+  
+  
   
   <!--XML Schema document created by ShapeChange - http://shapechange.net/-->
 </schema>

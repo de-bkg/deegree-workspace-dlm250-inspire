@@ -63,6 +63,7 @@
     </FeatureLayer>
     
     <!-- Folgende Themen haben keine Daten --> 
+<!--    
     <FeatureLayer>
         <FeatureType xmlns:tn-a="http://inspire.ec.europa.eu/schemas/tn-a/4.0" >tn-a:TaxiwayArea</FeatureType>
         <l:Name>TN.AirTransportNetwork.TaxiwayArea</l:Name>
@@ -147,5 +148,5 @@
             </l:Style>
         </l:StyleRef>
     </FeatureLayer>
-
+-->
 </FeatureLayers>

@@ -10,6 +10,7 @@
                  xmlns:elf-au="http://www.locationframework.eu/schemas/AdministrativeUnits/1.0" 
                  xmlns:elf-gn="http://www.locationframework.eu/schemas/GeographicalNames/1.0"  
                  xmlns:elf-hn="http://www.locationframework.eu/schemas/HydroNetwork/1.0" 
+                 xmlns:elf-ps="http://www.locationframework.eu/schemas/ProtectedSites/1.0" 
                  xmlns:tn-a="http://inspire.ec.europa.eu/schemas/tn-a/4.0" 
                  xmlns:tn-ra="http://inspire.ec.europa.eu/schemas/tn-ra/4.0" 
                  xmlns:tn-ro="http://inspire.ec.europa.eu/schemas/tn-ro/4.0" 
@@ -18,6 +19,7 @@
                  xmlns:hy-n="http://inspire.ec.europa.eu/schemas/hy-n/4.0" 
                  xmlns:hy-p="http://inspire.ec.europa.eu/schemas/hy-p/4.0" 
                  xmlns:au="http://inspire.ec.europa.eu/schemas/au/4.0" 
+                 xmlns:ps="http://inspire.ec.europa.eu/schemas/ps/4.0" 
                  xmlns:sc="http://www.interactive-instruments.de/ShapeChange/AppInfo" 
                  xmlns:net="http://inspire.ec.europa.eu/schemas/net/4.0" 
                  xmlns:gmlexr="http://www.opengis.net/gml/3.3/exr" 
@@ -40,6 +42,7 @@
   <GMLSchema>../../appschemas/elf/PhysicalWaters.xsd</GMLSchema>
   <GMLSchema>../../appschemas/elf/HydroNetwork.xsd</GMLSchema>
   <GMLSchema>../../appschemas/elf/AdministrativeUnits.xsd</GMLSchema>
+  <GMLSchema>../../appschemas/elf/ProtectedSites.xsd</GMLSchema>
   
   <!-- ===================================== -->
   <!-- == Transport Network -->
@@ -273,7 +276,8 @@
     </Complex>
     <Complex path="tn-a:aerodromeType">
       <Primitive path="@nilReason" mapping="aerodrometype_nilreason"/>
-      <Primitive path="@xlink:href" mapping="aerodrometype_href"/>      
+      <!--Primitive path="@xlink:href" mapping="aerodrometype_href"/--> 
+        <Feature path="."><Href mapping="aerodrometype_href"/></Feature>      
       <!-- TODO: ReferencedType? <Feature>...</Feature> -->
     </Complex>
   </FeatureTypeMapping>
@@ -5014,7 +5018,7 @@
     </Complex>
   </FeatureTypeMapping>
   
-  <FeatureTypeMapping name="au:Condominium" table="au.condominium">
+  <!--20170815FeatureTypeMapping name="au:Condominium" table="au.condominium">
     <FIDMapping prefix="DLM250_Condominium_">
       <Column name="localid" type="string"/>
     </FIDMapping>
@@ -5085,7 +5089,7 @@
         <Href mapping="href"/>
       </Feature>
     </Complex>
-  </FeatureTypeMapping>
+  </FeatureTypeMapping-->
 
   <FeatureTypeMapping name="au:AdministrativeUnit" table="au.adminunit">
     <FIDMapping prefix="DLM250_AdministrativeUnit_">
@@ -5220,14 +5224,14 @@
     <Complex path="au:beginLifespanVersion">
       <Primitive path="text()" mapping="beginlifespanversion"/>
     </Complex>
-    <Complex path="au:condominium">
+    <!--20170815Complex path="au:condominium">
       <Join table="au.adminunit_condominium" fromColumns="localid" toColumns="parentfk"/>
       <Primitive path="@nilReason" mapping="nilreason"/>
       <Feature path=".">
         <Join table="?" fromColumns="id" toColumns="parentfk"/>
         <Href mapping="href"/>
       </Feature>
-    </Complex>
+    </Complex-->
     <Complex path="au:lowerLevelUnit">
       <Join table="au.adminunit_lowerlevelunit" fromColumns="localid" toColumns="parentfk"/>
       <Primitive path="@nilReason" mapping="nilreason"/>
@@ -5243,22 +5247,22 @@
         <Href mapping="upperlevelunit_href"/>
       </Feature>
     </Complex>
-    <Complex path="au:administeredBy">
+    <!--Complex path="au:administeredBy">
       <Join table="au.adminunit_administeredby" fromColumns="localid" toColumns="parentfk"/>
       <Primitive path="@nilReason" mapping="nilreason"/>
       <Feature path=".">
         <Join table="?" fromColumns="id" toColumns="parentfk"/>
         <Href mapping="href"/>
       </Feature>
-    </Complex>
-    <Complex path="au:coAdminister">
+    </Complex-->
+    <!--Complex path="au:coAdminister">
       <Join table="au.adminunit_coadminister" fromColumns="localid" toColumns="parentfk"/>
       <Primitive path="@nilReason" mapping="nilreason"/>
       <Feature path=".">
         <Join table="?" fromColumns="id" toColumns="parentfk"/>
         <Href mapping="href"/>
       </Feature>
-    </Complex>
+    </Complex-->
     <Complex path="au:boundary">
       <Join table="au.adminunit_boundary" fromColumns="localid" toColumns="parentfk"/>
       <Primitive path="@nilReason" mapping="nilreason"/>
@@ -5403,14 +5407,14 @@
     <Complex path="au:beginLifespanVersion">
       <Primitive path="text()" mapping="beginlifespanversion"/>
     </Complex>
-    <Complex path="au:condominium">
+    <!--Complex path="au:condominium">
       <Join table="au.adminunit_condominium" fromColumns="localid" toColumns="parentfk"/>
       <Primitive path="@nilReason" mapping="nilreason"/>
       <Feature path=".">
         <Join table="?" fromColumns="id" toColumns="parentfk"/>
         <Href mapping="href"/>
       </Feature>
-    </Complex>
+    </Complex-->
     <Complex path="au:lowerLevelUnit">
       <Join table="au.adminunit_lowerlevelunit" fromColumns="localid" toColumns="parentfk"/>
       <Primitive path="@nilReason" mapping="nilreason"/>
@@ -5426,22 +5430,22 @@
         <Href mapping="upperlevelunit_href"/>
       </Feature>
     </Complex>
-    <Complex path="au:administeredBy">
+    <!--Complex path="au:administeredBy">
       <Join table="au.adminunit_administeredby" fromColumns="localid" toColumns="parentfk"/>
       <Primitive path="@nilReason" mapping="nilreason"/>
       <Feature path=".">
         <Join table="?" fromColumns="id" toColumns="parentfk"/>
         <Href mapping="href"/>
       </Feature>
-    </Complex>
-    <Complex path="au:coAdminister">
+    </Complex-->
+    <!--Complex path="au:coAdminister">
       <Join table="au.adminunit_coadminister" fromColumns="localid" toColumns="parentfk"/>
       <Primitive path="@nilReason" mapping="nilreason"/>
       <Feature path=".">
         <Join table="?" fromColumns="id" toColumns="parentfk"/>
         <Href mapping="href"/>
       </Feature>
-    </Complex>
+    </Complex-->
     <Complex path="au:boundary">
       <Join table="au.adminunit_boundary" fromColumns="localid" toColumns="parentfk"/>
       <Primitive path="@nilReason" mapping="nilreason"/>
@@ -5514,5 +5518,107 @@
     </Complex>
   </FeatureTypeMapping>
   
+  <!-- ===================================== -->
+  <!-- == Protected Sites -->
+  <!-- ===================================== -->
+ 
+  <FeatureTypeMapping name="ps:ProtectedSite" table="ps.protectedsite">
+    <FIDMapping prefix="DLM250_ProtectedSite_">
+      <Column name="localid" type="string"/>
+    </FIDMapping>
+    <Complex path="gml:identifier">
+      <Primitive path="text()" mapping="localid"/>
+      <Primitive path="@codeSpace" mapping="'http://bkg.bund.de/dlm250'"/>
+    </Complex>
+    <Complex path="ps:geometry">
+      <Geometry path="." mapping="geometry"/>
+    </Complex>
+    <Complex path="ps:inspireID">
+      <Complex path="base:Identifier">
+        <Primitive path="base:localId" mapping="localid"/>
+        <Primitive path="base:namespace" mapping="'http://bkg.bund.de/dlm250'"/>
+        <Complex path="base:versionId">
+          <Primitive path="@nilReason" mapping="'other:unpopulated'"/>
+          <Primitive path="@xsi:nil" mapping="'true'"/>
+        </Complex>
+      </Complex>
+    </Complex>
+    <Complex path="ps:legalFoundationDate">
+      <Primitive path="text()" mapping="legalfoundationdate"/>
+      <Primitive path="@nilReason" mapping="legalfoundationdate_nilreason"/>
+      <Primitive path="@xsi:nil" mapping="legalfoundationdate_nil"/>
+    </Complex>
+    <Complex path="ps:legalFoundationDocument">
+      <Primitive path="@nilReason" mapping="'other:unpopulated'"/>
+      <Primitive path="@xsi:nil" mapping="'true'"/>
+    </Complex>
+    <Complex path="ps:siteDesignation">
+      <Join table="ps.protectedsite_sitedesignation" fromColumns="localid" toColumns="parentfk"/>
+      <Primitive path="@nilReason" mapping="nilreason"/>
+      <Primitive path="@xsi:nil" mapping="nil"/>
+      <Complex path="ps:DesignationType">
+        <Complex path="ps:designationScheme">
+          <Primitive path="@nilReason" mapping="designationscheme_nilreason"/>
+          <Feature path=".">
+            <Href mapping="designationscheme_href"/>
+          </Feature>
+        </Complex>
+        <Complex path="ps:designation">
+          <Primitive path="@nilReason" mapping="designation_nilreason"/>
+          <Feature path=".">
+            <Href mapping="designation_href"/>
+          </Feature>
+        </Complex>
+        <Primitive path="ps:percentageUnderDesignation" mapping="percentageunderdesignation"/>
+      </Complex>
+    </Complex>
+    <Complex path="ps:siteName">
+      <Join table="ps.protectedsite_gn" fromColumns="localid" toColumns="parentfk"/>
+      <Primitive path="@nilReason" mapping="nilreason"/>
+      <Primitive path="@xsi:nil" mapping="nil"/>
+      <Complex path="gn:GeographicalName">
+       <Complex path="gn:language">
+          <Primitive path="@xsi:nil" mapping="'false'"/>
+          <Primitive path="text()" mapping="language"/>
+        </Complex>
+        <Complex path="gn:nativeness">
+          <Primitive path="@xsi:nil" mapping="'false'"/>
+          <Feature path=".">
+            <Href mapping="nativeness_href"/>
+          </Feature>
+        </Complex>
+        <Complex path="gn:nameStatus">
+          <Primitive path="@xsi:nil" mapping="'false'"/>
+          <Feature path=".">
+            <Href mapping="namestatus_href"/>
+          </Feature>
+        </Complex>
+        <Complex path="gn:sourceOfName">
+          <Primitive path="@xsi:nil" mapping="'false'"/>
+          <Primitive path="text()" mapping="sourceofname"/>
+        </Complex>
+        <Complex path="gn:pronunciation">
+          <Primitive path="@nilReason" mapping="'other:unpopulated'"/>
+          <Primitive path="@xsi:nil" mapping="'true'"/>
+        </Complex>
+        <Complex path="gn:spelling">
+          <Join table="ps.protectedsite_gn_spelling" fromColumns="id" toColumns="parentfk"/>
+          <Complex path="gn:SpellingOfName">
+            <Primitive path="gn:text" mapping="text"/>
+            <Complex path="gn:script">
+              <Primitive path="text()" mapping="script"/>
+              <Primitive path="@xsi:nil" mapping="'false'"/>
+            </Complex>
+          </Complex>
+        </Complex>
+      </Complex>
+    </Complex>
+    <Complex path="ps:siteProtectionClassification">
+      <Join table="ps.protectedsite_classification" fromColumns="localid" toColumns="parentfk"/>
+      <Primitive path="text()" mapping="value"/>
+      <Primitive path="@nilReason" mapping="nilreason"/>
+      <Primitive path="@xsi:nil" mapping="nil"/>
+    </Complex>
+  </FeatureTypeMapping>  
   
 </SQLFeatureStore>

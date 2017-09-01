@@ -14,6 +14,8 @@
 
   <!-- keine Transaktionen zulassen -->
   <EnableTransactions>false</EnableTransactions>
+  <EnableResponseBuffering>false</EnableResponseBuffering>
+
   <DisabledResources>
     <Pattern>http://inspire.ec.europa.eu/codelist</Pattern>
   </DisabledResources>
@@ -49,6 +51,9 @@
   <!-- Lambert -->
   <QueryCRS>urn:ogc:def:crs:EPSG::4839</QueryCRS>
 
+  <QueryMaxFeatures>10000</QueryMaxFeatures>
+  <QueryCheckAreaOfUse>false</QueryCheckAreaOfUse>
+
   <!-- Required for WFS 1.1.0/GML 3.2 output with gml:FeatureCollection root element (as mandated by ESDIN) -->
   <GMLFormat gmlVersion="GML_32">
     <MimeType>application/gml+xml; version=3.2</MimeType>
@@ -59,5 +64,5 @@
       <DisableStreaming>true</DisableStreaming>
     </GetFeatureResponse>
   </GMLFormat>
-  
+
 </deegreeWFS>

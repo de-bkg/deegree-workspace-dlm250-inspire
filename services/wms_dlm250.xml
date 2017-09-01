@@ -10,6 +10,11 @@
   <ServiceConfiguration>
     <ThemeId>tn-air</ThemeId>
     <ThemeId>tn-rail</ThemeId>
+    <ThemeId>tn-road</ThemeId>
+    <ThemeId>tn-water</ThemeId>
+    <ThemeId>hy</ThemeId>
+    <ThemeId>au</ThemeId>
+    <ThemeId>ps</ThemeId>
   </ServiceConfiguration>
 
 </deegreeWMS>

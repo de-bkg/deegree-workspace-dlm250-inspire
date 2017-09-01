@@ -4,7 +4,7 @@
         xmlns="http://www.w3.org/2001/XMLSchema" 
         xmlns:el-vec="http://inspire.ec.europa.eu/schemas/el-vec/4.0">
         
-  <import namespace="http://inspire.ec.europa.eu/schemas/el-vec/4.0" schemaLocation="http://inspire.ec.europa.eu/schemas/el-vec/4.0/ElevationVectorElements.xsd"/>
+  <import namespace="http://inspire.ec.europa.eu/schemas/el-vec/4.0" schemaLocation="../inspire/el-vec/4.0/ElevationVectorElements.xsd"/>
 
   <!--XML Schema document created by ShapeChange - http://shapechange.net/-->
 </schema>

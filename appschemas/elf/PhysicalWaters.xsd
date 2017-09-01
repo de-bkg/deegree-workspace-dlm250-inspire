@@ -10,11 +10,12 @@
         xmlns:hy-p="http://inspire.ec.europa.eu/schemas/hy-p/4.0">
         
   <import namespace="http://inspire.ec.europa.eu/schemas/base/3.3" schemaLocation="../inspire/base/3.3/BaseTypes.xsd"/>
-  <import namespace="http://inspire.ec.europa.eu/schemas/gn/4.0" schemaLocation="../inspire/gn/4.0/GeographicalNames.xsd"/>  
+  <import namespace="http://inspire.ec.europa.eu/schemas/gn/4.0" schemaLocation="../inspire/gn/4.0/GeographicalNames.xsd"/>
   <import namespace="http://inspire.ec.europa.eu/schemas/hy-p/4.0" schemaLocation="../inspire/hy-p/4.0/HydroPhysicalWaters.xsd"/>
   <import namespace="http://inspire.ec.europa.eu/schemas/hy/4.0" schemaLocation="../inspire/hy/4.0/HydroBase.xsd"/>
-  <import namespace="http://www.opengis.net/gml/3.2" schemaLocation="../inspire/gml/3.2.1/gml.xsd"/>
-  <import namespace="http://www.opengis.net/gml/3.3/exr" schemaLocation="../inspire/gml/3.3/extdEncRule.xsd"/>
+  <import namespace="http://www.opengis.net/gml/3.2" schemaLocation="http://schemas.opengis.net/gml/3.2.1/gml.xsd"/>
+  <import namespace="http://www.opengis.net/gml/3.3/exr" schemaLocation="http://schemas.opengis.net/gml/3.3/extdEncRule.xsd"/>
+  
   
   <!--XML Schema document created by ShapeChange - http://shapechange.net/-->
   <element name="Embankment" substitutionGroup="hy-p:Embankment" type="elf-pw:EmbankmentType"/>

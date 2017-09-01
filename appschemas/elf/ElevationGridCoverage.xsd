@@ -4,7 +4,7 @@
         xmlns:el-cov="http://inspire.ec.europa.eu/schemas/el-cov/4.0" 
         xmlns="http://www.w3.org/2001/XMLSchema">
         
-  <import namespace="http://inspire.ec.europa.eu/schemas/el-cov/4.0" schemaLocation="http://inspire.ec.europa.eu/schemas/el-cov/4.0/ElevationGridCoverage.xsd"/>
+  <import namespace="http://inspire.ec.europa.eu/schemas/el-cov/4.0" schemaLocation="../inspire/el-cov/4.0/ElevationGridCoverage.xsd"/>
   
   <!--XML Schema document created by ShapeChange - http://shapechange.net/-->
 </schema>

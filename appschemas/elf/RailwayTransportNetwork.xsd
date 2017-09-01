@@ -9,10 +9,11 @@
         xmlns:tn="http://inspire.ec.europa.eu/schemas/tn/4.0" 
         xmlns:tn-ra="http://inspire.ec.europa.eu/schemas/tn-ra/4.0">
     
-  <import namespace="http://inspire.ec.europa.eu/schemas/tn-ra/4.0" schemaLocation="../inspire/tn-ra/4.0/RailwayTransportNetwork.xsd"/>
-  <import namespace="http://inspire.ec.europa.eu/schemas/tn/4.0" schemaLocation="../inspire/tn/4.0/CommonTransportElements.xsd"/>
-  <import namespace="http://www.opengis.net/gml/3.2" schemaLocation="../inspire/gml/3.2.1/gml.xsd"/>
-  <import namespace="http://www.opengis.net/gml/3.3/exr" schemaLocation="../inspire/gml/3.3/extdEncRule.xsd"/>
+    <import namespace="http://inspire.ec.europa.eu/schemas/tn-ra/4.0" schemaLocation="../inspire/tn-ra/4.0/RailwayTransportNetwork.xsd"/>
+    <import namespace="http://inspire.ec.europa.eu/schemas/tn/4.0" schemaLocation="../inspire/tn/4.0/CommonTransportElements.xsd"/>
+    <import namespace="http://www.opengis.net/gml/3.2" schemaLocation="http://schemas.opengis.net/gml/3.2.1/gml.xsd"/>
+    <import namespace="http://www.opengis.net/gml/3.3/exr" schemaLocation="http://schemas.opengis.net/gml/3.3/extdEncRule.xsd"/>
+    
     
     <!--XML Schema document created by ShapeChange - http://shapechange.net/-->
     <element name="DesignSpeed" substitutionGroup="tn-ra:DesignSpeed" type="elf-tn-ra:DesignSpeedType"/>

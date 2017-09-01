@@ -8,30 +8,49 @@
                xsi:schemaLocation="http://www.deegree.org/layers/feature http://schemas.deegree.org/layers/feature/3.2.0/feature.xsd">
     
     <FeatureStoreId>dlm250</FeatureStoreId>
-    
+
     <FeatureLayer>
-        <FeatureType xmlns:tn-ra="http://inspire.ec.europa.eu/schemas/tn-ra/4.0">tn-ra:RailwayLink</FeatureType>
-        <l:Name>TN.RailTransportNetwork.RailwayLink</l:Name>
-        <d:Title>TN.RailTransportNetwork.RailwayLink</d:Title>
+        <FeatureType xmlns:tn-w="http://inspire.ec.europa.eu/schemas/tn-w/4.0">tn-w:WaterwayLink</FeatureType>
+        <l:Name>TN.WaterTransportNetwork.WaterwayLink</l:Name>
+        <d:Title>TN.WaterTransportNetwork.WaterwayLink</d:Title>
 
         <s:CRS>EPSG:4258 EPSG:4326 EPSG:3857 EPSG:3034 EPSG:3035 EPSG:31466 EPSG:31467 EPSG:31468 EPSG:31469 EPSG:2397 EPSG:2398 EPSG:2399 EPSG:25832 EPSG:25833 EPSG:32632 EPSG:32633 EPSG:3044 EPSG:3045 EPSG:4839</s:CRS>
 
         <l:StyleRef>
-            <l:StyleStoreId>TN_TransportLink_Default</l:StyleStoreId>
+            <l:StyleStoreId>TNW_WaterwayLink_Default</l:StyleStoreId>
             <l:Style>
                 <!-- The StyleName specifies the name under which the style will be known in the WMS -->
-                <l:StyleName>TN.RailTransportNetwork.RailwayLink.Default</l:StyleName>
+                <l:StyleName>TN.WaterTransportNetwork.WaterwayLink.Default</l:StyleName>
                 <!-- The LayerNameRef and StyleNameRef are used to extract the style from the style store -->
-                <l:LayerNameRef>TN.CommonTransportElements.TransportLink.Default</l:LayerNameRef>
-                <l:StyleNameRef>TN.CommonTransportElements.TransportLink.Default</l:StyleNameRef>
+                <l:LayerNameRef>TN.WaterTransportNetwork.WaterwayLink.Default</l:LayerNameRef>
+                <l:StyleNameRef>TN.WaterTransportNetwork.WaterwayLink.Default</l:StyleNameRef>
             </l:Style>
         </l:StyleRef>
-    </FeatureLayer>
-
+    </FeatureLayer>    
+    
     <FeatureLayer>
-        <FeatureType xmlns:tn-ra="http://inspire.ec.europa.eu/schemas/tn-ra/4.0">tn-ra:RailwayNode</FeatureType>
-        <l:Name>TN.RailTransportNetwork.RailwayNode</l:Name>
-        <d:Title>TN.RailTransportNetwork.RailwayNode</d:Title>
+        <FeatureType xmlns:tn-w="http://inspire.ec.europa.eu/schemas/tn-w/4.0">tn-w:PortArea</FeatureType>
+        <l:Name>TN.WaterTransportNetwork.PortArea</l:Name>
+        <d:Title>TN.WaterTransportNetwork.PortArea</d:Title>
+
+        <s:CRS>EPSG:4258 EPSG:4326 EPSG:3857 EPSG:3034 EPSG:3035 EPSG:31466 EPSG:31467 EPSG:31468 EPSG:31469 EPSG:2397 EPSG:2398 EPSG:2399 EPSG:25832 EPSG:25833 EPSG:32632 EPSG:32633 EPSG:3044 EPSG:3045 EPSG:4839</s:CRS>
+
+        <l:StyleRef>
+            <l:StyleStoreId>TNW_PortArea_Default</l:StyleStoreId>
+            <l:Style>
+                <!-- The StyleName specifies the name under which the style will be known in the WMS -->
+                <l:StyleName>TN.WaterTransportNetwork.PortArea.Default</l:StyleName>
+                <!-- The LayerNameRef and StyleNameRef are used to extract the style from the style store -->
+                <l:LayerNameRef>TN.WaterTransportNetwork.PortArea.Default</l:LayerNameRef>
+                <l:StyleNameRef>TN.WaterTransportNetwork.PortArea.Default</l:StyleNameRef>
+            </l:Style>
+        </l:StyleRef>
+    </FeatureLayer>  
+    
+    <FeatureLayer>
+        <FeatureType xmlns:tn-w="http://inspire.ec.europa.eu/schemas/tn-w/4.0">tn-w:PortNode</FeatureType>
+        <l:Name>TN.WaterTransportNetwork.PortNode</l:Name>
+        <d:Title>TN.WaterTransportNetwork.PortNode</d:Title>
 
         <s:CRS>EPSG:4258 EPSG:4326 EPSG:3857 EPSG:3034 EPSG:3035 EPSG:31466 EPSG:31467 EPSG:31468 EPSG:31469 EPSG:2397 EPSG:2398 EPSG:2399 EPSG:25832 EPSG:25833 EPSG:32632 EPSG:32633 EPSG:3044 EPSG:3045 EPSG:4839</s:CRS>
 
@@ -39,31 +58,11 @@
             <l:StyleStoreId>TN_TransportNode_Default</l:StyleStoreId>
             <l:Style>
                 <!-- The StyleName specifies the name under which the style will be known in the WMS -->
-                <l:StyleName>TN.RailTransportNetwork.RailwayNode.Default</l:StyleName>
+                <l:StyleName>TN.WaterTransportNetwork.PortArea.Default</l:StyleName>
                 <!-- The LayerNameRef and StyleNameRef are used to extract the style from the style store -->
                 <l:LayerNameRef>TN.CommonTransportElements.TransportNode.Default</l:LayerNameRef>
                 <l:StyleNameRef>TN.CommonTransportElements.TransportNode.Default</l:StyleNameRef>
             </l:Style>
         </l:StyleRef>
-    </FeatureLayer>
-
-    <FeatureLayer>
-        <FeatureType xmlns:tn-ra="http://inspire.ec.europa.eu/schemas/tn-ra/4.0">tn-ra:RailwayStationNode</FeatureType>
-        <l:Name>TN.RailTransportNetwork.RailwayStationNode</l:Name>
-        <d:Title>TN.RailTransportNetwork.RailwayStationNode</d:Title>
-
-        <s:CRS>EPSG:4258 EPSG:4326 EPSG:3857 EPSG:3034 EPSG:3035 EPSG:31466 EPSG:31467 EPSG:31468 EPSG:31469 EPSG:2397 EPSG:2398 EPSG:2399 EPSG:25832 EPSG:25833 EPSG:32632 EPSG:32633 EPSG:3044 EPSG:3045 EPSG:4839</s:CRS>
-
-        <l:StyleRef>
-            <l:StyleStoreId>TN_TransportNode_Default</l:StyleStoreId>
-            <l:Style>
-                <!-- The StyleName specifies the name under which the style will be known in the WMS -->
-                <l:StyleName>TN.RailTransportNetwork.RailwayStationNode.Default</l:StyleName>
-                <!-- The LayerNameRef and StyleNameRef are used to extract the style from the style store -->
-                <l:LayerNameRef>TN.CommonTransportElements.TransportNode.Default</l:LayerNameRef>
-                <l:StyleNameRef>TN.CommonTransportElements.TransportNode.Default</l:StyleNameRef>
-            </l:Style>
-        </l:StyleRef>
-    </FeatureLayer>
-    
+    </FeatureLayer>  
 </FeatureLayers>

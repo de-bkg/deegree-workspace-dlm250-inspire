@@ -7,10 +7,11 @@
         xmlns:gml="http://www.opengis.net/gml/3.2" 
         xmlns:gmlexr="http://www.opengis.net/gml/3.3/exr">
         
-  <import namespace="http://inspire.ec.europa.eu/schemas/base/3.3" schemaLocation="http://inspire.ec.europa.eu/schemas/base/3.3/BaseTypes.xsd"/>
+  <import namespace="http://inspire.ec.europa.eu/schemas/base/3.3" schemaLocation="../inspire/base/3.3/BaseTypes.xsd"/>
   <import namespace="http://www.locationframework.eu/schemas/GeographicalNames/1.0" schemaLocation="GeographicalNames.xsd"/>
   <import namespace="http://www.opengis.net/gml/3.2" schemaLocation="http://schemas.opengis.net/gml/3.2.1/gml.xsd"/>
   <import namespace="http://www.opengis.net/gml/3.3/exr" schemaLocation="http://schemas.opengis.net/gml/3.3/extdEncRule.xsd"/>
+  
   
   <!--XML Schema document created by ShapeChange - http://shapechange.net/-->
   <element name="AmusementPark" substitutionGroup="elf-misc:LandmarkFeature" type="elf-misc:AmusementParkType"/>
