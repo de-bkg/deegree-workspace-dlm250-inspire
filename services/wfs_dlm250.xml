@@ -54,6 +54,20 @@
   <QueryMaxFeatures>10000</QueryMaxFeatures>
   <QueryCheckAreaOfUse>false</QueryCheckAreaOfUse>
 
+  <!-- required for WFS 1.0.0 -->
+  <GMLFormat gmlVersion="GML_2">
+    <MimeType>application/gml+xml; version=2.1.2</MimeType>
+    <MimeType>text/xml; subtype=gml/2.1.2</MimeType>
+  </GMLFormat>
+  <GMLFormat gmlVersion="GML_30">
+    <MimeType>application/gml+xml; version=3.0</MimeType>
+    <MimeType>text/xml; subtype=gml/3.0</MimeType>
+  </GMLFormat>
+  <!-- required for WFS 1.1.0 -->
+  <GMLFormat gmlVersion="GML_31">
+    <MimeType>application/gml+xml; version=3.1</MimeType>
+    <MimeType>text/xml; subtype=gml/3.1.1</MimeType>
+  </GMLFormat>
   <!-- Required for WFS 1.1.0/GML 3.2 output with gml:FeatureCollection root element (as mandated by ESDIN) -->
   <GMLFormat gmlVersion="GML_32">
     <MimeType>application/gml+xml; version=3.2</MimeType>

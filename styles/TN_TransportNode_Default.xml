@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <se:FeatureTypeStyle version="1.1.0" 
-                     xmlns:elf-tn-a="http://www.locationframework.eu/schemas/AirTransportNetwork/1.0" 
-                     xmlns:tn-a="http://inspire.ec.europa.eu/schemas/tn-a/4.0" 
-                     xmlns:net="http://inspire.ec.europa.eu/schemas/net/4.0" 
                      xmlns:se="http://www.opengis.net/se" 
                      xmlns:ogc="http://www.opengis.net/ogc"
                      xmlns:base="urn:x-inspire:specification:gmlas:BaseTypes:3.2"
@@ -21,9 +18,6 @@
     
     <se:Rule>        
       <se:PointSymbolizer>
-        <se:Geometry>
-          <ogc:PropertyName>net:geometry</ogc:PropertyName>
-        </se:Geometry>
         <se:Graphic>
           <se:Mark>
             <se:WellKnownName>circle</se:WellKnownName>

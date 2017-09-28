@@ -7,12 +7,11 @@
                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
                xsi:schemaLocation="http://www.deegree.org/layers/feature http://schemas.deegree.org/layers/feature/3.2.0/feature.xsd">
     
-    <FeatureStoreId>dlm250</FeatureStoreId>
-
+    <FeatureStoreId>dlm250_wms_tn_rail_node</FeatureStoreId>
+    
     <FeatureLayer>
-        <FeatureType xmlns:elf-tn-ro="http://www.locationframework.eu/schemas/RoadTransportNetwork/1.0">elf-tn-ro:InterchangePoint</FeatureType>
-        <l:Name>TN.RoadTransportNetwork.InterchangePoint</l:Name>
-        <d:Title>TN.RoadTransportNetwork.InterchangePoint</d:Title>
+        <l:Name>TN.RailTransportNetwork.RailwayNode</l:Name>
+        <d:Title>TN.RailTransportNetwork.RailwayNode</d:Title>
 
         <s:CRS>EPSG:4258 EPSG:4326 EPSG:3857 EPSG:3034 EPSG:3035 EPSG:31466 EPSG:31467 EPSG:31468 EPSG:31469 EPSG:2397 EPSG:2398 EPSG:2399 EPSG:25832 EPSG:25833 EPSG:32632 EPSG:32633 EPSG:3044 EPSG:3045 EPSG:4839</s:CRS>
 
@@ -20,12 +19,12 @@
             <l:StyleStoreId>TN_TransportNode_Default</l:StyleStoreId>
             <l:Style>
                 <!-- The StyleName specifies the name under which the style will be known in the WMS -->
-                <l:StyleName>TN.RoadTransportNetwork.InterchangePoint.Default</l:StyleName>
+                <l:StyleName>TN.RailTransportNetwork.RailwayNode.Default</l:StyleName>
                 <!-- The LayerNameRef and StyleNameRef are used to extract the style from the style store -->
                 <l:LayerNameRef>TN.CommonTransportElements.TransportNode.Default</l:LayerNameRef>
                 <l:StyleNameRef>TN.CommonTransportElements.TransportNode.Default</l:StyleNameRef>
             </l:Style>
         </l:StyleRef>
-    </FeatureLayer>    
+    </FeatureLayer>
     
 </FeatureLayers>

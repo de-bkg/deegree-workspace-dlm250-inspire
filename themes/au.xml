@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Themes xmlns="http://www.deegree.org/themes/standard" xmlns:d="http://www.deegree.org/metadata/description" xmlns:s="http://www.deegree.org/metadata/spatial" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" configVersion="3.2.0" xsi:schemaLocation="http://www.deegree.org/themes/standard http://schemas.deegree.org/themes/3.2.0/themes.xsd">
 
-  <LayerStoreId>au</LayerStoreId>
+  <!-- LayerStoreId>au</LayerStoreId -->
+  <LayerStoreId>au-adminunit</LayerStoreId>
+  <LayerStoreId>au-adminboundary</LayerStoreId>
+  <LayerStoreId>au-adminunitarea</LayerStoreId>
 
   <Theme>
     <Identifier>AU</Identifier>
@@ -21,11 +24,11 @@
         <Layer>AU.AdministrativeUnit</Layer>
     </Theme>
     
-    <Theme>
+    <!-- Theme>
         <Identifier>AU.Condominium</Identifier>
         <d:Title>Kondominium</d:Title>
         <Layer>AU.Condominium</Layer>
-    </Theme>
+    </Theme -->
     
     <Theme>
         <Identifier>AU.AdministrativeUnitArea</Identifier>

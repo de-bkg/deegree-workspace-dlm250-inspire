@@ -30,9 +30,6 @@ with black (#000000) border.</se:Abstract>
         
         <se:Rule>
           <se:LineSymbolizer>
-            <se:Geometry>
-              <ogc:PropertyName>geometry</ogc:PropertyName>
-            </se:Geometry>
             <se:Stroke>
               <se:SvgParameter name="stroke">#33CCFF</se:SvgParameter>
               <se:SvgParameter name="stroke-width">1</se:SvgParameter>

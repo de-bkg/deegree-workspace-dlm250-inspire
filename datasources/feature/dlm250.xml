@@ -1197,9 +1197,7 @@
       <Primitive path="@xsi:nil" mapping="'true'"/>
     </Complex>
     <Complex path="tn-ra:formOfNode">
-      <Primitive path="@owns" mapping="formofnode_owns"/>
       <Primitive path="@nilReason" mapping="formofnode_nilreason"/>
-      <Primitive path="@gml:remoteSchema" mapping="formofnode_remoteschema"/>
       <Primitive path="@xsi:nil" mapping="formofnode_nil"/>
       <Feature path=".">
         <Join table="?" fromColumns="formofnode_fk" toColumns="localid"/>
@@ -2075,9 +2073,7 @@
       <Primitive path="@xsi:nil" mapping="'true'"/>
     </Complex>
     <Complex path="tn-ro:formOfRoadNode">
-      <Primitive path="@owns" mapping="formofroadnode_owns"/>
       <Primitive path="@nilReason" mapping="formofroadnode_nilreason"/>
-      <Primitive path="@gml:remoteSchema" mapping="formofroadnode_remoteschema"/>
       <Primitive path="@xsi:nil" mapping="formofroadnode_nil"/>
       <Feature path=".">
         <Join table="?" fromColumns="formofroadnode_fk" toColumns="localid"/>
@@ -3249,10 +3245,10 @@
       </Feature>
     </Complex>
     <Complex path="hy-n:hydroNodeCategory">
+      <!-- Primitive path="@xlink:href" mapping="hydronodecategory_href"/ -->
       <Primitive path="@nilReason" mapping="hydronodecategory_nilreason"/>
       <Primitive path="@xsi:nil" mapping="hydronodecategory_nil"/>
       <Feature path=".">
-        <Join table="?" fromColumns="hydronodecategory_fk" toColumns="localid"/>
         <Href mapping="hydronodecategory_href"/>
       </Feature>
     </Complex>
@@ -5017,79 +5013,6 @@
       </Feature>
     </Complex>
   </FeatureTypeMapping>
-  
-  <!--20170815FeatureTypeMapping name="au:Condominium" table="au.condominium">
-    <FIDMapping prefix="DLM250_Condominium_">
-      <Column name="localid" type="string"/>
-    </FIDMapping>
-    <Complex path="gml:identifier">
-      <Primitive path="text()" mapping="localid"/>
-      <Primitive path="@codeSpace" mapping="'http://bkg.bund.de/dlm250'"/>
-    </Complex>
-    <Complex path="au:inspireId">
-      <Complex path="base:Identifier">
-        <Primitive path="base:localId" mapping="localid"/>
-        <Primitive path="base:namespace" mapping="'http://bkg.bund.de/dlm250'"/>
-        <Complex path="base:versionId">
-          <Primitive path="@nilReason" mapping="'other:unpopulated'"/>
-          <Primitive path="@xsi:nil" mapping="'true'"/>
-        </Complex>
-      </Complex>
-    </Complex>
-    <Complex path="au:name">
-      <Join table="au.condominium_gn" fromColumns="localid" toColumns="parentfk"/>
-      <Primitive path="@nilReason" mapping="nilreason"/>
-      <Primitive path="@xsi:nil" mapping="nil"/>
-      <Complex path="gn:GeographicalName">
-        <Complex path="gn:language">
-          <Primitive path="text()" mapping="language"/>
-          <Primitive path="@nilReason" mapping="language_nilreason"/>
-          <Primitive path="@xsi:nil" mapping="language_nil"/>
-        </Complex>
-        <Complex path="gn:nativeness">
-          <Primitive path="@xsi:nil" mapping="'false'"/>
-          <Primitive path="@xlink:href" mapping="nativeness_href"/>
-        </Complex>
-        <Complex path="gn:nameStatus">
-          <Primitive path="@xsi:nil" mapping="'false'"/>
-          <Primitive path="@xlink:href" mapping="namestatus_href"/>
-        </Complex>
-        <Complex path="gn:sourceOfName">
-          <Primitive path="@xsi:nil" mapping="'false'"/>
-          <Primitive path="text()" mapping="sourceofname"/>
-        </Complex>
-        <Complex path="gn:pronunciation">
-          <Primitive path="@nilReason" mapping="'other:unpopulated'"/>
-          <Primitive path="@xsi:nil" mapping="'true'"/>
-        </Complex>
-        <Complex path="gn:spelling">
-          <Join table="au.condominium_gn_spelling" fromColumns="id" toColumns="parentfk"/>
-          <Complex path="gn:SpellingOfName">
-            <Primitive path="gn:text" mapping="text"/>
-            <Complex path="gn:script">
-              <Primitive path="text()" mapping="script"/>
-              <Primitive path="@xsi:nil" mapping="'false'"/>
-            </Complex>
-          </Complex>
-        </Complex>
-      </Complex>
-    </Complex>    
-    <Complex path="au:geometry">
-      <Geometry path="." mapping="geometry"/>
-    </Complex>
-    <Complex path="au:beginLifespanVersion">
-      <Primitive path="text()" mapping="beginlifespanversion"/>
-    </Complex>
-    <Complex path="au:admUnit">
-      <Join table="au.condominium_adminunit" fromColumns="localid" toColumns="parentfk"/>
-      <Primitive path="@nilReason" mapping="nilreason"/>
-      <Primitive path="@xsi:nil" mapping="nil"/>
-      <Feature path=".">
-        <Join table="?" fromColumns="id" toColumns="parentfk"/>
-        <Href mapping="href"/>
-      </Feature>
-    </Complex>
-  </FeatureTypeMapping-->
 
   <FeatureTypeMapping name="au:AdministrativeUnit" table="au.adminunit">
     <FIDMapping prefix="DLM250_AdministrativeUnit_">

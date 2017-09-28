@@ -72,19 +72,195 @@
     </ServiceContact>
   </ServiceProvider>
 
-<!--
   <DatasetMetadata>
-    <MetadataUrlTemplate>http://mis.bkg.bund.de/geonetwork/srv/eng/csw?request=GetRecordById&amp;service=CSW&amp;version=2.0.2&amp;resultType=results&amp;outputSchema=http://www.isotc211.org/2005/gmd&amp;outputFormat=application/xml&amp;typeNames=csw:Record&amp;elementSetName=full&amp;id=${metadataSetId}</MetadataUrlTemplate>
+    <MetadataUrlTemplate>https://registry.gdi-de.org/id/de.bund.bkg.csw/${metadataSetId}</MetadataUrlTemplate>
     <ExternalMetadataAuthority name="BKG">https://registry.gdi-de.org/id/de.bund.bkg.csw/</ExternalMetadataAuthority>
-    <Dataset xmlns:gn="http://inspire.ec.europa.eu/schemas/gn/4.0">
-      <Name>GN.NamedPlace</Name>                                            Layername wie im theme definiert!
-      <Title>GN.NamedPlace</Title>                                          can be multilingual by using the lang attribute
-      <Abstract>Harmonized INSPIRE Geographical Names (Annex I)</Abstract>  can be multilingual by using the lang attribute
-      <MetadataSetId>142d56bb-108b-4e6a-96a6-8239b80af77e</MetadataSetId>
-      <ExternalMetadataSetId authority="BKG">https://registry.gdi-de.org/id/de.bund.bkg.csw/DEBKG00M00000187</ExternalMetadataSetId>
+
+    <Dataset>
+      <Name>TN.AirTransportNetwork</Name>                
+      <Title>Air Transport Network</Title>                       
+      <Abstract>Air Transport Network</Abstract>
+      <MetadataSetId>DEBKG00M00000207</MetadataSetId>
+      <ExternalMetadataSetId authority="BKG">DEBKG00M00000207</ExternalMetadataSetId>
     </Dataset>
+    <Dataset>
+      <Name>TN.AirTransportNetwork.AerodromeArea</Name>                
+      <Title>Aerodrome Area</Title>                       
+      <Abstract>Aerodrome Area</Abstract>
+      <MetadataSetId>DEBKG00M00000207</MetadataSetId>
+      <ExternalMetadataSetId authority="BKG">DEBKG00M00000207</ExternalMetadataSetId>
+    </Dataset>
+    <Dataset>
+      <Name>TN.AirTransportNetwork.AerodromeNode</Name>                
+      <Title>Aerodrome Node</Title>                       
+      <Abstract>Aerodrome Node</Abstract>
+      <MetadataSetId>DEBKG00M00000207</MetadataSetId>
+      <ExternalMetadataSetId authority="BKG">DEBKG00M00000207</ExternalMetadataSetId>
+    </Dataset>
+    <Dataset>
+      <Name>TN.AirTransportNetwork.RunwayLine</Name>                
+      <Title>Runway Line</Title>                       
+      <Abstract>Runway Line</Abstract>
+      <MetadataSetId>DEBKG00M00000207</MetadataSetId>
+      <ExternalMetadataSetId authority="BKG">DEBKG00M00000207</ExternalMetadataSetId>
+    </Dataset>
+    
+    <Dataset>
+      <Name>TN.RailTransportNetwork</Name>                
+      <Title>Rail Transport Network</Title>                       
+      <Abstract>Rail Transport Network</Abstract>
+      <MetadataSetId>DEBKG00M00000207</MetadataSetId>
+      <ExternalMetadataSetId authority="BKG">DEBKG00M00000207</ExternalMetadataSetId>
+    </Dataset>
+    <Dataset>
+      <Name>TN.RailTransportNetwork.RailwayLink</Name>                
+      <Title>Railway Link</Title>                       
+      <Abstract>Railway Link</Abstract>
+      <MetadataSetId>DEBKG00M00000207</MetadataSetId>
+      <ExternalMetadataSetId authority="BKG">DEBKG00M00000207</ExternalMetadataSetId>
+    </Dataset>
+    <Dataset>
+      <Name>TN.RailTransportNetwork.RailwayNode</Name>                
+      <Title>Railway Node</Title>                       
+      <Abstract>Railway Node</Abstract>
+      <MetadataSetId>DEBKG00M00000207</MetadataSetId>
+      <ExternalMetadataSetId authority="BKG">DEBKG00M00000207</ExternalMetadataSetId>
+    </Dataset>
+    <Dataset>
+      <Name>TN.RailTransportNetwork.RailwayStationNode</Name>                
+      <Title>Railway Station Node</Title>                       
+      <Abstract>Railway Station Node</Abstract>
+      <MetadataSetId>DEBKG00M00000207</MetadataSetId>
+      <ExternalMetadataSetId authority="BKG">DEBKG00M00000207</ExternalMetadataSetId>
+    </Dataset>
+    
+    <Dataset>
+      <Name>TN.RoadTransportNetwork</Name>                
+      <Title>Road Transport Network</Title>                       
+      <Abstract>Road Transport Network</Abstract>
+      <MetadataSetId>DEBKG00M00000207</MetadataSetId>
+      <ExternalMetadataSetId authority="BKG">DEBKG00M00000207</ExternalMetadataSetId>
+    </Dataset>
+    <Dataset>
+      <Name>TN.RoadTransportNetwork.RoadLink</Name>                
+      <Title>Road Link</Title>                       
+      <Abstract>Road Link</Abstract>
+      <MetadataSetId>DEBKG00M00000207</MetadataSetId>
+      <ExternalMetadataSetId authority="BKG">DEBKG00M00000207</ExternalMetadataSetId>
+    </Dataset>
+    <Dataset>
+      <Name>TN.RoadTransportNetwork.RoadNode</Name>                
+      <Title>Road Node</Title>                       
+      <Abstract>Road Node</Abstract>
+      <MetadataSetId>DEBKG00M00000207</MetadataSetId>
+      <ExternalMetadataSetId authority="BKG">DEBKG00M00000207</ExternalMetadataSetId>
+    </Dataset>
+    <Dataset>
+      <Name>TN.RoadTransportNetwork.InterchangePoint</Name>                
+      <Title>Interchange Point</Title>                       
+      <Abstract>Interchange Point</Abstract>
+      <MetadataSetId>DEBKG00M00000207</MetadataSetId>
+      <ExternalMetadataSetId authority="BKG">DEBKG00M00000207</ExternalMetadataSetId>
+    </Dataset>
+    
+    <Dataset>
+      <Name>TN.WaterTransportNetwork</Name>                
+      <Title>Water Transport Network</Title>                       
+      <Abstract>Water Transport Network</Abstract>
+      <MetadataSetId>DEBKG00M00000207</MetadataSetId>
+      <ExternalMetadataSetId authority="BKG">DEBKG00M00000207</ExternalMetadataSetId>
+    </Dataset>
+    <Dataset>
+      <Name>TN.WaterTransportNetwork.WaterwayLink</Name>                
+      <Title>Waterway Link</Title>                       
+      <Abstract>Waterway Link</Abstract>
+      <MetadataSetId>DEBKG00M00000207</MetadataSetId>
+      <ExternalMetadataSetId authority="BKG">DEBKG00M00000207</ExternalMetadataSetId>
+    </Dataset>
+    <Dataset>
+      <Name>TN.WaterTransportNetwork.PortArea</Name>                
+      <Title>Port Area</Title>                       
+      <Abstract>Port Area</Abstract>
+      <MetadataSetId>DEBKG00M00000207</MetadataSetId>
+      <ExternalMetadataSetId authority="BKG">DEBKG00M00000207</ExternalMetadataSetId>
+    </Dataset>
+    <Dataset>
+      <Name>TN.WaterTransportNetwork.PortNode</Name>                
+      <Title>Port Node</Title>                       
+      <Abstract>Port Node</Abstract>
+      <MetadataSetId>DEBKG00M00000207</MetadataSetId>
+      <ExternalMetadataSetId authority="BKG">DEBKG00M00000207</ExternalMetadataSetId>
+    </Dataset>
+    
+    <Dataset>
+      <Name>HY</Name>                
+      <Title>Hydrography</Title>                       
+      <Abstract>Hydrography</Abstract>
+      <MetadataSetId>DEBKG00M00000208</MetadataSetId>
+      <ExternalMetadataSetId authority="BKG">DEBKG00M00000208</ExternalMetadataSetId>
+    </Dataset>
+    <Dataset>
+      <Name>HY.Network.WatercourseLink</Name>                
+      <Title>Watercourse Link</Title>                       
+      <Abstract>Watercourse Link</Abstract>
+      <MetadataSetId>DEBKG00M00000208</MetadataSetId>
+      <ExternalMetadataSetId authority="BKG">DEBKG00M00000208</ExternalMetadataSetId>
+    </Dataset>
+    <Dataset>
+      <Name>HY.Network.HydroNode</Name>                
+      <Title>Hydro Node</Title>                       
+      <Abstract>Hydro Node</Abstract>
+      <MetadataSetId>DEBKG00M00000208</MetadataSetId>
+      <ExternalMetadataSetId authority="BKG">DEBKG00M00000208</ExternalMetadataSetId>
+    </Dataset>
+
+    <Dataset>
+      <Name>AU</Name>                
+      <Title>Administrative Units</Title>                       
+      <Abstract>Administrative Units</Abstract>
+      <MetadataSetId>DEBKG00M00000210</MetadataSetId>
+      <ExternalMetadataSetId authority="BKG">DEBKG00M00000210</ExternalMetadataSetId>
+    </Dataset>
+    <Dataset>
+      <Name>AU.AdministrativeBoundary</Name>                
+      <Title>Administrative Boundary</Title>                       
+      <Abstract>Administrative Boundary</Abstract>
+      <MetadataSetId>DEBKG00M00000210</MetadataSetId>
+      <ExternalMetadataSetId authority="BKG">DEBKG00M00000210</ExternalMetadataSetId>
+    </Dataset>
+    <Dataset>
+      <Name>AU.AdministrativeUnit</Name>                
+      <Title>Administrative Unit</Title>                       
+      <Abstract>Administrative Unit</Abstract>
+      <MetadataSetId>DEBKG00M00000210</MetadataSetId>
+      <ExternalMetadataSetId authority="BKG">DEBKG00M00000210</ExternalMetadataSetId>
+    </Dataset>
+    <Dataset>
+      <Name>AU.AdministrativeUnitArea</Name>                
+      <Title>Administrative Unit Area</Title>                       
+      <Abstract>Administrative Unit Area</Abstract>
+      <MetadataSetId>DEBKG00M00000210</MetadataSetId>
+      <ExternalMetadataSetId authority="BKG">DEBKG00M00000210</ExternalMetadataSetId>
+    </Dataset>
+    
+    <Dataset>
+      <Name>PS</Name>                
+      <Title>Protected Sites</Title>                       
+      <Abstract>Protected Sites</Abstract>
+      <MetadataSetId>DEBKG00M00000209</MetadataSetId>
+      <ExternalMetadataSetId authority="BKG">DEBKG00M00000209</ExternalMetadataSetId>
+    </Dataset>
+    <Dataset>
+      <Name>PS.ProtectedSite</Name>                
+      <Title>Protected Site</Title>                       
+      <Abstract>Protected Site</Abstract>
+      <MetadataSetId>DEBKG00M00000209</MetadataSetId>
+      <ExternalMetadataSetId authority="BKG">DEBKG00M00000209</ExternalMetadataSetId>
+    </Dataset>
+
   </DatasetMetadata>
     
+<!--
   <ExtendedCapabilities protocolVersions="1.3.0">
     <inspire_vs:ExtendedCapabilities xmlns:inspire_vs="http://inspire.ec.europa.eu/schemas/inspire_vs/1.0" 
                                      xmlns:inspire_common="http://inspire.ec.europa.eu/schemas/common/1.0" 

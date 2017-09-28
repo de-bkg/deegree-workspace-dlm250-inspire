@@ -17,23 +17,23 @@
                      xmlns:base="urn:x-inspire:specification:gmlas:BaseTypes:3.2"
                      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
                      xsi:schemaLocation="http://www.opengis.net/se http://schemas.opengis.net/se/1.1.0/FeatureStyle.xsd">
-   <se:Name>TN.WaterTransportNetwork.WaterwayLink.Default</se:Name>
-    <se:Description>
-        <se:Title>Waterway Link Default Style</se:Title> 
-        <se:Abstract>The geometry is rendered as a solid violet line with a
+
+  <se:Name>TN.WaterTransportNetwork.WaterwayLink.Default</se:Name>
+  <se:Description>
+    <se:Title>Waterway Link Default Style</se:Title> 
+    <se:Abstract>The geometry is rendered as a solid violet line with a
             stroke width of 3 pixel (#EE82EE). Ends are rounded and have a 2 pixel black
             casing (#000000).
-        </se:Abstract> 
-    </se:Description> 
-    <se:FeatureTypeName>tn-w:WaterwayLink</se:FeatureTypeName> 
+    </se:Abstract> 
+  </se:Description> 
     
-    <se:Rule>
+  <se:Rule>
     <se:LineSymbolizer>    
-            <se:Stroke>
-                <se:SvgParameter name="stroke">#EE82EE</se:SvgParameter>
-                <se:SvgParameter name="stroke-width">3</se:SvgParameter>
-                <se:SvgParameter name="stroke-linecap">round</se:SvgParameter>
-            </se:Stroke>
-        </se:LineSymbolizer> 
-    </se:Rule>
-  </se:FeatureTypeStyle>
+      <se:Stroke>
+        <se:SvgParameter name="stroke">#EE82EE</se:SvgParameter>
+        <se:SvgParameter name="stroke-width">3</se:SvgParameter>
+        <se:SvgParameter name="stroke-linecap">round</se:SvgParameter>
+      </se:Stroke>
+    </se:LineSymbolizer> 
+  </se:Rule>
+</se:FeatureTypeStyle>

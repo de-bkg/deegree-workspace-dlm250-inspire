@@ -1,0 +1,34 @@
+<SimpleSQLFeatureStore configVersion="3.0.1"
+  xmlns="http://www.deegree.org/datasource/feature/simplesql"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.deegree.org/datasource/feature/simplesql
+  http://schemas.deegree.org/datasource/feature/simplesql/3.0.1/simplesql.xsd">
+
+  <StorageCRS>EPSG:4258</StorageCRS>
+  
+  <FeatureTypeName>RailwayStationNode</FeatureTypeName>
+  <FeatureTypeNamespace>http://inspire.ec.europa.eu/schemas/tn-ra/4.0</FeatureTypeNamespace>
+  <FeatureTypePrefix>tn-ra</FeatureTypePrefix>
+
+  <JDBCConnId>dlm250</JDBCConnId>
+  
+  <!-- Required: Query statement -->
+  <SQLStatement>
+    SELECT localid, beginlifespanversion, formofnode_href, formofnode_nilreason, formofnode_nil, numberofplatforms, numberofplatforms_nilreason, numberofplatforms_nil, st_asbinary(geometry) FROM tnra.railwaystationnode
+    WHERE geometry &amp;&amp; st_geomfromtext(?, -1)
+  </SQLStatement>
+
+  <!-- Required: Bounding box statement -->
+  <BBoxStatement>SELECT st_astext(ST_Estimated_Extent('tnra.railwaystationnode', 'geometry')) as bbox</BBoxStatement>
+  
+  <!-- TODO: LOD Statements-->
+  <!-- LODStatement aboveScale="3000">
+    SELECT name, title, asbinary(st_simplifypreservetopology(the_geom, 1)) FROM some_table
+    WHERE the_geom &amp;&amp; st_geomfromtext(?, -1)
+  </LODStatement>
+  <LODStatement aboveScale="6000">
+    SELECT name, title, asbinary(st_simplify(the_geom, 30)) FROM some_table
+    WHERE the_geom &amp;&amp; st_geomfromtext(?, -1) and not st_isempty(st_simplify(the_geom, 30))
+  </LODStatement -->
+
+</SimpleSQLFeatureStore>

@@ -5,9 +5,13 @@
             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
             xsi:schemaLocation="http://www.deegree.org/services/wms http://schemas.deegree.org/services/wms/3.1.0/wms_configuration.xsd">
 
-  <MetadataURLTemplate>http://discovery.eu/csw?service=CSW&amp;request=GetRecordById&amp;version=2.0.2&amp;id=${metadataSetId}&amp;outputSchema=http://www.isotc211.org/2005/gmd&amp;elementSetName=full</MetadataURLTemplate>
+  <MetadataURLTemplate>https://registry.gdi-de.org/id/de.bund.bkg.csw/${metadataSetId}</MetadataURLTemplate>
 
   <ServiceConfiguration>
+    <DefaultLayerOptions>
+      <MaxFeatures>20000</MaxFeatures>
+    </DefaultLayerOptions>
+  
     <ThemeId>tn-air</ThemeId>
     <ThemeId>tn-rail</ThemeId>
     <ThemeId>tn-road</ThemeId>

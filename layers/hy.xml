@@ -10,25 +10,6 @@
     <FeatureStoreId>dlm250</FeatureStoreId>
 
     <FeatureLayer>
-        <FeatureType xmlns:hy-n="http://inspire.ec.europa.eu/schemas/hy-n/4.0">hy-n:WatercourseLink</FeatureType>
-        <l:Name>HY.Network.WatercourseLink</l:Name>
-        <d:Title>HY.Network.WatercourseLink</d:Title>
-
-        <s:CRS>EPSG:4258 EPSG:4326 EPSG:3857 EPSG:3034 EPSG:3035 EPSG:31466 EPSG:31467 EPSG:31468 EPSG:31469 EPSG:2397 EPSG:2398 EPSG:2399 EPSG:25832 EPSG:25833 EPSG:32632 EPSG:32633 EPSG:3044 EPSG:3045 EPSG:4839</s:CRS>
-
-        <l:StyleRef>
-            <l:StyleStoreId>HY_Network_WatercourseLink_Default</l:StyleStoreId>
-            <l:Style>
-                <!-- The StyleName specifies the name under which the style will be known in the WMS -->
-                <l:StyleName>HY.Network.WatercourseLink.Default</l:StyleName>
-                <!-- The LayerNameRef and StyleNameRef are used to extract the style from the style store -->
-                <l:LayerNameRef>HY.Network.WatercourseLink.Default</l:LayerNameRef>
-                <l:StyleNameRef>HY.Network.WatercourseLink.Default</l:StyleNameRef>
-            </l:Style>
-        </l:StyleRef>
-    </FeatureLayer>    
-
-    <FeatureLayer>
         <FeatureType xmlns:hy-n="http://inspire.ec.europa.eu/schemas/hy-n/4.0">hy-n:HydroNode</FeatureType>
         <l:Name>HY.Network.HydroNode</l:Name>
         <d:Title>HY.Network.HydroNode</d:Title>

@@ -9,26 +9,22 @@
                      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
                      xsi:schemaLocation="http://www.opengis.net/se http://schemas.opengis.net/se/1.1.0/FeatureStyle.xsd">
 
-    <se:Name>TN.AirTransportNetwork.AirLink.Default</se:Name>
-    <se:Description>
-        <se:Title>AirAir Link Default Style</se:Title> 
-        <se:Abstract>
-            The geometry is rendered as a solid Maroon line with a stroke width of 3 pixel (#800000).  Ends are rounded and have a 2 pixel black casing (#000000).
-        </se:Abstract> 
-    </se:Description> 
-    <se:FeatureTypeName>tn-a:AirRouteLink</se:FeatureTypeName> 
-    
-    <se:Rule>
-        <se:PolygonSymbolizer> 
-            <se:Geometry> 
-                <ogc:PropertyName>net:centerlineGeometry</ogc:PropertyName> 
-            </se:Geometry> 
-            <se:Stroke>
-                <se:SvgParameter name="stroke">#800000</se:SvgParameter>
-                <se:SvgParameter name="stroke-width">3</se:SvgParameter>
-                <se:SvgParameter name="stroke-linecap">round</se:SvgParameter >
-            </se:Stroke>
-            <!-- TODO: Ends are rounded and have a 2 pixel black casing -->
-        </se:PolygonSymbolizer> 
-    </se:Rule>        
+  <se:Name>TN.AirTransportNetwork.AirLink.Default</se:Name>
+  <se:Description>
+    <se:Title>AirAir Link Default Style</se:Title> 
+    <se:Abstract>
+      The geometry is rendered as a solid Maroon line with a stroke width of 3 pixel (#800000).  Ends are rounded and have a 2 pixel black casing (#000000).
+    </se:Abstract> 
+  </se:Description> 
+
+  <se:Rule>
+    <se:PolygonSymbolizer> 
+      <se:Stroke>
+        <se:SvgParameter name="stroke">#800000</se:SvgParameter>
+        <se:SvgParameter name="stroke-width">3</se:SvgParameter>
+        <se:SvgParameter name="stroke-linecap">round</se:SvgParameter >
+      </se:Stroke>
+      <!-- TODO: Ends are rounded and have a 2 pixel black casing -->
+    </se:PolygonSymbolizer> 
+  </se:Rule>        
 </se:FeatureTypeStyle>

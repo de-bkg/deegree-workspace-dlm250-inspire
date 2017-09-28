@@ -22,7 +22,7 @@
                 <!-- The StyleName specifies the name under which the style will be known in the WMS -->
                 <l:StyleName>PS.ProtectedSite.Default</l:StyleName>
                 <!-- The LayerNameRef and StyleNameRef are used to extract the style from the style store -->
-                <l:LayerNameRef>PS.ProtectedSite.Default</l:LayerNameRef>
+                <l:LayerNameRef>PS.ProtectedSites</l:LayerNameRef>
                 <l:StyleNameRef>PS.ProtectedSite.Default</l:StyleNameRef>
             </l:Style>
         </l:StyleRef>

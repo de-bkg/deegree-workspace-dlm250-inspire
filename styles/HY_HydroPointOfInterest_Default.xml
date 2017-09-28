@@ -1,26 +1,31 @@
 <?xml version="1.0"?>
-<sld:StyledLayerDescriptor xmlns:sld="http://www.opengis.net/sld" xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.1.0" xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.1.0/StyledLayerDescriptor.xsd">
+<sld:StyledLayerDescriptor version="1.1.0" 
+                           xmlns:sld="http://www.opengis.net/sld" 
+                           xmlns:ogc="http://www.opengis.net/ogc" 
+                           xmlns:se="http://www.opengis.net/se" 
+                           xmlns:xlink="http://www.w3.org/1999/xlink" 
+                           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"                            
+                           xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.1.0/StyledLayerDescriptor.xsd">
   <sld:NamedLayer>
     <se:Name>HY.HydroPointOfInterest</se:Name>
     <sld:UserStyle>
       <se:Name>HY.PhysicalWaters.HydroPointOfInterest.Default</se:Name>
-      <sld:IsDefault>1</sld:IsDefault>
+
       <se:FeatureTypeStyle version="1.1.0">
         <se:Description>
-          <se:Title> Hydrographic points of interest default style</se:Title>
-          <se:Abstract> Fluvial points as rapids or falls are depicted with
-symbols; if the geometry is a curve they are depicted in aligned blue
-(#0066FF) marks (stars for Falls and crosses for Rapids); if the geometry is
-a surface it will be an area with blue (#0066FF) marks (stars for Falls and
-crosses for Rapids).</se:Abstract>
+          <se:Title>Hydrographic points of interest default style</se:Title>
+          <se:Abstract> 
+            Fluvial points as rapids or falls are depicted with
+            symbols; if the geometry is a curve they are depicted in aligned blue
+            (#0066FF) marks (stars for Falls and crosses for Rapids); if the geometry is
+            a surface it will be an area with blue (#0066FF) marks (stars for Falls and
+            crosses for Rapids).
+          </se:Abstract>
         </se:Description>
         
         <se:FeatureTypeName xmlns:hy-p="http://inspire.ec.europa.eu/schemas/hy-p/4.0">hy-p:Rapids</se:FeatureTypeName>
         <se:Rule>
           <se:PointSymbolizer>
-            <se:Geometry>
-              <ogc:PropertyName>geometry</ogc:PropertyName>
-            </se:Geometry>
             <se:Graphic>
               <se:ExternalGraphic>
                 <se:OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://.../rapids.png"/>
@@ -70,20 +75,19 @@ crosses for Rapids).</se:Abstract>
       
       <se:FeatureTypeStyle version="1.1.0">
         <se:Description>
-          <se:Title> Hydrographic points of interest default style</se:Title>
-          <se:Abstract> Fluvial points as rapids or falls are depicted with
-symbols; if the geometry is a curve they are depicted in aligned blue
-(#0066FF) marks (stars for Falls and crosses for Rapids); if the geometry is
-a surface it will be an area with blue (#0066FF) marks (stars for Falls and
-crosses for Rapids).</se:Abstract>
+          <se:Title>Hydrographic points of interest default style</se:Title>
+          <se:Abstract> 
+            Fluvial points as rapids or falls are depicted with
+            symbols; if the geometry is a curve they are depicted in aligned blue
+            (#0066FF) marks (stars for Falls and crosses for Rapids); if the geometry is
+            a surface it will be an area with blue (#0066FF) marks (stars for Falls and
+            crosses for Rapids).    
+          </se:Abstract>
         </se:Description>
         
         <se:FeatureTypeName xmlns:hy-p="http://inspire.ec.europa.eu/schemas/hy-p/4.0">hy-p:Falls</se:FeatureTypeName>
         <se:Rule>
           <se:PointSymbolizer>
-            <se:Geometry>
-              <ogc:PropertyName>geometry</ogc:PropertyName>
-            </se:Geometry>
             <se:Graphic>
               <se:ExternalGraphic>
                 <se:OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://.../falls.png"/>

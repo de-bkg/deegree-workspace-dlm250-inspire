@@ -13,9 +13,9 @@
                            version="1.1.0" 
                            xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.1.0/StyledLayerDescriptor.xsd">
   <sld:NamedLayer>
-    <se:Name>HY.Network</se:Name>
+    <se:Name>HY.Network.HydroNode.Default</se:Name>
     <sld:UserStyle>
-      <se:Name> HY.Network.Default</se:Name>
+      <se:Name>HY.Network.HydroNode.Default</se:Name>
       <sld:IsDefault>1</sld:IsDefault>
       
       <se:FeatureTypeStyle version="1.1.0">
@@ -27,28 +27,27 @@
 with black (#000000) border.</se:Abstract>
         </se:Description>
         
-        <se:FeatureTypeName xmlns:hy-n="http://inspire.ec.europa.eu/schemas/hy-n/4.0">hy-n:HydroNode</se:FeatureTypeName>
         <se:Rule>
           <ogc:Filter>
             <ogc:Or>
               <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>hydroNodeCategory</ogc:PropertyName>
-                <ogc:Literal>outlet</ogc:Literal>
+                <!-- ogc:PropertyName xmlns:hy-n="http://inspire.ec.europa.eu/schemas/hy-n/4.0">hy-n:hydroNodeCategory/@xlink:href</ogc:PropertyName -->
+                <ogc:PropertyName xmlns:hy-n="http://inspire.ec.europa.eu/schemas/hy-n/4.0">hy-n:hydronodecategory_href</ogc:PropertyName>
+                <ogc:Literal>http://inspire.ec.europa.eu/codelist/HydroNodeCategoryValue/outlet</ogc:Literal>
               </ogc:PropertyIsEqualTo>
               <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>hydroNodeCategory</ogc:PropertyName>
-                <ogc:Literal>junction</ogc:Literal>
+                <!-- ogc:PropertyName xmlns:hy-n="http://inspire.ec.europa.eu/schemas/hy-n/4.0">hy-n:hydroNodeCategory/@xlink:href</ogc:PropertyName -->
+                <ogc:PropertyName xmlns:hy-n="http://inspire.ec.europa.eu/schemas/hy-n/4.0">hy-n:hydronodecategory_href</ogc:PropertyName>
+                <ogc:Literal>http://inspire.ec.europa.eu/codelist/HydroNodeCategoryValue/junction</ogc:Literal>
               </ogc:PropertyIsEqualTo>
               <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>hydroNodeCategory</ogc:PropertyName>
-                <ogc:Literal>source</ogc:Literal>
+                <!-- ogc:PropertyName xmlns:hy-n="http://inspire.ec.europa.eu/schemas/hy-n/4.0">hy-n:hydroNodeCategory/@xlink:href</ogc:PropertyName -->
+                <ogc:PropertyName xmlns:hy-n="http://inspire.ec.europa.eu/schemas/hy-n/4.0">hy-n:hydronodecategory_href</ogc:PropertyName>
+                <ogc:Literal>http://inspire.ec.europa.eu/codelist/HydroNodeCategoryValue/source</ogc:Literal>
               </ogc:PropertyIsEqualTo>
             </ogc:Or>
           </ogc:Filter>
           <se:PointSymbolizer>
-            <se:Geometry>
-              <ogc:PropertyName>geometry</ogc:PropertyName>
-            </se:Geometry>
             <se:Graphic>
               <se:Mark>
                 <se:WellKnownName>circle</se:WellKnownName>
@@ -59,27 +58,32 @@ with black (#000000) border.</se:Abstract>
                   <se:SvgParameter name="stroke">#000000</se:SvgParameter>
                 </se:Stroke>
               </se:Mark>
-              <se:Size>3</se:Size>
+              <se:Size>6</se:Size>
             </se:Graphic>
           </se:PointSymbolizer>
         </se:Rule>
+        
         <se:Rule>
           <ogc:Filter>
             <ogc:Or>
               <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>hydroNodeCategory</ogc:PropertyName>
-                <ogc:Literal>flowConstriction</ogc:Literal>
+                <!-- ogc:PropertyName xmlns:hy-n="http://inspire.ec.europa.eu/schemas/hy-n/4.0">hy-n:hydroNodeCategory/@xlink:href</ogc:PropertyName -->
+                <ogc:PropertyName xmlns:hy-n="http://inspire.ec.europa.eu/schemas/hy-n/4.0">hy-n:hydronodecategory_href</ogc:PropertyName>
+                <ogc:Literal>http://inspire.ec.europa.eu/codelist/HydroNodeCategoryValue/flowConstriction</ogc:Literal>
               </ogc:PropertyIsEqualTo>
               <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>hydroNodeCategory</ogc:PropertyName>
-                <ogc:Literal>regulation</ogc:Literal>
+                <!-- ogc:PropertyName xmlns:hy-n="http://inspire.ec.europa.eu/schemas/hy-n/4.0">hy-n:hydroNodeCategory/@xlink:href</ogc:PropertyName -->
+                <ogc:PropertyName xmlns:hy-n="http://inspire.ec.europa.eu/schemas/hy-n/4.0">hy-n:hydronodecategory_href</ogc:PropertyName>
+                <ogc:Literal>http://inspire.ec.europa.eu/codelist/HydroNodeCategoryValue/regulation</ogc:Literal>
+              </ogc:PropertyIsEqualTo>
+              <ogc:PropertyIsEqualTo>
+                <!-- ogc:PropertyName xmlns:hy-n="http://inspire.ec.europa.eu/schemas/hy-n/4.0">hy-n:hydroNodeCategory/@xlink:href</ogc:PropertyName -->
+                <ogc:PropertyName xmlns:hy-n="http://inspire.ec.europa.eu/schemas/hy-n/4.0">hy-n:hydronodecategory_href</ogc:PropertyName>
+                <ogc:Literal>http://inspire.ec.europa.eu/codelist/HydroNodeCategoryValue/flowRegulation</ogc:Literal>
               </ogc:PropertyIsEqualTo>
             </ogc:Or>
           </ogc:Filter>
           <se:PointSymbolizer>
-            <se:Geometry>
-              <ogc:PropertyName>geometry</ogc:PropertyName>
-            </se:Geometry>
             <se:Graphic>
               <se:Mark>
                 <se:WellKnownName>circle</se:WellKnownName>
@@ -87,22 +91,21 @@ with black (#000000) border.</se:Abstract>
                   <se:SvgParameter name="fill">#000000</se:SvgParameter>
                 </se:Fill>
               </se:Mark>
-              <se:Size>3</se:Size>
+              <se:Size>6</se:Size>
             </se:Graphic>
           </se:PointSymbolizer>
         </se:Rule>
+        
         <se:Rule>
           <ogc:Filter>
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>hydroNodeCategory</ogc:PropertyName>
-              <ogc:Literal>boundary</ogc:Literal>
+                <!-- ogc:PropertyName xmlns:hy-n="http://inspire.ec.europa.eu/schemas/hy-n/4.0">hy-n:hydroNodeCategory/@xlink:href</ogc:PropertyName -->
+                <ogc:PropertyName xmlns:hy-n="http://inspire.ec.europa.eu/schemas/hy-n/4.0">hy-n:hydronodecategory_href</ogc:PropertyName>
+              <ogc:Literal>http://inspire.ec.europa.eu/codelist/HydroNodeCategoryValue/boundary</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <se:PointSymbolizer>
-            <se:Geometry>
-              <ogc:PropertyName>geometry</ogc:PropertyName>
-            </se:Geometry>
-            <se:Graphic>
+           <se:Graphic>
               <se:Mark>
                 <se:WellKnownName>circle</se:WellKnownName>
                 <se:Fill>
@@ -112,11 +115,11 @@ with black (#000000) border.</se:Abstract>
                   <se:SvgParameter name="stroke">#000000</se:SvgParameter>
                 </se:Stroke>
               </se:Mark>
-              <se:Size>3</se:Size>
+              <se:Size>6</se:Size>
             </se:Graphic>
           </se:PointSymbolizer>
         </se:Rule>
-
+        
       </se:FeatureTypeStyle>
     </sld:UserStyle>
   </sld:NamedLayer>

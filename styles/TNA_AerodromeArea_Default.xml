@@ -9,28 +9,24 @@
                      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
                      xsi:schemaLocation="http://www.opengis.net/se http://schemas.opengis.net/se/1.1.0/FeatureStyle.xsd">
 
-    <se:Name>TN.AirTransportNetwork.AerodromeArea.Default</se:Name>
-    <se:Description>
-        <se:Title>Aerodrome Area Default Style</se:Title> 
-        <se:Abstract>
-            The geometry is rendered using a 50% Blue (#0000CD) fill and a solid Blue (#0000CD)outline with a stroke width of 1 pixel.
-        </se:Abstract> 
-    </se:Description> 
-    <se:FeatureTypeName>elf-tn-a:AerodromeArea</se:FeatureTypeName> 
-    
-    <se:Rule>
-        <se:PolygonSymbolizer> 
-            <se:Geometry> 
-                <ogc:PropertyName>net:geometry</ogc:PropertyName> 
-            </se:Geometry> 
-            <se:Fill>
-                <se:SvgParameter name="fill">#0000CD</se:SvgParameter>
-                <se:SvgParameter name="fill-opacity">0.5</se:SvgParameter>
-            </se:Fill>
-            <se:Stroke>
-                <se:SvgParameter name="stroke">#0000CD</se:SvgParameter>
-                <se:SvgParameter name="stroke-width">1</se:SvgParameter>
-            </se:Stroke>
-        </se:PolygonSymbolizer> 
-    </se:Rule>        
+  <se:Name>TN.AirTransportNetwork.AerodromeArea.Default</se:Name>
+  <se:Description>
+    <se:Title>Aerodrome Area Default Style</se:Title> 
+    <se:Abstract>
+      The geometry is rendered using a 50% Blue (#0000CD) fill and a solid Blue (#0000CD)outline with a stroke width of 1 pixel.
+    </se:Abstract> 
+  </se:Description> 
+  
+  <se:Rule>
+    <se:PolygonSymbolizer> 
+      <se:Fill>
+        <se:SvgParameter name="fill">#0000CD</se:SvgParameter>
+        <se:SvgParameter name="fill-opacity">0.5</se:SvgParameter>
+      </se:Fill>
+      <se:Stroke>
+        <se:SvgParameter name="stroke">#0000CD</se:SvgParameter>
+        <se:SvgParameter name="stroke-width">1</se:SvgParameter>
+      </se:Stroke>
+    </se:PolygonSymbolizer> 
+  </se:Rule>        
 </se:FeatureTypeStyle>

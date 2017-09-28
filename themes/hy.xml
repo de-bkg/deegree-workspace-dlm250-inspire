@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Themes xmlns="http://www.deegree.org/themes/standard" xmlns:d="http://www.deegree.org/metadata/description" xmlns:s="http://www.deegree.org/metadata/spatial" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" configVersion="3.2.0" xsi:schemaLocation="http://www.deegree.org/themes/standard http://schemas.deegree.org/themes/3.2.0/themes.xsd">
 
-  <LayerStoreId>hy</LayerStoreId>
+  <!-- LayerStoreId>hy</LayerStoreId -->
+  <LayerStoreId>hy-net-hydronode</LayerStoreId>
+  <LayerStoreId>hy-net-watercourse</LayerStoreId>
 
   <Theme>
     <Identifier>HY</Identifier>
@@ -21,7 +23,7 @@
         <Layer>HY.Network.HydroNode</Layer>
     </Theme>
 
-    <Theme>
+    <!-- Theme>
         <Identifier>HY.PhysicalWaters.HydroPointOfInterest</Identifier>
         <d:Title>Interessante hydrologische Punkte</d:Title>
         <Layer>HY.PhysicalWaters.HydroPointOfInterest</Layer>
@@ -49,7 +51,7 @@
         <Identifier>HY.PhysicalWaters.Wetland</Identifier>
         <d:Title>Feuchtgebiete</d:Title>
         <Layer>HY.PhysicalWaters.Wetland</Layer>
-    </Theme>
+    </Theme -->
   </Theme>
 
 </Themes>

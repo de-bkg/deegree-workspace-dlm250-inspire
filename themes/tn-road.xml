@@ -2,6 +2,8 @@
 <Themes xmlns="http://www.deegree.org/themes/standard" xmlns:d="http://www.deegree.org/metadata/description" xmlns:s="http://www.deegree.org/metadata/spatial" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" configVersion="3.2.0" xsi:schemaLocation="http://www.deegree.org/themes/standard http://schemas.deegree.org/themes/3.2.0/themes.xsd">
 
   <LayerStoreId>tn-road</LayerStoreId>
+  <LayerStoreId>tn-road-link</LayerStoreId>
+  <LayerStoreId>tn-road-node</LayerStoreId>
 
   <Theme>
     <Identifier>TN.RoadTransportNetwork</Identifier>

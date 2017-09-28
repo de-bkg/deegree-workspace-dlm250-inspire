@@ -74,14 +74,14 @@
   </ServiceProvider>
 
   <DatasetMetadata>
-    <!--MetadataUrlTemplate>https://registry.gdi-de.org/id/de.bund.bkg.csw/${metadataSetId}</MetadataUrlTemplate-->
-    <MetadataUrlTemplate>http://mis.bkg.bund.de/geonetwork/srv/eng/csw?request=GetRecordById&amp;service=CSW&amp;version=2.0.2&amp;resultType=results&amp;outputSchema=http://www.isotc211.org/2005/gmd&amp;outputFormat=application/xml&amp;typeNames=csw:Record&amp;elementSetName=full&amp;id=${metadataSetId}</MetadataUrlTemplate>
+    <MetadataUrlTemplate>https://registry.gdi-de.org/id/de.bund.bkg.csw/${metadataSetId}</MetadataUrlTemplate>
+
     <Dataset xmlns:hy-p="http://inspire.ec.europa.eu/schemas/hy-p/4.0">
       <Name>hy-p:Crossing</Name>
       <Title>Crossing</Title>
       <Title lang="ger">Überleitung</Title>
       <!-- Abstract lang="ger">Ein künstliches Objekt, das den Fluss von Wasser über ein Hindernis hinweg oder unter einem Hindernis hindurch erlaubt.</Abstract -->
-      <MetadataSetId>A912C808-0B5A-4F39-A822-19C29047AE0B</MetadataSetId>
+      <MetadataSetId>DEBKG00M00000208</MetadataSetId>
     </Dataset>
 
     <Dataset xmlns:hy-p="http://inspire.ec.europa.eu/schemas/hy-p/4.0">
@@ -89,7 +89,7 @@
       <Title>Dam or Weir</Title>
       <Title lang="ger">Damm oder Wehr</Title>
       <!-- Abstract lang="ger">Eine dauerhafte, quer über einen Wasserlauf führende Barriere, die dazu dient, ein Gewässer aufzustauen oder seinen Durchfluss zu steuern.</Abstract -->
-      <MetadataSetId>A912C808-0B5A-4F39-A822-19C29047AE0B</MetadataSetId>
+      <MetadataSetId>DEBKG00M00000208</MetadataSetId>
     </Dataset>
 
     <Dataset xmlns:hy-p="hhttp://inspire.ec.europa.eu/schemas/hy-p/4.0">
@@ -97,7 +97,7 @@
       <Title>Embankment</Title>
       <Title lang="ger">Böschung</Title>
       <!-- Abstract lang="ger">Erhöhte dauerhafte Aufschüttung aus Erde oder anderen Materialien.</Abstract -->
-      <MetadataSetId>A912C808-0B5A-4F39-A822-19C29047AE0B</MetadataSetId>
+      <MetadataSetId>DEBKG00M00000208</MetadataSetId>
     </Dataset>
 
     <Dataset xmlns:hy-p="http://inspire.ec.europa.eu/schemas/hy-p/4.0">
@@ -105,7 +105,7 @@
       <Title>Falls</Title>
       <Title lang="ger">Wasserfall</Title>
       <!-- Abstract lang="ger">Ein von einer höher gelegenen Position vertikal abfallender Teil eines Wasserlaufs.</Abstract -->
-      <MetadataSetId>A912C808-0B5A-4F39-A822-19C29047AE0B</MetadataSetId>
+      <MetadataSetId>DEBKG00M00000208</MetadataSetId>
     </Dataset>
 
     <Dataset xmlns:hy-p="http://inspire.ec.europa.eu/schemas/hy-p/4.0">
@@ -113,7 +113,7 @@
       <Title>Land Water Boundary</Title>
       <Title lang="ger">Schleuse</Title>
       <!-- Abstract lang="ger"></Abstract -->
-      <MetadataSetId>A912C808-0B5A-4F39-A822-19C29047AE0B</MetadataSetId>
+      <MetadataSetId>DEBKG00M00000208</MetadataSetId>
     </Dataset>
 
     <Dataset xmlns:hy-p="http://inspire.ec.europa.eu/schemas/hy-p/4.0">
@@ -121,7 +121,7 @@
       <Title>Lock</Title>
       <Title lang="ger">LandWaterBoundary</Title>
       <!-- Abstract lang="ger">Abgeriegeltes großes Wasserbecken mit zwei oder mehreren Toren, das dazu genutzt wird, Wasserfahrzeuge anzuheben oder abzusenken, damit sie Gewässer mit unterschiedlichen Wasserspiegelhöhen passieren können.</Abstract -->
-      <MetadataSetId>A912C808-0B5A-4F39-A822-19C29047AE0B</MetadataSetId>
+      <MetadataSetId>DEBKG00M00000208</MetadataSetId>
     </Dataset>
 
     <Dataset xmlns:hy-p="http://inspire.ec.europa.eu/schemas/hy-p/4.0">
@@ -129,7 +129,7 @@
       <Title>Shore</Title>
       <Title lang="ger">Ufer</Title>
       <!-- Abstract lang="ger"></Abstract -->
-      <MetadataSetId>A912C808-0B5A-4F39-A822-19C29047AE0B</MetadataSetId>
+      <MetadataSetId>DEBKG00M00000208</MetadataSetId>
     </Dataset>
 
     <Dataset xmlns:hy-p="http://inspire.ec.europa.eu/schemas/hy-p/4.0">
@@ -137,7 +137,7 @@
       <Title>Shoreline Construction</Title>
       <Title lang="ger">Uferbefestigung</Title>
       <!-- Abstract lang="ger">Eine künstliche Struktur, die in unveränderbarer Position mit einem an ein Gewässer grenzenden Stück Land verbunden ist.</Abstract -->
-      <MetadataSetId>A912C808-0B5A-4F39-A822-19C29047AE0B</MetadataSetId>
+      <MetadataSetId>DEBKG00M00000208</MetadataSetId>
     </Dataset>
 
     <Dataset xmlns:hy-p="http://inspire.ec.europa.eu/schemas/hy-p/4.0">
@@ -145,7 +145,7 @@
       <Title>Standing Water</Title>
       <Title lang="ger">Stehendes Gewässer</Title>
       <!-- Abstract lang="ger">Ein Gewässer, das vollständig von Land umgeben ist.</Abstract -->
-      <MetadataSetId>A912C808-0B5A-4F39-A822-19C29047AE0B</MetadataSetId>
+      <MetadataSetId>DEBKG00M00000208</MetadataSetId>
     </Dataset>
 
     <Dataset xmlns:hy-p="http://inspire.ec.europa.eu/schemas/hy-p/4.0">
@@ -153,7 +153,7 @@
       <Title>Watercourse</Title>
       <Title lang="ger">Wasserlauf</Title>
       <!-- Abstract lang="ger">Ein natürlicher oder künstlicher Wasserlauf oder ein Fließgewässer.</Abstract -->
-      <MetadataSetId>A912C808-0B5A-4F39-A822-19C29047AE0B</MetadataSetId>
+      <MetadataSetId>DEBKG00M00000208</MetadataSetId>
     </Dataset>
 
     <Dataset xmlns:hy-p="http://inspire.ec.europa.eu/schemas/hy-p/4.0">
@@ -161,7 +161,7 @@
       <Title>Wetland</Title>
       <Title lang="ger">Feuchtgebiet</Title>
       <!-- Abstract lang="ger">Ein schlecht entwässertes oder periodisch überschwemmtes Gebiet, in dem der Boden mit Wasser gesättigt ist und Vegetation gedeiht.</Abstract -->
-      <MetadataSetId>A912C808-0B5A-4F39-A822-19C29047AE0B</MetadataSetId>
+      <MetadataSetId>DEBKG00M00000208</MetadataSetId>
     </Dataset>
     
 
@@ -170,7 +170,7 @@
       <Title>Hydro Node</Title>
       <Title lang="ger">Wasserknoten</Title>
       <!-- Abstract lang="ger"></Abstract -->
-      <MetadataSetId>A912C808-0B5A-4F39-A822-19C29047AE0B</MetadataSetId>
+      <MetadataSetId>DEBKG00M00000208</MetadataSetId>
     </Dataset>
 
     <Dataset xmlns:hy-n="http://inspire.ec.europa.eu/schemas/hy-n/4.0">
@@ -178,7 +178,7 @@
       <Title>Watercourse Link</Title>
       <Title lang="ger">Wasserlaufsegment</Title>
       <!-- Abstract lang="ger">Ein Abschnitt eines Wasserlaufs in einem hydrografischen Netzwerk.</Abstract -->
-      <MetadataSetId>A912C808-0B5A-4F39-A822-19C29047AE0B</MetadataSetId>
+      <MetadataSetId>DEBKG00M00000208</MetadataSetId>
     </Dataset>
 
 
@@ -187,7 +187,7 @@
       <Title>Aerodrome Area</Title>
       <Title lang="ger">Flugplatzgelände</Title>
       <!-- Abstract lang="ger">Ein abgegrenztes Gebiet auf dem Land oder einem Gewässer (einschließlich Gebäuden, Anlagen und Ausrüstung), das entweder ganz oder teilweise für die Ankunft, den Abflug und die Bewegungen von Flugzeugen und/oder Hubschraubern am Boden bestimmt ist.</Abstract -->
-      <MetadataSetId>7CA6B8A1-2331-428F-886A-CBF2D9D0B193</MetadataSetId>
+      <MetadataSetId>DEBKG00M00000207</MetadataSetId>
     </Dataset>
 
     <Dataset xmlns:tn-a="http://inspire.ec.europa.eu/schemas/tn-a/4.0">
@@ -195,7 +195,7 @@
       <Title>Aerodrome Category</Title>
       <Title lang="ger">Flugplatzkategorie</Title>
       <!-- Abstract lang="ger">Kategorie des Flugplatzes nach Umfang und Bedeutung der Flugdienste, die von und zum Flugplatz angeboten werden.</Abstract -->
-      <MetadataSetId>7CA6B8A1-2331-428F-886A-CBF2D9D0B193</MetadataSetId>
+      <MetadataSetId>DEBKG00M00000207</MetadataSetId>
     </Dataset>
 
     <Dataset xmlns:tn-a="http://inspire.ec.europa.eu/schemas/tn-a/4.0">
@@ -203,7 +203,7 @@
       <Title>Aerodrome Node</Title>
       <Title lang="ger">Flugplatz</Title>
       <!-- Abstract lang="ger"></Abstract -->
-      <MetadataSetId>7CA6B8A1-2331-428F-886A-CBF2D9D0B193</MetadataSetId>
+      <MetadataSetId>DEBKG00M00000207</MetadataSetId>
     </Dataset>
 
     <Dataset xmlns:tn-a="http://inspire.ec.europa.eu/schemas/tn-a/4.0">
@@ -211,7 +211,7 @@
       <Title>Aerodrome Type</Title>
       <Title lang="ger">Flugplatztyp</Title>
       <!-- Abstract lang="ger"></Abstract -->
-      <MetadataSetId>7CA6B8A1-2331-428F-886A-CBF2D9D0B193</MetadataSetId>
+      <MetadataSetId>DEBKG00M00000207</MetadataSetId>
     </Dataset>
 
     <Dataset xmlns:tn-a="http://inspire.ec.europa.eu/schemas/tn-a/4.0">
@@ -219,7 +219,7 @@
       <Title>Condition of Air Facility</Title>
       <Title lang="ger">Zustand der Fluganlage</Title>
       <!-- Abstract lang="ger">Status eines Luftverkehrselements hinsichtlich seiner Fertigstellung und Verwendung.</Abstract -->
-      <MetadataSetId>7CA6B8A1-2331-428F-886A-CBF2D9D0B193</MetadataSetId>
+      <MetadataSetId>DEBKG00M00000207</MetadataSetId>
     </Dataset>
 
     <Dataset xmlns:tn-a="http://inspire.ec.europa.eu/schemas/tn-a/4.0">
@@ -227,7 +227,7 @@
       <Title>Field Elevation</Title>
       <Title lang="ger">Platzhöhe</Title>
       <!-- Abstract lang="ger"></Abstract -->
-      <MetadataSetId>7CA6B8A1-2331-428F-886A-CBF2D9D0B193</MetadataSetId>
+      <MetadataSetId>DEBKG00M00000207</MetadataSetId>
     </Dataset>
 
     <Dataset xmlns:elf-tn-a="http://www.locationframework.eu/schemas/AirTransportNetwork/1.0" >
@@ -235,7 +235,7 @@
       <Title>Aerodrome Area</Title>
       <Title lang="ger">Flugplatzkategorie</Title>
       <!-- Abstract lang="ger">Kategorie des Flugplatzes nach Umfang und Bedeutung der Flugdienste, die von und zum Flugplatz angeboten werden.</Abstract -->
-      <MetadataSetId>7CA6B8A1-2331-428F-886A-CBF2D9D0B193</MetadataSetId>
+      <MetadataSetId>DEBKG00M00000207</MetadataSetId>
     </Dataset>
 
     <Dataset xmlns:elf-tn-a="http://www.locationframework.eu/schemas/AirTransportNetwork/1.0" >
@@ -243,7 +243,7 @@
       <Title>Aerodrome Node</Title>
       <Title lang="ger">Flugplatz</Title>
       <!-- Abstract lang="ger"></Abstract -->
-      <MetadataSetId>7CA6B8A1-2331-428F-886A-CBF2D9D0B193</MetadataSetId>
+      <MetadataSetId>DEBKG00M00000207</MetadataSetId>
     </Dataset>
 
     <Dataset xmlns:elf-tn-a="http://www.locationframework.eu/schemas/AirTransportNetwork/1.0" >
@@ -251,7 +251,7 @@
       <Title>Functional Use Category</Title>
       <Title lang="ger">Flughafen Funktionsketegorie</Title>
       <!-- Abstract lang="ger"></Abstract -->
-      <MetadataSetId>7CA6B8A1-2331-428F-886A-CBF2D9D0B193</MetadataSetId>
+      <MetadataSetId>DEBKG00M00000207</MetadataSetId>
     </Dataset>
 
     <Dataset xmlns:elf-tn-a="http://www.locationframework.eu/schemas/AirTransportNetwork/1.0" >
@@ -259,7 +259,7 @@
       <Title>Runway Line</Title>
       <Title lang="ger">Landebahn</Title>
       <!-- Abstract lang="ger"></Abstract -->
-      <MetadataSetId>7CA6B8A1-2331-428F-886A-CBF2D9D0B193</MetadataSetId>
+      <MetadataSetId>DEBKG00M00000207</MetadataSetId>
     </Dataset>
 
     <Dataset xmlns:elf-tn-a="http://www.locationframework.eu/schemas/AirTransportNetwork/1.0" >
@@ -267,7 +267,7 @@
       <Title>Transportation Use Category</Title>
       <Title lang="ger">Flughafen Transportkategorie</Title>
       <!-- Abstract lang="ger"></Abstract -->
-      <MetadataSetId>7CA6B8A1-2331-428F-886A-CBF2D9D0B193</MetadataSetId>
+      <MetadataSetId>DEBKG00M00000207</MetadataSetId>
     </Dataset>
 
     <Dataset xmlns:tn-ra="http://inspire.ec.europa.eu/schemas/tn-ra/4.0">
@@ -275,7 +275,7 @@
       <Title>Design Speed</Title>
       <Title lang="ger">tn-ra:DesignSpeed</Title>
       <!-- Abstract lang="ger"></Abstract -->
-      <MetadataSetId>7CA6B8A1-2331-428F-886A-CBF2D9D0B193</MetadataSetId>
+      <MetadataSetId>DEBKG00M00000207</MetadataSetId>
     </Dataset>
 
     <Dataset xmlns:tn-ra="http://inspire.ec.europa.eu/schemas/tn-ra/4.0">
@@ -283,7 +283,7 @@
       <Title>Nominal Track Gauge</Title>
       <Title lang="ger">Standardspurweite</Title>
       <!-- Abstract lang="ger">Der nominelle Abstand zwischen den beiden äußeren Schienen (der Spur) eines Bahngleises.</Abstract -->
-      <MetadataSetId>7CA6B8A1-2331-428F-886A-CBF2D9D0B193</MetadataSetId>
+      <MetadataSetId>DEBKG00M00000207</MetadataSetId>
     </Dataset>
 
     <Dataset xmlns:tn-ra="http://inspire.ec.europa.eu/schemas/tn-ra/4.0">
@@ -291,7 +291,7 @@
       <Title>Number of Tracks</Title>
       <Title lang="ger">Anzahl der Gleise</Title>
       <!-- Abstract lang="ger">Die Anzahl der Gleise auf einer Bahnstrecke.</Abstract -->
-      <MetadataSetId>7CA6B8A1-2331-428F-886A-CBF2D9D0B193</MetadataSetId>
+      <MetadataSetId>DEBKG00M00000207</MetadataSetId>
     </Dataset>
 
     <Dataset xmlns:tn-ra="http://inspire.ec.europa.eu/schemas/tn-ra/4.0">
@@ -299,7 +299,7 @@
       <Title>Railway Electrification</Title>
       <Title lang="ger">Bahnelektrifizierung</Title>
       <!-- Abstract lang="ger">Bahnelektrifizierung, Railway Electrification	Gibt an, ob die Bahnstrecke mit einem System zur Stromversorgung der sich darauf bewegenden Fahrzeuge ausgestattet ist.</Abstract -->
-      <MetadataSetId>7CA6B8A1-2331-428F-886A-CBF2D9D0B193</MetadataSetId>
+      <MetadataSetId>DEBKG00M00000207</MetadataSetId>
     </Dataset>
 
     <Dataset xmlns:tn-ra="http://inspire.ec.europa.eu/schemas/tn-ra/4.0">
@@ -307,7 +307,7 @@
       <Title>Railway Line</Title>
       <Title lang="ger">Bahnstrecke</Title>
       <!-- Abstract lang="ger">Eine Gruppe von Eisenbahnverbindungssequenzen und/oder einzelnen Eisenbahnverbindungen, die durch einen oder mehrere thematische Identifikatoren und/oder eine oder mehrere Eigenschaften gekennzeichnet ist.</Abstract -->
-      <MetadataSetId>7CA6B8A1-2331-428F-886A-CBF2D9D0B193</MetadataSetId>
+      <MetadataSetId>DEBKG00M00000207</MetadataSetId>
     </Dataset>
 
     <Dataset xmlns:tn-ra="http://inspire.ec.europa.eu/schemas/tn-ra/4.0">
@@ -315,7 +315,7 @@
       <Title>Railway Link</Title>
       <Title lang="ger">Eisenbahnverbindung</Title>
       <!-- Abstract lang="ger">Ein lineares Geo-Objekt, das die Geometrie und Konnektivität eines Schienennetzes zwischen zwei Punkten im Netz beschreibt.</Abstract -->
-      <MetadataSetId>7CA6B8A1-2331-428F-886A-CBF2D9D0B193</MetadataSetId>
+      <MetadataSetId>DEBKG00M00000207</MetadataSetId>
     </Dataset>
 
     <Dataset xmlns:tn-ra="http://inspire.ec.europa.eu/schemas/tn-ra/4.0">
@@ -323,7 +323,7 @@
       <Title>Railway Node</Title>
       <Title lang="ger">Bahnstreckenknoten</Title>
       <!-- Abstract lang="ger"></Abstract -->
-      <MetadataSetId>7CA6B8A1-2331-428F-886A-CBF2D9D0B193</MetadataSetId>
+      <MetadataSetId>DEBKG00M00000207</MetadataSetId>
     </Dataset>
 
     <Dataset xmlns:tn-ra="http://inspire.ec.europa.eu/schemas/tn-ra/4.0">
@@ -331,7 +331,7 @@
       <Title>Railway Station Code</Title>
       <Title lang="ger">Bahnhofscode</Title>
       <!-- Abstract lang="ger">Der einem Bahnhof zugewiesene eindeutige Code.</Abstract -->
-      <MetadataSetId>7CA6B8A1-2331-428F-886A-CBF2D9D0B193</MetadataSetId>
+      <MetadataSetId>DEBKG00M00000207</MetadataSetId>
     </Dataset>
 
     <Dataset xmlns:tn-ra="http://inspire.ec.europa.eu/schemas/tn-ra/4.0">
@@ -339,7 +339,7 @@
       <Title>Railway Station Node</Title>
       <Title lang="ger">Bahnhofsknotenpunkt</Title>
       <!-- Abstract lang="ger">Ein Bahnknotenpunkt, der die Lage eines Bahnhofs im Schienennetz darstellt.</Abstract -->
-      <MetadataSetId>7CA6B8A1-2331-428F-886A-CBF2D9D0B193</MetadataSetId>
+      <MetadataSetId>DEBKG00M00000207</MetadataSetId>
     </Dataset>
 
     <Dataset xmlns:tn-ra="http://inspire.ec.europa.eu/schemas/tn-ra/4.0">
@@ -347,7 +347,7 @@
       <Title>Railway Type</Title>
       <Title lang="ger">Bahnstreckentyp</Title>
       <!-- Abstract lang="ger"></Abstract -->
-      <MetadataSetId>7CA6B8A1-2331-428F-886A-CBF2D9D0B193</MetadataSetId>
+      <MetadataSetId>DEBKG00M00000207</MetadataSetId>
     </Dataset>
 
     <Dataset xmlns:tn-ra="http://inspire.ec.europa.eu/schemas/tn-ra/4.0">
@@ -355,7 +355,7 @@
       <Title>Railway Use</Title>
       <Title lang="ger">Bahnstreckenverwendung</Title>
       <!-- Abstract lang="ger"></Abstract -->
-      <MetadataSetId>7CA6B8A1-2331-428F-886A-CBF2D9D0B193</MetadataSetId>
+      <MetadataSetId>DEBKG00M00000207</MetadataSetId>
     </Dataset>
 
     <Dataset xmlns:elf-tn-ra="http://www.locationframework.eu/schemas/RailwayTransportNetwork/1.0">
@@ -363,7 +363,7 @@
       <Title>Design Speed</Title>
       <Title lang="ger">elf-tn-ra:DesignSpeed</Title>
       <!-- Abstract lang="ger"></Abstract -->
-      <MetadataSetId>7CA6B8A1-2331-428F-886A-CBF2D9D0B193</MetadataSetId>
+      <MetadataSetId>DEBKG00M00000207</MetadataSetId>
     </Dataset>
 
     <Dataset xmlns:elf-tn-ra="http://www.locationframework.eu/schemas/RailwayTransportNetwork/1.0">
@@ -371,7 +371,7 @@
       <Title>Railway Class</Title>
       <Title lang="ger">elf-tn-ra:RailwayClass</Title>
       <!-- Abstract lang="ger"></Abstract -->
-      <MetadataSetId>7CA6B8A1-2331-428F-886A-CBF2D9D0B193</MetadataSetId>
+      <MetadataSetId>DEBKG00M00000207</MetadataSetId>
     </Dataset>
 
     <Dataset xmlns:elf-tn-ra="http://www.locationframework.eu/schemas/RailwayTransportNetwork/1.0">
@@ -379,7 +379,7 @@
       <Title>Railway Electrification</Title>
       <Title lang="ger">Bahnelektrifizierung</Title>
       <!-- Abstract lang="ger">Bahnelektrifizierung, Railway Electrification	Gibt an, ob die Bahnstrecke mit einem System zur Stromversorgung der sich darauf bewegenden Fahrzeuge ausgestattet ist.</Abstract -->
-      <MetadataSetId>7CA6B8A1-2331-428F-886A-CBF2D9D0B193</MetadataSetId>
+      <MetadataSetId>DEBKG00M00000207</MetadataSetId>
     </Dataset>
 
     <Dataset xmlns:elf-tn-ra="http://www.locationframework.eu/schemas/RailwayTransportNetwork/1.0">
@@ -387,7 +387,7 @@
       <Title>Railway Link</Title>
       <Title lang="ger">Eisenbahnverbindung</Title>
       <!-- Abstract lang="ger">Ein lineares Geo-Objekt, das die Geometrie und Konnektivität eines Schienennetzes zwischen zwei Punkten im Netz beschreibt.</Abstract -->
-      <MetadataSetId>7CA6B8A1-2331-428F-886A-CBF2D9D0B193</MetadataSetId>
+      <MetadataSetId>DEBKG00M00000207</MetadataSetId>
     </Dataset>
 
     <Dataset xmlns:elf-tn-ra="http://www.locationframework.eu/schemas/RailwayTransportNetwork/1.0">
@@ -395,7 +395,7 @@
       <Title>Railway Station Node</Title>
       <Title lang="ger">Bahnhofsknotenpunkt</Title>
       <!-- Abstract lang="ger">Ein Bahnknotenpunkt, der die Lage eines Bahnhofs im Schienennetz darstellt.</Abstract -->
-      <MetadataSetId>7CA6B8A1-2331-428F-886A-CBF2D9D0B193</MetadataSetId>
+      <MetadataSetId>DEBKG00M00000207</MetadataSetId>
     </Dataset>
 
 
@@ -404,7 +404,7 @@
       <Title>ERoad</Title>
       <Title lang="ger">Europastraße</Title>
       <!-- Abstract lang="ger">Eine durch ihre Europastraßennummer gekennzeichnete Gruppe von Straßenrouten und/oder einzelnen Straßenabschnitten, die eine Strecke bilden, die Teil des internationalen Europastraßennetzes ist.</Abstract -->
-      <MetadataSetId>7CA6B8A1-2331-428F-886A-CBF2D9D0B193</MetadataSetId>
+      <MetadataSetId>DEBKG00M00000207</MetadataSetId>
     </Dataset>
 
     <Dataset xmlns:tn-ro="http://inspire.ec.europa.eu/schemas/tn-ro/4.0">
@@ -412,7 +412,7 @@
       <Title>Form of Way</Title>
       <Title lang="ger">Nutzungsart der Straße</Title>
       <!-- Abstract lang="ger">Eine Klassifikation, die auf den physischen Eigenschaften des Straßenabschnitts beruht.</Abstract -->
-      <MetadataSetId>7CA6B8A1-2331-428F-886A-CBF2D9D0B193</MetadataSetId>
+      <MetadataSetId>DEBKG00M00000207</MetadataSetId>
     </Dataset>
 
     <Dataset xmlns:tn-ro="http://inspire.ec.europa.eu/schemas/tn-ro/4.0">
@@ -420,7 +420,7 @@
       <Title>Functional Road Class</Title>
       <Title lang="ger">Funktionsklasse der Straße</Title>
       <!-- Abstract lang="ger">Eine Klassifikation, die auf der Bedeutung der Funktion beruht, die der Straße im Straßenverkehrsnetz zukommt.</Abstract -->
-      <MetadataSetId>7CA6B8A1-2331-428F-886A-CBF2D9D0B193</MetadataSetId>
+      <MetadataSetId>DEBKG00M00000207</MetadataSetId>
     </Dataset>
 
     <Dataset xmlns:tn-ro="http://inspire.ec.europa.eu/schemas/tn-ro/4.0">
@@ -428,7 +428,7 @@
       <Title>Number of Lanes</Title>
       <Title lang="ger">Anzahl der Fahrstreifen</Title>
       <!-- Abstract lang="ger">Die Anzahl der Fahrstreifen eines Straßenabschnitts.</Abstract -->
-      <MetadataSetId>7CA6B8A1-2331-428F-886A-CBF2D9D0B193</MetadataSetId>
+      <MetadataSetId>DEBKG00M00000207</MetadataSetId>
     </Dataset>
 
     <Dataset xmlns:tn-ro="http://inspire.ec.europa.eu/schemas/tn-ro/4.0">
@@ -436,7 +436,7 @@
       <Title>Road</Title>
       <Title lang="ger">Straße</Title>
       <!-- Abstract lang="ger">Eine Gruppe von Straßenrouten und/oder einzelnen Straßenabschnitten, die durch einen oder mehrere thematische Identifikatoren und/oder eine oder mehrere Eigenschaften gekennzeichnet ist.</Abstract -->
-      <MetadataSetId>7CA6B8A1-2331-428F-886A-CBF2D9D0B193</MetadataSetId>
+      <MetadataSetId>DEBKG00M00000207</MetadataSetId>
     </Dataset>
 
     <Dataset xmlns:tn-ro="http://inspire.ec.europa.eu/schemas/tn-ro/4.0">
@@ -444,7 +444,7 @@
       <Title>Road Link</Title>
       <Title lang="ger">Straßenabschnitt</Title>
       <!-- Abstract lang="ger">Ein lineares Geo-Objekt, das die Geometrie und Konnektivität eines Straßenverkehrsnetzes zwischen zwei Punkten im Netz beschreibt. Straßenabschnitte können Wege, Fahrradwege, Straßen mit einer Fahrbahn, Straßen mit mehreren Fahrbahnen und sogar Bewegungsbahnen über Verkehrsflächen sein.</Abstract -->
-      <MetadataSetId>7CA6B8A1-2331-428F-886A-CBF2D9D0B193</MetadataSetId>
+      <MetadataSetId>DEBKG00M00000207</MetadataSetId>
     </Dataset>
 
     <Dataset xmlns:tn-ro="http://inspire.ec.europa.eu/schemas/tn-ro/4.0">
@@ -452,7 +452,7 @@
       <Title>Road Node</Title>
       <Title lang="ger">Straßenknoten</Title>
       <!-- Abstract lang="ger"></Abstract -->
-      <MetadataSetId>7CA6B8A1-2331-428F-886A-CBF2D9D0B193</MetadataSetId>
+      <MetadataSetId>DEBKG00M00000207</MetadataSetId>
     </Dataset>
 
     <Dataset xmlns:tn-ro="http://inspire.ec.europa.eu/schemas/tn-ro/4.0">
@@ -460,7 +460,7 @@
       <Title>Road Service Type</Title>
       <Title lang="ger">Straßenservicetyp</Title>
       <!-- Abstract lang="ger"></Abstract -->
-      <MetadataSetId>7CA6B8A1-2331-428F-886A-CBF2D9D0B193</MetadataSetId>
+      <MetadataSetId>DEBKG00M00000207</MetadataSetId>
     </Dataset>
 
     <Dataset xmlns:tn-ro="http://inspire.ec.europa.eu/schemas/tn-ro/4.0">
@@ -468,7 +468,7 @@
       <Title>Road Surface Category</Title>
       <Title lang="ger">Kategorie der Straßenbefestigung</Title>
       <!-- Abstract lang="ger">Kennzeichnung der Beschaffenheit des Belags eines zugehörigen Straßenelements. Gibt an, ob eine Straße befestigt ist oder nicht.</Abstract -->
-      <MetadataSetId>7CA6B8A1-2331-428F-886A-CBF2D9D0B193</MetadataSetId>
+      <MetadataSetId>DEBKG00M00000207</MetadataSetId>
     </Dataset>
 
     <Dataset xmlns:elf-tn-ro="http://www.locationframework.eu/schemas/RoadTransportNetwork/1.0">
@@ -476,7 +476,7 @@
       <Title>Interchange Point</Title>
       <Title lang="ger">Kreuzung</Title>
       <!-- Abstract lang="ger"></Abstract -->
-      <MetadataSetId>7CA6B8A1-2331-428F-886A-CBF2D9D0B193</MetadataSetId>
+      <MetadataSetId>DEBKG00M00000207</MetadataSetId>
     </Dataset>
 
     <Dataset xmlns:elf-tn-ro="http://www.locationframework.eu/schemas/RoadTransportNetwork/1.0">
@@ -484,7 +484,7 @@
       <Title>Road Link</Title>
       <Title lang="ger">Straßenabschnitt</Title>
       <!-- Abstract lang="ger">Ein lineares Geo-Objekt, das die Geometrie und Konnektivität eines Straßenverkehrsnetzes zwischen zwei Punkten im Netz beschreibt. Straßenabschnitte können Wege, Fahrradwege, Straßen mit einer Fahrbahn, Straßen mit mehreren Fahrbahnen und sogar Bewegungsbahnen über Verkehrsflächen sein.</Abstract -->
-      <MetadataSetId>7CA6B8A1-2331-428F-886A-CBF2D9D0B193</MetadataSetId>
+      <MetadataSetId>DEBKG00M00000207</MetadataSetId>
     </Dataset>
 
 
@@ -493,7 +493,7 @@
       <Title>Condition of Water Facility</Title>
       <Title lang="ger">Zustand des Wasserstraßenabschnitts</Title>
       <!-- Abstract lang="ger">Status eines Wasserstraßenabschnitts hinsichtlich seiner Fertigstellung und Verwendung.</Abstract -->
-      <MetadataSetId>7CA6B8A1-2331-428F-886A-CBF2D9D0B193</MetadataSetId>
+      <MetadataSetId>DEBKG00M00000207</MetadataSetId>
     </Dataset>
 
     <Dataset xmlns:tn-w="http://inspire.ec.europa.eu/schemas/tn-w/4.0">
@@ -501,7 +501,7 @@
       <Title>Ferry Crossing</Title>
       <Title lang="ger">Fährroute</Title>
       <!-- Abstract lang="ger">Ein besonderer Wasserstraßenabschnitt, der den Transport von Fahrgästen, Fahrzeugen oder Frachten quer über ein Gewässer erleichtern soll und normalerweise als Verbindung zwischen zwei oder mehr Verkehrsknotenpunkten eines an Land liegenden Verkehrsnetzes dient.</Abstract -->
-      <MetadataSetId>7CA6B8A1-2331-428F-886A-CBF2D9D0B193</MetadataSetId>
+      <MetadataSetId>DEBKG00M00000207</MetadataSetId>
     </Dataset>
 
     <Dataset xmlns:tn-w="http://inspire.ec.europa.eu/schemas/tn-w/4.0">
@@ -509,7 +509,7 @@
       <Title>Port Area</Title>
       <Title lang="ger">Hafengelände</Title>
       <!-- Abstract lang="ger">Ein flächenförmiges Geo-Objekt, das die physischen Grenzen aller Gebäude und Anlagen des an Land befindlichen Teils eines See- oder Binnenhafens abbildet.</Abstract -->
-      <MetadataSetId>7CA6B8A1-2331-428F-886A-CBF2D9D0B193</MetadataSetId>
+      <MetadataSetId>DEBKG00M00000207</MetadataSetId>
     </Dataset>
 
     <Dataset xmlns:tn-w="http://inspire.ec.europa.eu/schemas/tn-w/4.0">
@@ -517,7 +517,7 @@
       <Title>Port Node</Title>
       <Title lang="ger">Hafen</Title>
       <!-- Abstract lang="ger">Ein punktförmiges Geo-Objekt, das einen See- oder Binnenhafens abbildet.</Abstract -->
-      <MetadataSetId>7CA6B8A1-2331-428F-886A-CBF2D9D0B193</MetadataSetId>
+      <MetadataSetId>DEBKG00M00000207</MetadataSetId>
     </Dataset>
 
     <Dataset xmlns:tn-w="http://inspire.ec.europa.eu/schemas/tn-w/4.0">
@@ -525,7 +525,7 @@
       <Title>Waterway Link</Title>
       <Title lang="ger">Wasserstraßenverbindung</Title>
       <!-- Abstract lang="ger">Ein lineares Geo-Objekt, das die Geometrie und Konnektivität des Wasserstraßenverkehrsnetzes zwischen zwei aufeinander folgenden Wasserstraßenknotenpunkten beschreibt. Es stellt eine lineare Strecke über ein Gewässer dar, das für die Schifffahrt genutzt wird.</Abstract -->
-      <MetadataSetId>7CA6B8A1-2331-428F-886A-CBF2D9D0B193</MetadataSetId>
+      <MetadataSetId>DEBKG00M00000207</MetadataSetId>
     </Dataset>
 
     <Dataset xmlns:elf-tn-w="http://www.locationframework.eu/schemas/WaterTransportNetwork/1.0">
@@ -533,7 +533,7 @@
       <Title>Ferry Crossing</Title>
       <Title lang="ger">Fährroute</Title>
       <!-- Abstract lang="ger">Ein besonderer Wasserstraßenabschnitt, der den Transport von Fahrgästen, Fahrzeugen oder Frachten quer über ein Gewässer erleichtern soll und normalerweise als Verbindung zwischen zwei oder mehr Verkehrsknotenpunkten eines an Land liegenden Verkehrsnetzes dient.</Abstract -->
-      <MetadataSetId>7CA6B8A1-2331-428F-886A-CBF2D9D0B193</MetadataSetId>
+      <MetadataSetId>DEBKG00M00000207</MetadataSetId>
     </Dataset>
 
     <Dataset xmlns:elf-tn-w="http://www.locationframework.eu/schemas/WaterTransportNetwork/1.0">
@@ -541,7 +541,7 @@
       <Title>Port Area</Title>
       <Title lang="ger">Hafengelände</Title>
       <!-- Abstract lang="ger">Ein flächenförmiges Geo-Objekt, das die physischen Grenzen aller Gebäude und Anlagen des an Land befindlichen Teils eines See- oder Binnenhafens abbildet.</Abstract -->
-      <MetadataSetId>7CA6B8A1-2331-428F-886A-CBF2D9D0B193</MetadataSetId>
+      <MetadataSetId>DEBKG00M00000207</MetadataSetId>
     </Dataset>
 
     <Dataset xmlns:elf-tn-w="http://www.locationframework.eu/schemas/WaterTransportNetwork/1.0">
@@ -549,7 +549,7 @@
       <Title>Port Node</Title>
       <Title lang="ger">Hafen</Title>
       <!-- Abstract lang="ger">Ein punktförmiges Geo-Objekt, das einen See- oder Binnenhafens abbildet.</Abstract -->
-      <MetadataSetId>7CA6B8A1-2331-428F-886A-CBF2D9D0B193</MetadataSetId>
+      <MetadataSetId>DEBKG00M00000207</MetadataSetId>
     </Dataset>
 
     <Dataset xmlns:elf-tn-w="http://www.locationframework.eu/schemas/WaterTransportNetwork/1.0">
@@ -557,7 +557,7 @@
       <Title>Port Type</Title>
       <Title lang="ger">Hafentyp</Title>
       <!-- Abstract lang="ger"></Abstract -->
-      <MetadataSetId>7CA6B8A1-2331-428F-886A-CBF2D9D0B193</MetadataSetId>
+      <MetadataSetId>DEBKG00M00000207</MetadataSetId>
     </Dataset>
 
     <Dataset xmlns:tn="http://inspire.ec.europa.eu/schemas/tn/4.0">
@@ -565,7 +565,7 @@
       <Title>Access Restriction</Title>
       <Title lang="ger">Zugangsbeschränkungen</Title>
       <!-- Abstract lang="ger"></Abstract -->
-      <MetadataSetId>7CA6B8A1-2331-428F-886A-CBF2D9D0B193</MetadataSetId>
+      <MetadataSetId>DEBKG00M00000207</MetadataSetId>
     </Dataset>
 
     <Dataset xmlns:tn="http://inspire.ec.europa.eu/schemas/tn/4.0">
@@ -573,7 +573,7 @@
       <Title>Condition of Facility</Title>
       <Title lang="ger">Zustand</Title>
       <!-- Abstract lang="ger"></Abstract -->
-      <MetadataSetId>7CA6B8A1-2331-428F-886A-CBF2D9D0B193</MetadataSetId>
+      <MetadataSetId>DEBKG00M00000207</MetadataSetId>
     </Dataset>
 
     <Dataset xmlns:tn="http://inspire.ec.europa.eu/schemas/tn/4.0">
@@ -581,7 +581,7 @@
       <Title>Vertical Position</Title>
       <Title lang="ger">Vertikale Position</Title>
       <!-- Abstract lang="ger"></Abstract -->
-      <MetadataSetId>7CA6B8A1-2331-428F-886A-CBF2D9D0B193</MetadataSetId>
+      <MetadataSetId>DEBKG00M00000207</MetadataSetId>
     </Dataset>
 
     <Dataset xmlns:au="http://inspire.ec.europa.eu/schemas/au/4.0">
@@ -589,7 +589,7 @@
       <Title>Administrative Boundary</Title>
       <Title lang="ger">Verwaltungsgrenze</Title>
       <!-- Abstract lang="ger">Eine Grenzlinie zwischen Verwaltungseinheiten.</Abstract -->
-      <MetadataSetId>BB6538CA-404E-46ED-B00C-C548495A1BF1</MetadataSetId>
+      <MetadataSetId>DEBKG00M00000210</MetadataSetId>
     </Dataset>
 
     <Dataset xmlns:au="http://inspire.ec.europa.eu/schemas/au/4.0">
@@ -597,7 +597,7 @@
       <Title>Administrative Unit</Title>
       <Title lang="ger">Verwaltungseinheit</Title>
       <!-- Abstract lang="ger">Verwaltungseinheit, in der ein Mitgliedstaat Hoheitsbefugnisse für die lokale, regionale und nationale Verwaltung hat und/oder ausübt.</Abstract -->
-      <MetadataSetId>BB6538CA-404E-46ED-B00C-C548495A1BF1</MetadataSetId>
+      <MetadataSetId>DEBKG00M00000210</MetadataSetId>
     </Dataset>
 
     <Dataset xmlns:au="http://inspire.ec.europa.eu/schemas/au/4.0">
@@ -605,7 +605,7 @@
       <Title>Condominium</Title>
       <Title lang="ger">Kondominium</Title>
       <!-- Abstract lang="ger">Ein Verwaltungsgebiet, das unabhängig von einer nationalen Gebietsaufteilung geschaffen wurde und von zwei oder mehr Ländern verwaltet wird.</Abstract -->
-      <MetadataSetId>BB6538CA-404E-46ED-B00C-C548495A1BF1</MetadataSetId>
+      <MetadataSetId>DEBKG00M00000210</MetadataSetId>
     </Dataset>
 
     <Dataset xmlns:elf-au="http://www.locationframework.eu/schemas/AdministrativeUnits/1.0">
@@ -613,7 +613,7 @@
       <Title>Administrative Unit</Title>
       <Title lang="ger">Verwaltungseinheit</Title>
       <!-- Abstract lang="ger">Verwaltungseinheit, in der ein Mitgliedstaat Hoheitsbefugnisse für die lokale, regionale und nationale Verwaltung hat und/oder ausübt.</Abstract -->
-      <MetadataSetId>BB6538CA-404E-46ED-B00C-C548495A1BF1</MetadataSetId>
+      <MetadataSetId>DEBKG00M00000210</MetadataSetId>
     </Dataset>
 
     <Dataset xmlns:elf-au="http://www.locationframework.eu/schemas/AdministrativeUnits/1.0">
@@ -621,7 +621,7 @@
       <Title>Administrative Unit Area</Title>
       <Title lang="ger">Verwaltungseinheit Gebiet</Title>
       <!-- Abstract lang="ger">Verwaltungseinheit, in der ein Mitgliedstaat Hoheitsbefugnisse für die lokale, regionale und nationale Verwaltung hat und/oder ausübt.</Abstract -->
-      <MetadataSetId>BB6538CA-404E-46ED-B00C-C548495A1BF1</MetadataSetId>
+      <MetadataSetId>DEBKG00M00000210</MetadataSetId>
     </Dataset>
 
 
@@ -630,16 +630,16 @@
       <Title>Protected Site</Title>
       <Title lang="ger">Schutzgebiete</Title>
       <!-- Abstract lang="ger">Schutzgebiete</Abstract -->
-      <MetadataSetId>3F8CC55E-0C19-494E-94B8-C966D8441B70</MetadataSetId>
+      <MetadataSetId>DEBKG00M00000209</MetadataSetId>
     </Dataset>
   </DatasetMetadata>
 
-  <!--ExtendedCapabilities protocolVersions="2.0.0">
+  <ExtendedCapabilities protocolVersions="1.1.0">
     <inspire_dls:ExtendedCapabilities xmlns:inspire_dls="http://inspire.ec.europa.eu/schemas/inspire_dls/1.0"
-                                      xmlns:inspire_common="http://inspire.ec.europa.eu/schemas/common/1.0"
-                                      xsi:schemaLocation="http://inspire.ec.europa.eu/schemas/common/1.0 http://inspire.ec.europa.eu/schemas/common/1.0/common.xsd http://inspire.ec.europa.eu/schemas/inspire_dls/1.0 http://inspire.ec.europa.eu/schemas/inspire_dls/1.0/inspire_dls.xsd">
+                                     xmlns:inspire_common="http://inspire.ec.europa.eu/schemas/common/1.0"
+                                     xsi:schemaLocation="http://inspire.ec.europa.eu/schemas/common/1.0 http://inspire.ec.europa.eu/schemas/common/1.0/common.xsd http://inspire.ec.europa.eu/schemas/inspire_dls/1.0 http://inspire.ec.europa.eu/schemas/inspire_dls/1.0/inspire_dls.xsd">
       <inspire_common:MetadataUrl>
-        <inspire_common:URL>http://mis.bkg.bund.de/geonetwork/srv/eng/csw?REQUEST=GetRecordById&amp;SERVICE=CSW&amp;VERSION=2.0.2&amp;OutputSchema=http://www.isotc211.org/2005/gmd&amp;elementSetName=full&amp;id=TODO</inspire_common:URL>
+        <inspire_common:URL>http://gdk.gdi-de.org/inspire/srv/eng/csw?REQUEST=GetRecordById&amp;SERVICE=CSW&amp;VERSION=2.0.2&amp;OutputSchema=http://www.isotc211.org/2005/gmd&amp;elementSetName=full&amp;id=CE94CE46-9843-4D14-80C3-89446AD2FFBC</inspire_common:URL>
         <inspire_common:MediaType>application/vnd.iso.19139+xml</inspire_common:MediaType>
       </inspire_common:MetadataUrl>
       <inspire_common:SupportedLanguages>
@@ -651,9 +651,59 @@
         <inspire_common:Language>eng</inspire_common:Language>
       </inspire_common:ResponseLanguage>
       <inspire_dls:SpatialDataSetIdentifier>
-        <inspire_common:Code>TODO...</inspire_common:Code>
+        <inspire_common:Code>DEBKG00M00000207</inspire_common:Code>
+        <inspire_common:Namespace>https://registry.gdi-de.org/id/de.bund.bkg.csw/</inspire_common:Namespace>
+      </inspire_dls:SpatialDataSetIdentifier>
+      <inspire_dls:SpatialDataSetIdentifier>
+        <inspire_common:Code>DEBKG00M00000208</inspire_common:Code>
+        <inspire_common:Namespace>https://registry.gdi-de.org/id/de.bund.bkg.csw/</inspire_common:Namespace>
+      </inspire_dls:SpatialDataSetIdentifier>
+      <inspire_dls:SpatialDataSetIdentifier>
+        <inspire_common:Code>DEBKG00M00000209</inspire_common:Code>
+        <inspire_common:Namespace>https://registry.gdi-de.org/id/de.bund.bkg.csw/</inspire_common:Namespace>
+      </inspire_dls:SpatialDataSetIdentifier>
+      <inspire_dls:SpatialDataSetIdentifier>
+        <inspire_common:Code>DEBKG00M00000210</inspire_common:Code>
+        <inspire_common:Namespace>https://registry.gdi-de.org/id/de.bund.bkg.csw/</inspire_common:Namespace>
       </inspire_dls:SpatialDataSetIdentifier>
     </inspire_dls:ExtendedCapabilities>
-  </ExtendedCapabilities-->
+  </ExtendedCapabilities>
+
+  <ExtendedCapabilities protocolVersions="2.0.0">
+    <ows:ExtendedCapabilities xmlns:ows="http://www.opengis.net/ows/1.1" 
+                              xmlns:inspire_common="http://inspire.ec.europa.eu/schemas/common/1.0" 
+                              xmlns:inspire_dls="http://inspire.ec.europa.eu/schemas/inspire_dls/1.0">
+      <inspire_dls:ExtendedCapabilities>
+        <inspire_common:MetadataUrl>
+          <inspire_common:URL>http://gdk.gdi-de.org/inspire/srv/eng/csw?REQUEST=GetRecordById&amp;SERVICE=CSW&amp;VERSION=2.0.2&amp;OutputSchema=http://www.isotc211.org/2005/gmd&amp;elementSetName=full&amp;id=CE94CE46-9843-4D14-80C3-89446AD2FFBC</inspire_common:URL>
+          <inspire_common:MediaType>application/vnd.iso.19139+xml</inspire_common:MediaType>
+        </inspire_common:MetadataUrl>
+        <inspire_common:SupportedLanguages>
+          <inspire_common:DefaultLanguage>
+            <inspire_common:Language>eng</inspire_common:Language>
+          </inspire_common:DefaultLanguage>
+        </inspire_common:SupportedLanguages>
+        <inspire_common:ResponseLanguage>
+          <inspire_common:Language>eng</inspire_common:Language>
+        </inspire_common:ResponseLanguage>
+        <inspire_dls:SpatialDataSetIdentifier>
+          <inspire_common:Code>DEBKG00M00000207</inspire_common:Code>
+          <inspire_common:Namespace>https://registry.gdi-de.org/id/de.bund.bkg.csw/</inspire_common:Namespace>
+        </inspire_dls:SpatialDataSetIdentifier>
+        <inspire_dls:SpatialDataSetIdentifier>
+          <inspire_common:Code>DEBKG00M00000208</inspire_common:Code>
+          <inspire_common:Namespace>https://registry.gdi-de.org/id/de.bund.bkg.csw/</inspire_common:Namespace>
+        </inspire_dls:SpatialDataSetIdentifier>
+        <inspire_dls:SpatialDataSetIdentifier>
+          <inspire_common:Code>DEBKG00M00000209</inspire_common:Code>
+          <inspire_common:Namespace>https://registry.gdi-de.org/id/de.bund.bkg.csw/</inspire_common:Namespace>
+        </inspire_dls:SpatialDataSetIdentifier>
+        <inspire_dls:SpatialDataSetIdentifier>
+          <inspire_common:Code>DEBKG00M00000210</inspire_common:Code>
+          <inspire_common:Namespace>https://registry.gdi-de.org/id/de.bund.bkg.csw/</inspire_common:Namespace>
+        </inspire_dls:SpatialDataSetIdentifier>
+      </inspire_dls:ExtendedCapabilities>
+    </ows:ExtendedCapabilities>
+  </ExtendedCapabilities>
 
 </deegreeServicesMetadata>

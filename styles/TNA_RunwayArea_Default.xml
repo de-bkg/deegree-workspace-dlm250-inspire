@@ -9,27 +9,23 @@
                      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
                      xsi:schemaLocation="http://www.opengis.net/se http://schemas.opengis.net/se/1.1.0/FeatureStyle.xsd">
 
-    <se:Name>TN.AirTransportNetwork.RunwayArea.Default</se:Name>
-    <se:Description>
-        <se:Title>Runway Area Default Style</se:Title> 
-        <se:Abstract>
-            The geometry is rendered using a White (#FFFFFF) fill and a solid Blue (#0000CD)outline with a stroke width of 2 pixel.
-        </se:Abstract> 
-    </se:Description> 
-    <se:FeatureTypeName>tn-a:RunwayArea</se:FeatureTypeName> 
-    
-    <se:Rule>
-        <se:PolygonSymbolizer> 
-            <se:Geometry> 
-                <ogc:PropertyName>net:geometry</ogc:PropertyName> 
-            </se:Geometry> 
-            <se:Fill>
-                <se:SvgParameter name="fill">#FFFFFF</se:SvgParameter>
-            </se:Fill>
-            <se:Stroke>
-                <se:SvgParameter name="stroke">#0000CD</se:SvgParameter>
-                <se:SvgParameter name="stroke-width">2</se:SvgParameter>
-            </se:Stroke>
-        </se:PolygonSymbolizer> 
-    </se:Rule>        
+  <se:Name>TN.AirTransportNetwork.RunwayArea.Default</se:Name>
+  <se:Description>
+    <se:Title>Runway Area Default Style</se:Title> 
+    <se:Abstract>
+      The geometry is rendered using a White (#FFFFFF) fill and a solid Blue (#0000CD)outline with a stroke width of 2 pixel.
+    </se:Abstract> 
+  </se:Description> 
+  
+  <se:Rule>
+    <se:PolygonSymbolizer> 
+      <se:Fill>
+        <se:SvgParameter name="fill">#FFFFFF</se:SvgParameter>
+      </se:Fill>
+      <se:Stroke>
+        <se:SvgParameter name="stroke">#0000CD</se:SvgParameter>
+        <se:SvgParameter name="stroke-width">2</se:SvgParameter>
+      </se:Stroke>
+    </se:PolygonSymbolizer> 
+  </se:Rule>        
 </se:FeatureTypeStyle>
