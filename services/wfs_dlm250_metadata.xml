@@ -44,9 +44,9 @@
     </Keywords>
     <Fees>This service can be used free of charge corresponding to the Spatial Data Access Act (http://www.geodatenzentrum.de/docpdf/geozg_eng.pdf)</Fees>
     <AccessConstraints>
-      Terms of Ordinance to Determine the Conditions for Use for the Provision of Spatial Data of the Federation (Verordnung zur Festlegung der Nutzungsbestimmungen für die Bereitstellung von Geodaten des Bundes – GeoNutzV), as published on 19th of March 2013 (Bundesgesetzblatt Jahrgang 2013 Teil I Nr. 14) are applied. 
+      Terms of Ordinance to Determine the Conditions for Use for the Provision of Spatial Data of the Federation (Verordnung zur Festlegung der Nutzungsbestimmungen für die Bereitstellung von Geodaten des Bundes – GeoNutzV), as published on 19 March 2013 (Bundesgesetzblatt Jahrgang 2013 Teil I Nr. 14) are applied. 
       For more details see: http://www.geodatenzentrum.de/docpdf/geonutzv_eng.pdf.
-     | Source reference must be maintained: &amp;copy; GeoBasis-DE / BKG &amp;lt; year of last data download&amp;gt;
+     | Source reference: &amp;copy; GeoBasis-DE / BKG &amp;lt; year of last data download&amp;gt;
     </AccessConstraints>    
   </ServiceIdentification>
 

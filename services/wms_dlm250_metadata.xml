@@ -43,9 +43,9 @@
     </Keywords>
     <Fees>This service can be used free of charge corresponding to the Spatial Data Access Act (http://www.geodatenzentrum.de/docpdf/geozg_eng.pdf)</Fees>
     <AccessConstraints>
-      Terms of Ordinance to Determine the Conditions for Use for the Provision of Spatial Data of the Federation (Verordnung zur Festlegung der Nutzungsbestimmungen für die Bereitstellung von Geodaten des Bundes – GeoNutzV), as published on 19th of March 2013 (Bundesgesetzblatt Jahrgang 2013 Teil I Nr. 14) are applied. 
+      Terms of Ordinance to Determine the Conditions for Use for the Provision of Spatial Data of the Federation (Verordnung zur Festlegung der Nutzungsbestimmungen für die Bereitstellung von Geodaten des Bundes – GeoNutzV), as published on 19 March 2013 (Bundesgesetzblatt Jahrgang 2013 Teil I Nr. 14) are applied. 
       For more details see: http://www.geodatenzentrum.de/docpdf/geonutzv_eng.pdf.
-     | Source reference must be maintained: &amp;copy; GeoBasis-DE / BKG &amp;lt; year of last data download&amp;gt;
+     | Source reference: &amp;copy; GeoBasis-DE / BKG &amp;lt; year of last data download&amp;gt;
     </AccessConstraints>    
   </ServiceIdentification>
 
@@ -260,13 +260,12 @@
 
   </DatasetMetadata>
     
-<!--
   <ExtendedCapabilities protocolVersions="1.3.0">
     <inspire_vs:ExtendedCapabilities xmlns:inspire_vs="http://inspire.ec.europa.eu/schemas/inspire_vs/1.0" 
                                      xmlns:inspire_common="http://inspire.ec.europa.eu/schemas/common/1.0" 
                                      xsi:schemaLocation="http://inspire.ec.europa.eu/schemas/common/1.0 http://inspire.ec.europa.eu/schemas/common/1.0/common.xsd http://inspire.ec.europa.eu/schemas/inspire_vs/1.0 http://inspire.ec.europa.eu/schemas/inspire_vs/1.0/inspire_vs.xsd">
       <inspire_common:MetadataUrl>
-        <inspire_common:URL>http://mis.bkg.bund.de/geonetwork/srv/eng/csw?request=GetRecordById&amp;service=CSW&amp;version=2.0.2&amp;resultType=results&amp;outputSchema=http://www.isotc211.org/2005/gmd&amp;outputFormat=application/xml&amp;typeNames=csw:Record&amp;elementSetName=full&amp;id=cd7b8516-bbe3-4836-9ed8-b49b6d279932</inspire_common:URL>
+        <inspire_common:URL>http://gdk.gdi-de.org/inspire/srv/eng/csw?REQUEST=GetRecordById&amp;SERVICE=CSW&amp;VERSION=2.0.2&amp;OutputSchema=http://www.isotc211.org/2005/gmd&amp;elementSetName=full&amp;id=1BEDB0B2-74F8-4FA2-8812-D4CC3AA2641B</inspire_common:URL>
         <inspire_common:MediaType>application/vnd.iso.19139+xml</inspire_common:MediaType>
       </inspire_common:MetadataUrl>
       <inspire_common:SupportedLanguages>
@@ -280,5 +279,4 @@
     </inspire_vs:ExtendedCapabilities>
   </ExtendedCapabilities>
 
--->
 </deegreeServicesMetadata>
