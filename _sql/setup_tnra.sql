@@ -1383,4 +1383,22 @@ ALTER TABLE ONLY railwayuse_networkref
 --
 -- PostgreSQL database dump complete
 --
+--
 
+-- indizes
+CREATE INDEX designspeed_networkref_parent_idx ON tnra.designspeed_networkref (parentfk ASC NULLS LAST);
+CREATE INDEX nominaltrackgauge_networkref_parent_idx ON tnra.nominaltrackgauge_networkref (parentfk ASC NULLS LAST);
+CREATE INDEX numberoftracks_networkref_parent_idx ON tnra.numberoftracks_networkref (parentfk ASC NULLS LAST);
+CREATE INDEX railwayclass_networkref_parent_idx ON tnra.railwayclass_networkref (parentfk ASC NULLS LAST);
+CREATE INDEX railwayelectrification_networkref_parent_idx ON tnra.railwayelectrification_networkref (parentfk ASC NULLS LAST);
+CREATE INDEX railwayline_gn_parent_idx ON tnra.railwayline_gn (parentfk ASC NULLS LAST);
+CREATE INDEX railwayline_gn_spelling_parent_idx ON tnra.railwayline_gn_spelling (parentfk ASC NULLS LAST);
+CREATE INDEX railwaylink_gn_parent_idx ON tnra.railwaylink_gn (parentfk ASC NULLS LAST);
+CREATE INDEX railwaylink_gn_spelling_parent_idx ON tnra.railwaylink_gn_spelling (parentfk ASC NULLS LAST);
+CREATE INDEX railwaynode_gn_parent_idx ON tnra.railwaynode_gn (parentfk ASC NULLS LAST);
+CREATE INDEX railwaynode_gn_spelling_parent_idx ON tnra.railwaynode_gn_spelling (parentfk ASC NULLS LAST);
+CREATE INDEX railwaystationcode_networkref_parent_idx ON tnra.railwaystationcode_networkref (parentfk ASC NULLS LAST);
+CREATE INDEX railwaystationnode_gn_parent_idx ON tnra.railwaystationnode_gn (parentfk ASC NULLS LAST);
+CREATE INDEX railwaystationnode_gn_spelling_parent_idx ON tnra.railwaystationnode_gn_spelling (parentfk ASC NULLS LAST);
+CREATE INDEX railwaytype_networkref_parent_idx ON tnra.railwaytype_networkref (parentfk ASC NULLS LAST);
+CREATE INDEX railwayuse_networkref_parent_idx ON tnra.railwayuse_networkref (parentfk ASC NULLS LAST);

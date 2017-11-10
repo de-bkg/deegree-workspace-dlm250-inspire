@@ -4,8 +4,10 @@
             xsi:schemaLocation="http://www.deegree.org/services/wfs http://schemas.deegree.org/services/wfs/3.2.0/wfs_configuration.xsd">  
 
   <SupportedVersions>
-    <Version>1.0.0</Version>
-    <Version>1.1.0</Version>
+    <!-- For INSPIRE services support for older WFS versions are not usefull as 
+         there is no dynamic schema conversion from GML 3.2.1 to older versions -->
+    <!-- Version>1.0.0</Version -->
+    <!-- Version>1.1.0</Version -->
     <Version>2.0.0</Version>
   </SupportedVersions>
   
@@ -53,21 +55,6 @@
 
   <QueryMaxFeatures>10000</QueryMaxFeatures>
   <QueryCheckAreaOfUse>false</QueryCheckAreaOfUse>
-
-  <!-- required for WFS 1.0.0 -->
-  <GMLFormat gmlVersion="GML_2">
-    <MimeType>application/gml+xml; version=2.1.2</MimeType>
-    <MimeType>text/xml; subtype=gml/2.1.2</MimeType>
-  </GMLFormat>
-  <GMLFormat gmlVersion="GML_30">
-    <MimeType>application/gml+xml; version=3.0.1</MimeType>
-    <MimeType>text/xml; subtype=gml/3.0.1</MimeType>
-  </GMLFormat>
-  <!-- required for WFS 1.1.0 -->
-  <GMLFormat gmlVersion="GML_31">
-    <MimeType>application/gml+xml; version=3.1</MimeType>
-    <MimeType>text/xml; subtype=gml/3.1.1</MimeType>
-  </GMLFormat>
 
   <!-- Required for WFS 1.1.0/GML 3.2 output with gml:FeatureCollection root element (as mandated by ESDIN) -->
   <GMLFormat gmlVersion="GML_32">

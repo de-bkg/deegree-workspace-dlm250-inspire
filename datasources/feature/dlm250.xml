@@ -2534,7 +2534,6 @@
     </FIDMapping>
     <Complex path="gml:identifier">
       <Primitive path="text()" mapping="localid"/>
-      <!-- 2017-05-22 mapping in 'http://bkg.bund.de/dlm250' geaendert -->
       <Primitive path="@codeSpace" mapping="'http://bkg.bund.de/dlm250'"/>
     </Complex>
     <Complex path="net:networkRef">
@@ -2582,7 +2581,6 @@
     </FIDMapping>
     <Complex path="gml:identifier">
       <Primitive path="text()" mapping="localid"/>
-      <!-- 2017-05-22 mapping in 'http://bkg.bund.de/dlm250' geaendert -->
       <Primitive path="@codeSpace" mapping="'http://bkg.bund.de/dlm250'"/>
     </Complex>
     <Complex path="net:beginLifespanVersion">
@@ -2655,7 +2653,6 @@
     </FIDMapping>
     <Complex path="gml:identifier">
       <Primitive path="text()" mapping="localid"/>
-      <!-- 2017-05-22 mapping in 'http://bkg.bund.de/dlm250' geaendert -->
       <Primitive path="@codeSpace" mapping="'http://bkg.bund.de/dlm250'"/>
     </Complex>
     <Complex path="net:beginLifespanVersion">
@@ -2728,7 +2725,6 @@
     </FIDMapping>
     <Complex path="gml:identifier">
       <Primitive path="text()" mapping="localid"/>
-      <!-- 2017-05-22 mapping in 'http://bkg.bund.de/dlm250' geaendert -->
       <Primitive path="@codeSpace" mapping="'http://bkg.bund.de/dlm250'"/>
     </Complex>
     <Complex path="net:beginLifespanVersion">
@@ -2801,7 +2797,6 @@
     </FIDMapping>
     <Complex path="gml:identifier">
       <Primitive path="text()" mapping="localid"/>
-      <!-- 2017-05-22 mapping in 'http://bkg.bund.de/dlm250' geaendert -->
       <Primitive path="@codeSpace" mapping="'http://bkg.bund.de/dlm250'"/>
     </Complex>
     <Complex path="net:beginLifespanVersion">
@@ -2964,7 +2959,6 @@
     </FIDMapping>
     <Complex path="gml:identifier">
       <Primitive path="text()" mapping="localid"/>
-      <!-- 2017-05-22 mapping in 'http://bkg.bund.de/dlm250' geaendert -->
       <Primitive path="@codeSpace" mapping="'http://bkg.bund.de/dlm250'"/>
     </Complex>
     <Complex path="net:beginLifespanVersion">

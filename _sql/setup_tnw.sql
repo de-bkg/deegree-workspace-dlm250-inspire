@@ -845,3 +845,15 @@ ALTER TABLE ONLY waterwaylink_gn_spelling
 -- PostgreSQL database dump complete
 --
 
+-- indizes
+CREATE INDEX conditionofwaterfacility_networkref_parent_idx ON tnw.conditionofwaterfacility_networkref (parentfk ASC NULLS LAST);
+CREATE INDEX ferrycrossing_gn_parent_idx ON tnw.ferrycrossing_gn (parentfk ASC NULLS LAST);
+CREATE INDEX ferrycrossing_gn_spelling_parent_idx ON tnw.ferrycrossing_gn_spelling (parentfk ASC NULLS LAST);
+CREATE INDEX portarea_gn_parent_idx ON tnw.portarea_gn (parentfk ASC NULLS LAST);
+CREATE INDEX portarea_gn_spelling_parent_idx ON tnw.portarea_gn_spelling (parentfk ASC NULLS LAST);
+CREATE INDEX portnode_gn_parent_idx ON tnw.portnode_gn (parentfk ASC NULLS LAST);
+CREATE INDEX portnode_gn_spelling_parent_idx ON tnw.portnode_gn_spelling (parentfk ASC NULLS LAST);
+CREATE INDEX porttype_networkref_parent_idx ON tnw.porttype_networkref (parentfk ASC NULLS LAST);
+CREATE INDEX waterwaylink_gn_parent_idx ON tnw.waterwaylink_gn (parentfk ASC NULLS LAST);
+CREATE INDEX waterwaylink_gn_spelling_parent_idx ON tnw.waterwaylink_gn_spelling (parentfk ASC NULLS LAST);
+

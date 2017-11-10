@@ -105,7 +105,7 @@ CREATE TABLE conditionoffacility (
 -- Name: conditionoffacility_networkref; Type: TABLE; Schema: tn; Owner: -
 --
 
-CREATE TABLE conditionoffacility_networkref (
+CREATE TABLE accessrestriction_networkref (
     id integer NOT NULL,
     parentfk text NOT NULL,
     nilreason text,
@@ -294,4 +294,7 @@ ALTER TABLE ONLY verticalposition_networkref
 --
 -- PostgreSQL database dump complete
 --
+
+-- indizes
+CREATE INDEX accessrestriction_networkref_parent_idx ON tn.accessrestriction_networkref (parentfk ASC NULLS LAST);
 

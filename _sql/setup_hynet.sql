@@ -510,3 +510,12 @@ ALTER TABLE ONLY watercourselink_hydroid
 -- PostgreSQL database dump complete
 --
 
+-- Indizes
+CREATE INDEX hydronode_gn_parent_idx ON hynet.hydronode_gn (parentfk ASC NULLS LAST);
+CREATE INDEX hydronode_gn_spelling_parent_idx ON hynet.hydronode_gn_spelling (parentfk ASC NULLS LAST);
+CREATE INDEX hydronode_hydroid_parent_idx ON hynet.hydronode_hydroid (parentfk ASC NULLS LAST);
+CREATE INDEX watercourselink_gn_parent_idx ON hynet.watercourselink_gn (parentfk ASC NULLS LAST);
+CREATE INDEX watercourselink_gn_spelling_parent_idx ON hynet.watercourselink_gn_spelling (parentfk ASC NULLS LAST);
+CREATE INDEX watercourselink_hydroid_parent_idx ON hynet.watercourselink_hydroid (parentfk ASC NULLS LAST);
+
+

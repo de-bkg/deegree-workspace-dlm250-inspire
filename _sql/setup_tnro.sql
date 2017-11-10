@@ -96,7 +96,7 @@ ALTER SEQUENCE eroad_gn_id_seq OWNED BY eroad_gn.id;
 -- Name: eroad_gn_spelling; Type: TABLE; Schema: tnro; Owner: -
 --
 
-CREATE TABLE eroad_gn_spelling (
+CREATE TABLE eroad_gn (
     id integer NOT NULL,
     parentfk integer NOT NULL,
     text text,
@@ -1461,3 +1461,21 @@ ALTER TABLE ONLY roadsurfacecategory_networkref
 -- PostgreSQL database dump complete
 --
 
+-- indizes
+  CREATE INDEX eroad_gn_parent_idx ON tnro.eroad_gn (parentfk ASC NULLS LAST);
+  CREATE INDEX eroad_link_parent_idx ON tnro.eroad_link (parentfk ASC NULLS LAST);
+  CREATE INDEX formofway_networkref_parent_idx ON tnro.formofway_networkref (parentfk ASC NULLS LAST);
+  CREATE INDEX functionalroadclass_networkref_parent_idx ON tnro.functionalroadclass_networkref (parentfk ASC NULLS LAST);
+  CREATE INDEX interchangepoint_gn_parent_idx ON tnro.interchangepoint_gn (parentfk ASC NULLS LAST);
+  CREATE INDEX interchangepoint_gn_spelling_parent_idx ON tnro.interchangepoint_gn_spelling (parentfk ASC NULLS LAST);
+  CREATE INDEX numberoflanes_networkref_parent_idx ON tnro.numberoflanes_networkref (parentfk ASC NULLS LAST);
+  CREATE INDEX road_gn_parent_idx ON tnro.road_gn (parentfk ASC NULLS LAST);
+  CREATE INDEX road_gn_spelling_parent_idx ON tnro.road_gn_spelling (parentfk ASC NULLS LAST);
+  CREATE INDEX road_link_parent_idx ON tnro.road_link (parentfk ASC NULLS LAST);
+  CREATE INDEX roadlink_gn_parent_idx ON tnro.roadlink_gn (parentfk ASC NULLS LAST);
+  CREATE INDEX roadlink_gn_spelling_parent_idx ON tnro.roadlink_gn_spelling (parentfk ASC NULLS LAST);
+  CREATE INDEX roadnode_gn_parent_idx ON tnro.roadnode_gn (parentfk ASC NULLS LAST);
+  CREATE INDEX roadnode_gn_spelling_parent_idx ON tnro.roadnode_gn_spelling (parentfk ASC NULLS LAST);
+  CREATE INDEX roadservicetype_availablefacility_parent_idx ON tnro.roadservicetype_availablefacility (parentfk ASC NULLS LAST);
+  CREATE INDEX roadservicetype_networkref_parent_idx ON tnro.roadservicetype_networkref (parentfk ASC NULLS LAST);
+  CREATE INDEX roadsurfacecategory_networkref_parent_idx ON tnro.roadsurfacecategory_networkref (parentfk ASC NULLS LAST);

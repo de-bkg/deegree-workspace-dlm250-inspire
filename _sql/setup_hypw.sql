@@ -2613,3 +2613,39 @@ ALTER TABLE ONLY wetland_hydroid
 -- PostgreSQL database dump complete
 --
 
+-- Indizes
+
+
+CREATE INDEX crossing_gn_parent_idx ON hypw.crossing_gn (parentfk ASC NULLS LAST);
+CREATE INDEX crossing_gn_spelling_parent_idx ON hypw.crossing_gn_spelling (parentfk ASC NULLS LAST);
+CREATE INDEX crossing_hydroid_parent_idx ON hypw.crossing_hydroid (parentfk ASC NULLS LAST);
+CREATE INDEX damorweir_gn_parent_idx ON hypw.damorweir_gn (parentfk ASC NULLS LAST);
+CREATE INDEX damorweir_gn_spelling_parent_idx ON hypw.damorweir_gn_spelling (parentfk ASC NULLS LAST);
+CREATE INDEX damorweir_hydroid_parent_idx ON hypw.damorweir_hydroid (parentfk ASC NULLS LAST);
+CREATE INDEX embankment_gn_parent_idx ON hypw.embankment_gn (parentfk ASC NULLS LAST);
+CREATE INDEX embankment_gn_spelling_parent_idx ON hypw.embankment_gn_spelling (parentfk ASC NULLS LAST);
+CREATE INDEX embankment_hydroid_parent_idx ON hypw.embankment_hydroid (parentfk ASC NULLS LAST);
+CREATE INDEX falls_gn_parent_idx ON hypw.falls_gn (parentfk ASC NULLS LAST);
+CREATE INDEX falls_gn_spelling_parent_idx ON hypw.falls_gn_spelling (parentfk ASC NULLS LAST);
+CREATE INDEX falls_hydroid_parent_idx ON hypw.falls_hydroid (parentfk ASC NULLS LAST);
+CREATE INDEX island_gn_parent_idx ON hypw.island_gn (parentfk ASC NULLS LAST);
+CREATE INDEX island_gn_spelling_parent_idx ON hypw.island_gn_spelling (parentfk ASC NULLS LAST);
+CREATE INDEX island_hydroid_parent_idx ON hypw.island_hydroid (parentfk ASC NULLS LAST);
+CREATE INDEX lock_gn_parent_idx ON hypw.lock_gn (parentfk ASC NULLS LAST);
+CREATE INDEX lock_gn_spelling_parent_idx ON hypw.lock_gn_spelling (parentfk ASC NULLS LAST);
+CREATE INDEX lock_hydroid_parent_idx ON hypw.lock_hydroid (parentfk ASC NULLS LAST);
+CREATE INDEX shore_gn_parent_idx ON hypw.shore_gn (parentfk ASC NULLS LAST);
+CREATE INDEX shore_gn_spelling_parent_idx ON hypw.shore_gn_spelling (parentfk ASC NULLS LAST);
+CREATE INDEX shore_hydroid_parent_idx ON hypw.shore_hydroid (parentfk ASC NULLS LAST);
+CREATE INDEX shorelineconstruction_gn_parent_idx ON hypw.shorelineconstruction_gn (parentfk ASC NULLS LAST);
+CREATE INDEX shorelineconstruction_gn_spelling_parent_idx ON hypw.shorelineconstruction_gn_spelling (parentfk ASC NULLS LAST);
+CREATE INDEX shorelineconstruction_hydroid_parent_idx ON hypw.shorelineconstruction_hydroid (parentfk ASC NULLS LAST);
+CREATE INDEX standingwater_gn_parent_idx ON hypw.standingwater_gn (parentfk ASC NULLS LAST);
+CREATE INDEX standingwater_gn_spelling_parent_idx ON hypw.standingwater_gn_spelling (parentfk ASC NULLS LAST);
+CREATE INDEX standingwater_hydroid_parent_idx ON hypw.standingwater_hydroid (parentfk ASC NULLS LAST);
+CREATE INDEX watercourse_gn_parent_idx ON hypw.watercourse_gn (parentfk ASC NULLS LAST);
+CREATE INDEX watercourse_gn_spelling_parent_idx ON hypw.watercourse_gn_spelling (parentfk ASC NULLS LAST);
+CREATE INDEX watercourse_hydroid_parent_idx ON hypw.watercourse_hydroid (parentfk ASC NULLS LAST);
+CREATE INDEX wetland_gn_parent_idx ON hypw.wetland_gn (parentfk ASC NULLS LAST);
+CREATE INDEX wetland_gn_spelling_parent_idx ON hypw.wetland_gn_spelling (parentfk ASC NULLS LAST);
+CREATE INDEX wetland_hydroid_parent_idx ON hypw.wetland_hydroid (parentfk ASC NULLS LAST);

@@ -911,3 +911,15 @@ ALTER TABLE ONLY transportationusecategory_networkref
 -- PostgreSQL database dump complete
 --
 
+-- indizes
+CREATE INDEX aerodromearea_gn_parent_idx ON tna.aerodromearea_gn (parentfk ASC NULLS LAST);
+CREATE INDEX aerodromearea_gn_spelling_parent_idx ON tna.aerodromearea_gn_spelling (parentfk ASC NULLS LAST);
+CREATE INDEX aerodromecategory_networkref_parent_idx ON tna.aerodromecategory_networkref (parentfk ASC NULLS LAST);
+CREATE INDEX aerodromenode_gn_parent_idx ON tna.aerodromenode_gn (parentfk ASC NULLS LAST);
+CREATE INDEX aerodromenode_gn_spelling_parent_idx ON tna.aerodromenode_gn_spelling (parentfk ASC NULLS LAST);
+CREATE INDEX aerodrometype_networkref_parent_idx ON tna.aerodrometype_networkref (parentfk ASC NULLS LAST);
+CREATE INDEX conditionofairfacility_networkref_parent_idx ON tna.conditionofairfacility_networkref (parentfk ASC NULLS LAST);
+CREATE INDEX fieldelevation_networkref_parent_idx ON tna.fieldelevation_networkref (parentfk ASC NULLS LAST);
+CREATE INDEX functionalusecategory_networkref_parent_idx ON tna.functionalusecategory_networkref (parentfk ASC NULLS LAST);
+CREATE INDEX transportationusecategory_networkref_parent_idx ON tna.transportationusecategory_networkref (parentfk ASC NULLS LAST);
+

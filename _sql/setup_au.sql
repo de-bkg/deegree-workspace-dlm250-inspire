@@ -245,3 +245,18 @@ CREATE TABLE au.adminunit_adminunitarea (
     href text
 );
 ALTER TABLE au.adminunit_adminunitarea OWNER TO inspire;
+
+
+-- == Indizes =====================================
+
+CREATE INDEX adminboundary_nationallevel_parent_idx ON au.adminboundary_nationallevel (parentfk ASC NULLS LAST);
+CREATE INDEX adminboundary_adminunit_parent_idx ON au.adminboundary_adminunit (parentfk ASC NULLS LAST);
+
+CREATE INDEX condominium_adminunit_parent_idx ON au.condominium_adminunit (parentfk ASC NULLS LAST);
+CREATE INDEX condominium_gn_parent_idx ON au.condominium_gn (parentfk ASC NULLS LAST);
+
+CREATE INDEX adminunit_nationallevelname_parent_idx ON au.adminunit_nationallevelname (parentfk ASC NULLS LAST);
+CREATE INDEX adminunit_residence_gn_parent_idx ON au.adminunit_residence_gn (parentfk ASC NULLS LAST);
+CREATE INDEX adminunit_coadminister_parent_idx ON au.adminunit_coadminister (parentfk ASC NULLS LAST);
+
+CREATE INDEX adminunit_boundary_parent_idx ON au.adminunit_boundary (parentfk ASC NULLS LAST);

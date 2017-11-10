@@ -62,3 +62,8 @@ CREATE TABLE ps.protectedsite_classification (
 );
 ALTER TABLE ps.protectedsite_classification OWNER TO inspire;
 
+-- Indizes
+CREATE INDEX protectedsite_sitedesignation_parent_idx ON ps.protectedsite_sitedesignation (parentfk ASC NULLS LAST);
+CREATE INDEX protectedsite_gn_parent_idx ON ps.protectedsite_gn (parentfk ASC NULLS LAST);
+CREATE INDEX protectedsite_gn_spelling_parent_idx ON ps.protectedsite_gn_spelling (parentfk ASC NULLS LAST);
+CREATE INDEX protectedsite_classification_parent_idx ON ps.protectedsite_classification (parentfk ASC NULLS LAST);
