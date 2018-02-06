@@ -56,7 +56,7 @@
     </FIDMapping>
     <Complex path="gml:identifier">
       <Primitive path="text()" mapping="localid"/>
-      <Primitive path="@codeSpace" mapping="'http://bkg.bund.de/dlm250'"/>
+      <Primitive path="@codeSpace" mapping="'https://registry.gdi-de.org/id/de.bund.bkg.inspire.dlm250'"/>
     </Complex>
     <Complex path="net:networkRef">
       <Join table="tn.accessrestriction_networkref" fromColumns="localid" toColumns="parentfk"/>
@@ -74,7 +74,7 @@
     <Complex path="net:inspireId">
       <Complex path="base:Identifier">
         <Primitive path="base:localId" mapping="localid"/>
-        <Primitive path="base:namespace" mapping="'http://bkg.bund.de/dlm250'"/>
+        <Primitive path="base:namespace" mapping="'https://registry.gdi-de.org/id/de.bund.bkg.inspire.dlm250'"/>
         <Complex path="base:versionId">
           <Primitive path="@nilReason" mapping="'other:unpopulated'"/>
           <Primitive path="@xsi:nil" mapping="'true'"/>
@@ -90,10 +90,7 @@
     </Complex>
     <Complex path="tn:restriction">
       <Primitive path="@nilReason" mapping="nilreason"/>
-      <Feature path=".">
-        <Join table="?" fromColumns="localid" toColumns="localid"/>
-        <Href mapping="restriction_href"/>
-      </Feature>
+      <Primitive path="@xlink:href" mapping="restriction_href"/>
     </Complex>
   </FeatureTypeMapping>
   <FeatureTypeMapping name="tn:ConditionOfFacility" table="tn.conditionoffacility">
@@ -102,7 +99,7 @@
     </FIDMapping>
     <Complex path="gml:identifier">
       <Primitive path="text()" mapping="localid"/>
-      <Primitive path="@codeSpace" mapping="'http://bkg.bund.de/dlm250'"/>
+      <Primitive path="@codeSpace" mapping="'https://registry.gdi-de.org/id/de.bund.bkg.inspire.dlm250'"/>
     </Complex>
     <Complex path="net:networkRef">
       <Join table="tn.conditionoffacility_networkref" fromColumns="localid" toColumns="parentfk"/>
@@ -120,7 +117,7 @@
     <Complex path="net:inspireId">
       <Complex path="base:Identifier">
         <Primitive path="base:localId" mapping="localid"/>
-        <Primitive path="base:namespace" mapping="'http://bkg.bund.de/dlm250'"/>
+        <Primitive path="base:namespace" mapping="'https://registry.gdi-de.org/id/de.bund.bkg.inspire.dlm250'"/>
         <Complex path="base:versionId">
           <Primitive path="@nilReason" mapping="'other:unpopulated'"/>
           <Primitive path="@xsi:nil" mapping="'true'"/>
@@ -148,7 +145,7 @@
     </FIDMapping>
     <Complex path="gml:identifier">
       <Primitive path="text()" mapping="localid"/>
-      <Primitive path="@codeSpace" mapping="'http://bkg.bund.de/dlm250'"/>
+      <Primitive path="@codeSpace" mapping="'https://registry.gdi-de.org/id/de.bund.bkg.inspire.dlm250'"/>
     </Complex>
     <Complex path="net:networkRef">
       <Join table="tn.verticalposition_networkref" fromColumns="localid" toColumns="parentfk"/>
@@ -166,7 +163,7 @@
     <Complex path="net:inspireId">
       <Complex path="base:Identifier">
         <Primitive path="base:localId" mapping="localid"/>
-        <Primitive path="base:namespace" mapping="'http://bkg.bund.de/dlm250'"/>
+        <Primitive path="base:namespace" mapping="'https://registry.gdi-de.org/id/de.bund.bkg.inspire.dlm250'"/>
         <Complex path="base:versionId">
           <Primitive path="@nilReason" mapping="'other:unpopulated'"/>
           <Primitive path="@xsi:nil" mapping="'true'"/>
@@ -198,7 +195,7 @@
     </FIDMapping>
     <Complex path="gml:identifier">
       <Primitive path="text()" mapping="localid"/>
-      <Primitive path="@codeSpace" mapping="'http://bkg.bund.de/dlm250'"/>
+      <Primitive path="@codeSpace" mapping="'https://registry.gdi-de.org/id/de.bund.bkg.inspire.dlm250'"/>
     </Complex>
     <Complex path="net:networkRef">
       <Join table="tna.aerodromecategory_networkref" fromColumns="localid" toColumns="parentfk"/>
@@ -216,7 +213,7 @@
     <Complex path="net:inspireId">
       <Complex path="base:Identifier">
         <Primitive path="base:localId" mapping="localid"/>
-        <Primitive path="base:namespace" mapping="'http://bkg.bund.de/dlm250'"/>
+        <Primitive path="base:namespace" mapping="'https://registry.gdi-de.org/id/de.bund.bkg.inspire.dlm250'"/>
         <Complex path="base:versionId">
           <Primitive path="@nilReason" mapping="'other:unpopulated'"/>
           <Primitive path="@xsi:nil" mapping="'true'"/>
@@ -232,8 +229,7 @@
     </Complex>
     <Complex path="tn-a:aerodromeCategory">
       <Primitive path="@nilReason" mapping="aerodromecategory_nilreason"/>
-      <!-- Primitive path="@xlink:href" mapping="aerodromecategory_href"/ -->
-      <Feature path="."><Href mapping="aerodromecategory_href"/></Feature>     
+      <Primitive path="@xlink:href" mapping="aerodromecategory_href"/>
     </Complex>
   </FeatureTypeMapping>
   <FeatureTypeMapping name="tn-a:AerodromeType" table="tna.aerodrometype">
@@ -242,7 +238,7 @@
     </FIDMapping>
     <Complex path="gml:identifier">
       <Primitive path="text()" mapping="localid"/>
-      <Primitive path="@codeSpace" mapping="'http://bkg.bund.de/dlm250'"/>
+      <Primitive path="@codeSpace" mapping="'https://registry.gdi-de.org/id/de.bund.bkg.inspire.dlm250'"/>
     </Complex>
     <Complex path="net:networkRef">
       <Join table="tna.aerodrometype_networkref" fromColumns="localid" toColumns="parentfk"/>
@@ -260,7 +256,7 @@
     <Complex path="net:inspireId">
       <Complex path="base:Identifier">
         <Primitive path="base:localId" mapping="localid"/>
-        <Primitive path="base:namespace" mapping="'http://bkg.bund.de/dlm250'"/>
+        <Primitive path="base:namespace" mapping="'https://registry.gdi-de.org/id/de.bund.bkg.inspire.dlm250'"/>
         <Complex path="base:versionId">
           <Primitive path="@nilReason" mapping="'other:unpopulated'"/>
           <Primitive path="@xsi:nil" mapping="'true'"/>
@@ -276,9 +272,7 @@
     </Complex>
     <Complex path="tn-a:aerodromeType">
       <Primitive path="@nilReason" mapping="aerodrometype_nilreason"/>
-      <!--Primitive path="@xlink:href" mapping="aerodrometype_href"/--> 
-        <Feature path="."><Href mapping="aerodrometype_href"/></Feature>      
-      <!-- TODO: ReferencedType? <Feature>...</Feature> -->
+      <Primitive path="@xlink:href" mapping="aerodrometype_href"/> 
     </Complex>
   </FeatureTypeMapping>
   <FeatureTypeMapping name="tn-a:ConditionOfAirFacility" table="tna.conditionofairfacility">
@@ -287,7 +281,7 @@
     </FIDMapping>
     <Complex path="gml:identifier">
       <Primitive path="text()" mapping="localid"/>
-      <Primitive path="@codeSpace" mapping="'http://bkg.bund.de/dlm250'"/>
+      <Primitive path="@codeSpace" mapping="'https://registry.gdi-de.org/id/de.bund.bkg.inspire.dlm250'"/>
     </Complex>
     <Complex path="net:networkRef">
       <Join table="tna.conditionofairfacility_networkref" fromColumns="localid" toColumns="parentfk"/>
@@ -305,7 +299,7 @@
     <Complex path="net:inspireId">
       <Complex path="base:Identifier">
         <Primitive path="base:localId" mapping="localid"/>
-        <Primitive path="base:namespace" mapping="'http://bkg.bund.de/dlm250'"/>
+        <Primitive path="base:namespace" mapping="'https://registry.gdi-de.org/id/de.bund.bkg.inspire.dlm250'"/>
         <Complex path="base:versionId">
           <Primitive path="@nilReason" mapping="'other:unpopulated'"/>
           <Primitive path="@xsi:nil" mapping="'true'"/>
@@ -320,10 +314,7 @@
       <Primitive path="@xsi:nil" mapping="'true'"/>
     </Complex>
     <Complex path="tn:currentStatus">
-      <Feature path=".">
-        <Join table="?" fromColumns="localid" toColumns="localid"/>
-        <Href mapping="currentstatus_href"/>
-      </Feature>
+      <Primitive path="@xlink:href" mapping="currentstatus_href"/> 
     </Complex>
   </FeatureTypeMapping>
   <FeatureTypeMapping name="tn-a:FieldElevation" table="tna.fieldelevation">
@@ -332,7 +323,7 @@
     </FIDMapping>
     <Complex path="gml:identifier">
       <Primitive path="text()" mapping="localid"/>
-      <Primitive path="@codeSpace" mapping="'http://bkg.bund.de/dlm250'"/>
+      <Primitive path="@codeSpace" mapping="'https://registry.gdi-de.org/id/de.bund.bkg.inspire.dlm250'"/>
     </Complex>
     <Complex path="net:networkRef">
       <Join table="tna.fieldelevation_networkref" fromColumns="localid" toColumns="parentfk"/>
@@ -350,7 +341,7 @@
     <Complex path="net:inspireId">
       <Complex path="base:Identifier">
         <Primitive path="base:localId" mapping="localid"/>
-        <Primitive path="base:namespace" mapping="'http://bkg.bund.de/dlm250'"/>
+        <Primitive path="base:namespace" mapping="'https://registry.gdi-de.org/id/de.bund.bkg.inspire.dlm250'"/>
         <Complex path="base:versionId">
           <Primitive path="@nilReason" mapping="'other:unpopulated'"/>
           <Primitive path="@xsi:nil" mapping="'true'"/>
@@ -377,7 +368,7 @@
     </FIDMapping>
     <Complex path="gml:identifier">
       <Primitive path="text()" mapping="localid"/>
-      <Primitive path="@codeSpace" mapping="'http://bkg.bund.de/dlm250'"/>
+      <Primitive path="@codeSpace" mapping="'https://registry.gdi-de.org/id/de.bund.bkg.inspire.dlm250'"/>
     </Complex>
     <Complex path="net:beginLifespanVersion">
       <Primitive path="text()" mapping="beginlifespanversion"/>
@@ -385,7 +376,7 @@
     <Complex path="net:inspireId">
       <Complex path="base:Identifier">
         <Primitive path="base:localId" mapping="localid"/>
-        <Primitive path="base:namespace" mapping="'http://bkg.bund.de/dlm250'"/>
+        <Primitive path="base:namespace" mapping="'https://registry.gdi-de.org/id/de.bund.bkg.inspire.dlm250'"/>
         <Complex path="base:versionId">
           <Primitive path="@nilReason" mapping="'other:unpopulated'"/>
           <Primitive path="@xsi:nil" mapping="'true'"/>
@@ -449,7 +440,7 @@
     </FIDMapping>
     <Complex path="gml:identifier">
       <Primitive path="text()" mapping="localid"/>
-      <Primitive path="@codeSpace" mapping="'http://bkg.bund.de/dlm250'"/>
+      <Primitive path="@codeSpace" mapping="'https://registry.gdi-de.org/id/de.bund.bkg.inspire.dlm250'"/>
     </Complex>
     <Complex path="net:beginLifespanVersion">
       <Primitive path="text()" mapping="beginlifespanversion"/>
@@ -457,7 +448,7 @@
     <Complex path="net:inspireId">
       <Complex path="base:Identifier">
         <Primitive path="base:localId" mapping="localid"/>
-        <Primitive path="base:namespace" mapping="'http://bkg.bund.de/dlm250'"/>
+        <Primitive path="base:namespace" mapping="'https://registry.gdi-de.org/id/de.bund.bkg.inspire.dlm250'"/>
         <Complex path="base:versionId">
           <Primitive path="@nilReason" mapping="'other:unpopulated'"/>
           <Primitive path="@xsi:nil" mapping="'true'"/>
@@ -482,11 +473,11 @@
         </Complex>
         <Complex path="gn:nativeness">
           <Primitive path="@xsi:nil" mapping="'false'"/>
-          <Feature path="."><Href mapping="nativeness_href"/></Feature>  
+          <Primitive path="@xlink:href" mapping="nativeness_href"/> 
         </Complex>
         <Complex path="gn:nameStatus">
           <Primitive path="@xsi:nil" mapping="'false'"/>
-          <Feature path="."><Href mapping="namestatus_href"/></Feature>  
+          <Primitive path="@xlink:href" mapping="namestatus_href"/> 
         </Complex>
         <Complex path="gn:sourceOfName">
           <Primitive path="@xsi:nil" mapping="'false'"/>
@@ -532,7 +523,7 @@
     </FIDMapping>
     <Complex path="gml:identifier">
       <Primitive path="text()" mapping="localid"/>
-      <Primitive path="@codeSpace" mapping="'http://bkg.bund.de/dlm250'"/>
+      <Primitive path="@codeSpace" mapping="'https://registry.gdi-de.org/id/de.bund.bkg.inspire.dlm250'"/>
     </Complex>
     <Complex path="net:beginLifespanVersion">
       <Primitive path="text()" mapping="beginlifespanversion"/>
@@ -540,7 +531,7 @@
     <Complex path="net:inspireId">
       <Complex path="base:Identifier">
         <Primitive path="base:localId" mapping="localid"/>
-        <Primitive path="base:namespace" mapping="'http://bkg.bund.de/dlm250'"/>
+        <Primitive path="base:namespace" mapping="'https://registry.gdi-de.org/id/de.bund.bkg.inspire.dlm250'"/>
         <Complex path="base:versionId">
           <Primitive path="@nilReason" mapping="'other:unpopulated'"/>
           <Primitive path="@xsi:nil" mapping="'true'"/>
@@ -607,7 +598,7 @@
     </FIDMapping>
     <Complex path="gml:identifier">
       <Primitive path="text()" mapping="localid"/>
-      <Primitive path="@codeSpace" mapping="'http://bkg.bund.de/dlm250'"/>
+      <Primitive path="@codeSpace" mapping="'https://registry.gdi-de.org/id/de.bund.bkg.inspire.dlm250'"/>
     </Complex>
     <Complex path="net:beginLifespanVersion">
       <Primitive path="text()" mapping="beginlifespanversion"/>
@@ -615,7 +606,7 @@
     <Complex path="net:inspireId">
       <Complex path="base:Identifier">
         <Primitive path="base:localId" mapping="localid"/>
-        <Primitive path="base:namespace" mapping="'http://bkg.bund.de/dlm250'"/>
+        <Primitive path="base:namespace" mapping="'https://registry.gdi-de.org/id/de.bund.bkg.inspire.dlm250'"/>
         <Complex path="base:versionId">
           <Primitive path="@nilReason" mapping="'other:unpopulated'"/>
           <Primitive path="@xsi:nil" mapping="'true'"/>
@@ -689,7 +680,7 @@
     </FIDMapping>
     <Complex path="gml:identifier">
       <Primitive path="text()" mapping="localid"/>
-      <Primitive path="@codeSpace" mapping="'http://bkg.bund.de/dlm250'"/>
+      <Primitive path="@codeSpace" mapping="'https://registry.gdi-de.org/id/de.bund.bkg.inspire.dlm250'"/>
     </Complex>
     <Complex path="net:networkRef">
       <Join table="tna.functionalusecategory_networkref" fromColumns="localid" toColumns="parentfk"/>
@@ -707,7 +698,7 @@
     <Complex path="net:inspireId">
       <Complex path="base:Identifier">
         <Primitive path="base:localId" mapping="localid"/>
-        <Primitive path="base:namespace" mapping="'http://bkg.bund.de/dlm250'"/>
+        <Primitive path="base:namespace" mapping="'https://registry.gdi-de.org/id/de.bund.bkg.inspire.dlm250'"/>
         <Complex path="base:versionId">
           <Primitive path="@nilReason" mapping="'other:unpopulated'"/>
           <Primitive path="@xsi:nil" mapping="'true'"/>
@@ -733,7 +724,7 @@
     </FIDMapping>
     <Complex path="gml:identifier">
       <Primitive path="text()" mapping="localid"/>
-      <Primitive path="@codeSpace" mapping="'http://bkg.bund.de/dlm250'"/>
+      <Primitive path="@codeSpace" mapping="'https://registry.gdi-de.org/id/de.bund.bkg.inspire.dlm250'"/>
     </Complex>
     <Complex path="elf-tn-a:geographicalName">
       <Primitive path="@nilReason" mapping="'other:unpopulated'"/>
@@ -748,7 +739,7 @@
     <Complex path="elf-tn-a:inspireId">
       <Complex path="base:Identifier">
         <Primitive path="base:localId" mapping="localid"/>
-        <Primitive path="base:namespace" mapping="'http://bkg.bund.de/dlm250'"/>
+        <Primitive path="base:namespace" mapping="'https://registry.gdi-de.org/id/de.bund.bkg.inspire.dlm250'"/>
         <Complex path="base:versionId">
           <Primitive path="@nilReason" mapping="'other:unpopulated'"/>
           <Primitive path="@xsi:nil" mapping="'true'"/>
@@ -766,7 +757,7 @@
     </FIDMapping>
     <Complex path="gml:identifier">
       <Primitive path="text()" mapping="localid"/>
-      <Primitive path="@codeSpace" mapping="'http://bkg.bund.de/dlm250'"/>
+      <Primitive path="@codeSpace" mapping="'https://registry.gdi-de.org/id/de.bund.bkg.inspire.dlm250'"/>
     </Complex>
     <Complex path="net:networkRef">
       <Join table="tna.transportationusecategory_networkref" fromColumns="localid" toColumns="parentfk"/>
@@ -784,7 +775,7 @@
     <Complex path="net:inspireId">
       <Complex path="base:Identifier">
         <Primitive path="base:localId" mapping="localid"/>
-        <Primitive path="base:namespace" mapping="'http://bkg.bund.de/dlm250'"/>
+        <Primitive path="base:namespace" mapping="'https://registry.gdi-de.org/id/de.bund.bkg.inspire.dlm250'"/>
         <Complex path="base:versionId">
           <Primitive path="@nilReason" mapping="'other:unpopulated'"/>
           <Primitive path="@xsi:nil" mapping="'true'"/>
@@ -818,7 +809,7 @@
     </FIDMapping>
     <Complex path="gml:identifier">
       <Primitive path="text()" mapping="localid"/>
-      <Primitive path="@codeSpace" mapping="'http://bkg.bund.de/dlm250'"/>
+      <Primitive path="@codeSpace" mapping="'https://registry.gdi-de.org/id/de.bund.bkg.inspire.dlm250'"/>
     </Complex>
     <Complex path="net:networkRef">
       <Join table="tnra.designspeed_networkref" fromColumns="localid" toColumns="parentfk"/>
@@ -836,7 +827,7 @@
     <Complex path="net:inspireId">
       <Complex path="base:Identifier">
         <Primitive path="base:localId" mapping="localid"/>
-        <Primitive path="base:namespace" mapping="'http://bkg.bund.de/dlm250'"/>
+        <Primitive path="base:namespace" mapping="'https://registry.gdi-de.org/id/de.bund.bkg.inspire.dlm250'"/>
         <Complex path="base:versionId">
           <Primitive path="@nilReason" mapping="'other:unpopulated'"/>
           <Primitive path="@xsi:nil" mapping="'true'"/>
@@ -861,7 +852,7 @@
     </FIDMapping>
     <Complex path="gml:identifier">
       <Primitive path="text()" mapping="localid"/>
-      <Primitive path="@codeSpace" mapping="'http://bkg.bund.de/dlm250'"/>
+      <Primitive path="@codeSpace" mapping="'https://registry.gdi-de.org/id/de.bund.bkg.inspire.dlm250'"/>
     </Complex>
     <Complex path="net:networkRef">
       <Join table="tnra.railwayelectrification_networkref" fromColumns="localid" toColumns="parentfk"/>
@@ -879,7 +870,7 @@
     <Complex path="net:inspireId">
       <Complex path="base:Identifier">
         <Primitive path="base:localId" mapping="localid"/>
-        <Primitive path="base:namespace" mapping="'http://bkg.bund.de/dlm250'"/>
+        <Primitive path="base:namespace" mapping="'https://registry.gdi-de.org/id/de.bund.bkg.inspire.dlm250'"/>
         <Complex path="base:versionId">
           <Primitive path="@nilReason" mapping="'other:unpopulated'"/>
           <Primitive path="@xsi:nil" mapping="'true'"/>
@@ -901,7 +892,7 @@
     </FIDMapping>
     <Complex path="gml:identifier">
       <Primitive path="text()" mapping="localid"/>
-      <Primitive path="@codeSpace" mapping="'http://bkg.bund.de/dlm250'"/>
+      <Primitive path="@codeSpace" mapping="'https://registry.gdi-de.org/id/de.bund.bkg.inspire.dlm250'"/>
     </Complex>
     <Complex path="net:networkRef">
       <Join table="tnra.nominaltrackgauge_networkref" fromColumns="localid" toColumns="parentfk"/>
@@ -919,7 +910,7 @@
     <Complex path="net:inspireId">
       <Complex path="base:Identifier">
         <Primitive path="base:localId" mapping="localid"/>
-        <Primitive path="base:namespace" mapping="'http://bkg.bund.de/dlm250'"/>
+        <Primitive path="base:namespace" mapping="'https://registry.gdi-de.org/id/de.bund.bkg.inspire.dlm250'"/>
         <Complex path="base:versionId">
           <Primitive path="@nilReason" mapping="'other:unpopulated'"/>
           <Primitive path="@xsi:nil" mapping="'true'"/>
@@ -951,7 +942,7 @@
     </FIDMapping>
     <Complex path="gml:identifier">
       <Primitive path="text()" mapping="localid"/>
-      <Primitive path="@codeSpace" mapping="'http://bkg.bund.de/dlm250'"/>
+      <Primitive path="@codeSpace" mapping="'https://registry.gdi-de.org/id/de.bund.bkg.inspire.dlm250'"/>
     </Complex>
     <Complex path="net:networkRef">
       <Join table="tnra.numberoftracks_networkref" fromColumns="localid" toColumns="parentfk"/>
@@ -969,7 +960,7 @@
     <Complex path="net:inspireId">
       <Complex path="base:Identifier">
         <Primitive path="base:localId" mapping="localid"/>
-        <Primitive path="base:namespace" mapping="'http://bkg.bund.de/dlm250'"/>
+        <Primitive path="base:namespace" mapping="'https://registry.gdi-de.org/id/de.bund.bkg.inspire.dlm250'"/>
         <Complex path="base:versionId">
           <Primitive path="@nilReason" mapping="'other:unpopulated'"/>
           <Primitive path="@xsi:nil" mapping="'true'"/>
@@ -996,7 +987,7 @@
     </FIDMapping>
     <Complex path="gml:identifier">
       <Primitive path="text()" mapping="localid"/>
-      <Primitive path="@codeSpace" mapping="'http://bkg.bund.de/dlm250'"/>
+      <Primitive path="@codeSpace" mapping="'https://registry.gdi-de.org/id/de.bund.bkg.inspire.dlm250'"/>
     </Complex>
     <Complex path="net:networkRef">
       <Join table="tnra.railwaystationcode_networkref" fromColumns="localid" toColumns="parentfk"/>
@@ -1014,7 +1005,7 @@
     <Complex path="net:inspireId">
       <Complex path="base:Identifier">
         <Primitive path="base:localId" mapping="localid"/>
-        <Primitive path="base:namespace" mapping="'http://bkg.bund.de/dlm250'"/>
+        <Primitive path="base:namespace" mapping="'https://registry.gdi-de.org/id/de.bund.bkg.inspire.dlm250'"/>
         <Complex path="base:versionId">
           <Primitive path="@nilReason" mapping="'other:unpopulated'"/>
           <Primitive path="@xsi:nil" mapping="'true'"/>
@@ -1036,7 +1027,7 @@
     </FIDMapping>
     <Complex path="gml:identifier">
       <Primitive path="text()" mapping="localid"/>
-      <Primitive path="@codeSpace" mapping="'http://bkg.bund.de/dlm250'"/>
+      <Primitive path="@codeSpace" mapping="'https://registry.gdi-de.org/id/de.bund.bkg.inspire.dlm250'"/>
     </Complex>
     <Complex path="net:networkRef">
       <Join table="tnra.railwaytype_networkref" fromColumns="localid" toColumns="parentfk"/>
@@ -1054,7 +1045,7 @@
     <Complex path="net:inspireId">
       <Complex path="base:Identifier">
         <Primitive path="base:localId" mapping="localid"/>
-        <Primitive path="base:namespace" mapping="'http://bkg.bund.de/dlm250'"/>
+        <Primitive path="base:namespace" mapping="'https://registry.gdi-de.org/id/de.bund.bkg.inspire.dlm250'"/>
         <Complex path="base:versionId">
           <Primitive path="@nilReason" mapping="'other:unpopulated'"/>
           <Primitive path="@xsi:nil" mapping="'true'"/>
@@ -1072,10 +1063,7 @@
       <Primitive path="@owns" mapping="type_owns"/>
       <Primitive path="@nilReason" mapping="type_nilreason"/>
       <Primitive path="@gml:remoteSchema" mapping="type_remoteschema"/>
-      <Feature path=".">
-        <Join table="?" fromColumns="type_fk" toColumns="localid"/>
-        <Href mapping="type_href"/>
-      </Feature>
+      <Primitive path="@xlink:href" mapping="type_href"/>
     </Complex>
   </FeatureTypeMapping>
   <FeatureTypeMapping name="tn-ra:RailwayUse" table="tnra.railwayuse">
@@ -1084,7 +1072,7 @@
     </FIDMapping>
     <Complex path="gml:identifier">
       <Primitive path="text()" mapping="localid"/>
-      <Primitive path="@codeSpace" mapping="'http://bkg.bund.de/dlm250'"/>
+      <Primitive path="@codeSpace" mapping="'https://registry.gdi-de.org/id/de.bund.bkg.inspire.dlm250'"/>
     </Complex>
     <Complex path="net:networkRef">
       <Join table="tnra.railwayuse_networkref" fromColumns="localid" toColumns="parentfk"/>
@@ -1102,7 +1090,7 @@
     <Complex path="net:inspireId">
       <Complex path="base:Identifier">
         <Primitive path="base:localId" mapping="localid"/>
-        <Primitive path="base:namespace" mapping="'http://bkg.bund.de/dlm250'"/>
+        <Primitive path="base:namespace" mapping="'https://registry.gdi-de.org/id/de.bund.bkg.inspire.dlm250'"/>
         <Complex path="base:versionId">
           <Primitive path="@nilReason" mapping="'other:unpopulated'"/>
           <Primitive path="@xsi:nil" mapping="'true'"/>
@@ -1120,10 +1108,7 @@
       <Primitive path="@owns" mapping="use_owns"/>
       <Primitive path="@nilReason" mapping="use_nilreason"/>
       <Primitive path="@gml:remoteSchema" mapping="use_remoteschema"/>
-      <Feature path=".">
-        <Join table="?" fromColumns="use_fk" toColumns="localid"/>
-        <Href mapping="use_href"/>
-      </Feature>
+      <Primitive path="@xlink:href" mapping="use_href"/>
     </Complex>
   </FeatureTypeMapping>
 
@@ -1133,7 +1118,7 @@
     </FIDMapping>
     <Complex path="gml:identifier">
       <Primitive path="text()" mapping="localid"/>
-      <Primitive path="@codeSpace" mapping="'http://bkg.bund.de/dlm250'"/>
+      <Primitive path="@codeSpace" mapping="'https://registry.gdi-de.org/id/de.bund.bkg.inspire.dlm250'"/>
     </Complex>
     <Complex path="net:beginLifespanVersion">
       <Primitive path="text()" mapping="beginlifespanversion"/>
@@ -1141,7 +1126,7 @@
     <Complex path="net:inspireId">
       <Complex path="base:Identifier">
         <Primitive path="base:localId" mapping="localid"/>
-        <Primitive path="base:namespace" mapping="'http://bkg.bund.de/dlm250'"/>
+        <Primitive path="base:namespace" mapping="'https://registry.gdi-de.org/id/de.bund.bkg.inspire.dlm250'"/>
         <Complex path="base:versionId">
           <Primitive path="@nilReason" mapping="'other:unpopulated'"/>
           <Primitive path="@xsi:nil" mapping="'true'"/>
@@ -1199,10 +1184,7 @@
     <Complex path="tn-ra:formOfNode">
       <Primitive path="@nilReason" mapping="formofnode_nilreason"/>
       <Primitive path="@xsi:nil" mapping="formofnode_nil"/>
-      <Feature path=".">
-        <Join table="?" fromColumns="formofnode_fk" toColumns="localid"/>
-        <Href mapping="formofnode_href"/>
-      </Feature>
+      <Primitive path="@xlink:href" mapping="formofnode_href"/>
     </Complex>
   </FeatureTypeMapping>
   <FeatureTypeMapping name="tn-ra:RailwayStationNode" table="tnra.railwaystationnode">
@@ -1211,7 +1193,7 @@
     </FIDMapping>
     <Complex path="gml:identifier">
       <Primitive path="text()" mapping="localid"/>
-      <Primitive path="@codeSpace" mapping="'http://bkg.bund.de/dlm250'"/>
+      <Primitive path="@codeSpace" mapping="'https://registry.gdi-de.org/id/de.bund.bkg.inspire.dlm250'"/>
     </Complex>
     <Complex path="net:beginLifespanVersion">
       <Primitive path="text()" mapping="beginlifespanversion"/>
@@ -1219,7 +1201,7 @@
     <Complex path="net:inspireId">
       <Complex path="base:Identifier">
         <Primitive path="base:localId" mapping="localid"/>
-        <Primitive path="base:namespace" mapping="'http://bkg.bund.de/dlm250'"/>
+        <Primitive path="base:namespace" mapping="'https://registry.gdi-de.org/id/de.bund.bkg.inspire.dlm250'"/>
         <Complex path="base:versionId">
           <Primitive path="@nilReason" mapping="'other:unpopulated'"/>
           <Primitive path="@xsi:nil" mapping="'true'"/>
@@ -1280,10 +1262,7 @@
       <Primitive path="@nilReason" mapping="formofnode_nilreason"/>
       <Primitive path="@gml:remoteSchema" mapping="formofnode_remoteschema"/>
       <Primitive path="@xsi:nil" mapping="formofnode_nil"/>
-      <Feature path=".">
-        <Join table="?" fromColumns="formofnode_fk" toColumns="localid"/>
-        <Href mapping="formofnode_href"/>
-      </Feature>
+      <Primitive path="@xlink:href" mapping="formofnode_href"/>
     </Complex>
     <Complex path="tn-ra:numberOfPlatforms">
       <Primitive path="text()" mapping="numberofplatforms"/>
@@ -1297,7 +1276,7 @@
     </FIDMapping>
     <Complex path="gml:identifier">
       <Primitive path="text()" mapping="localid"/>
-      <Primitive path="@codeSpace" mapping="'http://bkg.bund.de/dlm250'"/>
+      <Primitive path="@codeSpace" mapping="'https://registry.gdi-de.org/id/de.bund.bkg.inspire.dlm250'"/>
     </Complex>
     <Complex path="net:beginLifespanVersion">
       <Primitive path="text()" mapping="beginlifespanversion"/>
@@ -1305,7 +1284,7 @@
     <Complex path="net:inspireId">
       <Complex path="base:Identifier">
         <Primitive path="base:localId" mapping="localid"/>
-        <Primitive path="base:namespace" mapping="'http://bkg.bund.de/dlm250'"/>
+        <Primitive path="base:namespace" mapping="'https://registry.gdi-de.org/id/de.bund.bkg.inspire.dlm250'"/>
         <Complex path="base:versionId">
           <!--2017-05-22 Primitive path="text" mapping="inspireid_versionid"/-->
           <Primitive path="@nilReason" mapping="'other:unpopulated'"/>
@@ -1369,7 +1348,7 @@
     </FIDMapping>
     <Complex path="gml:identifier">
       <Primitive path="text()" mapping="localid"/>
-      <Primitive path="@codeSpace" mapping="'http://bkg.bund.de/dlm250'"/>
+      <Primitive path="@codeSpace" mapping="'https://registry.gdi-de.org/id/de.bund.bkg.inspire.dlm250'"/>
     </Complex>
     <Complex path="net:beginLifespanVersion">
       <Primitive path="text()" mapping="beginlifespanversion"/>
@@ -1377,7 +1356,7 @@
     <Complex path="net:inspireId">
       <Complex path="base:Identifier">
         <Primitive path="base:localId" mapping="localid"/>
-        <Primitive path="base:namespace" mapping="'http://bkg.bund.de/dlm250'"/>
+        <Primitive path="base:namespace" mapping="'https://registry.gdi-de.org/id/de.bund.bkg.inspire.dlm250'"/>
         <Complex path="base:versionId">
           <Primitive path="@nilReason" mapping="'other:unpopulated'"/>
           <Primitive path="@xsi:nil" mapping="'true'"/>
@@ -1446,7 +1425,7 @@
     </FIDMapping>
     <Complex path="gml:identifier">
       <Primitive path="text()" mapping="localid"/>
-      <Primitive path="@codeSpace" mapping="'http://bkg.bund.de/dlm250'"/>
+      <Primitive path="@codeSpace" mapping="'https://registry.gdi-de.org/id/de.bund.bkg.inspire.dlm250'"/>
     </Complex>
     <Complex path="net:networkRef">
       <Join table="tnra.designspeed_networkref" fromColumns="localid" toColumns="parentfk"/>
@@ -1464,7 +1443,7 @@
     <Complex path="net:inspireId">
       <Complex path="base:Identifier">
         <Primitive path="base:localId" mapping="localid"/>
-        <Primitive path="base:namespace" mapping="'http://bkg.bund.de/dlm250'"/>
+        <Primitive path="base:namespace" mapping="'https://registry.gdi-de.org/id/de.bund.bkg.inspire.dlm250'"/>
         <Complex path="base:versionId">
           <Primitive path="@nilReason" mapping="'other:unpopulated'"/>
           <Primitive path="@xsi:nil" mapping="'true'"/>
@@ -1486,10 +1465,7 @@
       <Primitive path="@owns" mapping="speedclass_owns"/>
       <Primitive path="@nilReason" mapping="speedclass_nilreason"/>
       <Primitive path="@gml:remoteSchema" mapping="speedclass_remoteschema"/>
-      <Feature path=".">
-        <Join table="?" fromColumns="speedclass_fk" toColumns="localid"/>
-        <Href mapping="speedclass_href"/>
-      </Feature>
+      <Primitive path="@xlink:href" mapping="speedclass_href"/>
     </Complex>
   </FeatureTypeMapping>
   <FeatureTypeMapping name="elf-tn-ra:RailwayClass" table="tnra.railwayclass">
@@ -1498,7 +1474,7 @@
     </FIDMapping>
     <Complex path="gml:identifier">
       <Primitive path="text()" mapping="localid"/>
-      <Primitive path="@codeSpace" mapping="'http://bkg.bund.de/dlm250'"/>
+      <Primitive path="@codeSpace" mapping="'https://registry.gdi-de.org/id/de.bund.bkg.inspire.dlm250'"/>
     </Complex>
     <Complex path="net:networkRef">
       <Join table="tnra.railwayclass_networkref" fromColumns="localid" toColumns="parentfk"/>
@@ -1516,7 +1492,7 @@
     <Complex path="net:inspireId">
       <Complex path="base:Identifier">
         <Primitive path="base:localId" mapping="localid"/>
-        <Primitive path="base:namespace" mapping="'http://bkg.bund.de/dlm250'"/>
+        <Primitive path="base:namespace" mapping="'https://registry.gdi-de.org/id/de.bund.bkg.inspire.dlm250'"/>
         <Complex path="base:versionId">
           <Primitive path="@nilReason" mapping="'other:unpopulated'"/>
           <Primitive path="@xsi:nil" mapping="'true'"/>
@@ -1534,10 +1510,7 @@
       <Primitive path="@owns" mapping="railwayclass_owns"/>
       <Primitive path="@nilReason" mapping="railwayclass_nilreason"/>
       <Primitive path="@gml:remoteSchema" mapping="railwayclass_remoteschema"/>
-      <Feature path=".">
-        <Join table="?" fromColumns="railwayclass_fk" toColumns="localid"/>
-        <Href mapping="railwayclass_href"/>
-      </Feature>
+      <Primitive path="@xlink:href" mapping="railwayclass_href"/>
     </Complex>
   </FeatureTypeMapping>
   <FeatureTypeMapping name="elf-tn-ra:RailwayElectrification" table="tnra.railwayelectrification">
@@ -1546,7 +1519,7 @@
     </FIDMapping>
     <Complex path="gml:identifier">
       <Primitive path="text()" mapping="localid"/>
-      <Primitive path="@codeSpace" mapping="'http://bkg.bund.de/dlm250'"/>
+      <Primitive path="@codeSpace" mapping="'https://registry.gdi-de.org/id/de.bund.bkg.inspire.dlm250'"/>
     </Complex>
     <Complex path="net:networkRef">
       <Join table="tnra.railwayelectrification_networkref" fromColumns="localid" toColumns="parentfk"/>
@@ -1564,7 +1537,7 @@
     <Complex path="net:inspireId">
       <Complex path="base:Identifier">
         <Primitive path="base:localId" mapping="localid"/>
-        <Primitive path="base:namespace" mapping="'http://bkg.bund.de/dlm250'"/>
+        <Primitive path="base:namespace" mapping="'https://registry.gdi-de.org/id/de.bund.bkg.inspire.dlm250'"/>
         <Complex path="base:versionId">
           <Primitive path="@nilReason" mapping="'other:unpopulated'"/>
           <Primitive path="@xsi:nil" mapping="'true'"/>
@@ -1583,10 +1556,7 @@
       <Primitive path="@owns" mapping="railwaypowermethod_owns"/>
       <Primitive path="@nilReason" mapping="railwaypowermethod_nilreason"/>
       <Primitive path="@gml:remoteSchema" mapping="railwaypowermethod_remoteschema"/>
-      <Feature path=".">
-        <Join table="?" fromColumns="railwaypowermethod_fk" toColumns="localid"/>
-        <Href mapping="railwaypowermethod_href"/>
-      </Feature>
+      <Primitive path="@xlink:href" mapping="railwaypowermethod_href"/>
     </Complex>
   </FeatureTypeMapping>
 
@@ -1596,7 +1566,7 @@
     </FIDMapping>
     <Complex path="gml:identifier">
       <Primitive path="text()" mapping="localid"/>
-      <Primitive path="@codeSpace" mapping="'http://bkg.bund.de/dlm250'"/>
+      <Primitive path="@codeSpace" mapping="'https://registry.gdi-de.org/id/de.bund.bkg.inspire.dlm250'"/>
     </Complex>
     <Complex path="net:beginLifespanVersion">
       <Primitive path="text()" mapping="beginlifespanversion"/>
@@ -1604,7 +1574,7 @@
     <Complex path="net:inspireId">
       <Complex path="base:Identifier">
         <Primitive path="base:localId" mapping="localid"/>
-        <Primitive path="base:namespace" mapping="'http://bkg.bund.de/dlm250'"/>
+        <Primitive path="base:namespace" mapping="'https://registry.gdi-de.org/id/de.bund.bkg.inspire.dlm250'"/>
         <Complex path="base:versionId">
           <Primitive path="@nilReason" mapping="'other:unpopulated'"/>
           <Primitive path="@xsi:nil" mapping="'true'"/>
@@ -1664,10 +1634,7 @@
       <Primitive path="@nilReason" mapping="formofnode_nilreason"/>
       <Primitive path="@gml:remoteSchema" mapping="formofnode_remoteschema"/>
       <Primitive path="@xsi:nil" mapping="formofnode_nil"/>
-      <Feature path=".">
-        <Join table="?" fromColumns="formofnode_fk" toColumns="localid"/>
-        <Href mapping="formofnode_href"/>
-      </Feature>
+      <Primitive path="@xlink:href" mapping="formofnode_href"/>
     </Complex>
     <Complex path="tn-ra:numberOfPlatforms">
       <Primitive path="text()" mapping="numberofplatforms"/>
@@ -1678,10 +1645,7 @@
       <Primitive path="@owns" mapping="facilitytype_owns"/>
       <Primitive path="@nilReason" mapping="facilitytype_nilreason"/>
       <Primitive path="@gml:remoteSchema" mapping="facilitytype_remoteschema"/>
-      <Feature path=".">
-        <Join table="?" fromColumns="facilitytype_fk" toColumns="localid"/>
-        <Href mapping="facilitytype_href"/>
-      </Feature>
+      <Primitive path="@xlink:href" mapping="facilitytype_href"/>
     </Complex>
   </FeatureTypeMapping>    
   <FeatureTypeMapping name="elf-tn-ra:RailwayLink" table="tnra.railwaylink">
@@ -1690,7 +1654,7 @@
     </FIDMapping>
     <Complex path="gml:identifier">
       <Primitive path="text()" mapping="localid"/>
-      <Primitive path="@codeSpace" mapping="'http://bkg.bund.de/dlm250'"/>
+      <Primitive path="@codeSpace" mapping="'https://registry.gdi-de.org/id/de.bund.bkg.inspire.dlm250'"/>
     </Complex>
     <Complex path="net:beginLifespanVersion">
       <Primitive path="text()" mapping="beginlifespanversion"/>
@@ -1698,7 +1662,7 @@
     <Complex path="net:inspireId">
       <Complex path="base:Identifier">
         <Primitive path="base:localId" mapping="localid"/>
-        <Primitive path="base:namespace" mapping="'http://bkg.bund.de/dlm250'"/>
+        <Primitive path="base:namespace" mapping="'https://registry.gdi-de.org/id/de.bund.bkg.inspire.dlm250'"/>
         <Complex path="base:versionId">
           <Primitive path="@nilReason" mapping="'other:unpopulated'"/>
           <Primitive path="@xsi:nil" mapping="'true'"/>
@@ -1732,7 +1696,7 @@
       </Feature>
     </Complex-->
     <Complex path="tn:geographicalName">
-     <Join table="tnra.railwaylink_gn" fromColumns="localid" toColumns="parentfk"/>
+      <Join table="tnra.railwaylink_gn" fromColumns="localid" toColumns="parentfk"/>
       <Primitive path="@xsi:nil" mapping="nil"/>
       <Primitive path="@nilReason" mapping="nilreason"/>
       <Complex path="gn:GeographicalName">
@@ -1783,7 +1747,7 @@
     </FIDMapping>
     <Complex path="gml:identifier">
       <Primitive path="text()" mapping="localid"/>
-      <Primitive path="@codeSpace" mapping="'http://bkg.bund.de/dlm250'"/>
+      <Primitive path="@codeSpace" mapping="'https://registry.gdi-de.org/id/de.bund.bkg.inspire.dlm250'"/>
     </Complex>
     <Complex path="net:beginLifespanVersion">
       <Primitive path="text()" mapping="beginlifespanversion"/>
@@ -1791,7 +1755,7 @@
     <Complex path="net:inspireId">
       <Complex path="base:Identifier">
         <Primitive path="base:localId" mapping="localid"/>
-        <Primitive path="base:namespace" mapping="'http://bkg.bund.de/dlm250'"/>
+        <Primitive path="base:namespace" mapping="'https://registry.gdi-de.org/id/de.bund.bkg.inspire.dlm250'"/>
         <Complex path="base:versionId">
           <Primitive path="@nilReason" mapping="'other:unpopulated'"/>
           <Primitive path="@xsi:nil" mapping="'true'"/>
@@ -1854,7 +1818,7 @@
     </FIDMapping>
     <Complex path="gml:identifier">
       <Primitive path="text()" mapping="localid"/>
-      <Primitive path="@codeSpace" mapping="'http://bkg.bund.de/dlm250'"/>
+      <Primitive path="@codeSpace" mapping="'https://registry.gdi-de.org/id/de.bund.bkg.inspire.dlm250'"/>
     </Complex>
     <Complex path="net:beginLifespanVersion">
       <Primitive path="text()" mapping="beginlifespanversion"/>
@@ -1862,7 +1826,7 @@
     <Complex path="net:inspireId">
       <Complex path="base:Identifier">
         <Primitive path="base:localId" mapping="localid"/>
-        <Primitive path="base:namespace" mapping="'http://bkg.bund.de/dlm250'"/>
+        <Primitive path="base:namespace" mapping="'https://registry.gdi-de.org/id/de.bund.bkg.inspire.dlm250'"/>
         <Complex path="base:versionId">
           <Primitive path="@nilReason" mapping="'other:unpopulated'"/>
           <Primitive path="@xsi:nil" mapping="'true'"/>
@@ -1929,7 +1893,7 @@
     </FIDMapping>
     <Complex path="gml:identifier">
       <Primitive path="text()" mapping="localid"/>
-      <Primitive path="@codeSpace" mapping="'http://bkg.bund.de/dlm250'"/>
+      <Primitive path="@codeSpace" mapping="'https://registry.gdi-de.org/id/de.bund.bkg.inspire.dlm250'"/>
     </Complex>
     <Complex path="net:beginLifespanVersion">
       <Primitive path="text()" mapping="beginlifespanversion"/>
@@ -1937,7 +1901,7 @@
     <Complex path="net:inspireId">
       <Complex path="base:Identifier">
         <Primitive path="base:localId" mapping="localid"/>
-        <Primitive path="base:namespace" mapping="'http://bkg.bund.de/dlm250'"/>
+        <Primitive path="base:namespace" mapping="'https://registry.gdi-de.org/id/de.bund.bkg.inspire.dlm250'"/>
         <Complex path="base:versionId">
           <Primitive path="@nilReason" mapping="'other:unpopulated'"/>
           <Primitive path="@xsi:nil" mapping="'true'"/>
@@ -2009,7 +1973,7 @@
     </FIDMapping>
     <Complex path="gml:identifier">
       <Primitive path="text()" mapping="localid"/>
-      <Primitive path="@codeSpace" mapping="'http://bkg.bund.de/dlm250'"/>
+      <Primitive path="@codeSpace" mapping="'https://registry.gdi-de.org/id/de.bund.bkg.inspire.dlm250'"/>
     </Complex>
     <Complex path="net:beginLifespanVersion">
       <Primitive path="text()" mapping="beginlifespanversion"/>
@@ -2017,7 +1981,7 @@
     <Complex path="net:inspireId">
       <Complex path="base:Identifier">
         <Primitive path="base:localId" mapping="localid"/>
-        <Primitive path="base:namespace" mapping="'http://bkg.bund.de/dlm250'"/>
+        <Primitive path="base:namespace" mapping="'https://registry.gdi-de.org/id/de.bund.bkg.inspire.dlm250'"/>
         <Complex path="base:versionId">
           <Primitive path="@nilReason" mapping="'other:unpopulated'"/>
           <Primitive path="@xsi:nil" mapping="'true'"/>
@@ -2075,10 +2039,7 @@
     <Complex path="tn-ro:formOfRoadNode">
       <Primitive path="@nilReason" mapping="formofroadnode_nilreason"/>
       <Primitive path="@xsi:nil" mapping="formofroadnode_nil"/>
-      <Feature path=".">
-        <Join table="?" fromColumns="formofroadnode_fk" toColumns="localid"/>
-        <Href mapping="formofroadnode_href"/>
-      </Feature>
+      <Primitive path="@xlink:href" mapping="formofroadnode_href"/>
     </Complex>
   </FeatureTypeMapping>
 
@@ -2089,7 +2050,7 @@
     </FIDMapping>
     <Complex path="gml:identifier">
       <Primitive path="text()" mapping="localid"/>
-      <Primitive path="@codeSpace" mapping="'http://bkg.bund.de/dlm250'"/>
+      <Primitive path="@codeSpace" mapping="'https://registry.gdi-de.org/id/de.bund.bkg.inspire.dlm250'"/>
     </Complex>
     <Complex path="net:networkRef">
       <Join table="tnro.formofway_networkref" fromColumns="localid" toColumns="parentfk"/>
@@ -2107,7 +2068,7 @@
     <Complex path="net:inspireId">
       <Complex path="base:Identifier">
         <Primitive path="base:localId" mapping="localid"/>
-        <Primitive path="base:namespace" mapping="'http://bkg.bund.de/dlm250'"/>
+        <Primitive path="base:namespace" mapping="'https://registry.gdi-de.org/id/de.bund.bkg.inspire.dlm250'"/>
         <Complex path="base:versionId">
           <Primitive path="@nilReason" mapping="'other:unpopulated'"/>
           <Primitive path="@xsi:nil" mapping="'true'"/>
@@ -2125,10 +2086,7 @@
       <Primitive path="@owns" mapping="formofway_owns"/>
       <Primitive path="@nilReason" mapping="formofway_nilreason"/>
       <Primitive path="@gml:remoteSchema" mapping="formofway_remoteschema"/>
-      <Feature path=".">
-        <Join table="?" fromColumns="formofway_fk" toColumns="localid"/>
-        <Href mapping="formofway_href"/>
-      </Feature>
+      <Primitive path="@xlink:href" mapping="formofway_href"/>
     </Complex>
   </FeatureTypeMapping>
   <FeatureTypeMapping name="tn-ro:FunctionalRoadClass" table="tnro.functionalroadclass">
@@ -2137,7 +2095,7 @@
     </FIDMapping>
     <Complex path="gml:identifier">
       <Primitive path="text()" mapping="localid"/>
-      <Primitive path="@codeSpace" mapping="'http://bkg.bund.de/dlm250'"/>
+      <Primitive path="@codeSpace" mapping="'https://registry.gdi-de.org/id/de.bund.bkg.inspire.dlm250'"/>
     </Complex>
     <Complex path="net:networkRef">
       <Join table="tnro.functionalroadclass_networkref" fromColumns="localid" toColumns="parentfk"/>
@@ -2155,7 +2113,7 @@
     <Complex path="net:inspireId">
       <Complex path="base:Identifier">
         <Primitive path="base:localId" mapping="localid"/>
-        <Primitive path="base:namespace" mapping="'http://bkg.bund.de/dlm250'"/>
+        <Primitive path="base:namespace" mapping="'https://registry.gdi-de.org/id/de.bund.bkg.inspire.dlm250'"/>
         <Complex path="base:versionId">
           <Primitive path="@nilReason" mapping="'other:unpopulated'"/>
           <Primitive path="@xsi:nil" mapping="'true'"/>
@@ -2178,7 +2136,7 @@
     </FIDMapping>
     <Complex path="gml:identifier">
       <Primitive path="text()" mapping="localid"/>
-      <Primitive path="@codeSpace" mapping="'http://bkg.bund.de/dlm250'"/>
+      <Primitive path="@codeSpace" mapping="'https://registry.gdi-de.org/id/de.bund.bkg.inspire.dlm250'"/>
     </Complex>
     <Complex path="net:networkRef">
       <Join table="tnro.numberoflanes_networkref" fromColumns="localid" toColumns="parentfk"/>
@@ -2196,7 +2154,7 @@
     <Complex path="net:inspireId">
       <Complex path="base:Identifier">
         <Primitive path="base:localId" mapping="localid"/>
-        <Primitive path="base:namespace" mapping="'http://bkg.bund.de/dlm250'"/>
+        <Primitive path="base:namespace" mapping="'https://registry.gdi-de.org/id/de.bund.bkg.inspire.dlm250'"/>
         <Complex path="base:versionId">
           <Primitive path="@nilReason" mapping="'other:unpopulated'"/>
           <Primitive path="@xsi:nil" mapping="'true'"/>
@@ -2215,10 +2173,7 @@
       <Primitive path="@nilReason" mapping="direction_nilreason"/>
       <Primitive path="@gml:remoteSchema" mapping="direction_remoteschema"/>
       <Primitive path="@xsi:nil" mapping="direction_nil"/>
-      <Feature path=".">
-        <Join table="?" fromColumns="direction_fk" toColumns="localid"/>
-        <Href mapping="direction_href"/>
-      </Feature>
+      <Primitive path="@xlink:href" mapping="direction_href"/>
     </Complex>
     <Complex path="tn-ro:minMaxNumberOfLanes">
       <Primitive path="text()" mapping="minmaxnumberoflanes"/>
@@ -2233,7 +2188,7 @@
     </FIDMapping>
     <Complex path="gml:identifier">
       <Primitive path="text()" mapping="localid"/>
-      <Primitive path="@codeSpace" mapping="'http://bkg.bund.de/dlm250'"/>
+      <Primitive path="@codeSpace" mapping="'https://registry.gdi-de.org/id/de.bund.bkg.inspire.dlm250'"/>
     </Complex>
     <Complex path="net:networkRef">
       <Join table="tnro.roadsurfacecategory_networkref" fromColumns="localid" toColumns="parentfk"/>
@@ -2251,7 +2206,7 @@
     <Complex path="net:inspireId">
       <Complex path="base:Identifier">
         <Primitive path="base:localId" mapping="localid"/>
-        <Primitive path="base:namespace" mapping="'http://bkg.bund.de/dlm250'"/>
+        <Primitive path="base:namespace" mapping="'https://registry.gdi-de.org/id/de.bund.bkg.inspire.dlm250'"/>
         <Complex path="base:versionId">
           <Primitive path="@nilReason" mapping="'other:unpopulated'"/>
           <Primitive path="@xsi:nil" mapping="'true'"/>
@@ -2269,10 +2224,7 @@
       <Primitive path="@owns" mapping="surfacecategory_owns"/>
       <Primitive path="@nilReason" mapping="surfacecategory_nilreason"/>
       <Primitive path="@gml:remoteSchema" mapping="surfacecategory_remoteschema"/>
-      <Feature path=".">
-        <Join table="?" fromColumns="surfacecategory_fk" toColumns="localid"/>
-        <Href mapping="surfacecategory_href"/>
-      </Feature>
+      <Primitive path="@xlink:href" mapping="surfacecategory_href"/>
     </Complex>
   </FeatureTypeMapping>
  
@@ -2283,12 +2235,8 @@
     </FIDMapping>
     <Complex path="gml:identifier">
       <Primitive path="text()" mapping="localid"/>
-      <Primitive path="@codeSpace" mapping="'http://bkg.bund.de/dlm250'"/>
+      <Primitive path="@codeSpace" mapping="'https://registry.gdi-de.org/id/de.bund.bkg.inspire.dlm250'"/>
     </Complex>
-    <!--2017-05-22 ersetzt & kopiert von roadlink Complex path="gml:identifier">
-      <Primitive path="text()" mapping="localid"/>
-	  <2017-05-22 column existiert nicht Primitive path="@codeSpace" mapping="identifier_codespace"/>
-    </Complex-->
     <Complex path="net:networkRef">
       <Join table="tnro.roadservicetype_networkref" fromColumns="localid" toColumns="parentfk"/>
       <Primitive path="@nilReason" mapping="nilreason"/>
@@ -2305,24 +2253,13 @@
     <Complex path="net:inspireId">
       <Complex path="base:Identifier">
         <Primitive path="base:localId" mapping="localid"/>
-        <Primitive path="base:namespace" mapping="'http://bkg.bund.de/dlm250'"/>
+        <Primitive path="base:namespace" mapping="'https://registry.gdi-de.org/id/de.bund.bkg.inspire.dlm250'"/>
         <Complex path="base:versionId">
           <Primitive path="@nilReason" mapping="'other:unpopulated'"/>
           <Primitive path="@xsi:nil" mapping="'true'"/>
         </Complex>
       </Complex>
     </Complex>
-    <!--2017-05-22 ersetzt und kopiert von roadlink Complex path="net:inspireId">
-      <Complex path="base:Identifier">
-        <Primitive path="base:localId" mapping="localid"/>
-		< Primitive path="base:namespace" mapping="namespace"/>
-        <Complex path="base:versionId">
-		  <2017-05-22 Primitive path="text()" mapping="versionid"/>
-          <Primitive path="@nilReason" mapping="versionid_nilreason"/>
-          <Primitive path="@xsi:nil" mapping="versionid_nil"/>
-        </Complex>
-      </Complex>
-    </Complex-->
     <Complex path="net:beginLifespanVersion">
       <Primitive path="text()" mapping="beginlifespanversion"/>
     </Complex>
@@ -2331,24 +2268,17 @@
       <Primitive path="@xsi:nil" mapping="'true'"/>
     </Complex>
     <Complex path="tn-ro:availableFacility">
-      <!--2017-05-22 num Column existiert nicht Join table="tnro.roadservicetype_availablefacility" fromColumns="localid" toColumns="parentfk" orderColumns="num" numbered="true"/--> 
       <Join table="tnro.roadservicetype_availablefacility" fromColumns="localid" toColumns="parentfk" numbered="true"/>
       <Primitive path="@owns" mapping="owns"/>
       <Primitive path="@nilReason" mapping="nilreason"/>
       <Primitive path="@gml:remoteSchema" mapping="remoteschema"/>
-      <Feature path=".">
-        <Join table="?" fromColumns="fk" toColumns="localid"/>
-        <Href mapping="href"/>
-      </Feature>
+      <Primitive path="@xlink:href" mapping="href"/>
     </Complex>
     <Complex path="tn-ro:type">
       <Primitive path="@owns" mapping="type_owns"/>
       <Primitive path="@nilReason" mapping="type_nilreason"/>
       <Primitive path="@gml:remoteSchema" mapping="type_remoteschema"/>
-      <Feature path=".">
-        <Join table="?" fromColumns="type_fk" toColumns="localid"/>
-        <Href mapping="type_href"/>
-      </Feature>
+      <Primitive path="@xlink:href" mapping="type_href"/>
     </Complex>
   </FeatureTypeMapping>
 
@@ -2359,7 +2289,7 @@
     </FIDMapping>
     <Complex path="gml:identifier">
       <Primitive path="text()" mapping="localid"/>
-      <Primitive path="@codeSpace" mapping="'http://bkg.bund.de/dlm250'"/>
+      <Primitive path="@codeSpace" mapping="'https://registry.gdi-de.org/id/de.bund.bkg.inspire.dlm250'"/>
     </Complex>
     <Complex path="net:beginLifespanVersion">
       <Primitive path="text()" mapping="beginlifespanversion"/>
@@ -2367,7 +2297,7 @@
     <Complex path="net:inspireId">
       <Complex path="base:Identifier">
         <Primitive path="base:localId" mapping="localid"/>
-        <Primitive path="base:namespace" mapping="'http://bkg.bund.de/dlm250'"/>
+        <Primitive path="base:namespace" mapping="'https://registry.gdi-de.org/id/de.bund.bkg.inspire.dlm250'"/>
         <Complex path="base:versionId">
           <Primitive path="@nilReason" mapping="'other:unpopulated'"/>
           <Primitive path="@xsi:nil" mapping="'true'"/>
@@ -2424,10 +2354,7 @@
     </Complex>
     <Complex path="elf-tn-ro:typeOfInterchange">
       <Primitive path="@nilReason" mapping="typeofinterchange_nilreason"/>
-      <Feature path=".">
-        <Join table="?" fromColumns="typeofinterchange_fk" toColumns="localid"/>
-        <Href mapping="typeofinterchange_href"/>
-      </Feature>
+      <Primitive path="@xlink:href" mapping="typeofinterchange_href"/>
     </Complex>
   </FeatureTypeMapping>
 
@@ -2437,7 +2364,7 @@
     </FIDMapping>
     <Complex path="gml:identifier">
       <Primitive path="text()" mapping="localid"/>
-      <Primitive path="@codeSpace" mapping="'http://bkg.bund.de/dlm250'"/>
+      <Primitive path="@codeSpace" mapping="'https://registry.gdi-de.org/id/de.bund.bkg.inspire.dlm250'"/>
     </Complex>
     <Complex path="net:beginLifespanVersion">
       <Primitive path="text()" mapping="beginlifespanversion"/>
@@ -2445,7 +2372,7 @@
     <Complex path="net:inspireId">
       <Complex path="base:Identifier">
         <Primitive path="base:localId" mapping="localid"/>
-        <Primitive path="base:namespace" mapping="'http://bkg.bund.de/dlm250'"/>
+        <Primitive path="base:namespace" mapping="'https://registry.gdi-de.org/id/de.bund.bkg.inspire.dlm250'"/>
         <Complex path="base:versionId">
           <Primitive path="@nilReason" mapping="'other:unpopulated'"/>
           <Primitive path="@xsi:nil" mapping="'true'"/>
@@ -2534,7 +2461,7 @@
     </FIDMapping>
     <Complex path="gml:identifier">
       <Primitive path="text()" mapping="localid"/>
-      <Primitive path="@codeSpace" mapping="'http://bkg.bund.de/dlm250'"/>
+      <Primitive path="@codeSpace" mapping="'https://registry.gdi-de.org/id/de.bund.bkg.inspire.dlm250'"/>
     </Complex>
     <Complex path="net:networkRef">
       <Join table="tnw.conditionofwaterfacility_networkref" fromColumns="localid" toColumns="parentfk"/>
@@ -2552,7 +2479,7 @@
     <Complex path="net:inspireId">
       <Complex path="base:Identifier">
         <Primitive path="base:localId" mapping="localid"/>
-        <Primitive path="base:namespace" mapping="'http://bkg.bund.de/dlm250'"/>
+        <Primitive path="base:namespace" mapping="'https://registry.gdi-de.org/id/de.bund.bkg.inspire.dlm250'"/>
         <Complex path="base:versionId">
           <Primitive path="@nilReason" mapping="'other:unpopulated'"/>
           <Primitive path="@xsi:nil" mapping="'true'"/>
@@ -2568,10 +2495,7 @@
     </Complex>
     <Complex path="tn:currentStatus">
       <Primitive path="@nilReason" mapping="currentstatus_nilreason"/>
-      <Feature path=".">
-        <Join table="?" fromColumns="localid" toColumns="localid"/>
-        <Href mapping="currentstatus_href"/>
-      </Feature>
+      <Primitive path="@xlink:href" mapping="currentstatus_href"/>
     </Complex>
   </FeatureTypeMapping>
   
@@ -2581,7 +2505,7 @@
     </FIDMapping>
     <Complex path="gml:identifier">
       <Primitive path="text()" mapping="localid"/>
-      <Primitive path="@codeSpace" mapping="'http://bkg.bund.de/dlm250'"/>
+      <Primitive path="@codeSpace" mapping="'https://registry.gdi-de.org/id/de.bund.bkg.inspire.dlm250'"/>
     </Complex>
     <Complex path="net:beginLifespanVersion">
       <Primitive path="text()" mapping="beginlifespanversion"/>
@@ -2589,7 +2513,7 @@
     <Complex path="net:inspireId">
       <Complex path="base:Identifier">
         <Primitive path="base:localId" mapping="localid"/>
-        <Primitive path="base:namespace" mapping="'http://bkg.bund.de/dlm250'"/>
+        <Primitive path="base:namespace" mapping="'https://registry.gdi-de.org/id/de.bund.bkg.inspire.dlm250'"/>
         <Complex path="base:versionId">
           <Primitive path="@nilReason" mapping="'other:unpopulated'"/>
           <Primitive path="@xsi:nil" mapping="'true'"/>
@@ -2653,7 +2577,7 @@
     </FIDMapping>
     <Complex path="gml:identifier">
       <Primitive path="text()" mapping="localid"/>
-      <Primitive path="@codeSpace" mapping="'http://bkg.bund.de/dlm250'"/>
+      <Primitive path="@codeSpace" mapping="'https://registry.gdi-de.org/id/de.bund.bkg.inspire.dlm250'"/>
     </Complex>
     <Complex path="net:beginLifespanVersion">
       <Primitive path="text()" mapping="beginlifespanversion"/>
@@ -2661,7 +2585,7 @@
     <Complex path="net:inspireId">
       <Complex path="base:Identifier">
         <Primitive path="base:localId" mapping="localid"/>
-        <Primitive path="base:namespace" mapping="'http://bkg.bund.de/dlm250'"/>
+        <Primitive path="base:namespace" mapping="'https://registry.gdi-de.org/id/de.bund.bkg.inspire.dlm250'"/>
         <Complex path="base:versionId">
           <Primitive path="@nilReason" mapping="'other:unpopulated'"/>
           <Primitive path="@xsi:nil" mapping="'true'"/>
@@ -2725,7 +2649,7 @@
     </FIDMapping>
     <Complex path="gml:identifier">
       <Primitive path="text()" mapping="localid"/>
-      <Primitive path="@codeSpace" mapping="'http://bkg.bund.de/dlm250'"/>
+      <Primitive path="@codeSpace" mapping="'https://registry.gdi-de.org/id/de.bund.bkg.inspire.dlm250'"/>
     </Complex>
     <Complex path="net:beginLifespanVersion">
       <Primitive path="text()" mapping="beginlifespanversion"/>
@@ -2733,7 +2657,7 @@
     <Complex path="net:inspireId">
       <Complex path="base:Identifier">
         <Primitive path="base:localId" mapping="localid"/>
-        <Primitive path="base:namespace" mapping="'http://bkg.bund.de/dlm250'"/>
+        <Primitive path="base:namespace" mapping="'https://registry.gdi-de.org/id/de.bund.bkg.inspire.dlm250'"/>
         <Complex path="base:versionId">
           <Primitive path="@nilReason" mapping="'other:unpopulated'"/>
           <Primitive path="@xsi:nil" mapping="'true'"/>
@@ -2797,7 +2721,7 @@
     </FIDMapping>
     <Complex path="gml:identifier">
       <Primitive path="text()" mapping="localid"/>
-      <Primitive path="@codeSpace" mapping="'http://bkg.bund.de/dlm250'"/>
+      <Primitive path="@codeSpace" mapping="'https://registry.gdi-de.org/id/de.bund.bkg.inspire.dlm250'"/>
     </Complex>
     <Complex path="net:beginLifespanVersion">
       <Primitive path="text()" mapping="beginlifespanversion"/>
@@ -2805,7 +2729,7 @@
     <Complex path="net:inspireId">
       <Complex path="base:Identifier">
         <Primitive path="base:localId" mapping="localid"/>
-        <Primitive path="base:namespace" mapping="'http://bkg.bund.de/dlm250'"/>
+        <Primitive path="base:namespace" mapping="'https://registry.gdi-de.org/id/de.bund.bkg.inspire.dlm250'"/>
         <Complex path="base:versionId">
           <Primitive path="@nilReason" mapping="'other:unpopulated'"/>
           <Primitive path="@xsi:nil" mapping="'true'"/>
@@ -2885,8 +2809,8 @@
     </FIDMapping>
     <Complex path="gml:identifier">
       <Primitive path="text()" mapping="localid"/>
-      <!-- 2017-05-22 mapping in 'http://bkg.bund.de/dlm250'geaendert -->
-      <Primitive path="@codeSpace" mapping="'http://bkg.bund.de/dlm250'"/>
+      <!-- 2017-05-22 mapping in 'https://registry.gdi-de.org/id/de.bund.bkg.inspire.dlm250'geaendert -->
+      <Primitive path="@codeSpace" mapping="'https://registry.gdi-de.org/id/de.bund.bkg.inspire.dlm250'"/>
     </Complex>
     <Complex path="net:beginLifespanVersion">
       <Primitive path="text()" mapping="beginlifespanversion"/>
@@ -2894,7 +2818,7 @@
     <Complex path="net:inspireId">
       <Complex path="base:Identifier">
         <Primitive path="base:localId" mapping="localid"/>
-        <Primitive path="base:namespace" mapping="'http://bkg.bund.de/dlm250'"/>
+        <Primitive path="base:namespace" mapping="'https://registry.gdi-de.org/id/de.bund.bkg.inspire.dlm250'"/>
         <Complex path="base:versionId">
           <Primitive path="@nilReason" mapping="'other:unpopulated'"/>
           <Primitive path="@xsi:nil" mapping="'true'"/>
@@ -2959,7 +2883,7 @@
     </FIDMapping>
     <Complex path="gml:identifier">
       <Primitive path="text()" mapping="localid"/>
-      <Primitive path="@codeSpace" mapping="'http://bkg.bund.de/dlm250'"/>
+      <Primitive path="@codeSpace" mapping="'https://registry.gdi-de.org/id/de.bund.bkg.inspire.dlm250'"/>
     </Complex>
     <Complex path="net:beginLifespanVersion">
       <Primitive path="text()" mapping="beginlifespanversion"/>
@@ -2967,7 +2891,7 @@
     <Complex path="net:inspireId">
       <Complex path="base:Identifier">
         <Primitive path="base:localId" mapping="localid"/>
-        <Primitive path="base:namespace" mapping="'http://bkg.bund.de/dlm250'"/>
+        <Primitive path="base:namespace" mapping="'https://registry.gdi-de.org/id/de.bund.bkg.inspire.dlm250'"/>
         <Complex path="base:versionId">
           <Primitive path="@nilReason" mapping="'other:unpopulated'"/>
           <Primitive path="@xsi:nil" mapping="'true'"/>
@@ -3034,8 +2958,8 @@
     </FIDMapping>
     <Complex path="gml:identifier">
       <Primitive path="text()" mapping="localid"/>
-      <!--2017-05-22 codespace in 'http://bkg.bund.de/dlm250' geaendert -->
-      <Primitive path="@codeSpace" mapping="'http://bkg.bund.de/dlm250'"/>
+      <!--2017-05-22 codespace in 'https://registry.gdi-de.org/id/de.bund.bkg.inspire.dlm250' geaendert -->
+      <Primitive path="@codeSpace" mapping="'https://registry.gdi-de.org/id/de.bund.bkg.inspire.dlm250'"/>
     </Complex>
     <Complex path="net:beginLifespanVersion">
       <Primitive path="text()" mapping="beginlifespanversion"/>
@@ -3043,7 +2967,7 @@
     <Complex path="net:inspireId">
       <Complex path="base:Identifier">
         <Primitive path="base:localId" mapping="localid"/>
-        <Primitive path="base:namespace" mapping="'http://bkg.bund.de/dlm250'"/>
+        <Primitive path="base:namespace" mapping="'https://registry.gdi-de.org/id/de.bund.bkg.inspire.dlm250'"/>
         <Complex path="base:versionId">
           <Primitive path="@nilReason" mapping="'other:unpopulated'"/>
           <Primitive path="@xsi:nil" mapping="'true'"/>
@@ -3108,8 +3032,7 @@
     </FIDMapping>
     <Complex path="gml:identifier">
       <Primitive path="text()" mapping="localid"/>
-      <!--2017-05-22 codespace in 'http://bkg.bund.de/dlm250' geaendert -->
-      <Primitive path="@codeSpace" mapping="'http://bkg.bund.de/dlm250'"/>
+      <Primitive path="@codeSpace" mapping="'https://registry.gdi-de.org/id/de.bund.bkg.inspire.dlm250'"/>
     </Complex>
     <Complex path="net:networkRef">
       <Join table="tnw.porttype_networkref" fromColumns="localid" toColumns="parentfk"/>
@@ -3127,7 +3050,7 @@
     <Complex path="net:inspireId">
       <Complex path="base:Identifier">
         <Primitive path="base:localId" mapping="localid"/>
-        <Primitive path="base:namespace" mapping="'http://bkg.bund.de/dlm250'"/>
+        <Primitive path="base:namespace" mapping="'https://registry.gdi-de.org/id/de.bund.bkg.inspire.dlm250'"/>
         <Complex path="base:versionId">
           <Primitive path="@nilReason" mapping="'other:unpopulated'"/>
           <Primitive path="@xsi:nil" mapping="'true'"/>
@@ -3143,10 +3066,7 @@
     </Complex>
     <Complex path="elf-tn-w:portType">
       <Primitive path="@nilReason" mapping="porttype_nilreason"/>
-      <Feature path=".">
-        <Join table="?" fromColumns="localid" toColumns="localid"/>
-        <Href mapping="porttype_href"/>
-      </Feature>
+      <Primitive path="@xlink:href" mapping="porttype_href"/>
     </Complex>
   </FeatureTypeMapping>
 
@@ -3161,7 +3081,7 @@
     </FIDMapping>
     <Complex path="gml:identifier">
       <Primitive path="text()" mapping="localid"/>
-      <Primitive path="@codeSpace" mapping="'http://bkg.bund.de/dlm250'"/>
+      <Primitive path="@codeSpace" mapping="'https://registry.gdi-de.org/id/de.bund.bkg.inspire.dlm250'"/>
     </Complex>
     <Complex path="net:beginLifespanVersion">
       <Primitive path="text()" mapping="beginlifespanversion"/>
@@ -3169,7 +3089,7 @@
     <Complex path="net:inspireId">
       <Complex path="base:Identifier">
         <Primitive path="base:localId" mapping="localid"/>
-        <Primitive path="base:namespace" mapping="'http://bkg.bund.de/dlm250'"/>
+        <Primitive path="base:namespace" mapping="'https://registry.gdi-de.org/id/de.bund.bkg.inspire.dlm250'"/>
         <Complex path="base:versionId">
           <Primitive path="@nilReason" mapping="'other:unpopulated'"/>
           <Primitive path="@xsi:nil" mapping="'true'"/>
@@ -3232,19 +3152,16 @@
     </Complex>
     <Complex path="hy-n:relatedHydroObject">
       <!-- 1:n -> 1:1 -->
-      <Primitive path="@nilReason" mapping="relatedhydroobject_nilreason"/>
+      <!-- deactivated: deegree doesn't generate attribute <Primitive path="@nilReason" mapping="relatedhydroobject_nilreason"/> -->
       <Feature path=".">
         <Join table="?" fromColumns="localid" toColumns="localid"/>
         <Href mapping="relatedhydroobject_href"/>
       </Feature>
     </Complex>
     <Complex path="hy-n:hydroNodeCategory">
-      <!-- Primitive path="@xlink:href" mapping="hydronodecategory_href"/ -->
       <Primitive path="@nilReason" mapping="hydronodecategory_nilreason"/>
       <Primitive path="@xsi:nil" mapping="hydronodecategory_nil"/>
-      <Feature path=".">
-        <Href mapping="hydronodecategory_href"/>
-      </Feature>
+      <Primitive path="@xlink:href" mapping="hydronodecategory_href"/>
     </Complex>
   </FeatureTypeMapping>
   
@@ -3254,7 +3171,7 @@
     </FIDMapping>
     <Complex path="gml:identifier">
       <Primitive path="text()" mapping="localid"/>
-      <Primitive path="@codeSpace" mapping="'http://bkg.bund.de/dlm250'"/>
+      <Primitive path="@codeSpace" mapping="'https://registry.gdi-de.org/id/de.bund.bkg.inspire.dlm250'"/>
     </Complex>
     <Complex path="net:beginLifespanVersion">
       <Primitive path="text()" mapping="beginlifespanversion"/>
@@ -3262,7 +3179,7 @@
     <Complex path="net:inspireId">
       <Complex path="base:Identifier">
         <Primitive path="base:localId" mapping="localid"/>
-        <Primitive path="base:namespace" mapping="'http://bkg.bund.de/dlm250'"/>
+        <Primitive path="base:namespace" mapping="'https://registry.gdi-de.org/id/de.bund.bkg.inspire.dlm250'"/>
         <Complex path="base:versionId">
           <Primitive path="@nilReason" mapping="'other:unpopulated'"/>
           <Primitive path="@xsi:nil" mapping="'true'"/>
@@ -3349,10 +3266,7 @@
     <Complex path="hy-n:flowDirection">
       <Primitive path="@nilReason" mapping="flowdirection_nilreason"/>
       <Primitive path="@xsi:nil" mapping="flowdirection_nil"/>
-      <Feature path=".">
-        <Join table="?" fromColumns="flowdirection_fk" toColumns="localid"/>
-        <Href mapping="flowdirection_href"/>
-      </Feature>
+      <Primitive path="@xlink:href" mapping="flowdirection_href"/>
     </Complex>
     <Complex path="hy-n:length">
       <Primitive path="text()" mapping="length"/>
@@ -3368,7 +3282,7 @@
     </FIDMapping>
     <Complex path="gml:identifier">
       <Primitive path="text()" mapping="localid"/>
-      <Primitive path="@codeSpace" mapping="'http://bkg.bund.de/dlm250'"/>
+      <Primitive path="@codeSpace" mapping="'https://registry.gdi-de.org/id/de.bund.bkg.inspire.dlm250'"/>
     </Complex>
     <Complex path="net:beginLifespanVersion">
       <Primitive path="text()" mapping="beginlifespanversion"/>
@@ -3376,7 +3290,7 @@
     <Complex path="net:inspireId">
       <Complex path="base:Identifier">
         <Primitive path="base:localId" mapping="localid"/>
-        <Primitive path="base:namespace" mapping="'http://bkg.bund.de/dlm250'"/>
+        <Primitive path="base:namespace" mapping="'https://registry.gdi-de.org/id/de.bund.bkg.inspire.dlm250'"/>
         <Complex path="base:versionId">
           <Primitive path="@nilReason" mapping="'other:unpopulated'"/>
           <Primitive path="@xsi:nil" mapping="'true'"/>
@@ -3461,7 +3375,7 @@
     </FIDMapping>
     <Complex path="gml:identifier">
       <Primitive path="text()" mapping="localid"/>
-      <Primitive path="@codeSpace" mapping="'http://bkg.bund.de/dlm250'"/>
+      <Primitive path="@codeSpace" mapping="'https://registry.gdi-de.org/id/de.bund.bkg.inspire.dlm250'"/>
     </Complex>
     <Complex path="hy-p:geographicalName">
       <Join table="hypw.crossing_gn" fromColumns="localid" toColumns="parentfk"/>
@@ -3524,10 +3438,7 @@
     <Complex path="hy-p:condition">
       <Primitive path="@nilReason" mapping="condition_nilreason"/>
       <Primitive path="@xsi:nil" mapping="condition_nil"/>
-      <Feature path=".">
-        <Join table="?" fromColumns="condition_fk" toColumns="localid"/>
-        <Href mapping="condition_href"/>
-      </Feature>
+      <Primitive path="@xlink:href" mapping="condition_href"/>
     </Complex>
     <Complex path="hy-p:geometry">
       <Geometry path="." mapping="geometry"/>
@@ -3535,7 +3446,7 @@
     <Complex path="hy-p:inspireId">
       <Complex path="base:Identifier">
         <Primitive path="base:localId" mapping="localid"/>
-        <Primitive path="base:namespace" mapping="'http://bkg.bund.de/dlm250'"/>
+        <Primitive path="base:namespace" mapping="'https://registry.gdi-de.org/id/de.bund.bkg.inspire.dlm250'"/>
         <Complex path="base:versionId">
           <Primitive path="@nilReason" mapping="'other:unpopulated'"/>
           <Primitive path="@xsi:nil" mapping="'true'"/>
@@ -3573,10 +3484,7 @@
     <Complex path="hy-p:type">
       <Primitive path="@nilReason" mapping="type_nilreason"/>
       <Primitive path="@xsi:nil" mapping="type_nil"/>
-      <Feature path=".">
-        <Join table="?" fromColumns="type_fk" toColumns="localid"/>
-        <Href mapping="type_href"/>
-      </Feature>
+      <Primitive path="@xlink:href" mapping="type_href"/>
     </Complex>
   </FeatureTypeMapping>
   
@@ -3586,7 +3494,7 @@
     </FIDMapping>
     <Complex path="gml:identifier">
       <Primitive path="text()" mapping="localid"/>
-      <Primitive path="@codeSpace" mapping="'http://bkg.bund.de/dlm250'"/>
+      <Primitive path="@codeSpace" mapping="'https://registry.gdi-de.org/id/de.bund.bkg.inspire.dlm250'"/>
     </Complex>
     <Complex path="hy-p:geographicalName">
       <Join table="hypw.damorweir_gn" fromColumns="localid" toColumns="parentfk"/>
@@ -3649,10 +3557,7 @@
     <Complex path="hy-p:condition">
       <Primitive path="@nilReason" mapping="condition_nilreason"/>
       <Primitive path="@xsi:nil" mapping="condition_nil"/>
-      <Feature path=".">
-        <Join table="?" fromColumns="condition_fk" toColumns="localid"/>
-        <Href mapping="condition_href"/>
-      </Feature>
+      <Primitive path="@xlink:href" mapping="condition_href"/>
     </Complex>
     <Complex path="hy-p:geometry">
       <Geometry path="." mapping="geometry"/>
@@ -3660,7 +3565,7 @@
     <Complex path="hy-p:inspireId">
       <Complex path="base:Identifier">
         <Primitive path="base:localId" mapping="localid"/>
-        <Primitive path="base:namespace" mapping="'http://bkg.bund.de/dlm250'"/>
+        <Primitive path="base:namespace" mapping="'https://registry.gdi-de.org/id/de.bund.bkg.inspire.dlm250'"/>
         <Complex path="base:versionId">
           <Primitive path="@nilReason" mapping="'other:unpopulated'"/>
           <Primitive path="@xsi:nil" mapping="'true'"/>
@@ -3703,7 +3608,7 @@
     </FIDMapping>
     <Complex path="gml:identifier">
       <Primitive path="text()" mapping="localid"/>
-      <Primitive path="@codeSpace" mapping="'http://bkg.bund.de/dlm250'"/>
+      <Primitive path="@codeSpace" mapping="'https://registry.gdi-de.org/id/de.bund.bkg.inspire.dlm250'"/>
     </Complex>
     <Complex path="hy-p:geographicalName">
       <Join table="hypw.embankment_gn" fromColumns="localid" toColumns="parentfk"/>
@@ -3766,10 +3671,7 @@
     <Complex path="hy-p:condition">
       <Primitive path="@nilReason" mapping="condition_nilreason"/>
       <Primitive path="@xsi:nil" mapping="condition_nil"/>
-      <Feature path=".">
-        <Join table="?" fromColumns="condition_fk" toColumns="localid"/>
-        <Href mapping="condition_href"/>
-      </Feature>
+      <Primitive path="@xlink:href" mapping="condition_href"/>
     </Complex>
     <Complex path="hy-p:geometry">
       <Geometry path="." mapping="geometry"/>
@@ -3777,7 +3679,7 @@
     <Complex path="hy-p:inspireId">
       <Complex path="base:Identifier">
         <Primitive path="base:localId" mapping="localid"/>
-        <Primitive path="base:namespace" mapping="'http://bkg.bund.de/dlm250'"/>
+        <Primitive path="base:namespace" mapping="'https://registry.gdi-de.org/id/de.bund.bkg.inspire.dlm250'"/>
         <Complex path="base:versionId">
           <Primitive path="@nilReason" mapping="'other:unpopulated'"/>
           <Primitive path="@xsi:nil" mapping="'true'"/>
@@ -3833,7 +3735,7 @@
     </FIDMapping>
     <Complex path="gml:identifier">
       <Primitive path="text()" mapping="localid"/>
-      <Primitive path="@codeSpace" mapping="'http://bkg.bund.de/dlm250'"/>
+      <Primitive path="@codeSpace" mapping="'https://registry.gdi-de.org/id/de.bund.bkg.inspire.dlm250'"/>
     </Complex>
     <Complex path="hy-p:geographicalName">
       <Join table="hypw.falls_gn" fromColumns="localid" toColumns="parentfk"/>
@@ -3899,7 +3801,7 @@
     <Complex path="hy-p:inspireId">
       <Complex path="base:Identifier">
         <Primitive path="base:localId" mapping="localid"/>
-        <Primitive path="base:namespace" mapping="'http://bkg.bund.de/dlm250'"/>
+        <Primitive path="base:namespace" mapping="'https://registry.gdi-de.org/id/de.bund.bkg.inspire.dlm250'"/>
         <Complex path="base:versionId">
           <Primitive path="@nilReason" mapping="'other:unpopulated'"/>
           <Primitive path="@xsi:nil" mapping="'true'"/>
@@ -3948,7 +3850,7 @@
     </FIDMapping>
     <Complex path="gml:identifier">
       <Primitive path="text()" mapping="localid"/>
-      <Primitive path="@codeSpace" mapping="'http://bkg.bund.de/dlm250'"/>
+      <Primitive path="@codeSpace" mapping="'https://registry.gdi-de.org/id/de.bund.bkg.inspire.dlm250'"/>
     </Complex>
     <Complex path="hy-p:beginLifespanVersion">
       <Primitive path="text()" mapping="beginlifespanversion"/>
@@ -3959,7 +3861,7 @@
     <Complex path="hy-p:inspireId">
       <Complex path="base:Identifier">
         <Primitive path="base:localId" mapping="localid"/>
-        <Primitive path="base:namespace" mapping="'http://bkg.bund.de/dlm250'"/>
+        <Primitive path="base:namespace" mapping="'https://registry.gdi-de.org/id/de.bund.bkg.inspire.dlm250'"/>
         <Complex path="base:versionId">
           <Primitive path="@nilReason" mapping="'other:unpopulated'"/>
           <Primitive path="@xsi:nil" mapping="'true'"/>
@@ -3974,10 +3876,7 @@
     <Complex path="hy-p:waterLevelCategory">
       <Primitive path="@nilReason" mapping="waterlevelcategory_nilreason"/>
       <Primitive path="@xsi:nil" mapping="waterlevelcategory_nil"/>
-      <Feature path=".">
-        <Join table="?" fromColumns="waterlevelcategory_fk" toColumns="localid"/>
-        <Href mapping="waterlevelcategory_href"/>
-      </Feature>
+      <Primitive path="@xlink:href" mapping="waterlevelcategory_href"/>
     </Complex>
   </FeatureTypeMapping>
   
@@ -3987,7 +3886,7 @@
     </FIDMapping>
     <Complex path="gml:identifier">
       <Primitive path="text()" mapping="localid"/>
-      <Primitive path="@codeSpace" mapping="'http://bkg.bund.de/dlm250'"/>
+      <Primitive path="@codeSpace" mapping="'https://registry.gdi-de.org/id/de.bund.bkg.inspire.dlm250'"/>
     </Complex>
     <Complex path="hy-p:geographicalName">
       <Join table="hypw.lock_gn" fromColumns="localid" toColumns="parentfk"/>
@@ -4050,10 +3949,7 @@
     <Complex path="hy-p:condition">
       <Primitive path="@nilReason" mapping="condition_nilreason"/>
       <Primitive path="@xsi:nil" mapping="condition_nil"/>
-      <Feature path=".">
-        <Join table="?" fromColumns="condition_fk" toColumns="localid"/>
-        <Href mapping="condition_href"/>
-      </Feature>
+      <Primitive path="@xlink:href" mapping="condition_href"/>
     </Complex>
     <Complex path="hy-p:geometry">
       <Geometry path="." mapping="geometry"/>
@@ -4061,7 +3957,7 @@
     <Complex path="hy-p:inspireId">
       <Complex path="base:Identifier">
         <Primitive path="base:localId" mapping="localid"/>
-        <Primitive path="base:namespace" mapping="'http://bkg.bund.de/dlm250'"/>
+        <Primitive path="base:namespace" mapping="'https://registry.gdi-de.org/id/de.bund.bkg.inspire.dlm250'"/>
         <Complex path="base:versionId">
           <Primitive path="@nilReason" mapping="'other:unpopulated'"/>
           <Primitive path="@xsi:nil" mapping="'true'"/>
@@ -4104,7 +4000,7 @@
     </FIDMapping>
     <Complex path="gml:identifier">
       <Primitive path="text()" mapping="localid"/>
-      <Primitive path="@codeSpace" mapping="'http://bkg.bund.de/dlm250'"/>
+      <Primitive path="@codeSpace" mapping="'https://registry.gdi-de.org/id/de.bund.bkg.inspire.dlm250'"/>
     </Complex>
     <Complex path="hy-p:geographicalName">
       <Join table="hypw.shore_gn" fromColumns="localid" toColumns="parentfk"/>
@@ -4164,7 +4060,7 @@
     <Complex path="hy-p:inspireId">
       <Complex path="base:Identifier">
         <Primitive path="base:localId" mapping="localid"/>
-        <Primitive path="base:namespace" mapping="'http://bkg.bund.de/dlm250'"/>
+        <Primitive path="base:namespace" mapping="'https://registry.gdi-de.org/id/de.bund.bkg.inspire.dlm250'"/>
         <Complex path="base:versionId">
           <Primitive path="@nilReason" mapping="'other:unpopulated'"/>
           <Primitive path="@xsi:nil" mapping="'true'"/>
@@ -4177,10 +4073,7 @@
     <Complex path="hy-p:composition">
       <Primitive path="@nilReason" mapping="composition_nilreason"/>
       <Primitive path="@xsi:nil" mapping="composition_nil"/>
-      <Feature path=".">
-        <Join table="?" fromColumns="composition_fk" toColumns="localid"/>
-        <Href mapping="composition_href"/>
-      </Feature>
+      <Primitive path="@xlink:href" mapping="composition_href"/>
     </Complex>
     <Complex path="hy-p:delineationKnown">
       <Primitive path="text()" mapping="delineationknown"/>
@@ -4198,7 +4091,7 @@
     </FIDMapping>
     <Complex path="gml:identifier">
       <Primitive path="text()" mapping="localid"/>
-      <Primitive path="@codeSpace" mapping="'http://bkg.bund.de/dlm250'"/>
+      <Primitive path="@codeSpace" mapping="'https://registry.gdi-de.org/id/de.bund.bkg.inspire.dlm250'"/>
     </Complex>
     <Complex path="hy-p:geographicalName">
       <Join table="hypw.shorelineconstruction_gn" fromColumns="localid" toColumns="parentfk"/>
@@ -4261,10 +4154,7 @@
     <Complex path="hy-p:condition">
       <Primitive path="@nilReason" mapping="condition_nilreason"/>
       <Primitive path="@xsi:nil" mapping="condition_nil"/>
-      <Feature path=".">
-        <Join table="?" fromColumns="condition_fk" toColumns="localid"/>
-        <Href mapping="condition_href"/>
-      </Feature>
+      <Primitive path="@xlink:href" mapping="condition_href"/>
     </Complex>
     <Complex path="hy-p:geometry">
       <Geometry path="." mapping="geometry"/>
@@ -4272,7 +4162,7 @@
     <Complex path="hy-p:inspireId">
       <Complex path="base:Identifier">
         <Primitive path="base:localId" mapping="localid"/>
-        <Primitive path="base:namespace" mapping="'http://bkg.bund.de/dlm250'"/>
+        <Primitive path="base:namespace" mapping="'https://registry.gdi-de.org/id/de.bund.bkg.inspire.dlm250'"/>
         <Complex path="base:versionId">
           <Primitive path="@nilReason" mapping="'other:unpopulated'"/>
           <Primitive path="@xsi:nil" mapping="'true'"/>
@@ -4315,7 +4205,7 @@
     </FIDMapping>
     <Complex path="gml:identifier">
       <Primitive path="text()" mapping="localid"/>
-      <Primitive path="@codeSpace" mapping="'http://bkg.bund.de/dlm250'"/>
+      <Primitive path="@codeSpace" mapping="'https://registry.gdi-de.org/id/de.bund.bkg.inspire.dlm250'"/>
     </Complex>
     <Complex path="hy-p:geographicalName">      
       <Join table="hypw.standingwater_gn" fromColumns="localid" toColumns="parentfk"/>
@@ -4381,7 +4271,7 @@
     <Complex path="hy-p:inspireId">
       <Complex path="base:Identifier">
         <Primitive path="base:localId" mapping="localid"/>
-        <Primitive path="base:namespace" mapping="'http://bkg.bund.de/dlm250'"/>
+        <Primitive path="base:namespace" mapping="'https://registry.gdi-de.org/id/de.bund.bkg.inspire.dlm250'"/>
         <Complex path="base:versionId">
           <Primitive path="@nilReason" mapping="'other:unpopulated'"/>
           <Primitive path="@xsi:nil" mapping="'true'"/>
@@ -4441,10 +4331,7 @@
     <Complex path="hy-p:persistence">
       <Primitive path="@nilReason" mapping="persistence_nilreason"/>
       <Primitive path="@xsi:nil" mapping="persistence_nil"/>
-      <Feature path=".">
-        <Join table="?" fromColumns="persistence_fk" toColumns="localid"/>
-        <Href mapping="persistence_href"/>
-      </Feature>
+      <Primitive path="@xlink:href" mapping="persistence_href"/>
     </Complex>
     <Complex path="hy-p:tidal">
       <Primitive path="text()" mapping="tidal"/>
@@ -4507,7 +4394,7 @@
     </FIDMapping>
     <Complex path="gml:identifier">
       <Primitive path="text()" mapping="localid"/>
-      <Primitive path="@codeSpace" mapping="'http://bkg.bund.de/dlm250'"/>
+      <Primitive path="@codeSpace" mapping="'https://registry.gdi-de.org/id/de.bund.bkg.inspire.dlm250'"/>
     </Complex>
     <Complex path="hy-p:geographicalName">
       <Join table="hypw.watercourse_gn" fromColumns="localid" toColumns="parentfk"/>
@@ -4573,7 +4460,7 @@
     <Complex path="hy-p:inspireId">
       <Complex path="base:Identifier">
         <Primitive path="base:localId" mapping="localid"/>
-        <Primitive path="base:namespace" mapping="'http://bkg.bund.de/dlm250'"/>
+        <Primitive path="base:namespace" mapping="'https://registry.gdi-de.org/id/de.bund.bkg.inspire.dlm250'"/>
         <Complex path="base:versionId">
           <Primitive path="@nilReason" mapping="'other:unpopulated'"/>
           <Primitive path="@xsi:nil" mapping="'true'"/>
@@ -4633,10 +4520,7 @@
     <Complex path="hy-p:persistence">
       <Primitive path="@nilReason" mapping="persistence_nilreason"/>
       <Primitive path="@xsi:nil" mapping="persistence_nil"/>
-      <Feature path=".">
-        <Join table="?" fromColumns="persistence_fk" toColumns="localid"/>
-        <Href mapping="persistence_href"/>
-      </Feature>
+      <Primitive path="@xlink:href" mapping="persistence_href"/>
     </Complex>
     <Complex path="hy-p:tidal">
       <Primitive path="text()" mapping="tidal"/>
@@ -4654,6 +4538,7 @@
     </Complex-->
     <Complex path="hy-p:drainsBasin">
       <Primitive path="@nilReason" mapping="'other:unpopulated'"/>
+      <Primitive path="@xsi:nil" mapping="'true'"/>
       <!--Join table="hypw.watercourse_drainsbasin" fromColumns="localid" toColumns="parentfk"/>
       <Primitive path="@nilReason" mapping="nilreason"/>
       <Primitive path="@xsi:nil" mapping="nil"/>
@@ -4675,10 +4560,7 @@
     <Complex path="hy-p:condition">
       <Primitive path="@nilReason" mapping="condition_nilreason"/>
       <Primitive path="@xsi:nil" mapping="condition_nil"/>
-      <Feature path=".">
-        <Join table="?" fromColumns="condition_fk" toColumns="localid"/>
-        <Href mapping="condition_href"/>
-      </Feature>
+      <Primitive path="@xlink:href" mapping="condition_href"/>
     </Complex>
     <Complex path="hy-p:delineationKnown">
       <Primitive path="text()" mapping="delineationknown"/>
@@ -4727,7 +4609,7 @@
     </FIDMapping>
     <Complex path="gml:identifier">
       <Primitive path="text()" mapping="localid"/>
-      <Primitive path="@codeSpace" mapping="'http://bkg.bund.de/dlm250'"/>
+      <Primitive path="@codeSpace" mapping="'https://registry.gdi-de.org/id/de.bund.bkg.inspire.dlm250'"/>
     </Complex>
     <Complex path="hy-p:geographicalName">
       <Join table="hypw.wetland_gn" fromColumns="localid" toColumns="parentfk"/>
@@ -4787,7 +4669,7 @@
     <Complex path="hy-p:inspireId">
       <Complex path="base:Identifier">
         <Primitive path="base:localId" mapping="localid"/>
-        <Primitive path="base:namespace" mapping="'http://bkg.bund.de/dlm250'"/>
+        <Primitive path="base:namespace" mapping="'https://registry.gdi-de.org/id/de.bund.bkg.inspire.dlm250'"/>
         <Complex path="base:versionId">
           <Primitive path="@nilReason" mapping="'other:unpopulated'"/>
           <Primitive path="@xsi:nil" mapping="'true'"/>
@@ -4832,7 +4714,7 @@
     </FIDMapping>
     <Complex path="gml:identifier">
       <Primitive path="text()" mapping="localid"/>
-      <Primitive path="@codeSpace" mapping="'http://bkg.bund.de/dlm250'"/>
+      <Primitive path="@codeSpace" mapping="'https://registry.gdi-de.org/id/de.bund.bkg.inspire.dlm250'"/>
     </Complex>
     <Complex path="net:beginLifespanVersion">
       <Primitive path="text()" mapping="beginlifespanversion"/>
@@ -4840,7 +4722,7 @@
     <Complex path="net:inspireId">
       <Complex path="base:Identifier">
         <Primitive path="base:localId" mapping="localid"/>
-        <Primitive path="base:namespace" mapping="'http://bkg.bund.de/dlm250'"/>
+        <Primitive path="base:namespace" mapping="'https://registry.gdi-de.org/id/de.bund.bkg.inspire.dlm250'"/>
         <Complex path="base:versionId">
           <Primitive path="@nilReason" mapping="'other:unpopulated'"/>
           <Primitive path="@xsi:nil" mapping="'true'"/>
@@ -4912,10 +4794,7 @@
     <Complex path="hy-n:hydroNodeCategory">
       <Primitive path="@nilReason" mapping="hydronodecategory_nilreason"/>
       <Primitive path="@xsi:nil" mapping="hydronodecategory_nil"/>
-      <Feature path=".">
-        <Join table="?" fromColumns="hydronodecategory_fk" toColumns="localid"/>
-        <Href mapping="hydronodecategory_href"/>
-      </Feature>
+      <Primitive path="@xlink:href" mapping="hydronodecategory_href"/>
     </Complex>
     <Complex path="elf-hn:spring">
       <Primitive path="@nilReason" mapping="spring_nilreason"/>
@@ -4953,7 +4832,7 @@
     </FIDMapping>
     <Complex path="gml:identifier">
       <Primitive path="text()" mapping="localid"/>
-      <Primitive path="@codeSpace" mapping="'http://bkg.bund.de/dlm250'"/>
+      <Primitive path="@codeSpace" mapping="'https://registry.gdi-de.org/id/de.bund.bkg.inspire.dlm250'"/>
     </Complex>
     <Complex path="au:geometry">
       <Geometry path="." mapping="geometry"/>
@@ -4961,7 +4840,7 @@
     <Complex path="au:inspireId">
       <Complex path="base:Identifier">
         <Primitive path="base:localId" mapping="localid"/>
-        <Primitive path="base:namespace" mapping="'http://bkg.bund.de/dlm250'"/>
+        <Primitive path="base:namespace" mapping="'https://registry.gdi-de.org/id/de.bund.bkg.inspire.dlm250'"/>
         <Complex path="base:versionId">
           <Primitive path="@nilReason" mapping="'other:unpopulated'"/>
           <Primitive path="@xsi:nil" mapping="'true'"/>
@@ -4979,10 +4858,7 @@
     <Complex path="au:nationalLevel">
       <Join table="au.adminboundary_nationallevel" fromColumns="localid" toColumns="parentfk"/>
       <Primitive path="@nilReason" mapping="nilreason"/>
-      <Feature path=".">
-        <Join table="?" fromColumns="id" toColumns="parentfk"/>
-        <Href mapping="href"/>
-      </Feature>
+      <Primitive path="@xlink:href" mapping="href"/>
     </Complex>
     <Complex path="au:legalStatus">
       <Primitive path="text()" mapping="legalstatus"/>
@@ -5014,7 +4890,7 @@
     </FIDMapping>
     <Complex path="gml:identifier">
       <Primitive path="text()" mapping="localid"/>
-      <Primitive path="@codeSpace" mapping="'http://bkg.bund.de/dlm250'"/>
+      <Primitive path="@codeSpace" mapping="'https://registry.gdi-de.org/id/de.bund.bkg.inspire.dlm250'"/>
     </Complex>
     <Complex path="au:geometry">
       <Geometry path="." mapping="geometry"/>
@@ -5023,7 +4899,7 @@
     <Complex path="au:inspireId">
       <Complex path="base:Identifier">
         <Primitive path="base:localId" mapping="localid"/>
-        <Primitive path="base:namespace" mapping="'http://bkg.bund.de/dlm250'"/>
+        <Primitive path="base:namespace" mapping="'https://registry.gdi-de.org/id/de.bund.bkg.inspire.dlm250'"/>
         <Complex path="base:versionId">
           <Primitive path="@nilReason" mapping="'other:unpopulated'"/>
           <Primitive path="@xsi:nil" mapping="'true'"/>
@@ -5032,10 +4908,7 @@
     </Complex>
     <Complex path="au:nationalLevel">
       <Primitive path="@nilReason" mapping="nationallevel_nilreason"/>
-      <Feature path=".">
-        <Join table="?" fromColumns="id" toColumns="parentfk"/>
-        <Href mapping="nationallevel_href"/>
-      </Feature>
+      <Primitive path="@xlink:href" mapping="nationallevel_href"/>
     </Complex>
     <Complex path="au:nationalLevelName">
       <Join table="au.adminunit_nationallevelname" fromColumns="localid" toColumns="parentfk"/>
@@ -5197,7 +5070,7 @@
     </FIDMapping>
     <Complex path="gml:identifier">
       <Primitive path="text()" mapping="localid"/>
-      <Primitive path="@codeSpace" mapping="'http://bkg.bund.de/dlm250'"/>
+      <Primitive path="@codeSpace" mapping="'https://registry.gdi-de.org/id/de.bund.bkg.inspire.dlm250'"/>
     </Complex>
     <Complex path="au:geometry">
       <Geometry path="." mapping="geometry"/>
@@ -5206,7 +5079,7 @@
     <Complex path="au:inspireId">
       <Complex path="base:Identifier">
         <Primitive path="base:localId" mapping="localid"/>
-        <Primitive path="base:namespace" mapping="'http://bkg.bund.de/dlm250'"/>
+        <Primitive path="base:namespace" mapping="'https://registry.gdi-de.org/id/de.bund.bkg.inspire.dlm250'"/>
         <Complex path="base:versionId">
           <Primitive path="@nilReason" mapping="'other:unpopulated'"/>
           <Primitive path="@xsi:nil" mapping="'true'"/>
@@ -5215,10 +5088,7 @@
     </Complex>
     <Complex path="au:nationalLevel">
       <Primitive path="@nilReason" mapping="nationallevel_nilreason"/>
-      <Feature path=".">
-        <Join table="?" fromColumns="id" toColumns="parentfk"/>
-        <Href mapping="nationallevel_href"/>
-      </Feature>
+      <Primitive path="@xlink:href" mapping="nationallevel_href"/>
     </Complex>
     <Complex path="au:nationalLevelName">
       <Join table="au.adminunit_nationallevelname" fromColumns="localid" toColumns="parentfk"/>
@@ -5388,8 +5258,8 @@
     <Complex path="elf-au:adminUnitArea">
       <Join table="au.adminunit_adminunitarea" fromColumns="localid" toColumns="fk_adminunit"/>
       <Feature path=".">
-        <Join table="au.adminunitarea" fromColumns="fk_adminunit" toColumns="localid"/>
-        <Href mapping="href_adminunit"/>
+        <Join table="au.adminunitarea" fromColumns="localid" toColumns="fk_adminunitarea"/>
+        <Href mapping="href_adminunitarea"/>
       </Feature>
     </Complex>
     <!-- TODO: namedPlacePoint -->
@@ -5401,7 +5271,7 @@
     </FIDMapping>
     <Complex path="gml:identifier">
       <Primitive path="text()" mapping="localid"/>
-      <Primitive path="@codeSpace" mapping="'http://bkg.bund.de/dlm250'"/>
+      <Primitive path="@codeSpace" mapping="'https://registry.gdi-de.org/id/de.bund.bkg.inspire.dlm250'"/>
     </Complex>
     <Complex path="elf-au:geometry">
       <Geometry path="." mapping="geometry"/>
@@ -5409,7 +5279,7 @@
     <Complex path="elf-au:inspireID">
       <Complex path="base:Identifier">
         <Primitive path="base:localId" mapping="localid"/>
-        <Primitive path="base:namespace" mapping="'http://bkg.bund.de/dlm250'"/>
+        <Primitive path="base:namespace" mapping="'https://registry.gdi-de.org/id/de.bund.bkg.inspire.dlm250'"/>
         <Complex path="base:versionId">
           <Primitive path="@nilReason" mapping="'other:unpopulated'"/>
           <Primitive path="@xsi:nil" mapping="'true'"/>
@@ -5418,10 +5288,7 @@
     </Complex>
     <Complex path="elf-au:landCoverType">
       <Primitive path="@nilReason" mapping="landcovertype_nilreason"/>
-      <Feature path=".">
-        <Join table="?" fromColumns="localid" toColumns="localid"/>
-        <Href mapping="landcovertype_href"/>
-      </Feature>
+      <Primitive path="@xlink:href" mapping="landcovertype_href"/>
     </Complex>
     <Complex path="elf-au:beginLifespanVersion">
       <Primitive path="text()" mapping="beginlifespanversion"/>
@@ -5429,8 +5296,8 @@
     <Complex path="elf-au:adminUnit">
       <Join table="au.adminunit_adminunitarea" fromColumns="localid" toColumns="fk_adminunitarea"/>
       <Feature path=".">
-        <Join table="au.adminunit" fromColumns="fk_adminunitarea" toColumns="localid"/>
-        <Href mapping="href_adminunitarea"/>
+        <Join table="au.adminunit" fromColumns="localid" toColumns="fk_adminunit"/>
+        <Href mapping="href_adminunit"/>
       </Feature>
     </Complex>
   </FeatureTypeMapping>
@@ -5445,7 +5312,7 @@
     </FIDMapping>
     <Complex path="gml:identifier">
       <Primitive path="text()" mapping="localid"/>
-      <Primitive path="@codeSpace" mapping="'http://bkg.bund.de/dlm250'"/>
+      <Primitive path="@codeSpace" mapping="'https://registry.gdi-de.org/id/de.bund.bkg.inspire.dlm250'"/>
     </Complex>
     <Complex path="ps:geometry">
       <Geometry path="." mapping="geometry"/>
@@ -5453,7 +5320,7 @@
     <Complex path="ps:inspireID">
       <Complex path="base:Identifier">
         <Primitive path="base:localId" mapping="localid"/>
-        <Primitive path="base:namespace" mapping="'http://bkg.bund.de/dlm250'"/>
+        <Primitive path="base:namespace" mapping="'https://registry.gdi-de.org/id/de.bund.bkg.inspire.dlm250'"/>
         <Complex path="base:versionId">
           <Primitive path="@nilReason" mapping="'other:unpopulated'"/>
           <Primitive path="@xsi:nil" mapping="'true'"/>
@@ -5476,15 +5343,11 @@
       <Complex path="ps:DesignationType">
         <Complex path="ps:designationScheme">
           <Primitive path="@nilReason" mapping="designationscheme_nilreason"/>
-          <Feature path=".">
-            <Href mapping="designationscheme_href"/>
-          </Feature>
+          <Primitive path="@xlink:href" mapping="designationscheme_href"/>
         </Complex>
         <Complex path="ps:designation">
           <Primitive path="@nilReason" mapping="designation_nilreason"/>
-          <Feature path=".">
-            <Href mapping="designation_href"/>
-          </Feature>
+          <Primitive path="@xlink:href" mapping="designation_href"/>
         </Complex>
         <Primitive path="ps:percentageUnderDesignation" mapping="percentageunderdesignation"/>
       </Complex>
@@ -5500,15 +5363,11 @@
         </Complex>
         <Complex path="gn:nativeness">
           <Primitive path="@xsi:nil" mapping="'false'"/>
-          <Feature path=".">
-            <Href mapping="nativeness_href"/>
-          </Feature>
+          <Primitive path="@xlink:href" mapping="nativeness_href"/>
         </Complex>
         <Complex path="gn:nameStatus">
           <Primitive path="@xsi:nil" mapping="'false'"/>
-          <Feature path=".">
-            <Href mapping="namestatus_href"/>
-          </Feature>
+          <Primitive path="@xlink:href" mapping="namestatus_href"/>
         </Complex>
         <Complex path="gn:sourceOfName">
           <Primitive path="@xsi:nil" mapping="'false'"/>

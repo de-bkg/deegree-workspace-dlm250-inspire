@@ -1,0 +1,32 @@
+<?xml version="1.0" ?>
+<crs:EllipsoidDefinitions configVersion="3.4.0" xmlns:crs="http://www.deegree.org/crs" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.deegree.org/crs http://schemas.deegree.org/crs/3.4.0/crsdefinition.xsd">
+    <crs:Ellipsoid>
+      <crs:Id>epsg:7030</crs:Id>
+      <crs:Id>http://www.opengis.net/gml/srs/epsg.xml#7030</crs:Id>
+      <crs:Id>urn:opengis:def:crs:epsg::7030</crs:Id>
+      <crs:Name>WGS84_Ellipsoid</crs:Name>
+      <crs:Units>metre</crs:Units>
+      <crs:SemiMajorAxis>6378137.0</crs:SemiMajorAxis>
+      <crs:InverseFlattening>298.257223563</crs:InverseFlattening>
+    </crs:Ellipsoid>     
+    <crs:Ellipsoid>
+      <crs:Id>epsg:7019</crs:Id>
+      <crs:Id>http://www.opengis.net/gml/srs/epsg.xml#7019</crs:Id>
+      <crs:Id>urn:ogc:def:crs:epsg::7019</crs:Id>
+      <crs:Id>urn:opengis:def:crs:epsg::7019</crs:Id>
+      <crs:Name>GRS 1980(IUGG, 1980)</crs:Name>
+      <crs:Units>metre</crs:Units>
+      <crs:SemiMajorAxis>6378137.0</crs:SemiMajorAxis>
+      <crs:InverseFlattening>298.257222101</crs:InverseFlattening>
+    </crs:Ellipsoid>
+     <crs:Ellipsoid>
+      <crs:Id>epsg:7004</crs:Id>
+      <crs:Id>http://www.opengis.net/gml/srs/epsg.xml#7004</crs:Id>
+      <crs:Id>urn:ogc:def:crs:epsg::7004</crs:Id>
+      <crs:Id>urn:opengis:def:crs:epsg::7004</crs:Id>
+      <crs:Name>Bessel 1841</crs:Name>
+      <crs:Units>metre</crs:Units>
+      <crs:SemiMajorAxis>6377397.155</crs:SemiMajorAxis>
+      <crs:InverseFlattening>299.1528128</crs:InverseFlattening>
+    </crs:Ellipsoid>
+  </crs:EllipsoidDefinitions>

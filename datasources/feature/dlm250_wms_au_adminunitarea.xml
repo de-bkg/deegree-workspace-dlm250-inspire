@@ -19,7 +19,7 @@
   </SQLStatement>
 
   <!-- Required: Bounding box statement -->
-  <BBoxStatement>SELECT st_astext(ST_Estimated_Extent('au.adminunitarea', 'geometry')) as bbox</BBoxStatement>
+  <BBoxStatement>SELECT st_astext(ST_EstimatedExtent('au', 'adminunitarea', 'geometry')) as bbox</BBoxStatement>
   
   <!-- TODO: LOD Statements-->
   <!-- LODStatement aboveScale="3000">

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Themes xmlns="http://www.deegree.org/themes/standard" xmlns:d="http://www.deegree.org/metadata/description" xmlns:s="http://www.deegree.org/metadata/spatial" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" configVersion="3.2.0" xsi:schemaLocation="http://www.deegree.org/themes/standard http://schemas.deegree.org/themes/3.2.0/themes.xsd">
 
-  <!-- LayerStoreId>hy</LayerStoreId -->
+  <LayerStoreId>hy</LayerStoreId>
   <LayerStoreId>hy-net-hydronode</LayerStoreId>
   <LayerStoreId>hy-net-watercourse</LayerStoreId>
 
@@ -22,6 +22,66 @@
         <d:Title>Hydrografisches Netzwerk HydroNode</d:Title>
         <Layer>HY.Network.HydroNode</Layer>
     </Theme>
+
+    <Theme>
+        <Identifier>HY.PhysicalWaters.LandWaterBoundary</Identifier>
+        <d:Title>Hydro - Physische Gewässer LandWaterBoundary</d:Title>
+        <Layer>HY.PhysicalWaters.LandWaterBoundary</Layer>
+    </Theme>
+
+    <Theme>
+        <Identifier>HY.PhysicalWaters.Shore</Identifier>
+        <d:Title>Hydro - Physische Gewässer Shore</d:Title>
+        <Layer>HY.PhysicalWaters.Shore</Layer>
+    </Theme>
+
+    <Theme>
+        <Identifier>HY.PhysicalWaters.Wetland</Identifier>
+        <d:Title>Hydro - Physische Gewässer Wetland</d:Title>
+        <Layer>HY.PhysicalWaters.Wetland</Layer>
+    </Theme>
+
+    <Theme>
+        <Identifier>HY.PhysicalWaters.Waterbodies.Watercourse</Identifier>
+        <d:Title>Hydro - Physische Gewässer Watercourse</d:Title>
+        <Layer>HY.PhysicalWaters.Waterbodies.Watercourse</Layer>
+    </Theme>
+
+    <Theme>
+        <Identifier>HY.PhysicalWaters.Waterbodies.StandingWater</Identifier>
+        <d:Title>Hydro - Physische Gewässer StandingWater</d:Title>
+        <Layer>HY.PhysicalWaters.Waterbodies.StandingWater</Layer>
+    </Theme>
+
+    <!-- Theme>
+        <Identifier>HY.ManMadeObject.Crossing</Identifier>
+        <d:Title>Hydro - Physische Gewässer Crossing</d:Title>
+        <Layer>HY.ManMadeObject.Crossing</Layer>
+    </Theme>
+
+    <Theme>
+        <Identifier>HY.ManMadeObject.DamOrWeir</Identifier>
+        <d:Title>Hydro - Physische Gewässer DamOrWeir</d:Title>
+        <Layer>HY.ManMadeObject.DamOrWeir</Layer>
+    </Theme>
+
+    <Theme>
+        <Identifier>HY.ManMadeObject.ShorelineConstruction</Identifier>
+        <d:Title>Hydro - Physische Gewässer ShorelineConstruction</d:Title>
+        <Layer>HY.ManMadeObject.ShorelineConstruction</Layer>
+    </Theme>
+
+    <Theme>
+        <Identifier>HY.ManMadeObject.Lock</Identifier>
+        <d:Title>Hydro - Physische Gewässer Lock</d:Title>
+        <Layer>HY.ManMadeObject.Lock</Layer>
+    </Theme>
+
+    <Theme>
+        <Identifier>HY.ManMadeObject.Ford</Identifier>
+        <d:Title>Hydro - Physische Gewässer Ford</d:Title>
+        <Layer>HY.ManMadeObject.Ford</Layer>
+    </Theme -->
 
     <!-- Theme>
         <Identifier>HY.PhysicalWaters.HydroPointOfInterest</Identifier>

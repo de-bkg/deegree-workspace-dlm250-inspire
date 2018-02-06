@@ -10,23 +10,185 @@
     <FeatureStoreId>dlm250</FeatureStoreId>
 
     <FeatureLayer>
-        <FeatureType xmlns:hy-n="http://inspire.ec.europa.eu/schemas/hy-n/4.0">hy-n:HydroNode</FeatureType>
-        <l:Name>HY.Network.HydroNode</l:Name>
-        <d:Title>HY.Network.HydroNode</d:Title>
+        <FeatureType xmlns:hy-p="http://inspire.ec.europa.eu/schemas/hy-p/4.0">hy-p:LandWaterBoundary</FeatureType>
+        <l:Name>HY.PhysicalWaters.LandWaterBoundary</l:Name>
+        <d:Title>HY.PhysicalWaters.LandWaterBoundary</d:Title>
 
         <s:CRS>EPSG:4258 EPSG:4326 EPSG:3857 EPSG:3034 EPSG:3035 EPSG:31466 EPSG:31467 EPSG:31468 EPSG:31469 EPSG:2397 EPSG:2398 EPSG:2399 EPSG:25832 EPSG:25833 EPSG:32632 EPSG:32633 EPSG:3044 EPSG:3045 EPSG:4839</s:CRS>
 
         <l:StyleRef>
-            <l:StyleStoreId>HY_Network_HydroNode_Default</l:StyleStoreId>
+            <l:StyleStoreId>HY_LandWaterBoundary_Default</l:StyleStoreId>
             <l:Style>
                 <!-- The StyleName specifies the name under which the style will be known in the WMS -->
-                <l:StyleName>HY.Network.HydroNode.Default</l:StyleName>
+                <l:StyleName>HY.PhysicalWaters.LandWaterBoundary.Default</l:StyleName>
                 <!-- The LayerNameRef and StyleNameRef are used to extract the style from the style store -->
-                <l:LayerNameRef>HY.Network.HydroNode.Default</l:LayerNameRef>
-                <l:StyleNameRef>HY.Network..HydroNode.Default</l:StyleNameRef>
+                <l:LayerNameRef>HY.PhysicalWaters.LandWaterBoundary</l:LayerNameRef>
+                <l:StyleNameRef>HY.PhysicalWaters.LandWaterBoundary.Default</l:StyleNameRef>
             </l:Style>
         </l:StyleRef>
     </FeatureLayer>    
+
+    <FeatureLayer>
+        <FeatureType xmlns:hy-p="http://inspire.ec.europa.eu/schemas/hy-p/4.0">hy-p:Shore</FeatureType>
+        <l:Name>HY.PhysicalWaters.Shore</l:Name>
+        <d:Title>HY.PhysicalWaters.Shore</d:Title>
+
+        <s:CRS>EPSG:4258 EPSG:4326 EPSG:3857 EPSG:3034 EPSG:3035 EPSG:31466 EPSG:31467 EPSG:31468 EPSG:31469 EPSG:2397 EPSG:2398 EPSG:2399 EPSG:25832 EPSG:25833 EPSG:32632 EPSG:32633 EPSG:3044 EPSG:3045 EPSG:4839</s:CRS>
+
+        <l:StyleRef>
+            <l:StyleStoreId>HY_Shore_Default</l:StyleStoreId>
+            <l:Style>
+                <!-- The StyleName specifies the name under which the style will be known in the WMS -->
+                <l:StyleName>HY.PhysicalWaters.Shore.Default</l:StyleName>
+                <!-- The LayerNameRef and StyleNameRef are used to extract the style from the style store -->
+                <l:LayerNameRef>HY.PhysicalWaters.Shore</l:LayerNameRef>
+                <l:StyleNameRef>HY.PhysicalWaters.Shore.Default</l:StyleNameRef>
+            </l:Style>
+        </l:StyleRef>
+    </FeatureLayer>    
+
+    <FeatureLayer>
+        <FeatureType xmlns:hy-p="http://inspire.ec.europa.eu/schemas/hy-p/4.0">hy-p:Wetland</FeatureType>
+        <l:Name>HY.PhysicalWaters.Wetland</l:Name>
+        <d:Title>HY.PhysicalWaters.Wetland</d:Title>
+
+        <s:CRS>EPSG:4258 EPSG:4326 EPSG:3857 EPSG:3034 EPSG:3035 EPSG:31466 EPSG:31467 EPSG:31468 EPSG:31469 EPSG:2397 EPSG:2398 EPSG:2399 EPSG:25832 EPSG:25833 EPSG:32632 EPSG:32633 EPSG:3044 EPSG:3045 EPSG:4839</s:CRS>
+
+        <l:StyleRef>
+            <l:StyleStoreId>HY_Wetland_Default</l:StyleStoreId>
+            <l:Style>
+                <!-- The StyleName specifies the name under which the style will be known in the WMS -->
+                <l:StyleName>HY.PhysicalWaters.Wetland.Default</l:StyleName>
+                <!-- The LayerNameRef and StyleNameRef are used to extract the style from the style store -->
+                <l:LayerNameRef>HY.PhysicalWaters.Wetland</l:LayerNameRef>
+                <l:StyleNameRef>HY.PhysicalWaters.Wetland.Default</l:StyleNameRef>
+            </l:Style>
+        </l:StyleRef>
+    </FeatureLayer>    
+
+    <FeatureLayer>
+        <FeatureType xmlns:hy-p="http://inspire.ec.europa.eu/schemas/hy-p/4.0">hy-p:Watercourse</FeatureType>
+        <l:Name>HY.PhysicalWaters.Waterbodies.Watercourse</l:Name>
+        <d:Title>HY.PhysicalWaters.Waterbodies.Watercourse</d:Title>
+
+        <s:CRS>EPSG:4258 EPSG:4326 EPSG:3857 EPSG:3034 EPSG:3035 EPSG:31466 EPSG:31467 EPSG:31468 EPSG:31469 EPSG:2397 EPSG:2398 EPSG:2399 EPSG:25832 EPSG:25833 EPSG:32632 EPSG:32633 EPSG:3044 EPSG:3045 EPSG:4839</s:CRS>
+
+        <l:StyleRef>
+            <l:StyleStoreId>HY_Waterbodies_Default</l:StyleStoreId>
+            <l:Style>
+                <!-- The StyleName specifies the name under which the style will be known in the WMS -->
+                <l:StyleName>HY.PhysicalWaters.Waterbodies.Default</l:StyleName>
+                <!-- The LayerNameRef and StyleNameRef are used to extract the style from the style store -->
+                <l:LayerNameRef>HY.PhysicalWaters.Waterbodies</l:LayerNameRef>
+                <l:StyleNameRef>HY.PhysicalWaters.Waterbodies.Watercourse.Default</l:StyleNameRef>
+            </l:Style>
+        </l:StyleRef>
+    </FeatureLayer>    
+
+    <FeatureLayer>
+        <FeatureType xmlns:hy-p="http://inspire.ec.europa.eu/schemas/hy-p/4.0">hy-p:StandingWater</FeatureType>
+        <l:Name>HY.PhysicalWaters.Waterbodies.StandingWater</l:Name>
+        <d:Title>HY.PhysicalWaters.Waterbodies.StandingWater</d:Title>
+
+        <s:CRS>EPSG:4258 EPSG:4326 EPSG:3857 EPSG:3034 EPSG:3035 EPSG:31466 EPSG:31467 EPSG:31468 EPSG:31469 EPSG:2397 EPSG:2398 EPSG:2399 EPSG:25832 EPSG:25833 EPSG:32632 EPSG:32633 EPSG:3044 EPSG:3045 EPSG:4839</s:CRS>
+
+        <l:StyleRef>
+            <l:StyleStoreId>HY_Waterbodies_Default</l:StyleStoreId>
+            <l:Style>
+                <!-- The StyleName specifies the name under which the style will be known in the WMS -->
+                <l:StyleName>HY.PhysicalWaters.Waterbodies.Default</l:StyleName>
+                <!-- The LayerNameRef and StyleNameRef are used to extract the style from the style store -->
+                <l:LayerNameRef>HY.PhysicalWaters.Waterbodies</l:LayerNameRef>
+                <l:StyleNameRef>HY.PhysicalWaters.Waterbodies.StandingWater.Default</l:StyleNameRef>
+            </l:Style>
+        </l:StyleRef>
+    </FeatureLayer>    
+
+    <!-- Not working due to href Filtering issue
+    <FeatureLayer>
+        <FeatureType xmlns:hy-p="http://inspire.ec.europa.eu/schemas/hy-p/4.0">hy-p:Crossing</FeatureType>
+        <l:Name>HY.ManMadeObject.Crossing</l:Name>
+        <d:Title>HY.ManMadeObject.Crossing</d:Title>
+
+        <s:CRS>EPSG:4258 EPSG:4326 EPSG:3857 EPSG:3034 EPSG:3035 EPSG:31466 EPSG:31467 EPSG:31468 EPSG:31469 EPSG:2397 EPSG:2398 EPSG:2399 EPSG:25832 EPSG:25833 EPSG:32632 EPSG:32633 EPSG:3044 EPSG:3045 EPSG:4839</s:CRS>
+
+        <l:StyleRef>
+            <l:StyleStoreId>HY_ManMadeObject_Crossing_Default</l:StyleStoreId>
+            <l:Style>
+                <l:StyleName>HY.PhysicalWaters.ManMadeObject.Default</l:StyleName>
+                <l:LayerNameRef>HY.PhysicalWaters.ManMadeObject</l:LayerNameRef>
+                <l:StyleNameRef>HY.PhysicalWaters.ManMadeObject.Crossing.Default</l:StyleNameRef>
+            </l:Style>
+        </l:StyleRef>
+    </FeatureLayer>    
+
+    <FeatureLayer>
+        <FeatureType xmlns:hy-p="http://inspire.ec.europa.eu/schemas/hy-p/4.0">hy-p:DamOrWeir</FeatureType>
+        <l:Name>HY.ManMadeObject.DamOrWeir</l:Name>
+        <d:Title>HY.ManMadeObject.DamOrWeir</d:Title>
+
+        <s:CRS>EPSG:4258 EPSG:4326 EPSG:3857 EPSG:3034 EPSG:3035 EPSG:31466 EPSG:31467 EPSG:31468 EPSG:31469 EPSG:2397 EPSG:2398 EPSG:2399 EPSG:25832 EPSG:25833 EPSG:32632 EPSG:32633 EPSG:3044 EPSG:3045 EPSG:4839</s:CRS>
+
+        <l:StyleRef>
+            <l:StyleStoreId>HY_ManMadeObject_Default</l:StyleStoreId>
+            <l:Style>
+                <l:StyleName>HY.PhysicalWaters.ManMadeObject.Default</l:StyleName>
+                <l:LayerNameRef>HY.PhysicalWaters.ManMadeObject</l:LayerNameRef>
+                <l:StyleNameRef>HY.PhysicalWaters.ManMadeObject.DamOrWeir.Default</l:StyleNameRef>
+            </l:Style>
+        </l:StyleRef>
+    </FeatureLayer>    
+
+    <FeatureLayer>
+        <FeatureType xmlns:hy-p="http://inspire.ec.europa.eu/schemas/hy-p/4.0">hy-p:ShorelineConstruction</FeatureType>
+        <l:Name>HY.ManMadeObject.ShorelineConstruction</l:Name>
+        <d:Title>HY.ManMadeObject.ShorelineConstruction</d:Title>
+
+        <s:CRS>EPSG:4258 EPSG:4326 EPSG:3857 EPSG:3034 EPSG:3035 EPSG:31466 EPSG:31467 EPSG:31468 EPSG:31469 EPSG:2397 EPSG:2398 EPSG:2399 EPSG:25832 EPSG:25833 EPSG:32632 EPSG:32633 EPSG:3044 EPSG:3045 EPSG:4839</s:CRS>
+
+        <l:StyleRef>
+            <l:StyleStoreId>HY_ManMadeObject_Default</l:StyleStoreId>
+            <l:Style>
+                <l:StyleName>HY.PhysicalWaters.ManMadeObject.Default</l:StyleName>
+                <l:LayerNameRef>HY.PhysicalWaters.ManMadeObject</l:LayerNameRef>
+                <l:StyleNameRef>HY.PhysicalWaters.ManMadeObject.ShorelineConstruction.Default</l:StyleNameRef>
+            </l:Style>
+        </l:StyleRef>
+    </FeatureLayer>    
+
+    <FeatureLayer>
+        <FeatureType xmlns:hy-p="http://inspire.ec.europa.eu/schemas/hy-p/4.0">hy-p:Lock</FeatureType>
+        <l:Name>HY.ManMadeObject.Lock</l:Name>
+        <d:Title>HY.ManMadeObject.Lock</d:Title>
+
+        <s:CRS>EPSG:4258 EPSG:4326 EPSG:3857 EPSG:3034 EPSG:3035 EPSG:31466 EPSG:31467 EPSG:31468 EPSG:31469 EPSG:2397 EPSG:2398 EPSG:2399 EPSG:25832 EPSG:25833 EPSG:32632 EPSG:32633 EPSG:3044 EPSG:3045 EPSG:4839</s:CRS>
+
+        <l:StyleRef>
+            <l:StyleStoreId>HY_ManMadeObject_Default</l:StyleStoreId>
+            <l:Style>
+                <l:StyleName>HY.PhysicalWaters.ManMadeObject.Default</l:StyleName>
+                <l:LayerNameRef>HY.PhysicalWaters.ManMadeObject</l:LayerNameRef>
+                <l:StyleNameRef>HY.PhysicalWaters.ManMadeObject.Lock.Default</l:StyleNameRef>
+            </l:Style>
+        </l:StyleRef>
+    </FeatureLayer>    
+
+    <FeatureLayer>
+        <FeatureType xmlns:hy-p="http://inspire.ec.europa.eu/schemas/hy-p/4.0">hy-p:Ford</FeatureType>
+        <l:Name>HY.ManMadeObject.Ford</l:Name>
+        <d:Title>HY.ManMadeObject.Ford</d:Title>
+
+        <s:CRS>EPSG:4258 EPSG:4326 EPSG:3857 EPSG:3034 EPSG:3035 EPSG:31466 EPSG:31467 EPSG:31468 EPSG:31469 EPSG:2397 EPSG:2398 EPSG:2399 EPSG:25832 EPSG:25833 EPSG:32632 EPSG:32633 EPSG:3044 EPSG:3045 EPSG:4839</s:CRS>
+
+        <l:StyleRef>
+            <l:StyleStoreId>HY_ManMadeObject_Default</l:StyleStoreId>
+            <l:Style>
+                <l:StyleName>HY.PhysicalWaters.ManMadeObject.Default</l:StyleName>
+                <l:LayerNameRef>HY.PhysicalWaters.ManMadeObject</l:LayerNameRef>
+                <l:StyleNameRef>HY.PhysicalWaters.ManMadeObject.Ford.Default</l:StyleNameRef>
+            </l:Style>
+        </l:StyleRef>
+    </FeatureLayer -->    
 
     <!-- FeatureLayer>
         <FeatureType xmlns:hy-p="http://inspire.ec.europa.eu/schemas/hy-p/4.0">hy-p:Rapids</FeatureType>

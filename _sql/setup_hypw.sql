@@ -2646,6 +2646,7 @@ CREATE INDEX standingwater_hydroid_parent_idx ON hypw.standingwater_hydroid (par
 CREATE INDEX watercourse_gn_parent_idx ON hypw.watercourse_gn (parentfk ASC NULLS LAST);
 CREATE INDEX watercourse_gn_spelling_parent_idx ON hypw.watercourse_gn_spelling (parentfk ASC NULLS LAST);
 CREATE INDEX watercourse_hydroid_parent_idx ON hypw.watercourse_hydroid (parentfk ASC NULLS LAST);
+CREATE INDEX watercourse_delineationknown_idx ON hypw.watercourse USING btree (delineationknown);
 CREATE INDEX wetland_gn_parent_idx ON hypw.wetland_gn (parentfk ASC NULLS LAST);
 CREATE INDEX wetland_gn_spelling_parent_idx ON hypw.wetland_gn_spelling (parentfk ASC NULLS LAST);
 CREATE INDEX wetland_hydroid_parent_idx ON hypw.wetland_hydroid (parentfk ASC NULLS LAST);

@@ -1,0 +1,93 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<sld:StyledLayerDescriptor version="1.1.0" 
+                           xmlns:sld="http://www.opengis.net/sld" 
+                           xmlns:ogc="http://www.opengis.net/ogc" 
+                           xmlns:se="http://www.opengis.net/se" 
+                           xmlns:xlink="http://www.w3.org/1999/xlink" 
+                           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"                            
+                           xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.1.0/StyledLayerDescriptor.xsd">
+  <sld:NamedLayer>
+    <se:Name>HY.PhysicalWaters.Waterbodies</se:Name>
+    <sld:UserStyle>
+      <se:Name>HY.PhysicalWaters.Waterbodies.Watercourse.Default</se:Name>
+      <sld:IsDefault>1</sld:IsDefault>
+      <se:FeatureTypeStyle version="1.1.0">
+        <se:Description>
+          <se:Title>Water bodies default style</se:Title>
+          <se:Abstract>
+            Physical waters as watercourses or standing water can be portrayed 
+            with different geometries depending on its dimensions and the level 
+            of detail or resolution. Lineal watercourses are depicted by solid 
+            blue (#33CCFF) lines with stroke width of 1 pixel and the superficial 
+            ones are depicted by filled blue light polygons (#CCFFFF) without 
+            border. Punctual standing waters are depicted by dark blue (#0066FF) 
+            circles with size of 6 pixel and the superficial ones are depicted by 
+            filled blue light polygons (#CCFFFF) without border.
+          </se:Abstract>
+        </se:Description>
+        
+        <se:FeatureTypeName xmlns:hy-p="http://inspire.ec.europa.eu/schemas/hy-p/4.0">hy-p:Watercourse</se:FeatureTypeName>
+        <se:Rule>
+          <ogc:Filter>
+            <!-- Delineation is known -->
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName xmlns:hy-p="http://inspire.ec.europa.eu/schemas/hy-p/4.0">hy-p:delineationKnown</ogc:PropertyName>
+              <ogc:Literal>true</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
+          <se:LineSymbolizer>
+            <se:Stroke>
+              <se:SvgParameter name="stroke">#33CCFF</se:SvgParameter>
+              <se:SvgParameter name="stroke-width">1</se:SvgParameter>
+            </se:Stroke>
+          </se:LineSymbolizer>
+          <se:PolygonSymbolizer>
+            <se:Fill>
+              <se:SvgParameter name="fill">#CCFFFF</se:SvgParameter>
+            </se:Fill>
+          </se:PolygonSymbolizer>
+        </se:Rule>
+      </se:FeatureTypeStyle>
+    </sld:UserStyle>
+    
+    <sld:UserStyle>
+      <se:Name>HY.PhysicalWaters.Waterbodies.StandingWater.Default</se:Name>
+      <sld:IsDefault>1</sld:IsDefault>
+      <se:FeatureTypeStyle version="1.1.0">
+        <se:Description>
+          <se:Title>Water bodies default style</se:Title>
+          <se:Abstract>
+            Physical waters as watercourses or standing water can be portrayed 
+            with different geometries depending on its dimensions and the level 
+            of detail or resolution. Lineal watercourses are depicted by solid 
+            blue (#33CCFF) lines with stroke width of 1 pixel and the superficial 
+            ones are depicted by filled blue light polygons (#CCFFFF) without 
+            border. Punctual standing waters are depicted by dark blue (#0066FF) 
+            circles with size of 6 pixel and the superficial ones are depicted by 
+            filled blue light polygons (#CCFFFF) without border.
+          </se:Abstract>
+        </se:Description>
+        
+        <se:FeatureTypeName xmlns:hy-p="http://inspire.ec.europa.eu/schemas/hy-p/4.0">hy-p:StandingWater</se:FeatureTypeName>
+        <se:Rule>
+          <se:PointSymbolizer>
+            <se:Graphic>
+              <se:Mark>
+                <se:WellKnownName>circle</se:WellKnownName>
+                <se:Fill>
+                  <se:SvgParameter name="fill">#0066FF</se:SvgParameter>
+                </se:Fill>
+              </se:Mark>
+              <se:Size>6</se:Size>
+            </se:Graphic>
+          </se:PointSymbolizer>
+          <se:PolygonSymbolizer>
+            <se:Fill>
+              <se:SvgParameter name="fill">#CCFFFF</se:SvgParameter>
+            </se:Fill>
+          </se:PolygonSymbolizer>
+        </se:Rule>
+      </se:FeatureTypeStyle>
+    </sld:UserStyle>
+  </sld:NamedLayer>
+</sld:StyledLayerDescriptor>

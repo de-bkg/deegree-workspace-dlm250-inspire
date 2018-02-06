@@ -1,0 +1,211 @@
+<?xml version="1.0"?>
+<crs:ProjectionDefinitions configVersion="3.4.0" xmlns:crs="http://www.deegree.org/crs" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.deegree.org/crs http://schemas.deegree.org/crs/3.4.0/crsdefinition.xsd">
+	<crs:TransverseMercator>
+		<crs:Id>epsg:16032</crs:Id>
+		<crs:Name>UTM zone 32N</crs:Name>
+		<crs:LatitudeOfNaturalOrigin>0.0</crs:LatitudeOfNaturalOrigin>
+		<crs:LongitudeOfNaturalOrigin>9.0</crs:LongitudeOfNaturalOrigin>
+		<crs:ScaleFactor>0.9996</crs:ScaleFactor>
+		<crs:FalseEasting>500000.0</crs:FalseEasting>
+		<crs:FalseNorthing>0.0</crs:FalseNorthing>
+	</crs:TransverseMercator>
+    <crs:LambertAzimuthalEqualArea>
+		<crs:Id>epsg:19986</crs:Id>
+		<crs:Name>Europe Equal Area 2001</crs:Name>
+		<crs:LatitudeOfNaturalOrigin>51.99999999999999</crs:LatitudeOfNaturalOrigin>
+		<crs:LongitudeOfNaturalOrigin>10.0</crs:LongitudeOfNaturalOrigin>
+		<crs:ScaleFactor>1.0</crs:ScaleFactor>
+		<crs:FalseEasting>4321000.0</crs:FalseEasting>
+		<crs:FalseNorthing>3210000.0</crs:FalseNorthing>
+	</crs:LambertAzimuthalEqualArea>
+    <crs:LambertConformalConic>
+		<crs:Id>epsg:19985</crs:Id>
+		<crs:Name>Europe Conformal 2001</crs:Name>
+		<crs:LatitudeOfNaturalOrigin>51.99999999999999</crs:LatitudeOfNaturalOrigin>
+		<crs:LongitudeOfNaturalOrigin>10.0</crs:LongitudeOfNaturalOrigin>
+		<crs:ScaleFactor>1.0</crs:ScaleFactor>
+		<crs:FalseEasting>4000000.0</crs:FalseEasting>
+		<crs:FalseNorthing>2800000.0</crs:FalseNorthing>
+		<crs:FirstParallelLatitude>35.0</crs:FirstParallelLatitude>
+		<crs:SecondParallelLatitude>65.0</crs:SecondParallelLatitude>
+	</crs:LambertConformalConic>
+    <crs:TransverseMercator>
+		<crs:Id>epsg:16026</crs:Id>
+		<crs:Name>UTM zone 26N</crs:Name>
+		<crs:LatitudeOfNaturalOrigin>0.0</crs:LatitudeOfNaturalOrigin>
+		<crs:LongitudeOfNaturalOrigin>-27.0</crs:LongitudeOfNaturalOrigin>
+		<crs:ScaleFactor>0.9996</crs:ScaleFactor>
+		<crs:FalseEasting>500000.0</crs:FalseEasting>
+		<crs:FalseNorthing>0.0</crs:FalseNorthing>
+	</crs:TransverseMercator>
+    <crs:TransverseMercator>
+		<crs:Id>epsg:16027</crs:Id>
+		<crs:Name>UTM zone 27N</crs:Name>
+		<crs:LatitudeOfNaturalOrigin>0.0</crs:LatitudeOfNaturalOrigin>
+		<crs:LongitudeOfNaturalOrigin>-20.999999999999993</crs:LongitudeOfNaturalOrigin>
+		<crs:ScaleFactor>0.9996</crs:ScaleFactor>
+		<crs:FalseEasting>500000.0</crs:FalseEasting>
+		<crs:FalseNorthing>0.0</crs:FalseNorthing>
+	</crs:TransverseMercator>
+    <crs:TransverseMercator>
+		<crs:Id>epsg:16028</crs:Id>
+		<crs:Name>UTM zone 28N</crs:Name>
+		<crs:LatitudeOfNaturalOrigin>0.0</crs:LatitudeOfNaturalOrigin>
+		<crs:LongitudeOfNaturalOrigin>-14.999999999999982</crs:LongitudeOfNaturalOrigin>
+		<crs:ScaleFactor>0.9996</crs:ScaleFactor>
+		<crs:FalseEasting>500000.0</crs:FalseEasting>
+		<crs:FalseNorthing>0.0</crs:FalseNorthing>
+	</crs:TransverseMercator>
+    <crs:TransverseMercator>
+		<crs:Id>epsg:16029</crs:Id>
+		<crs:Name>UTM zone 29N</crs:Name>
+		<crs:LatitudeOfNaturalOrigin>0.0</crs:LatitudeOfNaturalOrigin>
+		<crs:LongitudeOfNaturalOrigin>-9.0</crs:LongitudeOfNaturalOrigin>
+		<crs:ScaleFactor>0.9996</crs:ScaleFactor>
+		<crs:FalseEasting>500000.0</crs:FalseEasting>
+		<crs:FalseNorthing>0.0</crs:FalseNorthing>
+	</crs:TransverseMercator>
+    <crs:TransverseMercator>
+		<crs:Id>epsg:16030</crs:Id>
+		<crs:Name>UTM zone 30N</crs:Name>
+		<crs:LatitudeOfNaturalOrigin>0.0</crs:LatitudeOfNaturalOrigin>
+		<crs:LongitudeOfNaturalOrigin>-2.999999999999992</crs:LongitudeOfNaturalOrigin>
+		<crs:ScaleFactor>0.9996</crs:ScaleFactor>
+		<crs:FalseEasting>500000.0</crs:FalseEasting>
+		<crs:FalseNorthing>0.0</crs:FalseNorthing>
+	</crs:TransverseMercator>
+    <crs:TransverseMercator>
+		<crs:Id>epsg:16031</crs:Id>
+		<crs:Name>UTM zone 31N</crs:Name>
+		<crs:LatitudeOfNaturalOrigin>0.0</crs:LatitudeOfNaturalOrigin>
+		<crs:LongitudeOfNaturalOrigin>2.999999999999992</crs:LongitudeOfNaturalOrigin>
+		<crs:ScaleFactor>0.9996</crs:ScaleFactor>
+		<crs:FalseEasting>500000.0</crs:FalseEasting>
+		<crs:FalseNorthing>0.0</crs:FalseNorthing>
+	</crs:TransverseMercator>
+    <crs:TransverseMercator>
+		<crs:Id>epsg:16032</crs:Id>
+		<crs:Name>UTM zone 32N</crs:Name>
+		<crs:LatitudeOfNaturalOrigin>0.0</crs:LatitudeOfNaturalOrigin>
+		<crs:LongitudeOfNaturalOrigin>9.0</crs:LongitudeOfNaturalOrigin>
+		<crs:ScaleFactor>0.9996</crs:ScaleFactor>
+		<crs:FalseEasting>500000.0</crs:FalseEasting>
+		<crs:FalseNorthing>0.0</crs:FalseNorthing>
+	</crs:TransverseMercator>
+    <crs:TransverseMercator>
+		<crs:Id>epsg:16033</crs:Id>
+		<crs:Name>UTM zone 33N</crs:Name>
+		<crs:LatitudeOfNaturalOrigin>0.0</crs:LatitudeOfNaturalOrigin>
+		<crs:LongitudeOfNaturalOrigin>14.999999999999982</crs:LongitudeOfNaturalOrigin>
+		<crs:ScaleFactor>0.9996</crs:ScaleFactor>
+		<crs:FalseEasting>500000.0</crs:FalseEasting>
+		<crs:FalseNorthing>0.0</crs:FalseNorthing>
+	</crs:TransverseMercator>
+    <crs:TransverseMercator>
+		<crs:Id>epsg:16034</crs:Id>
+		<crs:Name>UTM zone 34N</crs:Name>
+		<crs:LatitudeOfNaturalOrigin>0.0</crs:LatitudeOfNaturalOrigin>
+		<crs:LongitudeOfNaturalOrigin>20.999999999999993</crs:LongitudeOfNaturalOrigin>
+		<crs:ScaleFactor>0.9996</crs:ScaleFactor>
+		<crs:FalseEasting>500000.0</crs:FalseEasting>
+		<crs:FalseNorthing>0.0</crs:FalseNorthing>
+	</crs:TransverseMercator>
+    <crs:TransverseMercator>
+		<crs:Id>epsg:16035</crs:Id>
+		<crs:Name>UTM zone 35N</crs:Name>
+		<crs:LatitudeOfNaturalOrigin>0.0</crs:LatitudeOfNaturalOrigin>
+		<crs:LongitudeOfNaturalOrigin>27.0</crs:LongitudeOfNaturalOrigin>
+		<crs:ScaleFactor>0.9996</crs:ScaleFactor>
+		<crs:FalseEasting>500000.0</crs:FalseEasting>
+		<crs:FalseNorthing>0.0</crs:FalseNorthing>
+	</crs:TransverseMercator>
+    <crs:TransverseMercator>
+		<crs:Id>epsg:16036</crs:Id>
+		<crs:Name>UTM zone 36N</crs:Name>
+		<crs:LatitudeOfNaturalOrigin>0.0</crs:LatitudeOfNaturalOrigin>
+		<crs:LongitudeOfNaturalOrigin>33.00000000000001</crs:LongitudeOfNaturalOrigin>
+		<crs:ScaleFactor>0.9996</crs:ScaleFactor>
+		<crs:FalseEasting>500000.0</crs:FalseEasting>
+		<crs:FalseNorthing>0.0</crs:FalseNorthing>
+	</crs:TransverseMercator>
+    <crs:TransverseMercator>
+		<crs:Id>epsg:16037</crs:Id>
+		<crs:Name>UTM zone 37N</crs:Name>
+		<crs:LatitudeOfNaturalOrigin>0.0</crs:LatitudeOfNaturalOrigin>
+		<crs:LongitudeOfNaturalOrigin>38.99999999999999</crs:LongitudeOfNaturalOrigin>
+		<crs:ScaleFactor>0.9996</crs:ScaleFactor>
+		<crs:FalseEasting>500000.0</crs:FalseEasting>
+		<crs:FalseNorthing>0.0</crs:FalseNorthing>
+	</crs:TransverseMercator>
+    <crs:TransverseMercator>
+		<crs:Id>epsg:16038</crs:Id>
+		<crs:Name>UTM zone 38N</crs:Name>
+		<crs:LatitudeOfNaturalOrigin>0.0</crs:LatitudeOfNaturalOrigin>
+		<crs:LongitudeOfNaturalOrigin>45.0</crs:LongitudeOfNaturalOrigin>
+		<crs:ScaleFactor>0.9996</crs:ScaleFactor>
+		<crs:FalseEasting>500000.0</crs:FalseEasting>
+		<crs:FalseNorthing>0.0</crs:FalseNorthing>
+	</crs:TransverseMercator>
+    <crs:TransverseMercator>
+		<crs:Id>epsg:16039</crs:Id>
+		<crs:Name>UTM zone 39N</crs:Name>
+		<crs:LatitudeOfNaturalOrigin>0.0</crs:LatitudeOfNaturalOrigin>
+		<crs:LongitudeOfNaturalOrigin>50.99999999999998</crs:LongitudeOfNaturalOrigin>
+		<crs:ScaleFactor>0.9996</crs:ScaleFactor>
+		<crs:FalseEasting>500000.0</crs:FalseEasting>
+		<crs:FalseNorthing>0.0</crs:FalseNorthing>
+	</crs:TransverseMercator>
+    <crs:TransverseMercator>
+		<crs:Id>epsg:16262</crs:Id>
+		<crs:Name>3-degree Gauss-Kruger zone 2</crs:Name>
+		<crs:LatitudeOfNaturalOrigin>0.0</crs:LatitudeOfNaturalOrigin>
+		<crs:LongitudeOfNaturalOrigin>6.0</crs:LongitudeOfNaturalOrigin>
+		<crs:ScaleFactor>1.0</crs:ScaleFactor>
+		<crs:FalseEasting>2500000.0</crs:FalseEasting>
+		<crs:FalseNorthing>0.0</crs:FalseNorthing>
+	</crs:TransverseMercator>
+    <crs:TransverseMercator>
+		<crs:Id>epsg:16262</crs:Id>
+		<crs:Name>3-degree Gauss-Kruger zone 2</crs:Name>
+		<crs:LatitudeOfNaturalOrigin>0.0</crs:LatitudeOfNaturalOrigin>
+		<crs:LongitudeOfNaturalOrigin>6.0</crs:LongitudeOfNaturalOrigin>
+		<crs:ScaleFactor>1.0</crs:ScaleFactor>
+		<crs:FalseEasting>2500000.0</crs:FalseEasting>
+		<crs:FalseNorthing>0.0</crs:FalseNorthing>
+	</crs:TransverseMercator>
+    <crs:TransverseMercator>
+		<crs:Id>epsg:16263</crs:Id>
+		<crs:Name>3-degree Gauss-Kruger zone 3</crs:Name>
+		<crs:LatitudeOfNaturalOrigin>0.0</crs:LatitudeOfNaturalOrigin>
+		<crs:LongitudeOfNaturalOrigin>9.0</crs:LongitudeOfNaturalOrigin>
+		<crs:ScaleFactor>1.0</crs:ScaleFactor>
+		<crs:FalseEasting>3500000.0</crs:FalseEasting>
+		<crs:FalseNorthing>0.0</crs:FalseNorthing>
+	</crs:TransverseMercator>
+	<crs:TransverseMercator>
+		<crs:Id>epsg:16264</crs:Id>
+		<crs:Name>3-degree Gauss-Kruger zone 4</crs:Name>
+		<crs:LatitudeOfNaturalOrigin>0.0</crs:LatitudeOfNaturalOrigin>
+		<crs:LongitudeOfNaturalOrigin>12.0</crs:LongitudeOfNaturalOrigin>
+		<crs:ScaleFactor>1.0</crs:ScaleFactor>
+		<crs:FalseEasting>4500000.0</crs:FalseEasting>
+		<crs:FalseNorthing>0.0</crs:FalseNorthing>
+	</crs:TransverseMercator>
+	<crs:TransverseMercator>
+		<crs:Id>epsg:16265</crs:Id>
+		<crs:Name>3-degree Gauss-Kruger zone 5</crs:Name>
+		<crs:LatitudeOfNaturalOrigin>0.0</crs:LatitudeOfNaturalOrigin>
+		<crs:LongitudeOfNaturalOrigin>14.999999999999998</crs:LongitudeOfNaturalOrigin>
+		<crs:ScaleFactor>1.0</crs:ScaleFactor>
+		<crs:FalseEasting>5500000.0</crs:FalseEasting>
+		<crs:FalseNorthing>0.0</crs:FalseNorthing>
+	</crs:TransverseMercator>
+    <crs:TransverseMercator>
+		<crs:Id>projection_for_urn:ogc:def:crs:epsg::325833</crs:Id>
+		<crs:LatitudeOfNaturalOrigin>0.0</crs:LatitudeOfNaturalOrigin>
+		<crs:LongitudeOfNaturalOrigin>14.999999999999998</crs:LongitudeOfNaturalOrigin>
+		<crs:ScaleFactor>0.9996</crs:ScaleFactor>
+		<crs:FalseEasting>3500000.0</crs:FalseEasting>
+		<crs:FalseNorthing>0.0</crs:FalseNorthing>
+	</crs:TransverseMercator>
+</crs:ProjectionDefinitions>

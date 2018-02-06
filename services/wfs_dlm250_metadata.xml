@@ -92,7 +92,7 @@
       <MetadataSetId>DEBKG00M00000208</MetadataSetId>
     </Dataset>
 
-    <Dataset xmlns:hy-p="hhttp://inspire.ec.europa.eu/schemas/hy-p/4.0">
+    <Dataset xmlns:hy-p="http://inspire.ec.europa.eu/schemas/hy-p/4.0">
       <Name>hy-p:Embankment</Name>
       <Title>Embankment</Title>
       <Title lang="ger">Böschung</Title>
